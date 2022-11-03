@@ -1,0 +1,31 @@
+[package]
+name = "countires"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["std"]
+std = []
+# std = ["lazy_static", "hashbrown/std"]
+# alloc = ["lazy_static/spin_no_std", "hashbrown"]
+
+# sqlx_mysql = ["sqlx/mysql"]
+# sqlx_postgres = ["sqlx/postgres"]
+# sqlx_sqlite = ["sqlx/sqlite"]
+# sqlx_mssql = ["sqlx/mssql"]
+
+[dependencies]
+hashbrown = { version = "0.12", optional = true, default-features = false }
+lazy_static = { version = "1.4", optional = true, default-features = false }
+serde = { version = "1", optional = true, default-features = false, features = ["derive"] }
+
+
+# sqlx = { version = "0.6", optional = true, default-features = false }
+
+[dev-dependencies]
+serde_json = "1"
+
+[build-dependencies]
+heck = "0.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
