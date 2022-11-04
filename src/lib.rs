@@ -4,18 +4,13 @@ mod generated;
 use core::borrow::Borrow;
 
 pub use generated::*;
+#[cfg(feature = "enums")]
+pub mod enums;
+#[cfg(feature = "enums")]
+pub use enums::{CCA2, CCA3};
 
-
-#[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
-pub enum CCA2 {
-
-}
-
-#[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
-pub enum CCA3 {
-
-}
-
+mod types;
+pub use types::*;
 
 // #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash)]
 // pub enum ParseCountryError {
@@ -154,7 +149,7 @@ impl<K: 'static, V: 'static> StaticMap<K, V> {
 
 impl<K: 'static + Eq, V: 'static> StaticMap<K, V> {
     pub fn get<Q>(&self, k: &Q) -> Option<&'static V>
-    where 
+    where
         K: Borrow<Q>,
         Q: ?Sized + Eq,
     {
@@ -164,14 +159,12 @@ impl<K: 'static + Eq, V: 'static> StaticMap<K, V> {
             .map(|(_, v)| v)
     }
 
-    pub fn contains<Q>(&self, k: &Q) -> bool 
-    where 
+    pub fn contains<Q>(&self, k: &Q) -> bool
+    where
         K: Borrow<Q>,
-        Q: ?Sized + Eq, 
+        Q: ?Sized + Eq,
     {
-        self.map
-            .iter()
-            .any(|(key, _)| key.borrow().eq(k))
+        self.map.iter().any(|(key, _)| key.borrow().eq(k))
     }
 }
 
@@ -208,7 +201,7 @@ impl NameMeta {
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
 pub struct OfficialLanguage {
     name: &'static str,
-    native: &'static str, 
+    native: &'static str,
     iso_639_3: &'static str,
     bcp_47: &'static str,
     iso_15924: &'static str,
@@ -231,7 +224,7 @@ impl OfficialLanguage {
     }
 
     /// Returns the [ISO 639-3] language code.
-    /// 
+    ///
     /// [ISO 639-3]: https://en.wikipedia.org/wiki/ISO_639-3
     #[inline]
     pub const fn iso639_3(&self) -> &'static str {
@@ -239,7 +232,7 @@ impl OfficialLanguage {
     }
 
     /// Returns the [BCP 47] tag.
-    /// 
+    ///
     /// [BCP 47]: https://en.wikipedia.org/wiki/IETF_language_tag
     #[inline]
     pub const fn bcp47(&self) -> &'static str {
@@ -247,7 +240,7 @@ impl OfficialLanguage {
     }
 
     /// Returns the [ISO 15924] script code.
-    /// 
+    ///
     /// [ISO 15924]: https://en.wikipedia.org/wiki/ISO_15924
     #[inline]
     pub const fn iso15924(&self) -> &'static str {
@@ -255,7 +248,7 @@ impl OfficialLanguage {
     }
 
     /// Returns array of assigned [IANA] tags.
-    /// 
+    ///
     /// [IANA]: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
     // TODO: add IANA struct which contains the information, and replace str with that struct
     #[inline]
@@ -353,7 +346,7 @@ impl Geography {
     }
 
     /// Returns list of countries by their [ISO 3166-1 alpha-2] codes that border the country
-    /// 
+    ///
     /// [ISO 3166-1 alpha-2]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
     #[inline]
     pub const fn borders_cca2(&self) -> &'static [CCA2] {
@@ -361,7 +354,7 @@ impl Geography {
     }
 
     /// Returns list of countries by their [ISO 3166-1 alpha-3] codes that border the country
-    /// 
+    ///
     /// [ISO 3166-1 alpha-3]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
     #[inline]
     pub const fn borders_cca3(&self) -> &'static [CCA3] {
@@ -398,7 +391,7 @@ impl Currency {
     }
 
     /// Returns the [ISO 4217] currency code
-    /// 
+    ///
     /// [ISO 4217]: https://en.wikipedia.org/wiki/ISO_4217
     #[inline]
     pub const fn iso(&self) -> &'static str {
@@ -406,7 +399,7 @@ impl Currency {
     }
 
     /// Returns the [ISO 4217 numeric] currency code
-    /// 
+    ///
     /// [ISO 4217 numeric]: https://en.wikipedia.org/wiki/ISO_4217#cite_note-ISO4217-1
     #[inline]
     pub const fn iso_numeric(&self) -> Option<u16> {
@@ -457,7 +450,7 @@ impl Currency {
 }
 
 /// [International dialing direct] info.
-/// 
+///
 /// [International dialing direct]: https://en.wikipedia.org/wiki/List_of_country_calling_codes
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
 pub struct IDD {
@@ -516,12 +509,12 @@ pub struct Subdivision {
 impl Subdivision {
     /// Returns the subdivision type
     #[inline]
-    pub const fn subdivision_type(&self) -> &'static str{
+    pub const fn subdivision_type(&self) -> &'static str {
         self.ty
     }
 
     /// Returns the [ISO 3166-2] code of the subdivision
-    /// 
+    ///
     /// [ISO 3166-2]: https://en.wikipedia.org/wiki/ISO_3166-2
     #[inline]
     pub const fn iso_code(&self) -> &'static str {
@@ -538,14 +531,14 @@ pub enum TimezoneType {
 impl core::fmt::Display for TimezoneType {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
         match self {
-            TimezoneType::Link => write!(f, "Link"),
-            TimezoneType::Canonical => write!(f, "Canonical"),
+            TimezoneType::Link => write!(f, "link"),
+            TimezoneType::Canonical => write!(f, "canonical"),
         }
     }
 }
 
 /// Timezone info, reference: [tz database timezones].
-/// 
+///
 /// [tz database timezones]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
 pub struct Timezone {
@@ -610,7 +603,7 @@ pub enum DrivingSide {
     Right,
 }
 
-/// The unit of distance used (kilometer or mile) 
+/// The unit of distance used (kilometer or mile)
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
 #[repr(u8)]
 pub enum DistanceUint {
@@ -705,7 +698,7 @@ pub struct Locale {
 
 impl Locale {
     /// Returns a list of [IETF] locale codes (e.g. `en-US`)
-    /// 
+    ///
     /// [IETF]: https://en.wikipedia.org/wiki/IETF_language_tag
     #[inline]
     pub const fn ietf(&self) -> &'static [&'static str] {
@@ -737,7 +730,7 @@ impl Locale {
     }
 
     /// Returns date formats for each IETF locale.
-    /// 
+    ///
     /// - Key is the IETF code
     /// - Value is the date format, where:
     ///   - `G` = era
@@ -800,7 +793,7 @@ impl Country1 {
     }
 
     /// Returns [ISO 3166-1 alpha-2] code.
-    /// 
+    ///
     /// [ISO 3166-1 alpha-2]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
     #[inline]
     pub const fn cca2(&self) -> &'static str {
@@ -808,7 +801,7 @@ impl Country1 {
     }
 
     /// Returns [ISO 3166-1 alpha-3] code.
-    /// 
+    ///
     /// [ISO 3166-1 alpha-3]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
     #[inline]
     pub const fn cca3(&self) -> &'static str {
@@ -816,7 +809,7 @@ impl Country1 {
     }
 
     /// Returns [ISO 3166-1 numeric] code.
-    /// 
+    ///
     /// [ISO 3166-1 numeric]: https://en.wikipedia.org/wiki/ISO_3166-1_numeric
     #[inline]
     pub const fn ccn3(&self) -> &'static str {
@@ -824,7 +817,7 @@ impl Country1 {
     }
 
     /// Returns [International Olympic Committee] code.
-    /// 
+    ///
     /// [International Olympic Committee]: https://en.wikipedia.org/wiki/International_Olympic_Committee
     #[inline]
     pub const fn ioc(&self) -> &'static str {
@@ -832,7 +825,7 @@ impl Country1 {
     }
 
     /// Returns list of [Country Code Top Level Domain (ccTLD)] used
-    /// 
+    ///
     /// [Country Code Top Level Domain (ccTLD)]: https://en.wikipedia.org/wiki/Country_code_top-level_domain#Lists
     #[inline]
     pub const fn tld(&self) -> &'static [&'static str] {
@@ -858,7 +851,7 @@ impl Country1 {
     }
 
     /// Returns the subdivisions (states, provinces, etc.) map whose key is [ISO 639-3] in the country
-    /// 
+    ///
     /// [ISO 639-3]: https://en.wikipedia.org/wiki/ISO_639-3
     #[inline]
     pub const fn subdivisions(&self) -> &'static StaticMap<&'static str, &'static Subdivision> {
@@ -866,7 +859,7 @@ impl Country1 {
     }
 
     /// Returns the [International dialing direct] info.
-    /// 
+    ///
     /// [International dialing direct]: https://en.wikipedia.org/wiki/List_of_country_calling_codes
     #[inline]
     pub const fn idd(&self) -> &'static IDD {
@@ -879,8 +872,6 @@ impl Country1 {
         self.locale
     }
 }
-
-
 
 #[test]
 fn test() {
@@ -899,8 +890,6 @@ fn test() {
         default_locale: String,
         currency_name: String,
     }
-
-
 
     #[derive(Serialize, Deserialize)]
     struct Country1 {
@@ -970,9 +959,11 @@ fn test() {
     }
 
     let src = File::open("countries.json").unwrap();
-    let country_data = serde_json::from_reader::<_, Vec<CountryData>>(src).unwrap().into_iter().map(|country| {
-        (country.alpha2.clone(), country)
-    }).collect::<HashMap<String, CountryData>>();
+    let country_data = serde_json::from_reader::<_, Vec<CountryData>>(src)
+        .unwrap()
+        .into_iter()
+        .map(|country| (country.alpha2.clone(), country))
+        .collect::<HashMap<String, CountryData>>();
     eprintln!("country_data: {}", country_data.len());
 
     let src = File::open("data.json").unwrap();
@@ -980,31 +971,58 @@ fn test() {
 
     let countries = countries
         .into_iter()
-        .map(|c| {
-            Country {
-                name: c.name,
-                alpha2: c.alpha2.clone(),
-                alpha3: c.alpha3,
-                country_code: c.country_code,
-                phone_code: c.phone_code,
-                currency_code: c.currency_code,
-                capital: c.capital,
-                iso: c.iso,
-                region: c.region,
-                sub_region: c.sub_region,
-                intermediate_region: c.intermediate_region,
-                region_code: c.region_code,
-                sub_region_code: c.sub_region_code,
-                intermediate_region_code: c.intermediate_region_code,
-                currency_name: country_data.get(&c.alpha2).unwrap().currency_name.clone(),
-                continent: country_data.get(&c.alpha2).unwrap().continent.clone().unwrap_or_default(),
-                emoji: country_data.get(&c.alpha2).unwrap().emoji.clone().unwrap_or_default(),
-                emoji_u: country_data.get(&c.alpha2).unwrap().emojiU.clone().unwrap_or_default().split(' ').map(ToString::to_string).collect(),
-                languages: country_data.get(&c.alpha2).unwrap().languages.clone().unwrap_or_default(),
-                locales: country_data.get(&c.alpha2).unwrap().locales.clone(),
-                default_locale: country_data.get(&c.alpha2).unwrap().default_locale.clone(),
-                default_language: country_data.get(&c.alpha2).unwrap().languages.clone().unwrap_or_default()[0].clone(),
-            }
+        .map(|c| Country {
+            name: c.name,
+            alpha2: c.alpha2.clone(),
+            alpha3: c.alpha3,
+            country_code: c.country_code,
+            phone_code: c.phone_code,
+            currency_code: c.currency_code,
+            capital: c.capital,
+            iso: c.iso,
+            region: c.region,
+            sub_region: c.sub_region,
+            intermediate_region: c.intermediate_region,
+            region_code: c.region_code,
+            sub_region_code: c.sub_region_code,
+            intermediate_region_code: c.intermediate_region_code,
+            currency_name: country_data.get(&c.alpha2).unwrap().currency_name.clone(),
+            continent: country_data
+                .get(&c.alpha2)
+                .unwrap()
+                .continent
+                .clone()
+                .unwrap_or_default(),
+            emoji: country_data
+                .get(&c.alpha2)
+                .unwrap()
+                .emoji
+                .clone()
+                .unwrap_or_default(),
+            emoji_u: country_data
+                .get(&c.alpha2)
+                .unwrap()
+                .emojiU
+                .clone()
+                .unwrap_or_default()
+                .split(' ')
+                .map(ToString::to_string)
+                .collect(),
+            languages: country_data
+                .get(&c.alpha2)
+                .unwrap()
+                .languages
+                .clone()
+                .unwrap_or_default(),
+            locales: country_data.get(&c.alpha2).unwrap().locales.clone(),
+            default_locale: country_data.get(&c.alpha2).unwrap().default_locale.clone(),
+            default_language: country_data
+                .get(&c.alpha2)
+                .unwrap()
+                .languages
+                .clone()
+                .unwrap_or_default()[0]
+                .clone(),
         })
         .collect::<Vec<_>>();
 
