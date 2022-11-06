@@ -34,6 +34,7 @@ impl core::fmt::Display for Day {
     }
 }
 
+#[cfg(feature = "serde")]
 impl serde::Serialize for Day {
     fn serialize<S>(&self, serializer: S) -> core::result::Result<S::Ok, S::Error>
     where
@@ -51,6 +52,7 @@ impl serde::Serialize for Day {
     }
 }
 
+#[cfg(feature = "serde")]
 impl<'de> serde::Deserialize<'de> for Day {
     fn deserialize<D>(deserializer: D) -> core::result::Result<Self, D::Error>
     where
@@ -368,7 +370,7 @@ impl<'de> serde::Deserialize<'de> for MeasurementSystem {
 /// Locale
 #[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub struct Locale {
-    ietf: &'static [&'static str],
+    ietf: &'static str,
     date_formats: &'static super::StaticMap<&'static str, &'static str>,
     measurement_system: MeasurementSystem,
     hour_clock: HourClock,
@@ -379,11 +381,9 @@ pub struct Locale {
 }
 
 impl Locale {
-    /// Returns a list of [IETF] locale codes (e.g. `en-US`)
-    ///
-    /// [IETF]: https://en.wikipedia.org/wiki/IETF_language_tag
+    /// Returns the IETF locale code (e.g. `en-US`)
     #[inline]
-    pub const fn ietf(&self) -> &'static [&'static str] {
+    pub const fn ietf(&self) -> &'static str {
         self.ietf
     }
 
@@ -437,44 +437,6 @@ impl Locale {
     }
 }
 
-/// [International dialing direct] info.
-///
-/// [International dialing direct]: https://en.wikipedia.org/wiki/List_of_country_calling_codes
-#[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
-#[allow(clippy::upper_case_acronyms)]
-pub struct IDD {
-    prefix: &'static str,
-    prefix_u8: u8,
-    suffixes: &'static [&'static str],
-    suffixes_u16: &'static [u16],
-}
-
-impl IDD {
-    /// Returns the geographical code prefix (e.g. +1 for US)
-    #[inline]
-    pub const fn prefix(&self) -> &'static str {
-        self.prefix
-    }
-
-    /// Returns the geographical code prefix (without '+') in `u8` (e.g. 1 for US)
-    #[inline]
-    pub const fn prefix_u8(&self) -> u8 {
-        self.prefix_u8
-    }
-
-    /// Returns the list of suffixes assigned (e.g. 201 in US)
-    #[inline]
-    pub const fn suffixes(&self) -> &'static [&'static str] {
-        self.suffixes
-    }
-
-    /// Returns the list of suffixes assigned in u16 (e.g. 201 in US)
-    #[inline]
-    pub const fn suffixes_u16(&self) -> &'static [u16] {
-        self.suffixes_u16
-    }
-}
-
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
 pub enum TimezoneType {
     Link,
@@ -520,77 +482,361 @@ impl<'de> serde::Deserialize<'de> for TimezoneType {
     }
 }
 
-/// Country
-#[derive(Debug, Copy, Clone, PartialEq, PartialOrd)]
-pub struct Country {
-    flag: &'static str,
-    cca2: &'static str,
-    cca3: &'static str,
-    ccn3: u16,
-    ioc: Option<&'static str>,
-    tld: &'static [&'static str],
-    locale: &'static Locale,
-    idd: &'static IDD,
+/// Timezone info, reference: [tz database timezones].
+///
+/// [tz database timezones]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+#[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
+pub struct Timezone {
+    name: &'static str,
+    ty: TimezoneType,
+    linked_to: Option<&'static str>,
+    utc_offset: &'static str,
+    dst_offset: &'static str,
 }
 
-impl Country {
-    /// Returns the country's flag
+impl Timezone {
+    /// Returns the name of the timezone
     #[inline]
-    pub const fn flag(&self) -> &'static str {
-        self.flag
+    pub const fn name(&self) -> &'static str {
+        self.name
     }
 
-    /// Returns [ISO 3166-1 alpha-2] code.
+    /// Returns the type of timezone (primary or alias)
+    #[inline]
+    pub const fn timezone_type(&self) -> TimezoneType {
+        self.ty
+    }
+
+    /// Returns the name of the timezone this timezone is linked to
+    #[inline]
+    pub const fn linked_to(&self) -> Option<&'static str> {
+        self.linked_to
+    }
+
+    /// Returns the UTC offset of the timezone
+    #[inline]
+    pub const fn utc_offset(&self) -> &'static str {
+        self.utc_offset
+    }
+
+    /// Returns the DST offset of the timezone
+    #[inline]
+    pub const fn dst_offset(&self) -> &'static str {
+        self.dst_offset
+    }
+}
+
+/// [International dialing direct] info.
+///
+/// [International dialing direct]: https://en.wikipedia.org/wiki/List_of_country_calling_codes
+#[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
+pub struct IDD {
+    prefix: &'static str,
+    prefix_u8: u8,
+    suffixes: &'static [&'static str],
+    suffixes_u16: &'static [u16],
+}
+
+impl IDD {
+    /// Returns the geographical code prefix (e.g. +1 for US)
+    #[inline]
+    pub const fn prefix(&self) -> &'static str {
+        self.prefix
+    }
+
+    /// Returns the geographical code prefix (without '+') in `u8` (e.g. 1 for US)
+    #[inline]
+    pub const fn prefix_u8(&self) -> u8 {
+        self.prefix_u8
+    }
+
+    /// Returns the list of suffixes assigned (e.g. 201 in US)
+    #[inline]
+    pub const fn suffixes(&self) -> &'static [&'static str] {
+        self.suffixes
+    }
+
+    /// Returns the list of suffixes assigned in u16 (e.g. 201 in US)
+    #[inline]
+    pub const fn suffixes_u16(&self) -> &'static [u16] {
+        self.suffixes_u16
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq, PartialOrd)]
+pub struct Geography {
+    latitude: f64,
+    longitude: f64,
+    land_locked: bool,
+    capital: &'static [&'static str],
+    area: f64,
+    region: &'static str,
+    subregion: &'static str,
+    border_countries: &'static [super::CCA2],
+}
+
+impl Geography {
+    /// Returns the latitude
+    #[inline]
+    pub const fn latitude(&self) -> f64 {
+        self.latitude
+    }
+
+    /// Returns the longitude
+    #[inline]
+    pub const fn longitude(&self) -> f64 {
+        self.longitude
+    }
+
+    /// Returns whether or not the country is landlocked (not bordering the ocean)
+    #[inline]
+    pub const fn is_landlocked(&self) -> bool {
+        self.land_locked
+    }
+
+    /// Returns the name of the capital cities
+    #[inline]
+    pub const fn capitals(&self) -> &'static [&'static str] {
+        self.capital
+    }
+
+    /// Returns the land area of the country
+    #[inline]
+    pub const fn area(&self) -> f64 {
+        self.area
+    }
+
+    /// Returns the region of the country
+    #[inline]
+    pub const fn region(&self) -> &'static str {
+        self.region
+    }
+
+    /// Returns the subregion of the country
+    #[inline]
+    pub const fn subregion(&self) -> &'static str {
+        self.subregion
+    }
+
+    /// Returns list of countries by their [ISO 3166-1 alpha-2] codes that border the country
     ///
     /// [ISO 3166-1 alpha-2]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
     #[inline]
-    pub const fn cca2(&self) -> &'static str {
-        self.cca2
+    pub const fn border_countries(&self) -> &'static [super::CCA2] {
+        self.border_countries
+    }
+}
+
+#[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
+pub struct Currency {
+    name: &'static str,
+    short_name: Option<&'static str>,
+    iso_4217: &'static str,
+    iso_numeric: Option<u16>,
+    symbol: &'static str,
+    subunit: Option<&'static str>,
+    prefix: Option<&'static str>,
+    suffix: Option<&'static str>,
+    decimal_mark: Option<char>,
+    decimal_places: u8,
+    thousands_separator: Option<char>,
+}
+
+impl Currency {
+    /// Returns the name of the currency
+    #[inline]
+    pub const fn name(&self) -> &'static str {
+        self.name
     }
 
-    /// Returns [ISO 3166-1 alpha-3] code.
+    /// Returns the short name of the currency
+    #[inline]
+    pub const fn short_name(&self) -> Option<&'static str> {
+        self.short_name
+    }
+
+    /// Returns the [ISO 4217] currency code
     ///
-    /// [ISO 3166-1 alpha-3]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
+    /// [ISO 4217]: https://en.wikipedia.org/wiki/ISO_4217
     #[inline]
-    pub const fn cca3(&self) -> &'static str {
-        self.cca3
+    pub const fn iso4217(&self) -> &'static str {
+        self.iso_4217
     }
 
-    /// Returns [ISO 3166-1 numeric] code.
+    /// Returns the [ISO 4217 numeric] currency code
     ///
-    /// [ISO 3166-1 numeric]: https://en.wikipedia.org/wiki/ISO_3166-1_numeric
+    /// [ISO 4217 numeric]: https://en.wikipedia.org/wiki/ISO_4217#cite_note-ISO4217-1
     #[inline]
-    pub const fn ccn3(&self) -> u16 {
-        self.ccn3
+    pub const fn iso_numeric(&self) -> Option<u16> {
+        self.iso_numeric
     }
 
-    /// Returns [International Olympic Committee] code.
+    /// Returns the currency symbol
+    #[inline]
+    pub const fn symbol(&self) -> &'static str {
+        self.symbol
+    }
+
+    /// Returns the name of the subunit of the currency
+    #[inline]
+    pub const fn subunit(&self) -> Option<&'static str> {
+        self.subunit
+    }
+
+    /// Returns the prefix of the currency symbol
+    #[inline]
+    pub const fn prefix(&self) -> Option<&'static str> {
+        self.prefix
+    }
+
+    /// Returns the suffix of the currency symbol
+    #[inline]
+    pub const fn suffix(&self) -> Option<&'static str> {
+        self.suffix
+    }
+
+    /// Returns the decimal mark of the currency
+    #[inline]
+    pub const fn decimal_mark(&self) -> Option<char> {
+        self.decimal_mark
+    }
+
+    /// Returns the number of decimal places of the currency
+    #[inline]
+    pub const fn decimal_places(&self) -> u8 {
+        self.decimal_places
+    }
+
+    /// Returns the thousands separator of the currency
+    #[inline]
+    pub const fn thousands_separator(&self) -> Option<char> {
+        self.thousands_separator
+    }
+}
+
+#[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
+pub struct SubdivisionMeta {
+    official: &'static str,
+    common: Option<&'static str>,
+    native: Option<&'static str>,
+}
+
+impl SubdivisionMeta {
+    /// Returns the official name of the subdivision
+    #[inline]
+    pub const fn official(&self) -> &'static str {
+        self.official
+    }
+
+    /// Returns the common name of the subdivision
+    #[inline]
+    pub const fn common(&self) -> Option<&'static str> {
+        self.common
+    }
+
+    /// Returns the native name of the subdivision
+    #[inline]
+    pub const fn native(&self) -> Option<&'static str> {
+        self.native
+    }
+}
+
+#[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
+pub struct Subdivision {
+    iso: &'static str,
+    ty: &'static str,
+    meta: &'static super::StaticMap<&'static str, SubdivisionMeta>,
+}
+
+impl Subdivision {
+    /// Returns the [ISO 3166-2 code] of the subdivision
     ///
-    /// [International Olympic Committee]: https://en.wikipedia.org/wiki/International_Olympic_Committee
+    /// [ISO 3166-2]: https://en.wikipedia.org/wiki/ISO_3166-2
     #[inline]
-    pub const fn ioc(&self) -> Option<&'static str> {
-        self.ioc
+    pub const fn iso_code(&self) -> &'static str {
+        self.iso
     }
 
-    /// Returns list of [Country Code Top Level Domain (ccTLD)] used
+    /// Returns the type of the subdivision
+    #[inline]
+    pub const fn subdivision_type(&self) -> &'static str {
+        self.ty
+    }
+
+    /// Returns the meta of the subdivision
+    #[inline]
+    pub const fn meta(&self) -> &'static super::StaticMap<&'static str, SubdivisionMeta> {
+        self.meta
+    }
+}
+
+#[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
+pub struct Language {
+    name: &'static str,
+    native_name: Option<&'static str>,
+    iso_639_3: &'static str,
+    bcp_47: &'static str,
+    iso_15924: &'static str,
+    iana: &'static [&'static str],
+    extinct: bool,
+    spurious: bool,
+}
+
+impl Language {
+    /// Returns the name of the language
+    #[inline]
+    pub const fn name(&self) -> &'static str {
+        self.name
+    }
+
+    /// Returns the native name of the language
+    #[inline]
+    pub const fn native_name(&self) -> Option<&'static str> {
+        self.native_name
+    }
+
+    /// Returns the [ISO 639-3] language code.
     ///
-    /// [Country Code Top Level Domain (ccTLD)]: https://en.wikipedia.org/wiki/Country_code_top-level_domain#Lists
+    /// [ISO 639-3]: https://en.wikipedia.org/wiki/ISO_639-3
     #[inline]
-    pub const fn tld(&self) -> &'static [&'static str] {
-        self.tld
+    pub const fn iso639_3(&self) -> &'static str {
+        self.iso_639_3
     }
 
-    /// Returns the country's locale information
-    #[inline]
-    pub const fn locale(&self) -> &'static Locale {
-        self.locale
-    }
-
-    /// Returns the country's [international dialing direct] information
+    /// Returns the [BCP 47] tag.
     ///
-    /// [international dialing direct]: https://en.wikipedia.org/wiki/List_of_country_calling_codes
+    /// [BCP 47]: https://en.wikipedia.org/wiki/IETF_language_tag
     #[inline]
-    pub const fn idd(&self) -> &'static IDD {
-        self.idd
+    pub const fn bcp47(&self) -> &'static str {
+        self.bcp_47
+    }
+
+    /// Returns the [ISO 15924] script code.
+    ///
+    /// [ISO 15924]: https://en.wikipedia.org/wiki/ISO_15924
+    #[inline]
+    pub const fn iso15924(&self) -> &'static str {
+        self.iso_15924
+    }
+
+    /// Returns array of assigned [IANA] tags.
+    ///
+    /// [IANA]: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+    // TODO: add IANA struct which contains the information, and replace str with that struct
+    #[inline]
+    pub const fn iana(&self) -> &'static [&'static str] {
+        self.iana
+    }
+
+    /// Returns whether the language is extinct
+    #[inline]
+    pub const fn is_extinct(&self) -> bool {
+        self.extinct
+    }
+
+    /// Returns whether the language is spurious
+    #[inline]
+    pub const fn is_spurious(&self) -> bool {
+        self.spurious
     }
 }

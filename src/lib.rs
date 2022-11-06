@@ -12,6 +12,9 @@ pub use enums::{CCA2, CCA3};
 mod types;
 pub use types::*;
 
+#[cfg(feature = "serde")]
+use serde;
+
 // #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash)]
 // pub enum ParseCountryError {
 //     UnknownCountry,
