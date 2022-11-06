@@ -145,12 +145,11 @@ impl<'de> serde::Deserialize<'de> for TimezoneType {{
     fn deserialize<D>(deserializer: D) -> core::result::Result<Self, D::Error>
     where
         D: serde::Deserializer<'de> {{
-        let s = String::deserialize(deserializer)?;
-        match s.to_lowercase().as_str() {{
-            "link" => Ok(TimezoneType::Link),
-            "canonical" => Ok(TimezoneType::Canonical),
+        String::deserialize(deserializer).and_then(|s| match s.as_str() {{
+            "link" | "Link" => Ok(TimezoneType::Link),
+            "canonical" | "Canonical" => Ok(TimezoneType::Canonical),
             _ => Err(serde::de::Error::custom(format!("Unknown timezone type: {{}}", s))),
-        }}
+        }})
     }}
 }}
 "#
@@ -263,12 +262,11 @@ impl<'de> serde::Deserialize<'de> for DrivingSide {{
     fn deserialize<D>(deserializer: D) -> core::result::Result<Self, D::Error>
     where
         D: serde::Deserializer<'de> {{
-        let s = String::deserialize(deserializer)?;
-        match s.to_lowercase().as_str() {{
-            "left" => Ok(DrivingSide::Left),
-            "right" => Ok(DrivingSide::Right),
+        String::deserialize(deserializer).and_then(|s| match s.as_str() {{
+            "left" | "Left" | "l" | "L" => Ok(DrivingSide::Left),
+            "right" | "Right" | "r" | "R" => Ok(DrivingSide::Right),
             _ => Err(serde::de::Error::custom(format!("Unknown driving side: {{}}", s))),
-        }}
+        }})
     }}
 }}
 "#
@@ -368,12 +366,11 @@ impl<'de> serde::Deserialize<'de> for DistanceUint {{
     fn deserialize<D>(deserializer: D) -> core::result::Result<Self, D::Error>
     where
         D: serde::Deserializer<'de> {{
-        let s = String::deserialize(deserializer)?;
-        match s.to_lowercase().as_str() {{
-            "kilometer" => Ok(DistanceUint::Kilometer),
-            "mile" => Ok(DistanceUint::Mile),
+        String::deserialize(deserializer).and_then(|s| match s.as_str() {{
+            "kilometer" | "km" | "Kilometer" | "Km" | "KM" => Ok(DistanceUint::Kilometer),
+            "mile" | "mi" | "Mile" | "Mi" | "MI" => Ok(DistanceUint::Mile),
             _ => Err(serde::de::Error::custom(format!("Unknown distance unit: {{}}", s))),
-        }}
+        }})
     }}
 }}
 "#
@@ -422,16 +419,24 @@ impl<'de> serde::Deserialize<'de> for TemperatureUint {
     where
         D: serde::Deserializer<'de>,
     {
-        let s = String::deserialize(deserializer)?;
-        match s.to_lowercase().as_str() {
-            "celsius" => Ok(TemperatureUint::Celsius),
-            "fahrenheit" => Ok(TemperatureUint::Fahrenheit),
-            "mixed" => Ok(TemperatureUint::Mixed),
+        String::deserialize(deserializer).and_then(|s| match s.as_str() {
+            "celsius" | "Celsius" => Ok(TemperatureUint::Celsius),
+            "fahrenheit" | "Fahrenheit" => Ok(TemperatureUint::Fahrenheit),
+            "mixed"
+            | "Mixed"
+            | "celsius or fahrenheit"
+            | "Celsius or Fahrenheit"
+            | "celsius/fahrenheit"
+            | "Celsius/Fahrenheit"
+            | " fahrenheit or celsius"
+            | "Fahrenheit or Celsius"
+            | "fahrenheit/celsius"
+            | "Fahrenheit/Celsius" => Ok(TemperatureUint::Mixed),
             _ => Err(serde::de::Error::custom(format!(
                 "Unknown temperature unit: {}",
                 s
             ))),
-        }
+        })
     }
 }
 
@@ -481,13 +486,12 @@ impl<'de> serde::Deserialize<'de> for TemperatureUint {{
     fn deserialize<D>(deserializer: D) -> core::result::Result<Self, D::Error>
     where
         D: serde::Deserializer<'de> {{
-        let s = String::deserialize(deserializer)?;
-        match s.to_lowercase().as_str() {{
-            "celsius" => Ok(TemperatureUint::Celsius),
-            "fahrenheit" => Ok(TemperatureUint::Fahrenheit),
-            "mixed" => Ok(TemperatureUint::Mixed),
+        String::deserialize(deserializer).and_then(|s| match s.as_str() {{
+            "celsius" | "Celsius" => Ok(TemperatureUint::Celsius),
+            "fahrenheit" | "Fahrenheit" => Ok(TemperatureUint::Fahrenheit),
+            "mixed" | "Mixed" | "celsius or fahrenheit" | "Celsius or Fahrenheit" | "celsius/fahrenheit" | "Celsius/Fahrenheit"| " fahrenheit or celsius" | "Fahrenheit or Celsius" | "fahrenheit/celsius" | "Fahrenheit/Celsius" => Ok(TemperatureUint::Mixed),
             _ => Err(serde::de::Error::custom(format!("Unknown temperature unit: {{}}", s))),
-        }}
+        }})
     }}
 }}        
 "#
@@ -535,8 +539,8 @@ impl<'de> serde::Deserialize<'de> for MeasurementSystem {
     {
         let s = String::deserialize(deserializer)?;
         match s.as_str() {
-            "metric" => Ok(MeasurementSystem::Metric),
-            "imperial" => Ok(MeasurementSystem::Imperial),
+            "metric" | "Metric" => Ok(MeasurementSystem::Metric),
+            "imperial" | "Imperial" => Ok(MeasurementSystem::Imperial),
             _ => Err(serde::de::Error::custom(format!(
                 "Unknown measurement system: {}",
                 s
@@ -589,8 +593,8 @@ impl<'de> serde::Deserialize<'de> for MeasurementSystem {{
         D: serde::Deserializer<'de> {{
         let s = String::deserialize(deserializer)?;
         match s.as_str() {{
-            "metric" => Ok(MeasurementSystem::Metric),
-            "imperial" => Ok(MeasurementSystem::Imperial),
+            "metric" | "Metric" => Ok(MeasurementSystem::Metric),
+            "imperial" | "Imperial" => Ok(MeasurementSystem::Imperial),
             _ => Err(serde::de::Error::custom(format!("Unknown measurement system: {{}}", s))),
         }}
     }}
@@ -641,16 +645,16 @@ impl<'de> serde::Deserialize<'de> for HourClock {
     where
         D: serde::Deserializer<'de>,
     {
-        let s = String::deserialize(deserializer)?;
-        match s.as_str() {
-            "12hr" => Ok(HourClock::Twelve),
-            "24hr" => Ok(HourClock::TwentyFour),
-            "mixed" => Ok(HourClock::Mixed),
+        String::deserialize(deserializer).and_then(|s| match s.as_str() {
+            "12hr" | "12" => Ok(HourClock::Twelve),
+            "24hr" | "24" => Ok(HourClock::TwentyFour),
+            "Mixed" | "mixed" | "12hr/24hr" | "24hr/12hr" | "12/24" | "24/12" | "12 or 24"
+            | "12hr or 24hr" | "24hr or 12hr" | "24 or 12" => Ok(HourClock::Mixed),
             _ => Err(serde::de::Error::custom(format!(
                 "Unknown hour clock: {}",
                 s
             ))),
-        }
+        })
     }
 }
 
@@ -700,12 +704,225 @@ impl<'de> serde::Deserialize<'de> for HourClock {{
     fn deserialize<D>(deserializer: D) -> core::result::Result<Self, D::Error>
     where
         D: serde::Deserializer<'de> {{
+        String::deserialize(deserializer).and_then(|s| {{
+            match s.as_str() {{
+                "12hr" | "12" => Ok(HourClock::Twelve),
+                "24hr" | "24" => Ok(HourClock::TwentyFour),
+                "Mixed" | "mixed" | "12hr/24hr" | "24hr/12hr" | "12/24" | "24/12" | "12 or 24" | "12hr or 24hr" | "24hr or 12hr" | "24 or 12" => Ok(HourClock::Mixed),
+                _ => Err(serde::de::Error::custom(format!("Unknown hour clock: {{}}", s))),
+            }}
+        }})
+    }}
+}}
+"#
+        )?;
+        Ok(())
+    }
+}
+
+/// Day
+#[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[repr(u8)]
+pub enum Day {
+    /// Sunday
+    Sunday,
+    /// Monday
+    Monday,
+    /// Tuesday
+    Tuesday,
+    /// Wednesday
+    Wednesday,
+    /// Thursday
+    Thursday,
+    /// Friday
+    Friday,
+    /// Saturday
+    Saturday,
+}
+
+impl core::fmt::Display for Day {
+    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
+        match self {
+            Day::Sunday => write!(f, "Sunday"),
+            Day::Monday => write!(f, "Monday"),
+            Day::Tuesday => write!(f, "Tuesday"),
+            Day::Wednesday => write!(f, "Wednesday"),
+            Day::Thursday => write!(f, "Thursday"),
+            Day::Friday => write!(f, "Friday"),
+            Day::Saturday => write!(f, "Saturday"),
+        }
+    }
+}
+
+impl serde::Serialize for Day {
+    fn serialize<S>(&self, serializer: S) -> core::result::Result<S::Ok, S::Error>
+    where
+        S: serde::Serializer,
+    {
+        match self {
+            Day::Sunday => serializer.serialize_str("Sunday"),
+            Day::Monday => serializer.serialize_str("Monday"),
+            Day::Tuesday => serializer.serialize_str("Tuesday"),
+            Day::Wednesday => serializer.serialize_str("Wednesday"),
+            Day::Thursday => serializer.serialize_str("Thursday"),
+            Day::Friday => serializer.serialize_str("Friday"),
+            Day::Saturday => serializer.serialize_str("Saturday"),
+        }
+    }
+}
+
+impl<'de> serde::Deserialize<'de> for Day {
+    fn deserialize<D>(deserializer: D) -> core::result::Result<Self, D::Error>
+    where
+        D: serde::Deserializer<'de>,
+    {
+        let s = String::deserialize(deserializer)?;
+        match s.as_str() {
+            "sunday" | "Sunday" | "Sun" | "sun" => Ok(Self::Sunday),
+            "monday" | "Monday" | "Mon" | "mon" => Ok(Self::Monday),
+            "tuesday" | "Tuesday" | "Tue" | "tue" => Ok(Self::Tuesday),
+            "wednesday" | "Wednesday" | "Wed" | "wed" => Ok(Self::Wednesday),
+            "thursday" | "Thursday" | "Thu" | "thu" => Ok(Self::Thursday),
+            "friday" | "Friday" | "Fri" | "fri" => Ok(Self::Friday),
+            "saturday" | "Saturday" | "Sat" | "sat" => Ok(Self::Saturday),
+            _ => Err(serde::de::Error::custom(format!("Unknown day: {}", s))),
+        }
+    }
+}
+
+impl Day {
+    /// Returns short name of the day
+    #[inline]
+    pub const fn short(&self) -> &'static str {
+        match self {
+            Day::Sunday => "Sun",
+            Day::Monday => "Mon",
+            Day::Tuesday => "Tue",
+            Day::Wednesday => "Wed",
+            Day::Thursday => "Thu",
+            Day::Friday => "Fri",
+            Day::Saturday => "Sat",
+        }
+    }
+
+    #[inline]
+    pub const fn as_str(&self) -> &'static str {
+        match self {
+            Day::Sunday => "Sunday",
+            Day::Monday => "Monday",
+            Day::Tuesday => "Tuesday",
+            Day::Wednesday => "Wednesday",
+            Day::Thursday => "Thursday",
+            Day::Friday => "Friday",
+            Day::Saturday => "Saturday",
+        }
+    }
+}
+
+impl ToTokenStream for Day {
+    fn to_token_stream<W: Write>(out: &mut W) -> Result<()> {
+        write!(
+            out,
+            r#"
+/// Day
+#[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[repr(u8)]
+pub enum Day {{
+    /// Sunday
+    Sunday,
+    /// Monday
+    Monday,
+    /// Tuesday
+    Tuesday,
+    /// Wednesday
+    Wednesday,
+    /// Thursday
+    Thursday,
+    /// Friday
+    Friday,
+    /// Saturday
+    Saturday,
+}}
+
+impl core::fmt::Display for Day {{
+    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {{
+        match self {{
+            Day::Sunday => write!(f, "Sunday"),
+            Day::Monday => write!(f, "Monday"),
+            Day::Tuesday => write!(f, "Tuesday"),
+            Day::Wednesday => write!(f, "Wednesday"),
+            Day::Thursday => write!(f, "Thursday"),
+            Day::Friday => write!(f, "Friday"),
+            Day::Saturday => write!(f, "Saturday"),
+        }}
+    }}
+}}
+
+impl serde::Serialize for Day {{
+    fn serialize<S>(&self, serializer: S) -> core::result::Result<S::Ok, S::Error>
+    where
+        S: serde::Serializer,
+    {{
+        match self {{
+            Day::Sunday => serializer.serialize_str("Sunday"),
+            Day::Monday => serializer.serialize_str("Monday"),
+            Day::Tuesday => serializer.serialize_str("Tuesday"),
+            Day::Wednesday => serializer.serialize_str("Wednesday"),
+            Day::Thursday => serializer.serialize_str("Thursday"),
+            Day::Friday => serializer.serialize_str("Friday"),
+            Day::Saturday => serializer.serialize_str("Saturday"),
+        }}
+    }}
+}}
+
+impl<'de> serde::Deserialize<'de> for Day {{
+    fn deserialize<D>(deserializer: D) -> core::result::Result<Self, D::Error>
+    where
+        D: serde::Deserializer<'de>,
+    {{
         let s = String::deserialize(deserializer)?;
         match s.as_str() {{
-            "12hr" => Ok(HourClock::Twelve),
-            "24hr" => Ok(HourClock::TwentyFour),
-            "mixed" => Ok(HourClock::Mixed),
-            _ => Err(serde::de::Error::custom(format!("Unknown hour clock: {{}}", s))),
+            "sunday" | "Sunday" | "Sun" | "sun" => Ok(Self::Sunday),
+            "monday" | "Monday" | "Mon" | "mon" => Ok(Self::Monday),
+            "tuesday" | "Tuesday" | "Tue" | "tue" => Ok(Self::Tuesday),
+            "wednesday" | "Wednesday" | "Wed" | "wed" => Ok(Self::Wednesday),
+            "thursday" | "Thursday" | "Thu" | "thu" => Ok(Self::Thursday),
+            "friday" | "Friday" | "Fri" | "fri" => Ok(Self::Friday),
+            "saturday" | "Saturday" | "Sat" | "sat" => Ok(Self::Saturday),
+            _ => Err(serde::de::Error::custom(format!(
+                "Unknown day: {{}}",
+                s
+            ))),
+        }}
+    }}
+}}
+
+
+impl Day {{
+    /// Returns short name of the day
+    #[inline]
+    pub const fn short(&self) -> &'static str {{
+        match self {{
+            Day::Sunday => "Sun",
+            Day::Monday => "Mon",
+            Day::Tuesday => "Tue",
+            Day::Wednesday => "Wed",
+            Day::Thursday => "Thu",
+            Day::Friday => "Fri",
+            Day::Saturday => "Sat",
+        }}
+    }}
+
+    #[inline]
+    pub const fn as_str(&self) -> &'static str {{
+        match self {{
+            Day::Sunday => "Sunday",
+            Day::Monday => "Monday",
+            Day::Tuesday => "Tuesday",
+            Day::Wednesday => "Wednesday",
+            Day::Thursday => "Thursday",
+            Day::Friday => "Friday",
+            Day::Saturday => "Saturday",
         }}
     }}
 }}
@@ -1038,14 +1255,18 @@ impl ToTokenStream for Locale {
                 r"
     /// Returns the unit of temperature (celsius or fahrenheit). see [`TemperatureUint`]",
             ),
+            (
+                "week_start_on",
+                "Day",
+                r"
+    /// Returns which day is the first day of the week on the calendar. see [`Day`]",
+            ),
         ];
 
         writeln!(
             buf,
             r"
-/// [International dialing direct] info.
-/// 
-/// [International dialing direct]: https://en.wikipedia.org/wiki/List_of_country_calling_codes"
+/// Locale"
         )?;
         writeln!(
             buf,
@@ -1138,6 +1359,7 @@ fn generate_types() -> Result<()> {
     let out_path = PathBuf::from("src/types.rs");
     let mut out = io::BufWriter::new(File::create(&out_path)?);
     writeln!(out, "// Auto generated file, please do not modify \n\n")?;
+    <Day as ToTokenStream>::to_token_stream(&mut out)?;
     <HourClock as ToTokenStream>::to_token_stream(&mut out)?;
     <DrivingSide as ToTokenStream>::to_token_stream(&mut out)?;
     <DistanceUint as ToTokenStream>::to_token_stream(&mut out)?;
