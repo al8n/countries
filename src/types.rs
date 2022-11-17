@@ -1,5 +1,7 @@
 // Auto generated file, please do not modify
 
+use super::StaticMap;
+
 /// Day
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
 #[repr(u8)]
@@ -532,9 +534,7 @@ impl Timezone {
 #[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub struct IDD {
     prefix: &'static str,
-    prefix_u8: u8,
     suffixes: &'static [&'static str],
-    suffixes_u16: &'static [u16],
 }
 
 impl IDD {
@@ -544,22 +544,10 @@ impl IDD {
         self.prefix
     }
 
-    /// Returns the geographical code prefix (without '+') in `u8` (e.g. 1 for US)
-    #[inline]
-    pub const fn prefix_u8(&self) -> u8 {
-        self.prefix_u8
-    }
-
     /// Returns the list of suffixes assigned (e.g. 201 in US)
     #[inline]
     pub const fn suffixes(&self) -> &'static [&'static str] {
         self.suffixes
-    }
-
-    /// Returns the list of suffixes assigned in u16 (e.g. 201 in US)
-    #[inline]
-    pub const fn suffixes_u16(&self) -> &'static [u16] {
-        self.suffixes_u16
     }
 }
 
@@ -838,5 +826,170 @@ impl Language {
     #[inline]
     pub const fn is_spurious(&self) -> bool {
         self.spurious
+    }
+}
+
+#[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
+pub struct CountryName {
+    common: &'static str,
+    official: &'static str,
+}
+
+impl CountryName {
+    /// Returns the common name of the country
+    #[inline]
+    pub const fn common(&self) -> &'static str {
+        self.common
+    }
+
+    /// Returns the official name of the country
+    #[inline]
+    pub const fn official(&self) -> &'static str {
+        self.official
+    }
+}
+
+#[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
+pub struct CountryMeta {
+    common: &'static str,
+    official: &'static str,
+    native: &'static super::StaticMap<&'static str, &'static CountryName>,
+    alternates: &'static [&'static str],
+}
+
+impl CountryMeta {
+    /// Returns the common name of the country
+    #[inline]
+    pub const fn common(&self) -> &'static str {
+        self.common
+    }
+
+    /// Returns the official name of the country
+    #[inline]
+    pub const fn official(&self) -> &'static str {
+        self.official
+    }
+
+    /// Returns the name of the country in native languages
+    #[inline]
+    pub const fn native(&self) -> &'static super::StaticMap<&'static str, &'static CountryName> {
+        self.native
+    }
+
+    /// Returns the alternate names of the country
+    #[inline]
+    pub const fn alternates(&self) -> &'static [&'static str] {
+        self.alternates
+    }
+}
+
+#[derive(Debug, Copy, Clone, PartialEq, PartialOrd)]
+pub struct Country {
+    name: &'static CountryMeta,
+    flag: &'static str,
+    cca2: &'static str,
+    cca3: &'static str,
+    ccn3: &'static str,
+    ioc: Option<&'static str>,
+    tld: &'static [&'static str],
+    locale: &'static Locale,
+    idd: &'static IDD,
+    geography: &'static Geography,
+    languages: &'static Language,
+    currencies: &'static [&'static Currency],
+    subdivisions: &'static StaticMap<&'static str, &'static Subdivision>,
+}
+
+impl Country {
+    /// Returns the name metadata of the country
+    #[inline]
+    pub const fn name(&self) -> &'static CountryMeta {
+        self.name
+    }
+
+    /// Returns the country's flag
+    #[inline]
+    pub const fn flag(&self) -> &'static str {
+        self.flag
+    }
+
+    /// Returns [ISO 3166-1 alpha-2] code.
+    ///
+    /// [ISO 3166-1 alpha-2]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+    #[inline]
+    pub const fn cca2(&self) -> &'static str {
+        self.cca2
+    }
+
+    /// Returns [ISO 3166-1 alpha-3] code.
+    ///
+    /// [ISO 3166-1 alpha-3]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
+    #[inline]
+    pub const fn cca3(&self) -> &'static str {
+        self.cca3
+    }
+
+    /// Returns [ISO 3166-1 numeric] code.
+    ///
+    /// [ISO 3166-1 numeric]: https://en.wikipedia.org/wiki/ISO_3166-1_numeric
+    #[inline]
+    pub const fn ccn3(&self) -> &'static str {
+        self.ccn3
+    }
+
+    /// Returns [International Olympic Committee] code.
+    ///
+    /// [International Olympic Committee]: https://en.wikipedia.org/wiki/International_Olympic_Committee
+    #[inline]
+    pub const fn ioc(&self) -> Option<&'static str> {
+        self.ioc
+    }
+
+    /// Returns list of [Country Code Top Level Domain (ccTLD)] used
+    ///
+    /// [Country Code Top Level Domain (ccTLD)]: https://en.wikipedia.org/wiki/Country_code_top-level_domain#Lists
+    #[inline]
+    pub const fn tld(&self) -> &'static [&'static str] {
+        self.tld
+    }
+
+    /// Returns the country's locale information
+    #[inline]
+    pub const fn locale(&self) -> &'static Locale {
+        self.locale
+    }
+
+    /// Returns the country's [international dialing direct] information
+    ///
+    /// [international dialing direct]: https://en.wikipedia.org/wiki/List_of_country_calling_codes
+    #[inline]
+    pub const fn idd(&self) -> &'static IDD {
+        self.idd
+    }
+
+    /// Returns the country's geographical information
+    #[inline]
+    pub const fn geography(&self) -> &'static Geography {
+        self.geography
+    }
+
+    /// Returns the country's language information
+    #[inline]
+    pub const fn languages(&self) -> &'static Language {
+        self.languages
+    }
+
+    /// Returns the list of currencies used in the country
+    #[inline]
+    pub const fn currencies(&self) -> &'static [&'static Currency] {
+        self.currencies
+    }
+
+    /// Returns the subdivisions (states, provinces, etc.) map whose key is [ISO 639-3] in the country
+    ///
+    /// [ISO 639-3]: https://en.wikipedia.org/wiki/ISO_639-3
+    #[inline]
+    pub const fn subdivisions(&self) -> &'static StaticMap<&'static str, &'static Subdivision> {
+        self.subdivisions
     }
 }

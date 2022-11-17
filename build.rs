@@ -107,6 +107,18 @@ struct Geography {
     border_countries: Vec<String>,
 }
 
+impl ToValue for Geography {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        let mut border_countries = String::from("&[");
+        for c in self.border_countries.iter() {
+            border_countries.push_str(&format!("super::CCA3::{},", c.to_uppercase()));
+        }
+        border_countries.push(']');
+        write!(buf, "&Geography {{ latitude: {}, longitude: {}, land_locked: {}, capital: {} area: {}, region: \"{}\", subregion: \"{}\", border_countries: {} }}", self.coordinates.latitude, self.coordinates.longitude, self.land_locked, self.capital.to_value_string()?, self.area, self.region, self.subregion, border_countries)?;
+        Ok(())
+    }
+}
+
 impl ToTokenStream for Geography {
     fn to_token_stream<W: Write>(out: &mut W) -> Result<()> {
         static FIELDS: &[StructField] = &[
@@ -155,10 +167,10 @@ impl ToTokenStream for Geography {
             },
             StructField {
                 name: "border_countries",
-                ty: "&'static [super::CCA2]",
-                doc: r"/// Returns list of countries by their [ISO 3166-1 alpha-2] codes that border the country
+                ty: "&'static [super::CCA3]",
+                doc: r"/// Returns list of countries by their [ISO 3166-1 alpha-3] codes that border the country
     /// 
-    /// [ISO 3166-1 alpha-2]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2",
+    /// [ISO 3166-1 alpha-3]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3",
                 getter: "border_countries",
             },
         ];
@@ -1289,10 +1301,109 @@ struct Locale {
     temperature_uint: TemperatureUint,
 }
 
+impl ToTokenStream for Locale {
+    fn to_token_stream<W: Write>(buf: &mut W) -> Result<()> {
+        <Day as ToTokenStream>::to_token_stream(buf)?;
+        <HourClock as ToTokenStream>::to_token_stream(buf)?;
+        <DrivingSide as ToTokenStream>::to_token_stream(buf)?;
+        <DistanceUint as ToTokenStream>::to_token_stream(buf)?;
+        <TemperatureUint as ToTokenStream>::to_token_stream(buf)?;
+        <MeasurementSystem as ToTokenStream>::to_token_stream(buf)?;
+
+        static FIELDS: &[StructField] = &[
+            StructField {
+                name: "ietf",
+                ty: "&'static str",
+                doc: "/// Returns the IETF locale code (e.g. `en-US`)",
+                getter: "ietf",
+            },
+            StructField {
+                name: "date_formats",
+                ty: "&'static super::StaticMap<&'static str, &'static str>",
+                doc: r"
+                /// Returns date formats for each IETF locale.
+                /// 
+                /// - Key is the IETF code
+                /// - Value is the date format, where:
+                ///   - `G` = era
+                ///   - `y` = year
+                ///   - `M` = month
+                ///   - `d` = day ",
+                getter: "date_formats",
+            },
+            StructField {
+                name: "measurement_system",
+                ty: "MeasurementSystem",
+                doc: "/// Returns system of measurement in use. see [`MeasurementSystem`]",
+                getter: "measurement_system",
+            },
+            StructField {
+                name: "hour_clock",
+                ty: "HourClock",
+                doc: "/// Returns the type of clock used. see [`HourClock`]",
+                getter: "hour_clock",
+            },
+            StructField {
+                name: "driving_side",
+                ty: "DrivingSide",
+                doc: "/// Returns the side of the road traffic drives on. see [`DrivingSide`]",
+                getter: "driving_side",
+            },
+            StructField {
+                name: "distance_uint",
+                ty: "DistanceUint",
+                doc: "/// Returns the unit of distance used (kilometer or mile). see [`DistanceUint`]",
+                getter: "distance_uint",
+            },
+            StructField {
+                name: "temperature_uint",
+                ty: "TemperatureUint",
+                doc: "/// Returns the unit of temperature (celsius or fahrenheit). see [`TemperatureUint`]",
+                getter: "temperature_uint",
+            },
+            StructField {
+                name: "week_start_on",
+                ty: "Day",
+                doc: "/// Returns which day is the first day of the week on the calendar. see [`Day`]",
+                getter: "week_start_on",
+            },
+        ];
+
+        Struct::new(
+            "Locale",
+            r"
+/// Locale",
+            FIELDS,
+        )
+        .render(buf)
+    }
+}
+
 #[derive(Debug, Clone, Deserialize, Serialize)]
 struct CountryName {
     common: String,
     official: String,
+}
+
+impl ToTokenStream for CountryName {
+    fn to_token_stream<W: Write>(buf: &mut W) -> Result<()> {
+        static FIELDS: &[StructField] = &[
+            StructField {
+                name: "common",
+                ty: "&'static str",
+                doc: "/// Returns the common name of the country",
+                getter: "common",
+            },
+            StructField {
+                name: "official",
+                ty: "&'static str",
+                doc: "/// Returns the official name of the country",
+                getter: "official",
+            },
+        ];
+
+        Struct::new("CountryName", r"", FIELDS).render(buf)
+    }
 }
 
 #[derive(Debug, Clone, Deserialize, Serialize)]
@@ -1301,6 +1412,74 @@ struct CountryMeta {
     official: String,
     native: Option<HashMap<String, CountryName>>,
     alternates: Option<Vec<String>>,
+}
+
+impl ToValue for CountryMeta {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        writeln!(buf, "&CountryMeta {{")?;
+        writeln!(buf, "\t\tcommon: \"{}\",", self.common)?;
+        writeln!(buf, "\t\tofficial: \"{}\",", self.official)?;
+        if let Some(natives) = &self.native {
+            let mut val = String::from("&[");
+            for (k, v) in natives {
+                val.push_str(&format!(
+                    "(\"{}\", &CountryName {{ common: \"{}\", official: \"{}\" }}), ",
+                    k, v.common, v.official
+                ));
+            }
+            val.push(']');
+            writeln!(buf, "\t\tnative: &super::StaticMap::new({}),", val)?;
+        } else {
+            writeln!(buf, "\t\tnative: &super::StaticMap::new(&[]),")?;
+        }
+
+        if let Some(alternates) = &self.alternates {
+            let mut val = String::from("&[");
+            for alternate in alternates {
+                val.push_str(&format!("\"{}\",", alternate));
+            }
+            val.push(']');
+            writeln!(buf, "\t\talternates: {},", val)?;
+        } else {
+            writeln!(buf, "\t\talternates: &[],")?;
+        }
+        writeln!(buf, "\t}},")?;
+        Ok(())
+    }
+}
+
+impl ToTokenStream for CountryMeta {
+    fn to_token_stream<W: Write>(buf: &mut W) -> Result<()> {
+        <CountryName as ToTokenStream>::to_token_stream(buf)?;
+        static FIELDS: &[StructField] = &[
+            StructField {
+                name: "common",
+                ty: "&'static str",
+                doc: "/// Returns the common name of the country",
+                getter: "common",
+            },
+            StructField {
+                name: "official",
+                ty: "&'static str",
+                doc: "/// Returns the official name of the country",
+                getter: "official",
+            },
+            StructField {
+                name: "native",
+                ty: "&'static super::StaticMap<&'static str, &'static CountryName>",
+                doc: "/// Returns the name of the country in native languages",
+                getter: "native",
+            },
+            StructField {
+                name: "alternates",
+                ty: "&'static [&'static str]",
+                doc: "/// Returns the alternate names of the country",
+                getter: "alternates",
+            },
+        ];
+
+        Struct::new("CountryMeta", r"", FIELDS).render(buf)
+    }
 }
 
 #[derive(Debug, Clone, Deserialize, Serialize)]
@@ -1321,6 +1500,51 @@ struct SubdivisionName {
 struct IDD {
     prefix: Option<String>,
     suffixes: Option<Vec<String>>,
+}
+
+impl ToValue for IDD {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        writeln!(
+            buf,
+            "&IDD {{ prefix: \"{}\", suffixes: {} }},",
+            self.prefix.as_ref().unwrap_or(&"".to_string()),
+            self.suffixes
+                .as_ref()
+                .map(|v| { v.to_value_string().unwrap() })
+                .unwrap_or_else(|| "&[]".to_string())
+        )?;
+
+        Ok(())
+    }
+}
+
+impl ToTokenStream for IDD {
+    fn to_token_stream<W: Write>(buf: &mut W) -> Result<()> {
+        static FIELDS: &[StructField] = &[
+            StructField {
+                name: "prefix",
+                ty: "&'static str",
+                doc: "/// Returns the geographical code prefix (e.g. +1 for US)",
+                getter: "prefix",
+            },
+            StructField {
+                name: "suffixes",
+                ty: "&'static [&'static str]",
+                doc: "/// Returns the list of suffixes assigned (e.g. 201 in US)",
+                getter: "suffixes",
+            },
+        ];
+
+        Struct::new(
+            "IDD",
+            r"
+/// [International dialing direct] info.
+/// 
+/// [International dialing direct]: https://en.wikipedia.org/wiki/List_of_country_calling_codes",
+            FIELDS,
+        )
+        .render(buf)
+    }
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1445,211 +1669,168 @@ trait ToTokenStream {
     fn to_token_stream<W: Write>(out: &mut W) -> Result<()>;
 }
 
-impl ToTokenStream for CountryData {
-    fn to_token_stream<W: Write>(buf: &mut W) -> Result<()> {
-        static FIELDS: &[(&str, &str, &str)] = &[
-            (
-                "flag",
-                "&'static str",
-                r"
-    /// Returns the country's flag",
-            ),
-            (
-                "cca2",
-                "&'static str",
-                r"
-    /// Returns [ISO 3166-1 alpha-2] code.
-    /// 
-    /// [ISO 3166-1 alpha-2]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2",
-            ),
-            (
-                "cca3",
-                "&'static str",
-                r"
-    /// Returns [ISO 3166-1 alpha-3] code.
-    /// 
-    /// [ISO 3166-1 alpha-3]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3",
-            ),
-            (
-                "ccn3",
-                "u16",
-                r"
-    /// Returns [ISO 3166-1 numeric] code.
-    /// 
-    /// [ISO 3166-1 numeric]: https://en.wikipedia.org/wiki/ISO_3166-1_numeric",
-            ),
-            (
-                "ioc",
-                "Option<&'static str>",
-                r"
-    /// Returns [International Olympic Committee] code.
-    /// 
-    /// [International Olympic Committee]: https://en.wikipedia.org/wiki/International_Olympic_Committee",
-            ),
-            (
-                "tld",
-                "&'static [&'static str]",
-                r"
-    /// Returns list of [Country Code Top Level Domain (ccTLD)] used
-    /// 
-    /// [Country Code Top Level Domain (ccTLD)]: https://en.wikipedia.org/wiki/Country_code_top-level_domain#Lists",
-            ),
-            (
-                "locale",
-                "&'static Locale",
-                r"
-    /// Returns the country's locale information",
-            ),
-            (
-                "idd",
-                "&'static IDD",
-                r"
-    /// Returns the country's [international dialing direct] information
-    /// 
-    /// [international dialing direct]: https://en.wikipedia.org/wiki/List_of_country_calling_codes",
-            ),
-        ];
+trait ToValue {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()>;
 
-        writeln!(buf, r"/// Country")?;
-        writeln!(buf, "#[derive(Debug, Copy, Clone, PartialEq, PartialOrd)]")?;
-        writeln!(buf, "pub struct Country {{")?;
-        for field in FIELDS {
-            writeln!(buf, "\t{}: {},", field.0, field.1)?;
-        }
-        writeln!(buf, "}}\n")?;
+    fn to_value_string(&self) -> Result<String> {
+        let mut buf = io::BufWriter::new(Vec::new());
+        self.to_value(&mut buf)?;
+        Ok(String::from_utf8(buf.into_inner()?)?)
+    }
+}
 
-        writeln!(buf, "impl Country {{")?;
-        for field in FIELDS {
-            writeln!(
-                buf,
-                "{}",
-                field
-                    .0
-                    .to_getter_token_stream(field.0, field.0, field.1, field.2)?
-            )?;
+impl ToValue for Vec<String> {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        write!(buf, "&[")?;
+        for item in self.iter() {
+            write!(buf, "\"{}\",", item)?;
         }
-        writeln!(buf, "}}\n")?;
+        write!(buf, "],")?;
         Ok(())
     }
 }
 
-impl ToTokenStream for IDD {
+impl ToTokenStream for CountryData {
     fn to_token_stream<W: Write>(buf: &mut W) -> Result<()> {
+        <CountryMeta as ToTokenStream>::to_token_stream(buf)?;
         static FIELDS: &[StructField] = &[
             StructField {
-                name: "prefix",
+                name: "name",
+                doc: "/// Returns the name metadata of the country",
+                ty: "&'static CountryMeta",
+                getter: "name",
+            },
+            StructField {
+                name: "flag",
                 ty: "&'static str",
-                doc: "/// Returns the geographical code prefix (e.g. +1 for US)",
-                getter: "prefix",
+                doc: r"
+    /// Returns the country's flag",
+                getter: "flag",
             },
             StructField {
-                name: "prefix_u8",
-                ty: "u8",
-                doc:
-                    "/// Returns the geographical code prefix (without '+') in `u8` (e.g. 1 for US)",
-                getter: "prefix_u8",
+                name: "cca2",
+                ty: "&'static str",
+                doc: r"
+    /// Returns [ISO 3166-1 alpha-2] code.
+    /// 
+    /// [ISO 3166-1 alpha-2]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2",
+                getter: "cca2",
             },
             StructField {
-                name: "suffixes",
+                name: "cca3",
+                ty: "&'static str",
+                doc: r"
+    /// Returns [ISO 3166-1 alpha-3] code.
+    /// 
+    /// [ISO 3166-1 alpha-3]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3",
+                getter: "cca3",
+            },
+            StructField {
+                name: "ccn3",
+                ty: "&'static str",
+                doc: r"
+    /// Returns [ISO 3166-1 numeric] code.
+    /// 
+    /// [ISO 3166-1 numeric]: https://en.wikipedia.org/wiki/ISO_3166-1_numeric",
+                getter: "ccn3",
+            },
+            StructField {
+                name: "ioc",
+                ty: "Option<&'static str>",
+                doc: r"
+    /// Returns [International Olympic Committee] code.
+    /// 
+    /// [International Olympic Committee]: https://en.wikipedia.org/wiki/International_Olympic_Committee",
+                getter: "ioc",
+            },
+            StructField {
+                name: "tld",
                 ty: "&'static [&'static str]",
-                doc: "/// Returns the list of suffixes assigned (e.g. 201 in US)",
-                getter: "suffixes",
+                doc: r"
+    /// Returns list of [Country Code Top Level Domain (ccTLD)] used
+    /// 
+    /// [Country Code Top Level Domain (ccTLD)]: https://en.wikipedia.org/wiki/Country_code_top-level_domain#Lists",
+                getter: "tld",
             },
             StructField {
-                name: "suffixes_u16",
-                ty: "&'static [u16]",
-                doc: "/// Returns the list of suffixes assigned in u16 (e.g. 201 in US)",
-                getter: "suffixes_u16",
+                name: "locale",
+                ty: "&'static Locale",
+                doc: r"
+    /// Returns the country's locale information",
+                getter: "locale",
+            },
+            StructField {
+                name: "idd",
+                ty: "&'static IDD",
+                doc: r"
+    /// Returns the country's [international dialing direct] information
+    /// 
+    /// [international dialing direct]: https://en.wikipedia.org/wiki/List_of_country_calling_codes",
+                getter: "idd",
+            },
+            StructField {
+                name: "geography",
+                ty: "&'static Geography",
+                doc: r"
+    /// Returns the country's geographical information",
+                getter: "geography",
+            },
+            StructField {
+                name: "languages",
+                ty: "&'static Language",
+                doc: r"
+    /// Returns the country's language information",
+                getter: "languages",
+            },
+            StructField {
+                name: "currencies",
+                ty: "&'static [&'static Currency]",
+                doc: r"
+    /// Returns the list of currencies used in the country",
+                getter: "currencies",
+            },
+            StructField {
+                name: "subdivisions",
+                ty: "&'static StaticMap<&'static str, &'static Subdivision>",
+                doc: r"
+    /// Returns the subdivisions (states, provinces, etc.) map whose key is [ISO 639-3] in the country
+    ///
+    /// [ISO 639-3]: https://en.wikipedia.org/wiki/ISO_639-3",
+                getter: "subdivisions",
             },
         ];
 
-        Struct::new(
-            "IDD",
-            r"
-/// [International dialing direct] info.
-/// 
-/// [International dialing direct]: https://en.wikipedia.org/wiki/List_of_country_calling_codes",
+        Struct::with_derives(
+            "Country",
+            "",
             FIELDS,
+            "#[derive(Debug, Copy, Clone, PartialEq, PartialOrd)]",
         )
         .render(buf)
     }
 }
 
-impl ToTokenStream for Locale {
-    fn to_token_stream<W: Write>(buf: &mut W) -> Result<()> {
-        <Day as ToTokenStream>::to_token_stream(buf)?;
-        <HourClock as ToTokenStream>::to_token_stream(buf)?;
-        <DrivingSide as ToTokenStream>::to_token_stream(buf)?;
-        <DistanceUint as ToTokenStream>::to_token_stream(buf)?;
-        <TemperatureUint as ToTokenStream>::to_token_stream(buf)?;
-        <MeasurementSystem as ToTokenStream>::to_token_stream(buf)?;
-
-        static FIELDS: &[StructField] = &[
-            StructField {
-                name: "ietf",
-                ty: "&'static str",
-                doc: "/// Returns the IETF locale code (e.g. `en-US`)",
-                getter: "ietf",
-            },
-            StructField {
-                name: "date_formats",
-                ty: "&'static super::StaticMap<&'static str, &'static str>",
-                doc: r"
-                /// Returns date formats for each IETF locale.
-                /// 
-                /// - Key is the IETF code
-                /// - Value is the date format, where:
-                ///   - `G` = era
-                ///   - `y` = year
-                ///   - `M` = month
-                ///   - `d` = day ",
-                getter: "date_formats",
-            },
-            StructField {
-                name: "measurement_system",
-                ty: "MeasurementSystem",
-                doc: "/// Returns system of measurement in use. see [`MeasurementSystem`]",
-                getter: "measurement_system",
-            },
-            StructField {
-                name: "hour_clock",
-                ty: "HourClock",
-                doc: "/// Returns the type of clock used. see [`HourClock`]",
-                getter: "hour_clock",
-            },
-            StructField {
-                name: "driving_side",
-                ty: "DrivingSide",
-                doc: "/// Returns the side of the road traffic drives on. see [`DrivingSide`]",
-                getter: "driving_side",
-            },
-            StructField {
-                name: "distance_uint",
-                ty: "DistanceUint",
-                doc: "/// Returns the unit of distance used (kilometer or mile). see [`DistanceUint`]",
-                getter: "distance_uint",
-            },
-            StructField {
-                name: "temperature_uint",
-                ty: "TemperatureUint",
-                doc: "/// Returns the unit of temperature (celsius or fahrenheit). see [`TemperatureUint`]",
-                getter: "temperature_uint",
-            },
-            StructField {
-                name: "week_start_on",
-                ty: "Day",
-                doc: "/// Returns which day is the first day of the week on the calendar. see [`Day`]",
-                getter: "week_start_on",
-            },
-        ];
-
-        Struct::new(
-            "Locale",
-            r"
-/// Locale",
-            FIELDS,
-        )
-        .render(buf)
+impl ToValue for CountryData {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        writeln!(buf, "&Country {{")?;
+        write!(buf, "\tname: ")?;
+        self.name.to_value(buf)?;
+        writeln!(buf, "\tcca2: \"{}\",", self.cca2)?;
+        writeln!(buf, "\tcca3: \"{}\",", self.cca3)?;
+        writeln!(buf, "\tccn3: \"{}\",", self.ccn3)?;
+        if let Some(ioc) = &self.ioc {
+            writeln!(buf, "\tioc: Some(\"{}\"),", ioc)?;
+        } else {
+            writeln!(buf, "\tioc: None,")?;
+        }
+        write!(buf, "\ttld: ")?;
+        self.tld.to_value(buf)?;
+        write!(buf, "\n\tidd: ")?;
+        self.idd.to_value(buf)?;
+        write!(buf, "\tgeography: ")?;
+        self.geography.to_value(buf)?;
+        writeln!(buf, "}};\n")?;
+        Ok(())
     }
 }
 
@@ -1699,7 +1880,7 @@ impl<W: Write> Generator for W {}
 
 fn generate_enums(src: &[CountryData]) -> Result<()> {
     let out_path = PathBuf::from("src/enums.rs");
-    let mut out = io::BufWriter::new(File::create(&out_path)?);
+    let mut out = io::BufWriter::new(File::create(out_path)?);
     writeln!(out, "// Auto generated file, please do not modify \n\n")?;
     out.gen_enum(
         "CCA2",
@@ -1717,8 +1898,10 @@ fn generate_enums(src: &[CountryData]) -> Result<()> {
 
 fn generate_types() -> Result<()> {
     let out_path = PathBuf::from("src/types.rs");
-    let mut out = io::BufWriter::new(File::create(&out_path)?);
+    let mut out = io::BufWriter::new(File::create(out_path)?);
     writeln!(out, "// Auto generated file, please do not modify \n\n")?;
+    writeln!(out, "use super::StaticMap;")?;
+
     <Locale as ToTokenStream>::to_token_stream(&mut out)?;
     <Timezone as ToTokenStream>::to_token_stream(&mut out)?;
     <IDD as ToTokenStream>::to_token_stream(&mut out)?;
@@ -1726,7 +1909,25 @@ fn generate_types() -> Result<()> {
     <Currency as ToTokenStream>::to_token_stream(&mut out)?;
     <Subdivision as ToTokenStream>::to_token_stream(&mut out)?;
     <Language as ToTokenStream>::to_token_stream(&mut out)?;
-    // <CountryData as ToTokenStream>::to_token_stream(&mut out)?;
+    <CountryData as ToTokenStream>::to_token_stream(&mut out)?;
+    Ok(())
+}
+
+fn generate_consts(data: &[CountryData]) -> Result<()> {
+    let out_path = PathBuf::from("src/consts.rs");
+    let mut out = io::BufWriter::new(File::create(out_path)?);
+    writeln!(out, "// Auto generated file, please do not modify \n\n")?;
+    writeln!(out, "use super::types::*;")?;
+
+    for country in data {
+        // writeln!(out, "/// {}", country.name)?;
+        write!(
+            out,
+            "pub const {}: &Country = ",
+            country.cca2.to_uppercase()
+        )?;
+        country.to_value(&mut out)?;
+    }
     Ok(())
 }
 
@@ -1734,10 +1935,11 @@ fn main() -> Result<()> {
     eprintln!("start build");
     let src_path = PathBuf::from("data.json");
 
-    let src = File::open(&src_path)?;
+    let src = File::open(src_path)?;
     let countries: Vec<CountryData> = serde_json::from_reader(src)?;
     generate_enums(&countries)?;
     generate_types()?;
+    generate_consts(&countries)?;
 
     Ok(())
 }
