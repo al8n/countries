@@ -94,6 +94,12 @@ impl<K: 'static, V: 'static> StaticMap<K, V> {
     pub const fn len(&self) -> usize {
         self.map.len()
     }
+
+    /// Returns true if the map has a length of 0.
+    #[inline]
+    pub const fn is_empty(&self) -> bool {
+        self.map.is_empty()
+    }
 }
 
 impl<K: 'static + Eq, V: 'static> StaticMap<K, V> {
