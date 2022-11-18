@@ -2,7 +2,9 @@
 name = "countires"
 version = "0.1.0"
 edition = "2021"
-description = "A placeholder"
+description = "All world countries, ISO- codes and data points about them, as well as tools for interfacing with that data."
+repository = "https://github.com/al8n/countries"
+keywords = ["countires", "iso", "iso3166", "iso4217", "locale"]
 license = "MIT/Apache-2.0"
 
 [features]
