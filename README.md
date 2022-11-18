@@ -3,7 +3,7 @@ All world countries, ISO- codes and data points about them, as well as tools for
 
 # Features
 - All methods in this crate can be invoked in compile time.
-- (WIP) `async-graphql` support
+- `async-graphql` support
 - (WIP) `sqlx` support
 
 # Acknowledgements

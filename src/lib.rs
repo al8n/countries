@@ -1,5 +1,7 @@
-#![cfg_attr(not(feature = "std"), no_std)]
 #![forbid(unsafe_code)]
+#![cfg_attr(not(feature = "std"), no_std)]
+#![cfg_attr(docsrs, feature(doc_cfg))]
+#![cfg_attr(docsrs, allow(unused_attributes))]
 
 use core::borrow::Borrow;
 
@@ -12,7 +14,12 @@ pub use types::*;
 mod consts;
 pub use consts::*;
 
+#[cfg(all(feature = "async-graphql", feature = "alloc"))]
+#[cfg_attr(docsrs, doc(cfg(all(feature = "async-graphql", feature = "alloc"))))]
+mod async_graphql;
+
 #[cfg(feature = "serde")]
+#[cfg_attr(docsrs, doc(cfg(feature = "serde")))]
 mod serde;
 
 // #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash)]

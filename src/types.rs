@@ -2,6 +2,10 @@
 
 /// Day
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[cfg_attr(
+    all(feature = "async-graphql", feature = "alloc"),
+    derive(::async_graphql::Enum)
+)]
 #[repr(u8)]
 pub enum Day {
     /// Sunday
@@ -103,6 +107,10 @@ impl Day {
 
 /// Type of clock used
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[cfg_attr(
+    all(feature = "async-graphql", feature = "alloc"),
+    derive(::async_graphql::Enum)
+)]
 #[repr(u8)]
 pub enum HourClock {
     /// 12-hour clock
@@ -158,6 +166,10 @@ impl<'de> serde::Deserialize<'de> for HourClock {
 
 /// Driving side
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[cfg_attr(
+    all(feature = "async-graphql", feature = "alloc"),
+    derive(::async_graphql::Enum)
+)]
 #[repr(u8)]
 pub enum DrivingSide {
     /// Left-hand side
@@ -207,6 +219,10 @@ impl<'de> serde::Deserialize<'de> for DrivingSide {
 
 /// The unit of distance used (kilometer or mile)
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[cfg_attr(
+    all(feature = "async-graphql", feature = "alloc"),
+    derive(::async_graphql::Enum)
+)]
 #[repr(u8)]
 pub enum DistanceUint {
     /// Kilometer
@@ -256,6 +272,10 @@ impl<'de> serde::Deserialize<'de> for DistanceUint {
 
 /// The unit of temperature (celsius or fahrenheit)
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[cfg_attr(
+    all(feature = "async-graphql", feature = "alloc"),
+    derive(::async_graphql::Enum)
+)]
 #[repr(u8)]
 pub enum TemperatureUint {
     /// Celsius
@@ -319,6 +339,10 @@ impl<'de> serde::Deserialize<'de> for TemperatureUint {
 
 /// The system of measurement in use
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[cfg_attr(
+    all(feature = "async-graphql", feature = "alloc"),
+    derive(::async_graphql::Enum)
+)]
 #[repr(u8)]
 pub enum MeasurementSystem {
     /// Metric system
@@ -368,6 +392,11 @@ impl<'de> serde::Deserialize<'de> for MeasurementSystem {
 }
 
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[cfg_attr(
+    all(feature = "async-graphql", feature = "alloc"),
+    derive(::async_graphql::Enum)
+)]
+#[repr(u8)]
 pub enum TimezoneType {
     Link,
     Canonical,
@@ -457,13 +486,57 @@ impl Timezone {
     }
 }
 
+#[cfg(all(feature = "async-graphql", feature = "alloc"))]
+mod timezone_graphql {
+    use super::*;
+    use async_graphql::Object;
+
+    #[Object]
+    impl Timezone {
+        /// Returns the name of the timezone
+        #[graphql(name = "name")]
+        #[inline]
+        pub async fn graphql_name(&self) -> &'static str {
+            self.name
+        }
+
+        /// Returns the type of timezone (primary or alias)
+        #[graphql(name = "timezone_type")]
+        #[inline]
+        pub async fn graphql_timezone_type(&self) -> TimezoneType {
+            self.ty
+        }
+
+        /// Returns the name of the timezone this timezone is linked to
+        #[graphql(name = "linked_to")]
+        #[inline]
+        pub async fn graphql_linked_to(&self) -> Option<&'static str> {
+            self.linked_to
+        }
+
+        /// Returns the UTC offset of the timezone
+        #[graphql(name = "utc_offset")]
+        #[inline]
+        pub async fn graphql_utc_offset(&self) -> &'static str {
+            self.utc_offset
+        }
+
+        /// Returns the DST offset of the timezone
+        #[graphql(name = "dst_offset")]
+        #[inline]
+        pub async fn graphql_dst_offset(&self) -> &'static str {
+            self.dst_offset
+        }
+    }
+}
+
 /// Locale
 #[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 #[cfg_attr(feature = "serde", derive(::serde::Serialize))]
 pub struct Locale {
     pub(crate) ietf: &'static [&'static str],
     pub(crate) timezones: &'static [&'static Timezone],
-    pub(crate) date_formats: &'static super::StaticMap<&'static str, &'static str>,
+    pub(crate) date_formats: &'static crate::StaticMap<&'static str, &'static str>,
     pub(crate) measurement_system: MeasurementSystem,
     pub(crate) hour_clock: HourClock,
     pub(crate) driving_side: DrivingSide,
@@ -496,7 +569,7 @@ impl Locale {
     ///   - `M` = month
     ///   - `d` = day
     #[inline]
-    pub const fn date_formats(&self) -> &'static super::StaticMap<&'static str, &'static str> {
+    pub const fn date_formats(&self) -> &'static crate::StaticMap<&'static str, &'static str> {
         self.date_formats
     }
 
@@ -537,6 +610,89 @@ impl Locale {
     }
 }
 
+#[cfg(all(feature = "async-graphql", feature = "alloc"))]
+mod locale_graphql {
+    use super::*;
+    use async_graphql::Object;
+
+    #[Object]
+    impl Locale {
+        /// Returns the IETF locale code (e.g. `en-US`)
+        #[graphql(name = "ietf")]
+        #[inline]
+        pub async fn graphql_ietf(&self) -> &'static [&'static str] {
+            self.ietf
+        }
+
+        /// Returns the list of [tz database timezones]
+        ///
+        /// [tz database timezones]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+        #[graphql(name = "timezones")]
+        #[inline]
+        pub async fn graphql_timezones(&self) -> &'static [&'static Timezone] {
+            self.timezones
+        }
+
+        /// Returns date formats for each IETF locale.
+        ///
+        /// - Key is the IETF code
+        /// - Value is the date format, where:
+        ///   - `G` = era
+        ///   - `y` = year
+        ///   - `M` = month
+        ///   - `d` = day
+        #[graphql(name = "date_formats")]
+        #[inline]
+        pub async fn graphql_date_formats(
+            &self,
+        ) -> &'static crate::StaticMap<&'static str, &'static str> {
+            self.date_formats
+        }
+
+        /// Returns system of measurement in use. see [`MeasurementSystem`]
+        #[graphql(name = "measurement_system")]
+        #[inline]
+        pub async fn graphql_measurement_system(&self) -> MeasurementSystem {
+            self.measurement_system
+        }
+
+        /// Returns the type of clock used. see [`HourClock`]
+        #[graphql(name = "hour_clock")]
+        #[inline]
+        pub async fn graphql_hour_clock(&self) -> HourClock {
+            self.hour_clock
+        }
+
+        /// Returns the side of the road traffic drives on. see [`DrivingSide`]
+        #[graphql(name = "driving_side")]
+        #[inline]
+        pub async fn graphql_driving_side(&self) -> DrivingSide {
+            self.driving_side
+        }
+
+        /// Returns the unit of distance used (kilometer or mile). see [`DistanceUint`]
+        #[graphql(name = "distance_unit")]
+        #[inline]
+        pub async fn graphql_distance_unit(&self) -> DistanceUint {
+            self.distance_unit
+        }
+
+        /// Returns the unit of temperature (celsius or fahrenheit). see [`TemperatureUint`]
+        #[graphql(name = "temperature_unit")]
+        #[inline]
+        pub async fn graphql_temperature_unit(&self) -> TemperatureUint {
+            self.temperature_unit
+        }
+
+        /// Returns which day is the first day of the week on the calendar. see [`Day`]
+        #[graphql(name = "week_start_on")]
+        #[inline]
+        pub async fn graphql_week_start_on(&self) -> Day {
+            self.week_start_on
+        }
+    }
+}
+
 /// [International dialing direct] info.
 ///
 /// [International dialing direct]: https://en.wikipedia.org/wiki/List_of_country_calling_codes
@@ -561,6 +717,29 @@ impl IDD {
     }
 }
 
+#[cfg(all(feature = "async-graphql", feature = "alloc"))]
+mod idd_graphql {
+    use super::*;
+    use async_graphql::Object;
+
+    #[Object]
+    impl IDD {
+        /// Returns the geographical code prefix (e.g. +1 for US)
+        #[graphql(name = "prefix")]
+        #[inline]
+        pub async fn graphql_prefix(&self) -> &'static str {
+            self.prefix
+        }
+
+        /// Returns the list of suffixes assigned (e.g. 201 in US)
+        #[graphql(name = "suffixes")]
+        #[inline]
+        pub async fn graphql_suffixes(&self) -> &'static [&'static str] {
+            self.suffixes
+        }
+    }
+}
+
 #[derive(Copy, Clone, Debug, PartialEq, PartialOrd)]
 #[cfg_attr(feature = "serde", derive(::serde::Serialize))]
 pub struct Geography {
@@ -571,7 +750,7 @@ pub struct Geography {
     pub(crate) area: f64,
     pub(crate) region: &'static str,
     pub(crate) subregion: &'static str,
-    pub(crate) border_countries: &'static [super::CCA3],
+    pub(crate) border_countries: &'static [crate::CCA3],
 }
 
 impl Geography {
@@ -621,8 +800,75 @@ impl Geography {
     ///
     /// [ISO 3166-1 alpha-3]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
     #[inline]
-    pub const fn border_countries(&self) -> &'static [super::CCA3] {
+    pub const fn border_countries(&self) -> &'static [crate::CCA3] {
         self.border_countries
+    }
+}
+
+#[cfg(all(feature = "async-graphql", feature = "alloc"))]
+mod geography_graphql {
+    use super::*;
+    use async_graphql::Object;
+
+    #[Object]
+    impl Geography {
+        /// Returns the latitude
+        #[graphql(name = "latitude")]
+        #[inline]
+        pub async fn graphql_latitude(&self) -> f64 {
+            self.latitude
+        }
+
+        /// Returns the longitude
+        #[graphql(name = "longitude")]
+        #[inline]
+        pub async fn graphql_longitude(&self) -> f64 {
+            self.longitude
+        }
+
+        /// Returns whether or not the country is landlocked (not bordering the ocean)
+        #[graphql(name = "is_landlocked")]
+        #[inline]
+        pub async fn graphql_is_landlocked(&self) -> bool {
+            self.land_locked
+        }
+
+        /// Returns the name of the capital cities
+        #[graphql(name = "capitals")]
+        #[inline]
+        pub async fn graphql_capitals(&self) -> &'static [&'static str] {
+            self.capital
+        }
+
+        /// Returns the land area of the country
+        #[graphql(name = "area")]
+        #[inline]
+        pub async fn graphql_area(&self) -> f64 {
+            self.area
+        }
+
+        /// Returns the region of the country
+        #[graphql(name = "region")]
+        #[inline]
+        pub async fn graphql_region(&self) -> &'static str {
+            self.region
+        }
+
+        /// Returns the subregion of the country
+        #[graphql(name = "subregion")]
+        #[inline]
+        pub async fn graphql_subregion(&self) -> &'static str {
+            self.subregion
+        }
+
+        /// Returns list of countries by their [ISO 3166-1 alpha-3] codes that border the country
+        ///
+        /// [ISO 3166-1 alpha-3]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
+        #[graphql(name = "border_countries")]
+        #[inline]
+        pub async fn graphql_border_countries(&self) -> &'static [crate::CCA3] {
+            self.border_countries
+        }
     }
 }
 
@@ -714,6 +960,96 @@ impl Currency {
     }
 }
 
+#[cfg(all(feature = "async-graphql", feature = "alloc"))]
+mod currency_graphql {
+    use super::*;
+    use async_graphql::Object;
+
+    #[Object]
+    impl Currency {
+        /// Returns the name of the currency
+        #[graphql(name = "name")]
+        #[inline]
+        pub async fn graphql_name(&self) -> &'static str {
+            self.name
+        }
+
+        /// Returns the short name of the currency
+        #[graphql(name = "short_name")]
+        #[inline]
+        pub async fn graphql_short_name(&self) -> Option<&'static str> {
+            self.short_name
+        }
+
+        /// Returns the [ISO 4217] currency code
+        ///
+        /// [ISO 4217]: https://en.wikipedia.org/wiki/ISO_4217
+        #[graphql(name = "iso4217")]
+        #[inline]
+        pub async fn graphql_iso4217(&self) -> &'static str {
+            self.iso_4217
+        }
+
+        /// Returns the [ISO 4217 numeric] currency code
+        ///
+        /// [ISO 4217 numeric]: https://en.wikipedia.org/wiki/ISO_4217#cite_note-ISO4217-1
+        #[graphql(name = "iso_numeric")]
+        #[inline]
+        pub async fn graphql_iso_numeric(&self) -> Option<&'static str> {
+            self.iso_numeric
+        }
+
+        /// Returns the currency symbol
+        #[graphql(name = "symbol")]
+        #[inline]
+        pub async fn graphql_symbol(&self) -> &'static str {
+            self.symbol
+        }
+
+        /// Returns the name of the subunit of the currency
+        #[graphql(name = "subunit")]
+        #[inline]
+        pub async fn graphql_subunit(&self) -> Option<&'static str> {
+            self.subunit
+        }
+
+        /// Returns the prefix of the currency symbol
+        #[graphql(name = "prefix")]
+        #[inline]
+        pub async fn graphql_prefix(&self) -> Option<&'static str> {
+            self.prefix
+        }
+
+        /// Returns the suffix of the currency symbol
+        #[graphql(name = "suffix")]
+        #[inline]
+        pub async fn graphql_suffix(&self) -> Option<&'static str> {
+            self.suffix
+        }
+
+        /// Returns the decimal mark of the currency
+        #[graphql(name = "decimal_mark")]
+        #[inline]
+        pub async fn graphql_decimal_mark(&self) -> Option<char> {
+            self.decimal_mark
+        }
+
+        /// Returns the number of decimal places of the currency
+        #[graphql(name = "decimal_places")]
+        #[inline]
+        pub async fn graphql_decimal_places(&self) -> u8 {
+            self.decimal_places
+        }
+
+        /// Returns the thousands separator of the currency
+        #[graphql(name = "thousands_separator")]
+        #[inline]
+        pub async fn graphql_thousands_separator(&self) -> Option<char> {
+            self.thousands_separator
+        }
+    }
+}
+
 #[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 #[cfg_attr(feature = "serde", derive(::serde::Serialize))]
 pub struct SubdivisionMeta {
@@ -742,12 +1078,42 @@ impl SubdivisionMeta {
     }
 }
 
+#[cfg(all(feature = "async-graphql", feature = "alloc"))]
+mod subdivision_meta_graphql {
+    use super::*;
+    use async_graphql::Object;
+
+    #[Object]
+    impl SubdivisionMeta {
+        /// Returns the official name of the subdivision
+        #[graphql(name = "official")]
+        #[inline]
+        pub async fn graphql_official(&self) -> &'static str {
+            self.official
+        }
+
+        /// Returns the common name of the subdivision
+        #[graphql(name = "common")]
+        #[inline]
+        pub async fn graphql_common(&self) -> Option<&'static str> {
+            self.common
+        }
+
+        /// Returns the native name of the subdivision
+        #[graphql(name = "native")]
+        #[inline]
+        pub async fn graphql_native(&self) -> Option<&'static str> {
+            self.native
+        }
+    }
+}
+
 #[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 #[cfg_attr(feature = "serde", derive(::serde::Serialize))]
 pub struct Subdivision {
     pub(crate) iso: &'static str,
     pub(crate) ty: Option<&'static str>,
-    pub(crate) meta: &'static super::StaticMap<&'static str, &'static SubdivisionMeta>,
+    pub(crate) meta: &'static crate::StaticMap<&'static str, &'static SubdivisionMeta>,
 }
 
 impl Subdivision {
@@ -767,8 +1133,42 @@ impl Subdivision {
 
     /// Returns the meta of the subdivision
     #[inline]
-    pub const fn meta(&self) -> &'static super::StaticMap<&'static str, &'static SubdivisionMeta> {
+    pub const fn meta(&self) -> &'static crate::StaticMap<&'static str, &'static SubdivisionMeta> {
         self.meta
+    }
+}
+
+#[cfg(all(feature = "async-graphql", feature = "alloc"))]
+mod subdivision_graphql {
+    use super::*;
+    use async_graphql::Object;
+
+    #[Object]
+    impl Subdivision {
+        /// Returns the [ISO 3166-2 code] of the subdivision
+        ///
+        /// [ISO 3166-2]: https://en.wikipedia.org/wiki/ISO_3166-2
+        #[graphql(name = "iso_code")]
+        #[inline]
+        pub async fn graphql_iso_code(&self) -> &'static str {
+            self.iso
+        }
+
+        /// Returns the type of the subdivision
+        #[graphql(name = "subdivision_type")]
+        #[inline]
+        pub async fn graphql_subdivision_type(&self) -> Option<&'static str> {
+            self.ty
+        }
+
+        /// Returns the meta of the subdivision
+        #[graphql(name = "meta")]
+        #[inline]
+        pub async fn graphql_meta(
+            &self,
+        ) -> &'static crate::StaticMap<&'static str, &'static SubdivisionMeta> {
+            self.meta
+        }
     }
 }
 
@@ -844,6 +1244,80 @@ impl Language {
     }
 }
 
+#[cfg(all(feature = "async-graphql", feature = "alloc"))]
+mod language_graphql {
+    use super::*;
+    use async_graphql::Object;
+
+    #[Object]
+    impl Language {
+        /// Returns the name of the language
+        #[graphql(name = "name")]
+        #[inline]
+        pub async fn graphql_name(&self) -> &'static str {
+            self.name
+        }
+
+        /// Returns the native name of the language
+        #[graphql(name = "native_name")]
+        #[inline]
+        pub async fn graphql_native_name(&self) -> Option<&'static str> {
+            self.native_name
+        }
+
+        /// Returns the [ISO 639-3] language code.
+        ///
+        /// [ISO 639-3]: https://en.wikipedia.org/wiki/ISO_639-3
+        #[graphql(name = "iso639_3")]
+        #[inline]
+        pub async fn graphql_iso639_3(&self) -> &'static str {
+            self.iso_639_3
+        }
+
+        /// Returns the [BCP 47] tag.
+        ///
+        /// [BCP 47]: https://en.wikipedia.org/wiki/IETF_language_tag
+        #[graphql(name = "bcp47")]
+        #[inline]
+        pub async fn graphql_bcp47(&self) -> &'static str {
+            self.bcp_47
+        }
+
+        /// Returns the [ISO 15924] script code.
+        ///
+        /// [ISO 15924]: https://en.wikipedia.org/wiki/ISO_15924
+        #[graphql(name = "iso15924")]
+        #[inline]
+        pub async fn graphql_iso15924(&self) -> &'static str {
+            self.iso_15924
+        }
+
+        /// Returns array of assigned [IANA] tags.
+        ///
+        /// [IANA]: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+        // TODO: add IANA struct which contains the information, and replace str with that struct
+        #[graphql(name = "iana")]
+        #[inline]
+        pub async fn graphql_iana(&self) -> &'static [&'static str] {
+            self.iana
+        }
+
+        /// Returns whether the language is extinct
+        #[graphql(name = "is_extinct")]
+        #[inline]
+        pub async fn graphql_is_extinct(&self) -> bool {
+            self.extinct
+        }
+
+        /// Returns whether the language is spurious
+        #[graphql(name = "is_spurious")]
+        #[inline]
+        pub async fn graphql_is_spurious(&self) -> bool {
+            self.spurious
+        }
+    }
+}
+
 #[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 #[cfg_attr(feature = "serde", derive(::serde::Serialize))]
 pub struct CountryName {
@@ -865,12 +1339,35 @@ impl CountryName {
     }
 }
 
+#[cfg(all(feature = "async-graphql", feature = "alloc"))]
+mod country_name_graphql {
+    use super::*;
+    use async_graphql::Object;
+
+    #[Object]
+    impl CountryName {
+        /// Returns the common name of the country
+        #[graphql(name = "common")]
+        #[inline]
+        pub async fn graphql_common(&self) -> &'static str {
+            self.common
+        }
+
+        /// Returns the official name of the country
+        #[graphql(name = "official")]
+        #[inline]
+        pub async fn graphql_official(&self) -> &'static str {
+            self.official
+        }
+    }
+}
+
 #[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 #[cfg_attr(feature = "serde", derive(::serde::Serialize))]
 pub struct CountryMeta {
     pub(crate) common: &'static str,
     pub(crate) official: &'static str,
-    pub(crate) native: &'static super::StaticMap<&'static str, &'static CountryName>,
+    pub(crate) native: &'static crate::StaticMap<&'static str, &'static CountryName>,
     pub(crate) alternates: &'static [&'static str],
 }
 
@@ -889,7 +1386,7 @@ impl CountryMeta {
 
     /// Returns the name of the country in native languages
     #[inline]
-    pub const fn native(&self) -> &'static super::StaticMap<&'static str, &'static CountryName> {
+    pub const fn native(&self) -> &'static crate::StaticMap<&'static str, &'static CountryName> {
         self.native
     }
 
@@ -897,6 +1394,45 @@ impl CountryMeta {
     #[inline]
     pub const fn alternates(&self) -> &'static [&'static str] {
         self.alternates
+    }
+}
+
+#[cfg(all(feature = "async-graphql", feature = "alloc"))]
+mod country_meta_graphql {
+    use super::*;
+    use async_graphql::Object;
+
+    #[Object]
+    impl CountryMeta {
+        /// Returns the common name of the country
+        #[graphql(name = "common")]
+        #[inline]
+        pub async fn graphql_common(&self) -> &'static str {
+            self.common
+        }
+
+        /// Returns the official name of the country
+        #[graphql(name = "official")]
+        #[inline]
+        pub async fn graphql_official(&self) -> &'static str {
+            self.official
+        }
+
+        /// Returns the name of the country in native languages
+        #[graphql(name = "native")]
+        #[inline]
+        pub async fn graphql_native(
+            &self,
+        ) -> &'static crate::StaticMap<&'static str, &'static CountryName> {
+            self.native
+        }
+
+        /// Returns the alternate names of the country
+        #[graphql(name = "alternates")]
+        #[inline]
+        pub async fn graphql_alternates(&self) -> &'static [&'static str] {
+            self.alternates
+        }
     }
 }
 
@@ -1016,5 +1552,126 @@ impl Country {
     #[inline]
     pub const fn subdivisions(&self) -> &'static [&'static Subdivision] {
         self.subdivisions
+    }
+}
+
+#[cfg(all(feature = "async-graphql", feature = "alloc"))]
+mod country_graphql {
+    use super::*;
+    use async_graphql::Object;
+
+    #[Object]
+    impl Country {
+        /// Returns the name metadata of the country
+        #[graphql(name = "name")]
+        #[inline]
+        pub async fn graphql_name(&self) -> &'static CountryMeta {
+            self.name
+        }
+
+        /// Returns the country's flag
+        #[graphql(name = "flag")]
+        #[inline]
+        pub async fn graphql_flag(&self) -> &'static str {
+            self.flag
+        }
+
+        /// Returns [ISO 3166-1 alpha-2] code.
+        ///
+        /// [ISO 3166-1 alpha-2]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+        #[graphql(name = "cca2")]
+        #[inline]
+        pub async fn graphql_cca2(&self) -> &'static str {
+            self.cca2
+        }
+
+        /// Returns [ISO 3166-1 alpha-3] code.
+        ///
+        /// [ISO 3166-1 alpha-3]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
+        #[graphql(name = "cca3")]
+        #[inline]
+        pub async fn graphql_cca3(&self) -> &'static str {
+            self.cca3
+        }
+
+        /// Returns [ISO 3166-1 numeric] code.
+        ///
+        /// [ISO 3166-1 numeric]: https://en.wikipedia.org/wiki/ISO_3166-1_numeric
+        #[graphql(name = "ccn3")]
+        #[inline]
+        pub async fn graphql_ccn3(&self) -> &'static str {
+            self.ccn3
+        }
+
+        /// Returns [International Olympic Committee] code.
+        ///
+        /// [International Olympic Committee]: https://en.wikipedia.org/wiki/International_Olympic_Committee
+        #[graphql(name = "ioc")]
+        #[inline]
+        pub async fn graphql_ioc(&self) -> Option<&'static str> {
+            self.ioc
+        }
+
+        /// Returns list of [Country Code Top Level Domain (ccTLD)] used
+        ///
+        /// [Country Code Top Level Domain (ccTLD)]: https://en.wikipedia.org/wiki/Country_code_top-level_domain#Lists
+        #[graphql(name = "tld")]
+        #[inline]
+        pub async fn graphql_tld(&self) -> &'static [&'static str] {
+            self.tld
+        }
+
+        /// Returns the country's locale information
+        #[graphql(name = "locale")]
+        #[inline]
+        pub async fn graphql_locale(&self) -> &'static Locale {
+            self.locale
+        }
+
+        /// Returns the country's [international dialing direct] information
+        ///
+        /// [international dialing direct]: https://en.wikipedia.org/wiki/List_of_country_calling_codes
+        #[graphql(name = "idd")]
+        #[inline]
+        pub async fn graphql_idd(&self) -> &'static IDD {
+            self.idd
+        }
+
+        /// Returns the country's geographical information
+        #[graphql(name = "geography")]
+        #[inline]
+        pub async fn graphql_geography(&self) -> &'static Geography {
+            self.geography
+        }
+
+        /// Returns the country's official languages information
+        #[graphql(name = "official_languages")]
+        #[inline]
+        pub async fn graphql_official_languages(&self) -> &'static [&'static Language] {
+            self.official_languages
+        }
+
+        /// Returns the country's spoken language codes
+        #[graphql(name = "spoken_languages")]
+        #[inline]
+        pub async fn graphql_spoken_languages(&self) -> &'static [&'static str] {
+            self.spoken_languages
+        }
+
+        /// Returns the list of currencies used in the country
+        #[graphql(name = "currencies")]
+        #[inline]
+        pub async fn graphql_currencies(&self) -> &'static [&'static Currency] {
+            self.currencies
+        }
+
+        /// Returns the subdivisions (states, provinces, etc.) map whose key is [ISO 639-3] in the country
+        ///
+        /// [ISO 639-3]: https://en.wikipedia.org/wiki/ISO_639-3
+        #[graphql(name = "subdivisions")]
+        #[inline]
+        pub async fn graphql_subdivisions(&self) -> &'static [&'static Subdivision] {
+            self.subdivisions
+        }
     }
 }

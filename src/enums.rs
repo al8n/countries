@@ -3,6 +3,10 @@
 /// ISO 3166-1 alpha-2 code
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash)]
 #[cfg_attr(feature = "serde", derive(::serde::Serialize, ::serde::Deserialize))]
+#[cfg_attr(
+    any(feature = "async-graphql", feature = "alloc"),
+    derive(::async_graphql::Enum)
+)]
 #[repr(u8)]
 pub enum CCA2 {
     AF,
@@ -260,6 +264,10 @@ pub enum CCA2 {
 /// ISO 3166-1 alpha-3 code
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash)]
 #[cfg_attr(feature = "serde", derive(::serde::Serialize, ::serde::Deserialize))]
+#[cfg_attr(
+    any(feature = "async-graphql", feature = "alloc"),
+    derive(::async_graphql::Enum)
+)]
 #[repr(u8)]
 pub enum CCA3 {
     AFG,

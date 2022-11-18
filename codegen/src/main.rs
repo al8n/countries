@@ -1,3 +1,4 @@
+use heck::ToSnakeCase;
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use std::error::Error;
@@ -88,6 +89,7 @@ impl Struct {
 
     fn to_context(&self) -> Context {
         let mut context = Context::new();
+        context.insert("mod", &self.name.to_snake_case());
         context.insert("name", &self.name);
         context.insert("doc", &self.doc);
         context.insert("fields", &self.fields);
@@ -146,7 +148,7 @@ impl ToValue for Geography {
     fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
         let mut border_countries = String::from("&[");
         for c in self.border_countries.iter() {
-            border_countries.push_str(&format!("super::CCA3::{},", c.to_uppercase()));
+            border_countries.push_str(&format!("crate::CCA3::{},", c.to_uppercase()));
         }
         border_countries.push(']');
         writeln!(buf,"&Geography {{ latitude: {}f64, longitude: {}f64, land_locked: {}, capital: {} area: {}f64, region: \"{}\", subregion: \"{}\", border_countries: {} }},", self.coordinates.latitude, self.coordinates.longitude, self.land_locked, self.capital.to_value_string()?, self.area, self.region, self.subregion, border_countries)?;
@@ -202,7 +204,7 @@ impl ToTokenStream for Geography {
             },
             StructField {
                 name: "border_countries",
-                ty: "&'static [super::CCA3]",
+                ty: "&'static [crate::CCA3]",
                 doc: r"/// Returns list of countries by their [ISO 3166-1 alpha-3] codes that border the country
     /// 
     /// [ISO 3166-1 alpha-3]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3",
@@ -538,6 +540,8 @@ impl ToTokenStream for TimezoneType {
             out,
             r#"
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[cfg_attr(all(feature = "async-graphql", feature = "alloc"), derive(::async_graphql::Enum))]
+#[repr(u8)]
 pub enum TimezoneType {{
     Link,
     Canonical,
@@ -738,6 +742,7 @@ impl ToTokenStream for DrivingSide {
             r#"
 /// Driving side
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[cfg_attr(all(feature = "async-graphql", feature = "alloc"), derive(::async_graphql::Enum))]
 #[repr(u8)]
 pub enum DrivingSide {{
     /// Left-hand side
@@ -852,6 +857,7 @@ impl ToTokenStream for DistanceUint {
             r#"
 /// The unit of distance used (kilometer or mile) 
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[cfg_attr(all(feature = "async-graphql", feature = "alloc"), derive(::async_graphql::Enum))]
 #[repr(u8)]
 pub enum DistanceUint {{
     /// Kilometer
@@ -979,6 +985,7 @@ impl ToTokenStream for TemperatureUint {
             r#"
 /// The unit of temperature (celsius or fahrenheit)
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[cfg_attr(all(feature = "async-graphql", feature = "alloc"), derive(::async_graphql::Enum))]
 #[repr(u8)]
 pub enum TemperatureUint {{
     /// Celsius
@@ -1098,6 +1105,7 @@ impl ToTokenStream for MeasurementSystem {
             r#"
 /// The system of measurement in use
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[cfg_attr(all(feature = "async-graphql", feature = "alloc"), derive(::async_graphql::Enum))]
 #[repr(u8)]
 pub enum MeasurementSystem {{
     /// Metric system
@@ -1218,6 +1226,7 @@ impl ToTokenStream for HourClock {
             r#"
 /// Type of clock used
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[cfg_attr(all(feature = "async-graphql", feature = "alloc"), derive(::async_graphql::Enum))]
 #[repr(u8)]
 pub enum HourClock {{
     /// 12-hour clock
@@ -1394,6 +1403,7 @@ impl ToTokenStream for Day {
             r#"
 /// Day
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash, PartialOrd, Ord)]
+#[cfg_attr(all(feature = "async-graphql", feature = "alloc"), derive(::async_graphql::Enum))]
 #[repr(u8)]
 pub enum Day {{
     /// Sunday
@@ -1520,7 +1530,7 @@ struct Locale {
 
 impl ToValue for HashMap<String, String> {
     fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
-        write!(buf, "&super::StaticMap::new(&[")?;
+        write!(buf, "&crate::StaticMap::new(&[")?;
         for (key, value) in self {
             write!(buf, "(\"{}\", \"{}\"),", key, value)?;
         }
@@ -1575,7 +1585,7 @@ impl ToTokenStream for Locale {
             },
             StructField {
                 name: "date_formats",
-                ty: "&'static super::StaticMap<&'static str, &'static str>",
+                ty: "&'static crate::StaticMap<&'static str, &'static str>",
                 doc: r"
     /// Returns date formats for each IETF locale.
     /// 
@@ -1684,9 +1694,9 @@ impl ToValue for CountryMeta {
                 ));
             }
             val.push(']');
-            writeln!(buf, "\t\tnative: &super::StaticMap::new({}),", val)?;
+            writeln!(buf, "\t\tnative: &crate::StaticMap::new({}),", val)?;
         } else {
-            writeln!(buf, "\t\tnative: &super::StaticMap::new(&[]),")?;
+            writeln!(buf, "\t\tnative: &crate::StaticMap::new(&[]),")?;
         }
 
         if let Some(alternates) = &self.alternates {
@@ -1722,7 +1732,7 @@ impl ToTokenStream for CountryMeta {
             },
             StructField {
                 name: "native",
-                ty: "&'static super::StaticMap<&'static str, &'static CountryName>",
+                ty: "&'static crate::StaticMap<&'static str, &'static CountryName>",
                 doc: "/// Returns the name of the country in native languages",
                 getter: "native",
             },
@@ -1837,7 +1847,7 @@ struct Subdivision {
 
 impl ToValue for HashMap<String, SubdivisionName> {
     fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
-        write!(buf, "&super::StaticMap::new(&[")?;
+        write!(buf, "&crate::StaticMap::new(&[")?;
         for (k, v) in self {
             write!(buf, "(\"{}\", {}),", k, v.to_value_string()?)?;
         }
@@ -1913,7 +1923,7 @@ impl ToTokenStream for Subdivision {
             StructField {
                 name: "meta",
                 doc: "/// Returns the meta of the subdivision",
-                ty: "&'static super::StaticMap<&'static str, &'static SubdivisionMeta>",
+                ty: "&'static crate::StaticMap<&'static str, &'static SubdivisionMeta>",
                 getter: "meta",
             },
         ];
@@ -2194,6 +2204,7 @@ trait Generator: Write {
                 )
             })
             .and_then(|_| writeln!(self, "#[cfg_attr(feature=\"serde\", derive(::serde::Serialize, ::serde::Deserialize))]"))
+            .and_then(|_| writeln!(self, "#[cfg_attr(any(feature=\"async-graphql\", feature=\"alloc\"), derive(::async_graphql::Enum))]"))
             .and_then(|_| writeln!(self, "#[repr(u8)]"))
             .and_then(|_| writeln!(self, "pub enum {name} {{"))?;
 
