@@ -1,7 +1,8 @@
 {{doc}}
 {{derives}}
+#[cfg_attr(feature = "serde", derive(::serde::Serialize))]
 pub struct {{name}} {
-    {% for field in fields %}{{ field.name }}: {{ field.ty }},
+    {% for field in fields %}pub(crate) {{ field.name }}: {{ field.ty }},
     {% endfor %}
 }
 

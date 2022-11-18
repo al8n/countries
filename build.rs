@@ -1,5 +1,5 @@
 use serde::{Deserialize, Serialize};
-use std::collections::{HashMap, HashSet};
+use std::collections::HashMap;
 use std::error::Error;
 use std::fs::File;
 use std::io::{self, Write};
@@ -18,7 +18,40 @@ lazy_static::lazy_static! {
     };
 }
 
-const STRUCT_TEMPLATE: &str = "struct.tpl";
+struct EnumDeref {
+    name: &'static str,
+    variants: Vec<String>,
+}
+
+impl EnumDeref {
+    const TEMPLATE: &str = "enum_deref.tpl";
+
+    fn new(name: &'static str, variants: Vec<String>) -> Self {
+        Self { name, variants }
+    }
+
+    fn to_context(&self) -> Context {
+        let mut context = Context::new();
+        context.insert("name", &self.name);
+        context.insert("variants", &self.variants);
+        context
+    }
+
+    fn render<W: Write>(&self, buf: &mut W) -> Result<()> {
+        match TEMPLATES.render(Self::TEMPLATE, &self.to_context()) {
+            Ok(s) => writeln!(buf, "{}", s)?,
+            Err(e) => {
+                eprintln!("Error: {}", e);
+                let mut cause = e.source();
+                while let Some(e) = cause {
+                    eprintln!("Reason: {}", e);
+                    cause = e.source();
+                }
+            }
+        };
+        Ok(())
+    }
+}
 
 struct Struct {
     name: &'static str,
@@ -28,6 +61,8 @@ struct Struct {
 }
 
 impl Struct {
+    const TEMPLATE: &str = "struct.tpl";
+
     fn new(name: &'static str, doc: &'static str, fields: &'static [StructField]) -> Self {
         Self {
             name,
@@ -61,7 +96,7 @@ impl Struct {
     }
 
     fn render<W: Write>(&self, buf: &mut W) -> Result<()> {
-        match TEMPLATES.render(STRUCT_TEMPLATE, &self.to_context()) {
+        match TEMPLATES.render(Self::TEMPLATE, &self.to_context()) {
             Ok(s) => writeln!(buf, "{}", s)?,
             Err(e) => {
                 eprintln!("Error: {}", e);
@@ -114,7 +149,7 @@ impl ToValue for Geography {
             border_countries.push_str(&format!("super::CCA3::{},", c.to_uppercase()));
         }
         border_countries.push(']');
-        write!(buf, "&Geography {{ latitude: {}, longitude: {}, land_locked: {}, capital: {} area: {}, region: \"{}\", subregion: \"{}\", border_countries: {} }}", self.coordinates.latitude, self.coordinates.longitude, self.land_locked, self.capital.to_value_string()?, self.area, self.region, self.subregion, border_countries)?;
+        writeln!(buf,"&Geography {{ latitude: {}f64, longitude: {}f64, land_locked: {}, capital: {} area: {}f64, region: \"{}\", subregion: \"{}\", border_countries: {} }},", self.coordinates.latitude, self.coordinates.longitude, self.land_locked, self.capital.to_value_string()?, self.area, self.region, self.subregion, border_countries)?;
         Ok(())
     }
 }
@@ -201,6 +236,48 @@ struct Currency {
     thousands_separator: Option<String>,
 }
 
+impl ToValue for Option<String> {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        match self {
+            Some(s) => write!(buf, "Some(\"{}\")", s)?,
+            None => write!(buf, "None")?,
+        }
+        Ok(())
+    }
+}
+
+impl ToValue for Vec<Currency> {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        write!(buf, "&[")?;
+        for currency in self {
+            write!(buf, "{}, ", currency.to_value_string()?)?;
+        }
+        writeln!(buf, "],")?;
+        Ok(())
+    }
+}
+
+impl ToValue for Currency {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        write!(
+            buf,
+            "&Currency {{ name: \"{}\", short_name: {}, iso_4217: \"{}\", iso_numeric: {}, symbol: \"{}\", subunit: {}, prefix: {}, suffix: {}, decimal_mark: {}, decimal_places: {}, thousands_separator: {} }}",
+            self.name,
+            self.short_name.to_value_string()?,
+            self.iso_4217,
+            self.iso_numeric.to_value_string()?,
+            self.symbol,
+            self.subunit.to_value_string()?,
+            self.prefix.to_value_string()?,
+            self.suffix.to_value_string()?,
+            self.decimal_mark.as_ref().and_then(|s| if s.is_empty() { None } else { Some(format!("Some('{}')", s)) }).unwrap_or_else(|| "None".to_string()),
+            self.decimal_places,
+            self.thousands_separator.as_ref().and_then(|s| if s.is_empty() { None } else { Some(format!("Some('{}')", s)) }).unwrap_or_else(|| "None".to_string()),
+        )?;
+        Ok(())
+    }
+}
+
 impl ToTokenStream for Currency {
     fn to_token_stream<W: Write>(out: &mut W) -> Result<()> {
         static FIELDS: &[StructField] = &[
@@ -226,7 +303,7 @@ impl ToTokenStream for Currency {
             },
             StructField {
                 name: "iso_numeric",
-                ty: "Option<u16>",
+                ty: "Option<&'static str>",
                 doc: r"/// Returns the [ISO 4217 numeric] currency code
     ///
     /// [ISO 4217 numeric]: https://en.wikipedia.org/wiki/ISO_4217#cite_note-ISO4217-1",
@@ -302,13 +379,25 @@ struct OfficialLanguage {
     spurious: bool,
 }
 
-#[derive(Debug, Clone, Deserialize, Serialize)]
-struct Language {
-    official: Vec<OfficialLanguage>,
-    spoken: Option<Vec<String>>,
+impl ToValue for OfficialLanguage {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        write!(buf,
+            "&Language {{ name: \"{}\", native_name: {}, iana: {} iso_639_3: \"{}\", bcp_47: \"{}\", iso_15924: \"{}\", extinct: {}, spurious: {}, }},",
+            self.name.common,
+            self.name.native.as_ref().map(|name| format!("Some(\"{}\")", name)).unwrap_or_else(|| String::from("None")),
+            self.iana.to_value_string()?,
+            self.iso_639_3,
+            self.bcp_47,
+            self.iso_15924,
+            self.extinct,
+            self.spurious
+        )?;
+
+        Ok(())
+    }
 }
 
-impl ToTokenStream for Language {
+impl ToTokenStream for OfficialLanguage {
     fn to_token_stream<W: Write>(out: &mut W) -> Result<()> {
         static FIELDS: &[StructField] = &[
             StructField {
@@ -374,10 +463,44 @@ impl ToTokenStream for Language {
     }
 }
 
+impl ToValue for Vec<OfficialLanguage> {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        write!(buf, "&[")?;
+        for l in self.iter() {
+            write!(buf, " {}", l.to_value_string()?)?;
+        }
+        writeln!(buf, "],")?;
+        Ok(())
+    }
+}
+
+#[derive(Debug, Clone, Deserialize, Serialize)]
+struct Language {
+    official: Vec<OfficialLanguage>,
+    spoken: Option<Vec<String>>,
+}
+
+impl ToTokenStream for Language {
+    fn to_token_stream<W: Write>(out: &mut W) -> Result<()> {
+        <OfficialLanguage as ToTokenStream>::to_token_stream(out)?;
+        Ok(())
+    }
+}
+
 #[derive(Debug, Copy, Clone)]
 enum TimezoneType {
     Link,
     Canonical,
+}
+
+impl ToValue for TimezoneType {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        match self {
+            TimezoneType::Link => write!(buf, "TimezoneType::Link")?,
+            TimezoneType::Canonical => write!(buf, "TimezoneType::Canonical")?,
+        }
+        Ok(())
+    }
 }
 
 impl serde::Serialize for TimezoneType {
@@ -447,7 +570,7 @@ impl<'de> serde::Deserialize<'de> for TimezoneType {{
     fn deserialize<D>(deserializer: D) -> core::result::Result<Self, D::Error>
     where
         D: serde::Deserializer<'de> {{
-        String::deserialize(deserializer).and_then(|s| match s.as_str() {{
+        <&'de str as serde::Deserialize<'de>>::deserialize(deserializer).and_then(|s| match s {{
             "link" | "Link" => Ok(TimezoneType::Link),
             "canonical" | "Canonical" => Ok(TimezoneType::Canonical),
             _ => Err(serde::de::Error::custom(format!("Unknown timezone type: {{}}", s))),
@@ -472,6 +595,32 @@ struct Timezone {
     utc_offset: String,
     #[serde(rename = "dstOffset")]
     dst_offset: String,
+}
+
+impl ToValue for Timezone {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        write!(
+            buf,
+            "&Timezone {{ name: \"{}\", ty: {}, linked_to: {}, utc_offset: \"{}\", dst_offset: \"{}\" }}",
+            self.name,
+            self.ty.to_value_string()?,
+            self.linked_to.to_value_string()?,
+            self.utc_offset,
+            self.dst_offset,
+        )?;
+        Ok(())
+    }
+}
+
+impl ToValue for Vec<Timezone> {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        write!(buf, "&[")?;
+        for t in self {
+            write!(buf, "{},", t.to_value_string()?)?;
+        }
+        write!(buf, "]")?;
+        Ok(())
+    }
 }
 
 impl ToTokenStream for Timezone {
@@ -514,12 +663,13 @@ impl ToTokenStream for Timezone {
         Struct {
             name: "Timezone",
             doc: r"
-            /// Timezone info, reference: [tz database timezones].
-            ///
-            /// [tz database timezones]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+/// Timezone info, reference: [tz database timezones].
+///
+/// [tz database timezones]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
             fields: FIELDS,
             derives: "#[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]",
-        }.render(buf)
+        }
+        .render(buf)
     }
 }
 
@@ -531,6 +681,16 @@ enum DrivingSide {
     Left,
     /// Right-hand side
     Right,
+}
+
+impl ToValue for DrivingSide {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        match self {
+            DrivingSide::Left => write!(buf, "DrivingSide::Left")?,
+            DrivingSide::Right => write!(buf, "DrivingSide::Right")?,
+        }
+        Ok(())
+    }
 }
 
 impl core::fmt::Display for DrivingSide {
@@ -613,7 +773,7 @@ impl<'de> serde::Deserialize<'de> for DrivingSide {{
     fn deserialize<D>(deserializer: D) -> core::result::Result<Self, D::Error>
     where
         D: serde::Deserializer<'de> {{
-        String::deserialize(deserializer).and_then(|s| match s.as_str() {{
+        <&'de str as serde::Deserialize<'de>>::deserialize(deserializer).and_then(|s| match s {{
             "left" | "Left" | "l" | "L" => Ok(DrivingSide::Left),
             "right" | "Right" | "r" | "R" => Ok(DrivingSide::Right),
             _ => Err(serde::de::Error::custom(format!("Unknown driving side: {{}}", s))),
@@ -635,6 +795,16 @@ enum DistanceUint {
     Kilometer,
     /// Mile
     Mile,
+}
+
+impl ToValue for DistanceUint {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        match self {
+            DistanceUint::Kilometer => write!(buf, "DistanceUint::Kilometer")?,
+            DistanceUint::Mile => write!(buf, "DistanceUint::Mile")?,
+        }
+        Ok(())
+    }
 }
 
 impl core::fmt::Display for DistanceUint {
@@ -717,7 +887,7 @@ impl<'de> serde::Deserialize<'de> for DistanceUint {{
     fn deserialize<D>(deserializer: D) -> core::result::Result<Self, D::Error>
     where
         D: serde::Deserializer<'de> {{
-        String::deserialize(deserializer).and_then(|s| match s.as_str() {{
+        <&'de str as serde::Deserialize<'de>>::deserialize(deserializer).and_then(|s| match s {{
             "kilometer" | "km" | "Kilometer" | "Km" | "KM" => Ok(DistanceUint::Kilometer),
             "mile" | "mi" | "Mile" | "Mi" | "MI" => Ok(DistanceUint::Mile),
             _ => Err(serde::de::Error::custom(format!("Unknown distance unit: {{}}", s))),
@@ -740,6 +910,17 @@ pub enum TemperatureUint {
     Fahrenheit,
     /// Mixed
     Mixed,
+}
+
+impl ToValue for TemperatureUint {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        match self {
+            TemperatureUint::Celsius => write!(buf, "TemperatureUint::Celsius")?,
+            TemperatureUint::Fahrenheit => write!(buf, "TemperatureUint::Fahrenheit")?,
+            TemperatureUint::Mixed => write!(buf, "TemperatureUint::Mixed")?,
+        }
+        Ok(())
+    }
 }
 
 impl core::fmt::Display for TemperatureUint {
@@ -837,7 +1018,7 @@ impl<'de> serde::Deserialize<'de> for TemperatureUint {{
     fn deserialize<D>(deserializer: D) -> core::result::Result<Self, D::Error>
     where
         D: serde::Deserializer<'de> {{
-        String::deserialize(deserializer).and_then(|s| match s.as_str() {{
+        <&'de str as serde::Deserialize<'de>>::deserialize(deserializer).and_then(|s| match s {{
             "celsius" | "Celsius" => Ok(TemperatureUint::Celsius),
             "fahrenheit" | "Fahrenheit" => Ok(TemperatureUint::Fahrenheit),
             "mixed" | "Mixed" | "celsius or fahrenheit" | "Celsius or Fahrenheit" | "celsius/fahrenheit" | "Celsius/Fahrenheit"| " fahrenheit or celsius" | "Fahrenheit or Celsius" | "fahrenheit/celsius" | "Fahrenheit/Celsius" => Ok(TemperatureUint::Mixed),
@@ -860,6 +1041,16 @@ pub enum MeasurementSystem {
     Metric,
     /// Imperial system
     Imperial,
+}
+
+impl ToValue for MeasurementSystem {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        match self {
+            MeasurementSystem::Metric => write!(buf, "MeasurementSystem::Metric")?,
+            MeasurementSystem::Imperial => write!(buf, "MeasurementSystem::Imperial")?,
+        }
+        Ok(())
+    }
 }
 
 impl core::fmt::Display for MeasurementSystem {
@@ -942,8 +1133,8 @@ impl<'de> serde::Deserialize<'de> for MeasurementSystem {{
     fn deserialize<D>(deserializer: D) -> core::result::Result<Self, D::Error>
     where
         D: serde::Deserializer<'de> {{
-        let s = String::deserialize(deserializer)?;
-        match s.as_str() {{
+        let s = <&'de str as serde::Deserialize<'de>>::deserialize(deserializer)?;
+        match s {{
             "metric" | "Metric" => Ok(MeasurementSystem::Metric),
             "imperial" | "Imperial" => Ok(MeasurementSystem::Imperial),
             _ => Err(serde::de::Error::custom(format!("Unknown measurement system: {{}}", s))),
@@ -966,6 +1157,17 @@ pub enum HourClock {
     TwentyFour,
     /// Mixed (12-hour clock or 24-hour clock)
     Mixed,
+}
+
+impl ToValue for HourClock {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        match self {
+            HourClock::Twelve => write!(buf, "HourClock::Twelve")?,
+            HourClock::TwentyFour => write!(buf, "HourClock::TwentyFour")?,
+            HourClock::Mixed => write!(buf, "HourClock::Mixed")?,
+        }
+        Ok(())
+    }
 }
 
 impl core::fmt::Display for HourClock {
@@ -1055,8 +1257,8 @@ impl<'de> serde::Deserialize<'de> for HourClock {{
     fn deserialize<D>(deserializer: D) -> core::result::Result<Self, D::Error>
     where
         D: serde::Deserializer<'de> {{
-        String::deserialize(deserializer).and_then(|s| {{
-            match s.as_str() {{
+        <&'de str as serde::Deserialize<'de>>::deserialize(deserializer).and_then(|s| {{
+            match s {{
                 "12hr" | "12" => Ok(HourClock::Twelve),
                 "24hr" | "24" => Ok(HourClock::TwentyFour),
                 "Mixed" | "mixed" | "12hr/24hr" | "24hr/12hr" | "12/24" | "24/12" | "12 or 24" | "12hr or 24hr" | "24hr or 12hr" | "24 or 12" => Ok(HourClock::Mixed),
@@ -1089,6 +1291,21 @@ pub enum Day {
     Friday,
     /// Saturday
     Saturday,
+}
+
+impl ToValue for Day {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        match self {
+            Day::Sunday => write!(buf, "Day::Sunday")?,
+            Day::Monday => write!(buf, "Day::Monday")?,
+            Day::Tuesday => write!(buf, "Day::Tuesday")?,
+            Day::Wednesday => write!(buf, "Day::Wednesday")?,
+            Day::Thursday => write!(buf, "Day::Thursday")?,
+            Day::Friday => write!(buf, "Day::Friday")?,
+            Day::Saturday => write!(buf, "Day::Saturday")?,
+        }
+        Ok(())
+    }
 }
 
 impl core::fmt::Display for Day {
@@ -1233,8 +1450,8 @@ impl<'de> serde::Deserialize<'de> for Day {{
     where
         D: serde::Deserializer<'de>,
     {{
-        let s = String::deserialize(deserializer)?;
-        match s.as_str() {{
+        let s = <&'de str as serde::Deserialize<'de>>::deserialize(deserializer)?;
+        match s {{
             "sunday" | "Sunday" | "Sun" | "sun" => Ok(Self::Sunday),
             "monday" | "Monday" | "Mon" | "mon" => Ok(Self::Monday),
             "tuesday" | "Tuesday" | "Tue" | "tue" => Ok(Self::Tuesday),
@@ -1294,11 +1511,41 @@ struct Locale {
     hour_clock: HourClock,
     timezones: Vec<Timezone>,
     date_formats: HashMap<String, String>,
-    week_starts_on: String,
+    week_starts_on: Day,
     #[serde(rename = "distanceMeasurement")]
     distance_uint: DistanceUint,
     #[serde(rename = "temperatureMeasurement")]
     temperature_uint: TemperatureUint,
+}
+
+impl ToValue for HashMap<String, String> {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        write!(buf, "&super::StaticMap::new(&[")?;
+        for (key, value) in self {
+            write!(buf, "(\"{}\", \"{}\"),", key, value)?;
+        }
+        write!(buf, "]),")?;
+        Ok(())
+    }
+}
+
+impl ToValue for Locale {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        writeln!(
+            buf,
+            "&Locale {{ ietf: {} date_formats: {} timezones: {}, measurement_system: {}, hour_clock: {}, driving_side: {}, distance_unit: {}, temperature_unit: {}, week_start_on: {}}},",
+            self.ietf.to_value_string()?,
+            self.date_formats.to_value_string()?,
+            self.timezones.to_value_string()?,
+            self.measurement_system.to_value_string()?,
+            self.hour_clock.to_value_string()?,
+            self.driving_side.to_value_string()?,
+            self.distance_uint.to_value_string()?,
+            self.temperature_uint.to_value_string()?,
+            self.week_starts_on.to_value_string()?,
+        )?;
+        Ok(())
+    }
 }
 
 impl ToTokenStream for Locale {
@@ -1309,26 +1556,35 @@ impl ToTokenStream for Locale {
         <DistanceUint as ToTokenStream>::to_token_stream(buf)?;
         <TemperatureUint as ToTokenStream>::to_token_stream(buf)?;
         <MeasurementSystem as ToTokenStream>::to_token_stream(buf)?;
+        <Timezone as ToTokenStream>::to_token_stream(buf)?;
 
         static FIELDS: &[StructField] = &[
             StructField {
                 name: "ietf",
-                ty: "&'static str",
+                ty: "&'static [&'static str]",
                 doc: "/// Returns the IETF locale code (e.g. `en-US`)",
                 getter: "ietf",
+            },
+            StructField {
+                name: "timezones",
+                ty: "&'static [&'static Timezone]",
+                doc: r"/// Returns the list of [tz database timezones]
+    /// 
+    /// [tz database timezones]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+                getter: "timezones",
             },
             StructField {
                 name: "date_formats",
                 ty: "&'static super::StaticMap<&'static str, &'static str>",
                 doc: r"
-                /// Returns date formats for each IETF locale.
-                /// 
-                /// - Key is the IETF code
-                /// - Value is the date format, where:
-                ///   - `G` = era
-                ///   - `y` = year
-                ///   - `M` = month
-                ///   - `d` = day ",
+    /// Returns date formats for each IETF locale.
+    /// 
+    /// - Key is the IETF code
+    /// - Value is the date format, where:
+    ///   - `G` = era
+    ///   - `y` = year
+    ///   - `M` = month
+    ///   - `d` = day ",
                 getter: "date_formats",
             },
             StructField {
@@ -1350,16 +1606,16 @@ impl ToTokenStream for Locale {
                 getter: "driving_side",
             },
             StructField {
-                name: "distance_uint",
+                name: "distance_unit",
                 ty: "DistanceUint",
                 doc: "/// Returns the unit of distance used (kilometer or mile). see [`DistanceUint`]",
-                getter: "distance_uint",
+                getter: "distance_unit",
             },
             StructField {
-                name: "temperature_uint",
+                name: "temperature_unit",
                 ty: "TemperatureUint",
                 doc: "/// Returns the unit of temperature (celsius or fahrenheit). see [`TemperatureUint`]",
-                getter: "temperature_uint",
+                getter: "temperature_unit",
             },
             StructField {
                 name: "week_start_on",
@@ -1489,11 +1745,34 @@ enum SubdivisionOfficialName {
     String(String),
 }
 
+impl ToValue for SubdivisionOfficialName {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        match self {
+            SubdivisionOfficialName::Number(n) => write!(buf, "{n}")?,
+            SubdivisionOfficialName::String(s) => write!(buf, "{s}")?,
+        }
+        Ok(())
+    }
+}
+
 #[derive(Debug, Clone, Deserialize, Serialize)]
 struct SubdivisionName {
     official: SubdivisionOfficialName,
     common: Option<String>,
     native: Option<String>,
+}
+
+impl ToValue for SubdivisionName {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        write!(
+            buf,
+            "&SubdivisionMeta {{ official: \"{}\", common: {}, native: {} }},",
+            self.official.to_value_string()?,
+            self.common.to_value_string()?,
+            self.native.to_value_string()?,
+        )?;
+        Ok(())
+    }
 }
 
 #[derive(Clone, Serialize, Deserialize)]
@@ -1556,6 +1835,41 @@ struct Subdivision {
     name: HashMap<String, SubdivisionName>,
 }
 
+impl ToValue for HashMap<String, SubdivisionName> {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        write!(buf, "&super::StaticMap::new(&[")?;
+        for (k, v) in self {
+            write!(buf, "(\"{}\", {}),", k, v.to_value_string()?)?;
+        }
+        write!(buf, "]),")?;
+        Ok(())
+    }
+}
+
+impl ToValue for Vec<Subdivision> {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        write!(buf, "&[")?;
+        for v in self {
+            write!(buf, "{}", v.to_value_string()?)?;
+        }
+        writeln!(buf, "],")?;
+        Ok(())
+    }
+}
+
+impl ToValue for Subdivision {
+    fn to_value<W: Write>(&self, buf: &mut W) -> Result<()> {
+        write!(
+            buf,
+            "&Subdivision {{ iso: \"{}\", ty: {}, meta: {} }},",
+            self.iso_code,
+            self.ty.to_value_string()?,
+            self.name.to_value_string()?,
+        )?;
+        Ok(())
+    }
+}
+
 impl ToTokenStream for Subdivision {
     fn to_token_stream<W: Write>(out: &mut W) -> Result<()> {
         static META_FIELDS: &[StructField] = &[
@@ -1593,13 +1907,13 @@ impl ToTokenStream for Subdivision {
             StructField {
                 name: "ty",
                 doc: "/// Returns the type of the subdivision",
-                ty: "&'static str",
+                ty: "Option<&'static str>",
                 getter: "subdivision_type",
             },
             StructField {
                 name: "meta",
                 doc: "/// Returns the meta of the subdivision",
-                ty: "&'static super::StaticMap<&'static str, SubdivisionMeta>",
+                ty: "&'static super::StaticMap<&'static str, &'static SubdivisionMeta>",
                 getter: "meta",
             },
         ];
@@ -1776,11 +2090,18 @@ impl ToTokenStream for CountryData {
                 getter: "geography",
             },
             StructField {
-                name: "languages",
-                ty: "&'static Language",
+                name: "official_languages",
+                ty: "&'static [&'static Language]",
                 doc: r"
-    /// Returns the country's language information",
-                getter: "languages",
+    /// Returns the country's official languages information",
+                getter: "official_languages",
+            },
+            StructField {
+                name: "spoken_languages",
+                ty: "&'static [&'static str]",
+                doc: r"
+    /// Returns the country's spoken language codes",
+                getter: "spoken_languages",
             },
             StructField {
                 name: "currencies",
@@ -1791,7 +2112,7 @@ impl ToTokenStream for CountryData {
             },
             StructField {
                 name: "subdivisions",
-                ty: "&'static StaticMap<&'static str, &'static Subdivision>",
+                ty: "&'static [&'static Subdivision]",
                 doc: r"
     /// Returns the subdivisions (states, provinces, etc.) map whose key is [ISO 639-3] in the country
     ///
@@ -1815,6 +2136,7 @@ impl ToValue for CountryData {
         writeln!(buf, "&Country {{")?;
         write!(buf, "\tname: ")?;
         self.name.to_value(buf)?;
+        writeln!(buf, "\tflag: \"{}\",", self.flag)?;
         writeln!(buf, "\tcca2: \"{}\",", self.cca2)?;
         writeln!(buf, "\tcca3: \"{}\",", self.cca3)?;
         writeln!(buf, "\tccn3: \"{}\",", self.ccn3)?;
@@ -1829,6 +2151,23 @@ impl ToValue for CountryData {
         self.idd.to_value(buf)?;
         write!(buf, "\tgeography: ")?;
         self.geography.to_value(buf)?;
+        write!(buf, "\tofficial_languages: ")?;
+        self.languages.official.to_value(buf)?;
+        writeln!(
+            buf,
+            "\tspoken_languages: {}",
+            self.languages
+                .spoken
+                .as_ref()
+                .map(|s| s.to_value_string().unwrap())
+                .unwrap_or_else(|| "&[],".to_string())
+        )?;
+        write!(buf, "\tlocale: ")?;
+        self.locale.to_value(buf)?;
+        write!(buf, "\tcurrencies: ")?;
+        self.currencies.to_value(buf)?;
+        write!(buf, "\tsubdivisions: ")?;
+        self.subdivisions.to_value(buf)?;
         writeln!(buf, "}};\n")?;
         Ok(())
     }
@@ -1839,12 +2178,7 @@ trait Generator: Write {
         &mut self,
         name: &'static str,
         impls: &[Box<dyn ToGetterTokenStream>],
-    ) -> Result<()> {
-        writeln!(self, "impl {} {{", name)?;
-
-        writeln!(self, "}}\n")?;
-        Ok(())
-    }
+    ) -> Result<()>;
 
     fn gen_enum<D: core::fmt::Display>(
         &mut self,
@@ -1859,6 +2193,7 @@ trait Generator: Write {
                     "#[derive(Debug, Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash)]"
                 )
             })
+            .and_then(|_| writeln!(self, "#[cfg_attr(feature=\"serde\", derive(::serde::Serialize, ::serde::Deserialize))]"))
             .and_then(|_| writeln!(self, "#[repr(u8)]"))
             .and_then(|_| writeln!(self, "pub enum {name} {{"))?;
 
@@ -1876,7 +2211,15 @@ trait Generator: Write {
     }
 }
 
-impl<W: Write> Generator for W {}
+impl<W: Write> Generator for W {
+    fn gen_enum_impl(
+        &mut self,
+        _name: &'static str,
+        _impls: &[Box<dyn ToGetterTokenStream>],
+    ) -> Result<()> {
+        todo!()
+    }
+}
 
 fn generate_enums(src: &[CountryData]) -> Result<()> {
     let out_path = PathBuf::from("src/enums.rs");
@@ -1892,6 +2235,10 @@ fn generate_enums(src: &[CountryData]) -> Result<()> {
         src.iter().map(|c| &c.cca3),
         "ISO 3166-1 alpha-3 code",
     )?;
+
+    EnumDeref::new("CCA2", src.iter().map(|c| c.cca2.to_uppercase()).collect()).render(&mut out)?;
+    EnumDeref::new("CCA3", src.iter().map(|c| c.cca3.to_uppercase()).collect()).render(&mut out)?;
+
     out.eof()?;
     Ok(())
 }
@@ -1900,10 +2247,8 @@ fn generate_types() -> Result<()> {
     let out_path = PathBuf::from("src/types.rs");
     let mut out = io::BufWriter::new(File::create(out_path)?);
     writeln!(out, "// Auto generated file, please do not modify \n\n")?;
-    writeln!(out, "use super::StaticMap;")?;
 
     <Locale as ToTokenStream>::to_token_stream(&mut out)?;
-    <Timezone as ToTokenStream>::to_token_stream(&mut out)?;
     <IDD as ToTokenStream>::to_token_stream(&mut out)?;
     <Geography as ToTokenStream>::to_token_stream(&mut out)?;
     <Currency as ToTokenStream>::to_token_stream(&mut out)?;
@@ -1920,14 +2265,21 @@ fn generate_consts(data: &[CountryData]) -> Result<()> {
     writeln!(out, "use super::types::*;")?;
 
     for country in data {
-        // writeln!(out, "/// {}", country.name)?;
         write!(
             out,
             "pub const {}: &Country = ",
             country.cca2.to_uppercase()
         )?;
         country.to_value(&mut out)?;
+        writeln!(out)?;
+        write!(
+            out,
+            "pub const {}: &Country = {};",
+            country.cca3.to_uppercase(),
+            country.cca2.to_uppercase()
+        )?;
     }
+
     Ok(())
 }
 
