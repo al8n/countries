@@ -19,21 +19,33 @@ lazy_static::lazy_static! {
     };
 }
 
+#[derive(Debug, Clone, Deserialize, Serialize)]
+struct Variant {
+    name: String,
+    doc: String,
+}
+
 struct EnumDeref {
     name: &'static str,
-    variants: Vec<String>,
+    version: usize,
+    variants: Vec<Variant>,
 }
 
 impl EnumDeref {
-    const TEMPLATE: &str = "enum_deref.tpl";
+    const TEMPLATE: &str = "enum.tpl";
 
-    fn new(name: &'static str, variants: Vec<String>) -> Self {
-        Self { name, variants }
+    fn new(name: &'static str, version: usize, variants: Vec<Variant>) -> Self {
+        Self {
+            name,
+            variants,
+            version,
+        }
     }
 
     fn to_context(&self) -> Context {
         let mut context = Context::new();
         context.insert("name", &self.name);
+        context.insert("version", &self.version);
         context.insert("variants", &self.variants);
         context
     }
@@ -2184,71 +2196,41 @@ impl ToValue for CountryData {
 }
 
 trait Generator: Write {
-    fn gen_enum_impl(
-        &mut self,
-        name: &'static str,
-        impls: &[Box<dyn ToGetterTokenStream>],
-    ) -> Result<()>;
-
-    fn gen_enum<D: core::fmt::Display>(
-        &mut self,
-        name: &'static str,
-        variants: impl Iterator<Item = D>,
-        doc: &'static str,
-    ) -> Result<()> {
-        writeln!(self, "/// {doc}")
-            .and_then(|_| {
-                writeln!(
-                    self,
-                    "#[derive(Debug, Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash)]"
-                )
-            })
-            .and_then(|_| writeln!(self, "#[cfg_attr(feature=\"serde\", derive(::serde::Serialize, ::serde::Deserialize))]"))
-            .and_then(|_| writeln!(self, "#[cfg_attr(any(feature=\"async-graphql\", feature=\"alloc\"), derive(::async_graphql::Enum))]"))
-            .and_then(|_| writeln!(self, "#[repr(u8)]"))
-            .and_then(|_| writeln!(self, "pub enum {name} {{"))?;
-
-        for variant in variants {
-            writeln!(self, "\t{},", variant)?;
-        }
-
-        writeln!(self, "}}\n")?;
-        Ok(())
-    }
-
     fn eof(&mut self) -> Result<()> {
         writeln!(self)?;
         Ok(())
     }
 }
 
-impl<W: Write> Generator for W {
-    fn gen_enum_impl(
-        &mut self,
-        _name: &'static str,
-        _impls: &[Box<dyn ToGetterTokenStream>],
-    ) -> Result<()> {
-        todo!()
-    }
-}
+impl<W: Write> Generator for W {}
 
 fn generate_enums(src: &[CountryData]) -> Result<()> {
     let out_path = PathBuf::from("src/enums.rs");
     let mut out = io::BufWriter::new(File::create(out_path)?);
     writeln!(out, "// Auto generated file, please do not modify \n\n")?;
-    out.gen_enum(
-        "CCA2",
-        src.iter().map(|c| &c.cca2),
-        "ISO 3166-1 alpha-2 code",
-    )?;
-    out.gen_enum(
-        "CCA3",
-        src.iter().map(|c| &c.cca3),
-        "ISO 3166-1 alpha-3 code",
-    )?;
 
-    EnumDeref::new("CCA2", src.iter().map(|c| c.cca2.to_uppercase()).collect()).render(&mut out)?;
-    EnumDeref::new("CCA3", src.iter().map(|c| c.cca3.to_uppercase()).collect()).render(&mut out)?;
+    EnumDeref::new(
+        "CCA2",
+        2,
+        src.iter()
+            .map(|c| Variant {
+                name: c.cca2.to_uppercase(),
+                doc: c.name.official.clone(),
+            })
+            .collect(),
+    )
+    .render(&mut out)?;
+    EnumDeref::new(
+        "CCA3",
+        3,
+        src.iter()
+            .map(|c| Variant {
+                name: c.cca3.to_uppercase(),
+                doc: c.name.official.clone(),
+            })
+            .collect(),
+    )
+    .render(&mut out)?;
 
     out.eof()?;
     Ok(())
@@ -2276,6 +2258,7 @@ fn generate_consts(data: &[CountryData]) -> Result<()> {
     writeln!(out, "use super::types::*;")?;
 
     for country in data {
+        writeln!(out, "/// {}", country.name.official)?;
         write!(
             out,
             "pub const {}: &Country = ",
@@ -2283,7 +2266,8 @@ fn generate_consts(data: &[CountryData]) -> Result<()> {
         )?;
         country.to_value(&mut out)?;
         writeln!(out)?;
-        write!(
+        writeln!(out, "/// {}", country.name.official)?;
+        writeln!(
             out,
             "pub const {}: &Country = {};",
             country.cca3.to_uppercase(),

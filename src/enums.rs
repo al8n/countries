@@ -1,6 +1,8 @@
 // Auto generated file, please do not modify
 
-/// ISO 3166-1 alpha-2 code
+/// [ISO 3166-1 alpha-2] code in enum.
+///
+/// [ISO 3166-1 alpha-2]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash)]
 #[cfg_attr(feature = "serde", derive(::serde::Serialize, ::serde::Deserialize))]
 #[cfg_attr(
@@ -9,517 +11,755 @@
 )]
 #[repr(u8)]
 pub enum CCA2 {
+    /// Islamic Republic of Afghanistan
     AF,
-    AX,
-    AL,
-    DZ,
-    AS,
-    AD,
-    AO,
-    AI,
-    AQ,
-    AG,
-    AR,
-    AM,
-    AW,
-    AU,
-    AT,
-    AZ,
-    BS,
-    BH,
-    BD,
-    BB,
-    BY,
-    BE,
-    BZ,
-    BJ,
-    BM,
-    BT,
-    BO,
-    BA,
-    BW,
-    BV,
-    BR,
-    IO,
-    VG,
-    BN,
-    BG,
-    BF,
-    BI,
-    KH,
-    CM,
-    CA,
-    CV,
-    BQ,
-    KY,
-    CF,
-    TD,
-    CL,
-    CN,
-    CX,
-    CC,
-    CO,
-    KM,
-    CK,
-    CR,
-    CI,
-    HR,
-    CU,
-    CW,
-    CY,
-    CZ,
-    DK,
-    DJ,
-    DM,
-    DO,
-    CD,
-    EC,
-    EG,
-    SV,
-    GQ,
-    ER,
-    EE,
-    SZ,
-    ET,
-    FK,
-    FO,
-    FJ,
-    FI,
-    FR,
-    GF,
-    PF,
-    TF,
-    GA,
-    GM,
-    GE,
-    DE,
-    GH,
-    GI,
-    GR,
-    GL,
-    GD,
-    GP,
-    GU,
-    GT,
-    GG,
-    GN,
-    GW,
-    GY,
-    HT,
-    HM,
-    HN,
-    HK,
-    HU,
-    IS,
-    IN,
-    ID,
-    IR,
-    IQ,
-    IE,
-    IM,
-    IL,
-    IT,
-    JM,
-    JP,
-    JE,
-    JO,
-    KZ,
-    KE,
-    KI,
-    XK,
-    KW,
-    KG,
-    LA,
-    LV,
-    LB,
-    LS,
-    LR,
-    LY,
-    LI,
-    LT,
-    LU,
-    MO,
-    MG,
-    MW,
-    MY,
-    MV,
-    ML,
-    MT,
-    MH,
-    MQ,
-    MR,
-    MU,
-    YT,
-    MX,
-    FM,
-    MD,
-    MC,
-    MN,
-    ME,
-    MS,
-    MA,
-    MZ,
-    MM,
-    NA,
-    NR,
-    NP,
-    NL,
-    NC,
-    NZ,
-    NI,
-    NE,
-    NG,
-    NU,
-    NF,
-    KP,
-    MK,
-    MP,
-    NO,
-    OM,
-    PK,
-    PW,
-    PS,
-    PA,
-    PG,
-    PY,
-    PE,
-    PH,
-    PN,
-    PL,
-    PT,
-    PR,
-    QA,
-    CG,
-    RE,
-    RO,
-    RU,
-    RW,
-    BL,
-    SH,
-    KN,
-    LC,
-    MF,
-    PM,
-    VC,
-    WS,
-    SM,
-    ST,
-    SA,
-    SN,
-    RS,
-    SC,
-    SL,
-    SG,
-    SX,
-    SK,
-    SI,
-    SB,
-    SO,
-    ZA,
-    GS,
-    KR,
-    SS,
-    ES,
-    LK,
-    SD,
-    SR,
-    SJ,
-    SE,
-    CH,
-    SY,
-    TW,
-    TJ,
-    TZ,
-    TH,
-    TL,
-    TG,
-    TK,
-    TO,
-    TT,
-    TN,
-    TR,
-    TM,
-    TC,
-    TV,
-    UG,
-    UA,
-    AE,
-    GB,
-    US,
-    UM,
-    VI,
-    UY,
-    UZ,
-    VU,
-    VA,
-    VE,
-    VN,
-    WF,
-    EH,
-    YE,
-    ZM,
-    ZW,
-}
 
-/// ISO 3166-1 alpha-3 code
-#[derive(Debug, Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash)]
-#[cfg_attr(feature = "serde", derive(::serde::Serialize, ::serde::Deserialize))]
-#[cfg_attr(
-    any(feature = "async-graphql", feature = "alloc"),
-    derive(::async_graphql::Enum)
-)]
-#[repr(u8)]
-pub enum CCA3 {
-    AFG,
-    ALA,
-    ALB,
-    DZA,
-    ASM,
-    AND,
-    AGO,
-    AIA,
-    ATA,
-    ATG,
-    ARG,
-    ARM,
-    ABW,
-    AUS,
-    AUT,
-    AZE,
-    BHS,
-    BHR,
-    BGD,
-    BRB,
-    BLR,
-    BEL,
-    BLZ,
-    BEN,
-    BMU,
-    BTN,
-    BOL,
-    BIH,
-    BWA,
-    BVT,
-    BRA,
-    IOT,
-    VGB,
-    BRN,
-    BGR,
-    BFA,
-    BDI,
-    KHM,
-    CMR,
-    CAN,
-    CPV,
-    BES,
-    CYM,
-    CAF,
-    TCD,
-    CHL,
-    CHN,
-    CXR,
-    CCK,
-    COL,
-    COM,
-    COK,
-    CRI,
-    CIV,
-    HRV,
-    CUB,
-    CUW,
-    CYP,
-    CZE,
-    DNK,
-    DJI,
-    DMA,
-    DOM,
-    COD,
-    ECU,
-    EGY,
-    SLV,
-    GNQ,
-    ERI,
-    EST,
-    SWZ,
-    ETH,
-    FLK,
-    FRO,
-    FJI,
-    FIN,
-    FRA,
-    GUF,
-    PYF,
-    ATF,
-    GAB,
-    GMB,
-    GEO,
-    DEU,
-    GHA,
-    GIB,
-    GRC,
-    GRL,
-    GRD,
-    GLP,
-    GUM,
-    GTM,
-    GGY,
-    GIN,
-    GNB,
-    GUY,
-    HTI,
-    HMD,
-    HND,
-    HKG,
-    HUN,
-    ISL,
-    IND,
-    IDN,
-    IRN,
-    IRQ,
-    IRL,
-    IMN,
-    ISR,
-    ITA,
-    JAM,
-    JPN,
-    JEY,
-    JOR,
-    KAZ,
-    KEN,
-    KIR,
-    UNK,
-    KWT,
-    KGZ,
-    LAO,
-    LVA,
-    LBN,
-    LSO,
-    LBR,
-    LBY,
-    LIE,
-    LTU,
-    LUX,
-    MAC,
-    MDG,
-    MWI,
-    MYS,
-    MDV,
-    MLI,
-    MLT,
-    MHL,
-    MTQ,
-    MRT,
-    MUS,
-    MYT,
-    MEX,
-    FSM,
-    MDA,
-    MCO,
-    MNG,
-    MNE,
-    MSR,
-    MAR,
-    MOZ,
-    MMR,
-    NAM,
-    NRU,
-    NPL,
-    NLD,
-    NCL,
-    NZL,
-    NIC,
-    NER,
-    NGA,
-    NIU,
-    NFK,
-    PRK,
-    MKD,
-    MNP,
-    NOR,
-    OMN,
-    PAK,
-    PLW,
-    PSE,
-    PAN,
-    PNG,
-    PRY,
-    PER,
-    PHL,
-    PCN,
-    POL,
-    PRT,
-    PRI,
-    QAT,
-    COG,
-    REU,
-    ROU,
-    RUS,
-    RWA,
-    BLM,
-    SHN,
-    KNA,
-    LCA,
-    MAF,
-    SPM,
-    VCT,
-    WSM,
-    SMR,
-    STP,
-    SAU,
-    SEN,
-    SRB,
-    SYC,
-    SLE,
-    SGP,
-    SXM,
-    SVK,
-    SVN,
-    SLB,
-    SOM,
-    ZAF,
-    SGS,
-    KOR,
-    SSD,
-    ESP,
-    LKA,
-    SDN,
-    SUR,
-    SJM,
-    SWE,
-    CHE,
-    SYR,
-    TWN,
-    TJK,
-    TZA,
-    THA,
-    TLS,
-    TGO,
-    TKL,
-    TON,
-    TTO,
-    TUN,
-    TUR,
-    TKM,
-    TCA,
-    TUV,
-    UGA,
-    UKR,
-    ARE,
-    GBR,
-    USA,
-    UMI,
-    VIR,
-    URY,
-    UZB,
-    VUT,
-    VAT,
-    VEN,
-    VNM,
-    WLF,
-    ESH,
-    YEM,
-    ZMB,
-    ZWE,
+    /// Åland Islands
+    AX,
+
+    /// Republic of Albania
+    AL,
+
+    /// People's Democratic Republic of Algeria
+    DZ,
+
+    /// American Samoa
+    AS,
+
+    /// Principality of Andorra
+    AD,
+
+    /// Republic of Angola
+    AO,
+
+    /// Anguilla
+    AI,
+
+    /// Antarctica
+    AQ,
+
+    /// Antigua and Barbuda
+    AG,
+
+    /// Argentine Republic
+    AR,
+
+    /// Republic of Armenia
+    AM,
+
+    /// Aruba
+    AW,
+
+    /// Commonwealth of Australia
+    AU,
+
+    /// Republic of Austria
+    AT,
+
+    /// Republic of Azerbaijan
+    AZ,
+
+    /// Commonwealth of the Bahamas
+    BS,
+
+    /// Kingdom of Bahrain
+    BH,
+
+    /// People's Republic of Bangladesh
+    BD,
+
+    /// Barbados
+    BB,
+
+    /// Republic of Belarus
+    BY,
+
+    /// Kingdom of Belgium
+    BE,
+
+    /// Belize
+    BZ,
+
+    /// Republic of Benin
+    BJ,
+
+    /// Bermuda
+    BM,
+
+    /// Kingdom of Bhutan
+    BT,
+
+    /// Plurinational State of Bolivia
+    BO,
+
+    /// Bosnia and Herzegovina
+    BA,
+
+    /// Republic of Botswana
+    BW,
+
+    /// Bouvet Island
+    BV,
+
+    /// Federative Republic of Brazil
+    BR,
+
+    /// British Indian Ocean Territory
+    IO,
+
+    /// Virgin Islands
+    VG,
+
+    /// Nation of Brunei, Abode of Peace
+    BN,
+
+    /// Republic of Bulgaria
+    BG,
+
+    /// Burkina Faso
+    BF,
+
+    /// Republic of Burundi
+    BI,
+
+    /// Kingdom of Cambodia
+    KH,
+
+    /// Republic of Cameroon
+    CM,
+
+    /// Canada
+    CA,
+
+    /// Republic of Cabo Verde
+    CV,
+
+    /// Bonaire, Sint Eustatius and Saba
+    BQ,
+
+    /// Cayman Islands
+    KY,
+
+    /// Central African Republic
+    CF,
+
+    /// Republic of Chad
+    TD,
+
+    /// Republic of Chile
+    CL,
+
+    /// People's Republic of China
+    CN,
+
+    /// Territory of Christmas Island
+    CX,
+
+    /// Territory of the Cocos (Keeling) Islands
+    CC,
+
+    /// Republic of Colombia
+    CO,
+
+    /// Union of the Comoros
+    KM,
+
+    /// Cook Islands
+    CK,
+
+    /// Republic of Costa Rica
+    CR,
+
+    /// Republic of Côte d'Ivoire
+    CI,
+
+    /// Republic of Croatia
+    HR,
+
+    /// Republic of Cuba
+    CU,
+
+    /// Country of Curaçao
+    CW,
+
+    /// Republic of Cyprus
+    CY,
+
+    /// Czech Republic
+    CZ,
+
+    /// Kingdom of Denmark
+    DK,
+
+    /// Republic of Djibouti
+    DJ,
+
+    /// Commonwealth of Dominica
+    DM,
+
+    /// Dominican Republic
+    DO,
+
+    /// Democratic Republic of the Congo
+    CD,
+
+    /// Republic of Ecuador
+    EC,
+
+    /// Arab Republic of Egypt
+    EG,
+
+    /// Republic of El Salvador
+    SV,
+
+    /// Republic of Equatorial Guinea
+    GQ,
+
+    /// State of Eritrea
+    ER,
+
+    /// Republic of Estonia
+    EE,
+
+    /// Kingdom of Eswatini
+    SZ,
+
+    /// Federal Democratic Republic of Ethiopia
+    ET,
+
+    /// Falkland Islands
+    FK,
+
+    /// Faroe Islands
+    FO,
+
+    /// Republic of Fiji
+    FJ,
+
+    /// Republic of Finland
+    FI,
+
+    /// French Republic
+    FR,
+
+    /// Guiana
+    GF,
+
+    /// French Polynesia
+    PF,
+
+    /// Territory of the French Southern and Antarctic Lands
+    TF,
+
+    /// Gabonese Republic
+    GA,
+
+    /// Republic of the Gambia
+    GM,
+
+    /// Georgia
+    GE,
+
+    /// Federal Republic of Germany
+    DE,
+
+    /// Republic of Ghana
+    GH,
+
+    /// Gibraltar
+    GI,
+
+    /// Hellenic Republic
+    GR,
+
+    /// Greenland
+    GL,
+
+    /// Grenada
+    GD,
+
+    /// Guadeloupe
+    GP,
+
+    /// Guam
+    GU,
+
+    /// Republic of Guatemala
+    GT,
+
+    /// Bailiwick of Guernsey
+    GG,
+
+    /// Republic of Guinea
+    GN,
+
+    /// Republic of Guinea-Bissau
+    GW,
+
+    /// Co-operative Republic of Guyana
+    GY,
+
+    /// Republic of Haiti
+    HT,
+
+    /// Heard Island and McDonald Islands
+    HM,
+
+    /// Republic of Honduras
+    HN,
+
+    /// Hong Kong Special Administrative Region of the People's Republic of China
+    HK,
+
+    /// Hungary
+    HU,
+
+    /// Iceland
+    IS,
+
+    /// Republic of India
+    IN,
+
+    /// Republic of Indonesia
+    ID,
+
+    /// Islamic Republic of Iran
+    IR,
+
+    /// Republic of Iraq
+    IQ,
+
+    /// Republic of Ireland
+    IE,
+
+    /// Isle of Man
+    IM,
+
+    /// State of Israel
+    IL,
+
+    /// Italian Republic
+    IT,
+
+    /// Jamaica
+    JM,
+
+    /// Japan
+    JP,
+
+    /// Bailiwick of Jersey
+    JE,
+
+    /// Hashemite Kingdom of Jordan
+    JO,
+
+    /// Republic of Kazakhstan
+    KZ,
+
+    /// Republic of Kenya
+    KE,
+
+    /// Independent and Sovereign Republic of Kiribati
+    KI,
+
+    /// Republic of Kosovo
+    XK,
+
+    /// State of Kuwait
+    KW,
+
+    /// Kyrgyz Republic
+    KG,
+
+    /// Lao People's Democratic Republic
+    LA,
+
+    /// Republic of Latvia
+    LV,
+
+    /// Lebanese Republic
+    LB,
+
+    /// Kingdom of Lesotho
+    LS,
+
+    /// Republic of Liberia
+    LR,
+
+    /// State of Libya
+    LY,
+
+    /// Principality of Liechtenstein
+    LI,
+
+    /// Republic of Lithuania
+    LT,
+
+    /// Grand Duchy of Luxembourg
+    LU,
+
+    /// Macao Special Administrative Region of the People's Republic of China
+    MO,
+
+    /// Republic of Madagascar
+    MG,
+
+    /// Republic of Malawi
+    MW,
+
+    /// Malaysia
+    MY,
+
+    /// Republic of the Maldives
+    MV,
+
+    /// Republic of Mali
+    ML,
+
+    /// Republic of Malta
+    MT,
+
+    /// Republic of the Marshall Islands
+    MH,
+
+    /// Martinique
+    MQ,
+
+    /// Islamic Republic of Mauritania
+    MR,
+
+    /// Republic of Mauritius
+    MU,
+
+    /// Department of Mayotte
+    YT,
+
+    /// United Mexican States
+    MX,
+
+    /// Federated States of Micronesia
+    FM,
+
+    /// Republic of Moldova
+    MD,
+
+    /// Principality of Monaco
+    MC,
+
+    /// Mongolia
+    MN,
+
+    /// Montenegro
+    ME,
+
+    /// Montserrat
+    MS,
+
+    /// Kingdom of Morocco
+    MA,
+
+    /// Republic of Mozambique
+    MZ,
+
+    /// Republic of the Union of Myanmar
+    MM,
+
+    /// Republic of Namibia
+    NA,
+
+    /// Republic of Nauru
+    NR,
+
+    /// Federal Democratic Republic of Nepal
+    NP,
+
+    /// Kingdom of the Netherlands
+    NL,
+
+    /// New Caledonia
+    NC,
+
+    /// New Zealand
+    NZ,
+
+    /// Republic of Nicaragua
+    NI,
+
+    /// Republic of Niger
+    NE,
+
+    /// Federal Republic of Nigeria
+    NG,
+
+    /// Niue
+    NU,
+
+    /// Territory of Norfolk Island
+    NF,
+
+    /// Democratic People's Republic of Korea
+    KP,
+
+    /// Republic of North Macedonia
+    MK,
+
+    /// Commonwealth of the Northern Mariana Islands
+    MP,
+
+    /// Kingdom of Norway
+    NO,
+
+    /// Sultanate of Oman
+    OM,
+
+    /// Islamic Republic of Pakistan
+    PK,
+
+    /// Republic of Palau
+    PW,
+
+    /// State of Palestine
+    PS,
+
+    /// Republic of Panama
+    PA,
+
+    /// Independent State of Papua New Guinea
+    PG,
+
+    /// Republic of Paraguay
+    PY,
+
+    /// Republic of Peru
+    PE,
+
+    /// Republic of the Philippines
+    PH,
+
+    /// Pitcairn Group of Islands
+    PN,
+
+    /// Republic of Poland
+    PL,
+
+    /// Portuguese Republic
+    PT,
+
+    /// Commonwealth of Puerto Rico
+    PR,
+
+    /// State of Qatar
+    QA,
+
+    /// Republic of the Congo
+    CG,
+
+    /// Réunion Island
+    RE,
+
+    /// Romania
+    RO,
+
+    /// Russian Federation
+    RU,
+
+    /// Republic of Rwanda
+    RW,
+
+    /// Collectivity of Saint Barthélemy
+    BL,
+
+    /// Saint Helena, Ascension and Tristan da Cunha
+    SH,
+
+    /// Federation of Saint Christopher and Nevis
+    KN,
+
+    /// Saint Lucia
+    LC,
+
+    /// Saint Martin
+    MF,
+
+    /// Saint Pierre and Miquelon
+    PM,
+
+    /// Saint Vincent and the Grenadines
+    VC,
+
+    /// Independent State of Samoa
+    WS,
+
+    /// Most Serene Republic of San Marino
+    SM,
+
+    /// Democratic Republic of São Tomé and Príncipe
+    ST,
+
+    /// Kingdom of Saudi Arabia
+    SA,
+
+    /// Republic of Senegal
+    SN,
+
+    /// Republic of Serbia
+    RS,
+
+    /// Republic of Seychelles
+    SC,
+
+    /// Republic of Sierra Leone
+    SL,
+
+    /// Republic of Singapore
+    SG,
+
+    /// Sint Maarten
+    SX,
+
+    /// Slovak Republic
+    SK,
+
+    /// Republic of Slovenia
+    SI,
+
+    /// Solomon Islands
+    SB,
+
+    /// Federal Republic of Somalia
+    SO,
+
+    /// Republic of South Africa
+    ZA,
+
+    /// South Georgia and the South Sandwich Islands
+    GS,
+
+    /// Republic of Korea
+    KR,
+
+    /// Republic of South Sudan
+    SS,
+
+    /// Kingdom of Spain
+    ES,
+
+    /// Democratic Socialist Republic of Sri Lanka
+    LK,
+
+    /// Republic of the Sudan
+    SD,
+
+    /// Republic of Suriname
+    SR,
+
+    /// Svalbard og Jan Mayen
+    SJ,
+
+    /// Kingdom of Sweden
+    SE,
+
+    /// Swiss Confederation
+    CH,
+
+    /// Syrian Arab Republic
+    SY,
+
+    /// Republic of China (Taiwan)
+    TW,
+
+    /// Republic of Tajikistan
+    TJ,
+
+    /// United Republic of Tanzania
+    TZ,
+
+    /// Kingdom of Thailand
+    TH,
+
+    /// Democratic Republic of Timor-Leste
+    TL,
+
+    /// Togolese Republic
+    TG,
+
+    /// Tokelau
+    TK,
+
+    /// Kingdom of Tonga
+    TO,
+
+    /// Republic of Trinidad and Tobago
+    TT,
+
+    /// Tunisian Republic
+    TN,
+
+    /// Republic of Turkey
+    TR,
+
+    /// Turkmenistan
+    TM,
+
+    /// Turks and Caicos Islands
+    TC,
+
+    /// Tuvalu
+    TV,
+
+    /// Republic of Uganda
+    UG,
+
+    /// Ukraine
+    UA,
+
+    /// United Arab Emirates
+    AE,
+
+    /// United Kingdom of Great Britain and Northern Ireland
+    GB,
+
+    /// United States of America
+    US,
+
+    /// United States Minor Outlying Islands
+    UM,
+
+    /// Virgin Islands of the United States
+    VI,
+
+    /// Oriental Republic of Uruguay
+    UY,
+
+    /// Republic of Uzbekistan
+    UZ,
+
+    /// Republic of Vanuatu
+    VU,
+
+    /// Vatican City State
+    VA,
+
+    /// Bolivarian Republic of Venezuela
+    VE,
+
+    /// Socialist Republic of Vietnam
+    VN,
+
+    /// Territory of the Wallis and Futuna Islands
+    WF,
+
+    /// Sahrawi Arab Democratic Republic
+    EH,
+
+    /// Republic of Yemen
+    YE,
+
+    /// Republic of Zambia
+    ZM,
+
+    /// Republic of Zimbabwe
+    ZW,
 }
 
 impl core::ops::Deref for CCA2 {
@@ -780,6 +1020,769 @@ impl core::ops::Deref for CCA2 {
         }
     }
 }
+
+/// [ISO 3166-1 alpha-3] code in enum.
+///
+/// [ISO 3166-1 alpha-3]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
+#[derive(Debug, Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash)]
+#[cfg_attr(feature = "serde", derive(::serde::Serialize, ::serde::Deserialize))]
+#[cfg_attr(
+    any(feature = "async-graphql", feature = "alloc"),
+    derive(::async_graphql::Enum)
+)]
+#[repr(u8)]
+pub enum CCA3 {
+    /// Islamic Republic of Afghanistan
+    AFG,
+
+    /// Åland Islands
+    ALA,
+
+    /// Republic of Albania
+    ALB,
+
+    /// People's Democratic Republic of Algeria
+    DZA,
+
+    /// American Samoa
+    ASM,
+
+    /// Principality of Andorra
+    AND,
+
+    /// Republic of Angola
+    AGO,
+
+    /// Anguilla
+    AIA,
+
+    /// Antarctica
+    ATA,
+
+    /// Antigua and Barbuda
+    ATG,
+
+    /// Argentine Republic
+    ARG,
+
+    /// Republic of Armenia
+    ARM,
+
+    /// Aruba
+    ABW,
+
+    /// Commonwealth of Australia
+    AUS,
+
+    /// Republic of Austria
+    AUT,
+
+    /// Republic of Azerbaijan
+    AZE,
+
+    /// Commonwealth of the Bahamas
+    BHS,
+
+    /// Kingdom of Bahrain
+    BHR,
+
+    /// People's Republic of Bangladesh
+    BGD,
+
+    /// Barbados
+    BRB,
+
+    /// Republic of Belarus
+    BLR,
+
+    /// Kingdom of Belgium
+    BEL,
+
+    /// Belize
+    BLZ,
+
+    /// Republic of Benin
+    BEN,
+
+    /// Bermuda
+    BMU,
+
+    /// Kingdom of Bhutan
+    BTN,
+
+    /// Plurinational State of Bolivia
+    BOL,
+
+    /// Bosnia and Herzegovina
+    BIH,
+
+    /// Republic of Botswana
+    BWA,
+
+    /// Bouvet Island
+    BVT,
+
+    /// Federative Republic of Brazil
+    BRA,
+
+    /// British Indian Ocean Territory
+    IOT,
+
+    /// Virgin Islands
+    VGB,
+
+    /// Nation of Brunei, Abode of Peace
+    BRN,
+
+    /// Republic of Bulgaria
+    BGR,
+
+    /// Burkina Faso
+    BFA,
+
+    /// Republic of Burundi
+    BDI,
+
+    /// Kingdom of Cambodia
+    KHM,
+
+    /// Republic of Cameroon
+    CMR,
+
+    /// Canada
+    CAN,
+
+    /// Republic of Cabo Verde
+    CPV,
+
+    /// Bonaire, Sint Eustatius and Saba
+    BES,
+
+    /// Cayman Islands
+    CYM,
+
+    /// Central African Republic
+    CAF,
+
+    /// Republic of Chad
+    TCD,
+
+    /// Republic of Chile
+    CHL,
+
+    /// People's Republic of China
+    CHN,
+
+    /// Territory of Christmas Island
+    CXR,
+
+    /// Territory of the Cocos (Keeling) Islands
+    CCK,
+
+    /// Republic of Colombia
+    COL,
+
+    /// Union of the Comoros
+    COM,
+
+    /// Cook Islands
+    COK,
+
+    /// Republic of Costa Rica
+    CRI,
+
+    /// Republic of Côte d'Ivoire
+    CIV,
+
+    /// Republic of Croatia
+    HRV,
+
+    /// Republic of Cuba
+    CUB,
+
+    /// Country of Curaçao
+    CUW,
+
+    /// Republic of Cyprus
+    CYP,
+
+    /// Czech Republic
+    CZE,
+
+    /// Kingdom of Denmark
+    DNK,
+
+    /// Republic of Djibouti
+    DJI,
+
+    /// Commonwealth of Dominica
+    DMA,
+
+    /// Dominican Republic
+    DOM,
+
+    /// Democratic Republic of the Congo
+    COD,
+
+    /// Republic of Ecuador
+    ECU,
+
+    /// Arab Republic of Egypt
+    EGY,
+
+    /// Republic of El Salvador
+    SLV,
+
+    /// Republic of Equatorial Guinea
+    GNQ,
+
+    /// State of Eritrea
+    ERI,
+
+    /// Republic of Estonia
+    EST,
+
+    /// Kingdom of Eswatini
+    SWZ,
+
+    /// Federal Democratic Republic of Ethiopia
+    ETH,
+
+    /// Falkland Islands
+    FLK,
+
+    /// Faroe Islands
+    FRO,
+
+    /// Republic of Fiji
+    FJI,
+
+    /// Republic of Finland
+    FIN,
+
+    /// French Republic
+    FRA,
+
+    /// Guiana
+    GUF,
+
+    /// French Polynesia
+    PYF,
+
+    /// Territory of the French Southern and Antarctic Lands
+    ATF,
+
+    /// Gabonese Republic
+    GAB,
+
+    /// Republic of the Gambia
+    GMB,
+
+    /// Georgia
+    GEO,
+
+    /// Federal Republic of Germany
+    DEU,
+
+    /// Republic of Ghana
+    GHA,
+
+    /// Gibraltar
+    GIB,
+
+    /// Hellenic Republic
+    GRC,
+
+    /// Greenland
+    GRL,
+
+    /// Grenada
+    GRD,
+
+    /// Guadeloupe
+    GLP,
+
+    /// Guam
+    GUM,
+
+    /// Republic of Guatemala
+    GTM,
+
+    /// Bailiwick of Guernsey
+    GGY,
+
+    /// Republic of Guinea
+    GIN,
+
+    /// Republic of Guinea-Bissau
+    GNB,
+
+    /// Co-operative Republic of Guyana
+    GUY,
+
+    /// Republic of Haiti
+    HTI,
+
+    /// Heard Island and McDonald Islands
+    HMD,
+
+    /// Republic of Honduras
+    HND,
+
+    /// Hong Kong Special Administrative Region of the People's Republic of China
+    HKG,
+
+    /// Hungary
+    HUN,
+
+    /// Iceland
+    ISL,
+
+    /// Republic of India
+    IND,
+
+    /// Republic of Indonesia
+    IDN,
+
+    /// Islamic Republic of Iran
+    IRN,
+
+    /// Republic of Iraq
+    IRQ,
+
+    /// Republic of Ireland
+    IRL,
+
+    /// Isle of Man
+    IMN,
+
+    /// State of Israel
+    ISR,
+
+    /// Italian Republic
+    ITA,
+
+    /// Jamaica
+    JAM,
+
+    /// Japan
+    JPN,
+
+    /// Bailiwick of Jersey
+    JEY,
+
+    /// Hashemite Kingdom of Jordan
+    JOR,
+
+    /// Republic of Kazakhstan
+    KAZ,
+
+    /// Republic of Kenya
+    KEN,
+
+    /// Independent and Sovereign Republic of Kiribati
+    KIR,
+
+    /// Republic of Kosovo
+    UNK,
+
+    /// State of Kuwait
+    KWT,
+
+    /// Kyrgyz Republic
+    KGZ,
+
+    /// Lao People's Democratic Republic
+    LAO,
+
+    /// Republic of Latvia
+    LVA,
+
+    /// Lebanese Republic
+    LBN,
+
+    /// Kingdom of Lesotho
+    LSO,
+
+    /// Republic of Liberia
+    LBR,
+
+    /// State of Libya
+    LBY,
+
+    /// Principality of Liechtenstein
+    LIE,
+
+    /// Republic of Lithuania
+    LTU,
+
+    /// Grand Duchy of Luxembourg
+    LUX,
+
+    /// Macao Special Administrative Region of the People's Republic of China
+    MAC,
+
+    /// Republic of Madagascar
+    MDG,
+
+    /// Republic of Malawi
+    MWI,
+
+    /// Malaysia
+    MYS,
+
+    /// Republic of the Maldives
+    MDV,
+
+    /// Republic of Mali
+    MLI,
+
+    /// Republic of Malta
+    MLT,
+
+    /// Republic of the Marshall Islands
+    MHL,
+
+    /// Martinique
+    MTQ,
+
+    /// Islamic Republic of Mauritania
+    MRT,
+
+    /// Republic of Mauritius
+    MUS,
+
+    /// Department of Mayotte
+    MYT,
+
+    /// United Mexican States
+    MEX,
+
+    /// Federated States of Micronesia
+    FSM,
+
+    /// Republic of Moldova
+    MDA,
+
+    /// Principality of Monaco
+    MCO,
+
+    /// Mongolia
+    MNG,
+
+    /// Montenegro
+    MNE,
+
+    /// Montserrat
+    MSR,
+
+    /// Kingdom of Morocco
+    MAR,
+
+    /// Republic of Mozambique
+    MOZ,
+
+    /// Republic of the Union of Myanmar
+    MMR,
+
+    /// Republic of Namibia
+    NAM,
+
+    /// Republic of Nauru
+    NRU,
+
+    /// Federal Democratic Republic of Nepal
+    NPL,
+
+    /// Kingdom of the Netherlands
+    NLD,
+
+    /// New Caledonia
+    NCL,
+
+    /// New Zealand
+    NZL,
+
+    /// Republic of Nicaragua
+    NIC,
+
+    /// Republic of Niger
+    NER,
+
+    /// Federal Republic of Nigeria
+    NGA,
+
+    /// Niue
+    NIU,
+
+    /// Territory of Norfolk Island
+    NFK,
+
+    /// Democratic People's Republic of Korea
+    PRK,
+
+    /// Republic of North Macedonia
+    MKD,
+
+    /// Commonwealth of the Northern Mariana Islands
+    MNP,
+
+    /// Kingdom of Norway
+    NOR,
+
+    /// Sultanate of Oman
+    OMN,
+
+    /// Islamic Republic of Pakistan
+    PAK,
+
+    /// Republic of Palau
+    PLW,
+
+    /// State of Palestine
+    PSE,
+
+    /// Republic of Panama
+    PAN,
+
+    /// Independent State of Papua New Guinea
+    PNG,
+
+    /// Republic of Paraguay
+    PRY,
+
+    /// Republic of Peru
+    PER,
+
+    /// Republic of the Philippines
+    PHL,
+
+    /// Pitcairn Group of Islands
+    PCN,
+
+    /// Republic of Poland
+    POL,
+
+    /// Portuguese Republic
+    PRT,
+
+    /// Commonwealth of Puerto Rico
+    PRI,
+
+    /// State of Qatar
+    QAT,
+
+    /// Republic of the Congo
+    COG,
+
+    /// Réunion Island
+    REU,
+
+    /// Romania
+    ROU,
+
+    /// Russian Federation
+    RUS,
+
+    /// Republic of Rwanda
+    RWA,
+
+    /// Collectivity of Saint Barthélemy
+    BLM,
+
+    /// Saint Helena, Ascension and Tristan da Cunha
+    SHN,
+
+    /// Federation of Saint Christopher and Nevis
+    KNA,
+
+    /// Saint Lucia
+    LCA,
+
+    /// Saint Martin
+    MAF,
+
+    /// Saint Pierre and Miquelon
+    SPM,
+
+    /// Saint Vincent and the Grenadines
+    VCT,
+
+    /// Independent State of Samoa
+    WSM,
+
+    /// Most Serene Republic of San Marino
+    SMR,
+
+    /// Democratic Republic of São Tomé and Príncipe
+    STP,
+
+    /// Kingdom of Saudi Arabia
+    SAU,
+
+    /// Republic of Senegal
+    SEN,
+
+    /// Republic of Serbia
+    SRB,
+
+    /// Republic of Seychelles
+    SYC,
+
+    /// Republic of Sierra Leone
+    SLE,
+
+    /// Republic of Singapore
+    SGP,
+
+    /// Sint Maarten
+    SXM,
+
+    /// Slovak Republic
+    SVK,
+
+    /// Republic of Slovenia
+    SVN,
+
+    /// Solomon Islands
+    SLB,
+
+    /// Federal Republic of Somalia
+    SOM,
+
+    /// Republic of South Africa
+    ZAF,
+
+    /// South Georgia and the South Sandwich Islands
+    SGS,
+
+    /// Republic of Korea
+    KOR,
+
+    /// Republic of South Sudan
+    SSD,
+
+    /// Kingdom of Spain
+    ESP,
+
+    /// Democratic Socialist Republic of Sri Lanka
+    LKA,
+
+    /// Republic of the Sudan
+    SDN,
+
+    /// Republic of Suriname
+    SUR,
+
+    /// Svalbard og Jan Mayen
+    SJM,
+
+    /// Kingdom of Sweden
+    SWE,
+
+    /// Swiss Confederation
+    CHE,
+
+    /// Syrian Arab Republic
+    SYR,
+
+    /// Republic of China (Taiwan)
+    TWN,
+
+    /// Republic of Tajikistan
+    TJK,
+
+    /// United Republic of Tanzania
+    TZA,
+
+    /// Kingdom of Thailand
+    THA,
+
+    /// Democratic Republic of Timor-Leste
+    TLS,
+
+    /// Togolese Republic
+    TGO,
+
+    /// Tokelau
+    TKL,
+
+    /// Kingdom of Tonga
+    TON,
+
+    /// Republic of Trinidad and Tobago
+    TTO,
+
+    /// Tunisian Republic
+    TUN,
+
+    /// Republic of Turkey
+    TUR,
+
+    /// Turkmenistan
+    TKM,
+
+    /// Turks and Caicos Islands
+    TCA,
+
+    /// Tuvalu
+    TUV,
+
+    /// Republic of Uganda
+    UGA,
+
+    /// Ukraine
+    UKR,
+
+    /// United Arab Emirates
+    ARE,
+
+    /// United Kingdom of Great Britain and Northern Ireland
+    GBR,
+
+    /// United States of America
+    USA,
+
+    /// United States Minor Outlying Islands
+    UMI,
+
+    /// Virgin Islands of the United States
+    VIR,
+
+    /// Oriental Republic of Uruguay
+    URY,
+
+    /// Republic of Uzbekistan
+    UZB,
+
+    /// Republic of Vanuatu
+    VUT,
+
+    /// Vatican City State
+    VAT,
+
+    /// Bolivarian Republic of Venezuela
+    VEN,
+
+    /// Socialist Republic of Vietnam
+    VNM,
+
+    /// Territory of the Wallis and Futuna Islands
+    WLF,
+
+    /// Sahrawi Arab Democratic Republic
+    ESH,
+
+    /// Republic of Yemen
+    YEM,
+
+    /// Republic of Zambia
+    ZMB,
+
+    /// Republic of Zimbabwe
+    ZWE,
+}
+
 impl core::ops::Deref for CCA3 {
     type Target = super::types::Country;
 

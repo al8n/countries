@@ -1,4 +1,6 @@
+//! All world countries, ISO- codes and data points about them, as well as tools for interfacing with that data.
 #![forbid(unsafe_code)]
+// #![deny(missing_docs)]
 #![cfg_attr(not(feature = "std"), no_std)]
 #![cfg_attr(docsrs, feature(doc_cfg))]
 #![cfg_attr(docsrs, allow(unused_attributes))]
@@ -46,6 +48,7 @@ mod serde;
 // #[cfg(feature = "std")]
 // impl std::error::Error for ParseCountryError {}
 
+/// A map can be built in compile time
 #[derive(Debug, PartialEq, Eq, Hash, PartialOrd, Ord)]
 pub struct StaticMap<K: 'static, V: 'static> {
     map: &'static [(K, V)],
@@ -110,6 +113,7 @@ impl<K: 'static, V: 'static> StaticMap<K, V> {
 }
 
 impl<K: 'static + Eq, V: 'static> StaticMap<K, V> {
+    /// Returns the value at the given key.
     pub fn get<Q>(&self, k: &Q) -> Option<&'static V>
     where
         K: Borrow<Q>,
@@ -121,6 +125,7 @@ impl<K: 'static + Eq, V: 'static> StaticMap<K, V> {
             .map(|(_, v)| v)
     }
 
+    /// Returns if the key is already present in the map or not.
     pub fn contains<Q>(&self, k: &Q) -> bool
     where
         K: Borrow<Q>,

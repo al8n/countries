@@ -1,23 +1,24 @@
 // Auto generated file, please do not modify
 
 use super::types::*;
+/// Islamic Republic of Afghanistan
 pub const AF: &Country = &Country {
     name: &CountryMeta {
         common: "Afghanistan",
         official: "Islamic Republic of Afghanistan",
         native: &crate::StaticMap::new(&[
             (
-                "prs",
-                &CountryName {
-                    common: "افغانستان",
-                    official: "جمهوری اسلامی افغانستان",
-                },
-            ),
-            (
                 "pus",
                 &CountryName {
                     common: "افغانستان",
                     official: "د افغانستان اسلامي جمهوریت",
+                },
+            ),
+            (
+                "prs",
+                &CountryName {
+                    common: "افغانستان",
+                    official: "جمهوری اسلامی افغانستان",
                 },
             ),
             (
@@ -118,10 +119,10 @@ pub const AF: &Country = &Country {
     locale: &Locale {
         ietf: &["fa-AF", "prs-AF", "ps-AF", "uz-Arab-AF", "tk-AF"],
         date_formats: &crate::StaticMap::new(&[
-            ("fa-AF", "yyyy/M/dd"),
+            ("prs-AF", "MM/dd/yyyy"),
             ("uz-Arab-AF", "GG yyyy-MM-dd"),
             ("ps-AF", "GG yyyy-MM-dd"),
-            ("prs-AF", "MM/dd/yyyy"),
+            ("fa-AF", "yyyy/M/dd"),
         ]),
         timezones: &[&Timezone {
             name: "Asia/Kabul",
@@ -156,14 +157,6 @@ pub const AF: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ps",
-                    &SubdivisionMeta {
-                        official: "Bakhshān",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "fa",
                     &SubdivisionMeta {
                         official: "Badakhshān",
@@ -175,6 +168,14 @@ pub const AF: &Country = &Country {
                     "en",
                     &SubdivisionMeta {
                         official: "Badakhshan",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "ps",
+                    &SubdivisionMeta {
+                        official: "Bakhshān",
                         common: None,
                         native: None,
                     },
@@ -216,11 +217,11 @@ pub const AF: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fa",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Baghlān",
+                        official: "Baghlan",
                         common: None,
-                        native: Some("بغلان"),
+                        native: None,
                     },
                 ),
                 (
@@ -232,11 +233,11 @@ pub const AF: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fa",
                     &SubdivisionMeta {
-                        official: "Baghlan",
+                        official: "Baghlān",
                         common: None,
-                        native: None,
+                        native: Some("بغلان"),
                     },
                 ),
             ]),
@@ -254,19 +255,19 @@ pub const AF: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Balkh",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "fa",
                     &SubdivisionMeta {
                         official: "Balkh",
                         common: None,
                         native: Some("بلخ"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Balkh",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -284,19 +285,19 @@ pub const AF: &Country = &Country {
                     },
                 ),
                 (
-                    "fa",
-                    &SubdivisionMeta {
-                        official: "Bāmyān",
-                        common: None,
-                        native: Some("بامیان"),
-                    },
-                ),
-                (
                     "ps",
                     &SubdivisionMeta {
                         official: "Bāmyān",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "fa",
+                    &SubdivisionMeta {
+                        official: "Bāmyān",
+                        common: None,
+                        native: Some("بامیان"),
                     },
                 ),
             ]),
@@ -305,14 +306,6 @@ pub const AF: &Country = &Country {
             iso: "AF-DAY",
             ty: None,
             meta: &crate::StaticMap::new(&[
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Daykundi",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "fa",
                     &SubdivisionMeta {
@@ -325,6 +318,14 @@ pub const AF: &Country = &Country {
                     "ps",
                     &SubdivisionMeta {
                         official: "Dāykundī",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Daykundi",
                         common: None,
                         native: None,
                     },
@@ -344,19 +345,19 @@ pub const AF: &Country = &Country {
                     },
                 ),
                 (
-                    "fa",
-                    &SubdivisionMeta {
-                        official: "Farāh",
-                        common: None,
-                        native: Some("فراه"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Farah",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "fa",
+                    &SubdivisionMeta {
+                        official: "Farāh",
+                        common: None,
+                        native: Some("فراه"),
                     },
                 ),
             ]),
@@ -396,14 +397,6 @@ pub const AF: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ps",
-                    &SubdivisionMeta {
-                        official: "Ghaznī",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "fa",
                     &SubdivisionMeta {
                         official: "Ghaznī",
@@ -419,6 +412,14 @@ pub const AF: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "ps",
+                    &SubdivisionMeta {
+                        official: "Ghaznī",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -426,19 +427,19 @@ pub const AF: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fa",
-                    &SubdivisionMeta {
-                        official: "Ghōr",
-                        common: None,
-                        native: Some("غور"),
-                    },
-                ),
-                (
                     "ps",
                     &SubdivisionMeta {
                         official: "Ghōr",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "fa",
+                    &SubdivisionMeta {
+                        official: "Ghōr",
+                        common: None,
+                        native: Some("غور"),
                     },
                 ),
                 (
@@ -456,19 +457,19 @@ pub const AF: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ps",
-                    &SubdivisionMeta {
-                        official: "Helmand",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "fa",
                     &SubdivisionMeta {
                         official: "Helmand",
                         common: None,
                         native: Some("هلمند"),
+                    },
+                ),
+                (
+                    "ps",
+                    &SubdivisionMeta {
+                        official: "Helmand",
+                        common: None,
+                        native: None,
                     },
                 ),
                 (
@@ -486,9 +487,9 @@ pub const AF: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ps",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Herāt",
+                        official: "Herat",
                         common: None,
                         native: None,
                     },
@@ -502,9 +503,9 @@ pub const AF: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "ps",
                     &SubdivisionMeta {
-                        official: "Herat",
+                        official: "Herāt",
                         common: None,
                         native: None,
                     },
@@ -515,14 +516,6 @@ pub const AF: &Country = &Country {
             iso: "AF-JOW",
             ty: None,
             meta: &crate::StaticMap::new(&[
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Jowzjan",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "fa",
                     &SubdivisionMeta {
@@ -535,6 +528,14 @@ pub const AF: &Country = &Country {
                     "ps",
                     &SubdivisionMeta {
                         official: "Jowzjān",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Jowzjan",
                         common: None,
                         native: None,
                     },
@@ -576,19 +577,19 @@ pub const AF: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fa",
-                    &SubdivisionMeta {
-                        official: "Kandahār",
-                        common: None,
-                        native: Some("قندهار"),
-                    },
-                ),
-                (
                     "ps",
                     &SubdivisionMeta {
                         official: "Kandahār",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "fa",
+                    &SubdivisionMeta {
+                        official: "Kandahār",
+                        common: None,
+                        native: Some("قندهار"),
                     },
                 ),
                 (
@@ -614,17 +615,17 @@ pub const AF: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "ps",
                     &SubdivisionMeta {
-                        official: "Kapisa",
+                        official: "Kāpīsā",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ps",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kāpīsā",
+                        official: "Kapisa",
                         common: None,
                         native: None,
                     },
@@ -704,19 +705,19 @@ pub const AF: &Country = &Country {
                     },
                 ),
                 (
-                    "ps",
-                    &SubdivisionMeta {
-                        official: "Kunduz",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "fa",
                     &SubdivisionMeta {
                         official: "Kunduz",
                         common: None,
                         native: Some("کندز"),
+                    },
+                ),
+                (
+                    "ps",
+                    &SubdivisionMeta {
+                        official: "Kunduz",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -726,17 +727,17 @@ pub const AF: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ps",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Laghmān",
+                        official: "Laghman",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ps",
                     &SubdivisionMeta {
-                        official: "Laghman",
+                        official: "Laghmān",
                         common: None,
                         native: None,
                     },
@@ -764,19 +765,19 @@ pub const AF: &Country = &Country {
                     },
                 ),
                 (
-                    "fa",
-                    &SubdivisionMeta {
-                        official: "Lōgar",
-                        common: None,
-                        native: Some("لوگَر"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Logar",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "fa",
+                    &SubdivisionMeta {
+                        official: "Lōgar",
+                        common: None,
+                        native: Some("لوگَر"),
                     },
                 ),
             ]),
@@ -786,11 +787,11 @@ pub const AF: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "fa",
                     &SubdivisionMeta {
-                        official: "Nangarhar",
+                        official: "Nangarhār",
                         common: None,
-                        native: None,
+                        native: Some("ننگرهار"),
                     },
                 ),
                 (
@@ -802,11 +803,11 @@ pub const AF: &Country = &Country {
                     },
                 ),
                 (
-                    "fa",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Nangarhār",
+                        official: "Nangarhar",
                         common: None,
-                        native: Some("ننگرهار"),
+                        native: None,
                     },
                 ),
             ]),
@@ -824,19 +825,19 @@ pub const AF: &Country = &Country {
                     },
                 ),
                 (
-                    "fa",
-                    &SubdivisionMeta {
-                        official: "Nīmrōz",
-                        common: None,
-                        native: Some("نیمروز"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Nimruz",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "fa",
+                    &SubdivisionMeta {
+                        official: "Nīmrōz",
+                        common: None,
+                        native: Some("نیمروز"),
                     },
                 ),
             ]),
@@ -854,17 +855,17 @@ pub const AF: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "ps",
                     &SubdivisionMeta {
-                        official: "Nuristan",
+                        official: "Nūristān",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ps",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Nūristān",
+                        official: "Nuristan",
                         common: None,
                         native: None,
                     },
@@ -876,19 +877,19 @@ pub const AF: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ps",
-                    &SubdivisionMeta {
-                        official: "Paktīkā",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "fa",
                     &SubdivisionMeta {
                         official: "Paktīkā",
                         common: None,
                         native: Some("پکتیکا"),
+                    },
+                ),
+                (
+                    "ps",
+                    &SubdivisionMeta {
+                        official: "Paktīkā",
+                        common: None,
+                        native: None,
                     },
                 ),
                 (
@@ -914,19 +915,19 @@ pub const AF: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Paktia",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "fa",
                     &SubdivisionMeta {
                         official: "Paktiyā",
                         common: None,
                         native: Some("پکتیا"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Paktia",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -966,6 +967,14 @@ pub const AF: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
+                    "fa",
+                    &SubdivisionMeta {
+                        official: "Parwān",
+                        common: None,
+                        native: Some("پروان"),
+                    },
+                ),
+                (
                     "ps",
                     &SubdivisionMeta {
                         official: "Parwān",
@@ -979,14 +988,6 @@ pub const AF: &Country = &Country {
                         official: "Parwan",
                         common: None,
                         native: None,
-                    },
-                ),
-                (
-                    "fa",
-                    &SubdivisionMeta {
-                        official: "Parwān",
-                        common: None,
-                        native: Some("پروان"),
                     },
                 ),
             ]),
@@ -1026,19 +1027,19 @@ pub const AF: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Sar-e Pol",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "fa",
                     &SubdivisionMeta {
                         official: "Sar-e Pul",
                         common: None,
                         native: Some("سرپل"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Sar-e Pol",
+                        common: None,
+                        native: None,
                     },
                 ),
                 (
@@ -1064,19 +1065,19 @@ pub const AF: &Country = &Country {
                     },
                 ),
                 (
-                    "fa",
-                    &SubdivisionMeta {
-                        official: "Takhār",
-                        common: None,
-                        native: Some("تخار"),
-                    },
-                ),
-                (
                     "ps",
                     &SubdivisionMeta {
                         official: "Takhār",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "fa",
+                    &SubdivisionMeta {
+                        official: "Takhār",
+                        common: None,
+                        native: Some("تخار"),
                     },
                 ),
             ]),
@@ -1094,19 +1095,19 @@ pub const AF: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Urozgan",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "fa",
                     &SubdivisionMeta {
                         official: "Uruzgān",
                         common: None,
                         native: Some("اروزگان"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Urozgan",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -1124,19 +1125,19 @@ pub const AF: &Country = &Country {
                     },
                 ),
                 (
-                    "fa",
-                    &SubdivisionMeta {
-                        official: "Wardak",
-                        common: None,
-                        native: Some("ميدان وردگ"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Maidan Wardak",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "fa",
+                    &SubdivisionMeta {
+                        official: "Wardak",
+                        common: None,
+                        native: Some("ميدان وردگ"),
                     },
                 ),
             ]),
@@ -1145,14 +1146,6 @@ pub const AF: &Country = &Country {
             iso: "AF-ZAB",
             ty: None,
             meta: &crate::StaticMap::new(&[
-                (
-                    "fa",
-                    &SubdivisionMeta {
-                        official: "Zābul",
-                        common: None,
-                        native: Some("زابل"),
-                    },
-                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -1169,12 +1162,22 @@ pub const AF: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "fa",
+                    &SubdivisionMeta {
+                        official: "Zābul",
+                        common: None,
+                        native: Some("زابل"),
+                    },
+                ),
             ]),
         },
     ],
 };
 
+/// Islamic Republic of Afghanistan
 pub const AFG: &Country = AF;
+/// Åland Islands
 pub const AX: &Country = &Country {
     name: &CountryMeta {
         common: "Aland Islands",
@@ -1252,7 +1255,9 @@ pub const AX: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Åland Islands
 pub const ALA: &Country = AX;
+/// Republic of Albania
 pub const AL: &Country = &Country {
     name: &CountryMeta {
         common: "Albania",
@@ -1482,7 +1487,9 @@ pub const AL: &Country = &Country {
     ],
 };
 
+/// Republic of Albania
 pub const ALB: &Country = AL;
+/// People's Democratic Republic of Algeria
 pub const DZ: &Country = &Country {
     name: &CountryMeta {
         common: "Algeria",
@@ -1563,8 +1570,8 @@ pub const DZ: &Country = &Country {
     locale: &Locale {
         ietf: &["ar-DZ", "fr-DZ", "kab-DZ"],
         date_formats: &crate::StaticMap::new(&[
-            ("kab-DZ", "dd/MM/yyyy"),
             ("fr-DZ", "dd/MM/yyyy"),
+            ("kab-DZ", "dd/MM/yyyy"),
             ("ar-DZ", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
@@ -2174,7 +2181,9 @@ pub const DZ: &Country = &Country {
     ],
 };
 
+/// People's Democratic Republic of Algeria
 pub const DZA: &Country = DZ;
+/// American Samoa
 pub const AS: &Country = &Country {
     name: &CountryMeta {
         common: "American Samoa",
@@ -2261,7 +2270,9 @@ pub const AS: &Country = &Country {
     subdivisions: &[],
 };
 
+/// American Samoa
 pub const ASM: &Country = AS;
+/// Principality of Andorra
 pub const AD: &Country = &Country {
     name: &CountryMeta {
         common: "Andorra",
@@ -2424,7 +2435,9 @@ pub const AD: &Country = &Country {
     ],
 };
 
+/// Principality of Andorra
 pub const AND: &Country = AD;
+/// Republic of Angola
 pub const AO: &Country = &Country {
     name: &CountryMeta {
         common: "Angola",
@@ -2493,7 +2506,7 @@ pub const AO: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["ln-AO", "pt-AO"],
-        date_formats: &crate::StaticMap::new(&[("ln-AO", "dd/MM/yyyy"), ("pt-AO", "dd/MM/yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("pt-AO", "dd/MM/yyyy"), ("ln-AO", "dd/MM/yyyy")]),
         timezones: &[&Timezone {
             name: "Africa/Lagos",
             ty: TimezoneType::Canonical,
@@ -2741,7 +2754,9 @@ pub const AO: &Country = &Country {
     ],
 };
 
+/// Republic of Angola
 pub const AGO: &Country = AO;
+/// Anguilla
 pub const AI: &Country = &Country {
     name: &CountryMeta {
         common: "Anguilla",
@@ -2819,7 +2834,9 @@ pub const AI: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Anguilla
 pub const AIA: &Country = AI;
+/// Antarctica
 pub const AQ: &Country = &Country {
     name: &CountryMeta {
         common: "Antarctica",
@@ -2944,7 +2961,9 @@ pub const AQ: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Antarctica
 pub const ATA: &Country = AQ;
+/// Antigua and Barbuda
 pub const AG: &Country = &Country {
     name: &CountryMeta {
         common: "Antigua and Barbuda",
@@ -3119,24 +3138,26 @@ pub const AG: &Country = &Country {
     ],
 };
 
+/// Antigua and Barbuda
 pub const ATG: &Country = AG;
+/// Argentine Republic
 pub const AR: &Country = &Country {
     name: &CountryMeta {
         common: "Argentina",
         official: "Argentine Republic",
         native: &crate::StaticMap::new(&[
             (
-                "grn",
-                &CountryName {
-                    common: "Argentina",
-                    official: "Argentine Republic",
-                },
-            ),
-            (
                 "spa",
                 &CountryName {
                     common: "Argentina",
                     official: "República Argentina",
+                },
+            ),
+            (
+                "grn",
+                &CountryName {
+                    common: "Argentina",
+                    official: "Argentine Republic",
                 },
             ),
         ]),
@@ -3585,7 +3606,9 @@ pub const AR: &Country = &Country {
     ],
 };
 
+/// Argentine Republic
 pub const ARG: &Country = AR;
+/// Republic of Armenia
 pub const AM: &Country = &Country {
     name: &CountryMeta {
         common: "Armenia",
@@ -3744,19 +3767,19 @@ pub const AM: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Armavir",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "hy",
                     &SubdivisionMeta {
                         official: "Armavir",
                         common: None,
                         native: Some("Արմավիր"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Armavir",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -3766,19 +3789,19 @@ pub const AM: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "hy",
-                    &SubdivisionMeta {
-                        official: "Geġark'unik'",
-                        common: None,
-                        native: Some("Գեղարքունիք"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Gegharkunik",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "hy",
+                    &SubdivisionMeta {
+                        official: "Geġark'unik'",
+                        common: None,
+                        native: Some("Գեղարքունիք"),
                     },
                 ),
             ]),
@@ -3788,19 +3811,19 @@ pub const AM: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "hy",
-                    &SubdivisionMeta {
-                        official: "Kotayk'",
-                        common: None,
-                        native: Some("Կոտայք"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Kotayk",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "hy",
+                    &SubdivisionMeta {
+                        official: "Kotayk'",
+                        common: None,
+                        native: Some("Կոտայք"),
                     },
                 ),
             ]),
@@ -3810,19 +3833,19 @@ pub const AM: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "hy",
-                    &SubdivisionMeta {
-                        official: "Loṙi",
-                        common: None,
-                        native: Some("Լոռի"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Lori",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "hy",
+                    &SubdivisionMeta {
+                        official: "Loṙi",
+                        common: None,
+                        native: Some("Լոռի"),
                     },
                 ),
             ]),
@@ -3832,19 +3855,19 @@ pub const AM: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Shirak",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "hy",
                     &SubdivisionMeta {
                         official: "Širak",
                         common: None,
                         native: Some("Շիրակ"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Shirak",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -3876,19 +3899,19 @@ pub const AM: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "hy",
-                    &SubdivisionMeta {
-                        official: "Tavuš",
-                        common: None,
-                        native: Some("Տավուշ"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Tavush",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "hy",
+                    &SubdivisionMeta {
+                        official: "Tavuš",
+                        common: None,
+                        native: Some("Տավուշ"),
                     },
                 ),
             ]),
@@ -3898,14 +3921,6 @@ pub const AM: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Vayots Dzor",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "hy",
                     &SubdivisionMeta {
                         official: "Vayoć Jor",
@@ -3913,26 +3928,36 @@ pub const AM: &Country = &Country {
                         native: Some("Վայոց Ձոր"),
                     },
                 ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Vayots Dzor",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
     ],
 };
 
+/// Republic of Armenia
 pub const ARM: &Country = AM;
+/// Aruba
 pub const AW: &Country = &Country {
     name: &CountryMeta {
         common: "Aruba",
         official: "Aruba",
         native: &crate::StaticMap::new(&[
             (
-                "nld",
+                "pap",
                 &CountryName {
                     common: "Aruba",
                     official: "Aruba",
                 },
             ),
             (
-                "pap",
+                "nld",
                 &CountryName {
                     common: "Aruba",
                     official: "Aruba",
@@ -4017,7 +4042,9 @@ pub const AW: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Aruba
 pub const ABW: &Country = AW;
+/// Commonwealth of Australia
 pub const AU: &Country = &Country {
     name: &CountryMeta {
         common: "Australia",
@@ -4315,7 +4342,9 @@ pub const AU: &Country = &Country {
     ],
 };
 
+/// Commonwealth of Australia
 pub const AUS: &Country = AU;
+/// Republic of Austria
 pub const AT: &Country = &Country {
     name: &CountryMeta {
         common: "Austria",
@@ -4387,7 +4416,7 @@ pub const AT: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["de-AT", "en-AT"],
-        date_formats: &crate::StaticMap::new(&[("de-AT", "dd.MM.yyyy"), ("en-AT", "dd/MM/yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("en-AT", "dd/MM/yyyy"), ("de-AT", "dd.MM.yyyy")]),
         timezones: &[&Timezone {
             name: "Europe/Vienna",
             ty: TimezoneType::Canonical,
@@ -4465,17 +4494,17 @@ pub const AT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Niederösterreich",
+                        official: "Lower Austria",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
-                        official: "Lower Austria",
+                        official: "Niederösterreich",
                         common: None,
                         native: None,
                     },
@@ -4487,17 +4516,17 @@ pub const AT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Oberösterreich",
+                        official: "Upper Austria",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
-                        official: "Upper Austria",
+                        official: "Oberösterreich",
                         common: None,
                         native: None,
                     },
@@ -4531,17 +4560,17 @@ pub const AT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
-                        official: "Styria",
+                        official: "Steiermark",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Steiermark",
+                        official: "Styria",
                         common: None,
                         native: None,
                     },
@@ -4553,17 +4582,17 @@ pub const AT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
-                        official: "Tyrol",
+                        official: "Tirol",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Tirol",
+                        official: "Tyrol",
                         common: None,
                         native: None,
                     },
@@ -4597,17 +4626,17 @@ pub const AT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
-                        official: "Vienna",
+                        official: "Wien",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Wien",
+                        official: "Vienna",
                         common: None,
                         native: None,
                     },
@@ -4617,7 +4646,9 @@ pub const AT: &Country = &Country {
     ],
 };
 
+/// Republic of Austria
 pub const AUT: &Country = AT;
+/// Republic of Azerbaijan
 pub const AZ: &Country = &Country {
     name: &CountryMeta {
         common: "Azerbaijan",
@@ -4684,8 +4715,8 @@ pub const AZ: &Country = &Country {
     locale: &Locale {
         ietf: &["az-Cyrl-AZ", "az-Latn-AZ"],
         date_formats: &crate::StaticMap::new(&[
-            ("az-Cyrl-AZ", "dd.MM.yyyy"),
             ("az-Latn-AZ", "dd.MM.yyyy"),
+            ("az-Cyrl-AZ", "dd.MM.yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Asia/Baku",
@@ -4720,17 +4751,17 @@ pub const AZ: &Country = &Country {
             ty: Some(""),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Naxçıvan",
+                        official: "Nakhchivan",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Nakhchivan",
+                        official: "Naxçıvan",
                         common: None,
                         native: None,
                     },
@@ -4830,7 +4861,7 @@ pub const AZ: &Country = &Country {
             ty: Some("municipality"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
                         official: "Naftalan",
                         common: None,
@@ -4838,7 +4869,7 @@ pub const AZ: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
                         official: "Naftalan",
                         common: None,
@@ -4852,17 +4883,17 @@ pub const AZ: &Country = &Country {
             ty: Some("municipality"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Nakhchivan",
+                        official: "Naxçıvan",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Naxçıvan",
+                        official: "Nakhchivan",
                         common: None,
                         native: None,
                     },
@@ -4984,17 +5015,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Abşeron",
+                        official: "Absheron",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Absheron",
+                        official: "Abşeron",
                         common: None,
                         native: None,
                     },
@@ -5006,17 +5037,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Aghjabadi",
+                        official: "Ağcabədi",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Ağcabədi",
+                        official: "Aghjabadi",
                         common: None,
                         native: None,
                     },
@@ -5050,17 +5081,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Ağdaş",
+                        official: "Agdash",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Agdash",
+                        official: "Ağdaş",
                         common: None,
                         native: None,
                     },
@@ -5116,7 +5147,7 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
                         official: "Astara",
                         common: None,
@@ -5124,7 +5155,7 @@ pub const AZ: &Country = &Country {
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
                         official: "Astara",
                         common: None,
@@ -5160,17 +5191,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Balakan",
+                        official: "Balakən",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Balakən",
+                        official: "Balakan",
                         common: None,
                         native: None,
                     },
@@ -5204,17 +5235,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Beyləqan",
+                        official: "Beylagan",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Beylagan",
+                        official: "Beyləqan",
                         common: None,
                         native: None,
                     },
@@ -5226,17 +5257,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Biləsuvar",
+                        official: "Bilasuvar",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Bilasuvar",
+                        official: "Biləsuvar",
                         common: None,
                         native: None,
                     },
@@ -5248,17 +5279,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Cəbrayıl",
+                        official: "Jabrayil",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Jabrayil",
+                        official: "Cəbrayıl",
                         common: None,
                         native: None,
                     },
@@ -5270,17 +5301,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Cəlilabad",
+                        official: "Jalilabad",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Jalilabad",
+                        official: "Cəlilabad",
                         common: None,
                         native: None,
                     },
@@ -5336,17 +5367,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Fuzuli",
+                        official: "Füzuli",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Füzuli",
+                        official: "Fuzuli",
                         common: None,
                         native: None,
                     },
@@ -5402,17 +5433,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Goychay",
+                        official: "Göyçay",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Göyçay",
+                        official: "Goychay",
                         common: None,
                         native: None,
                     },
@@ -5424,17 +5455,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Göygöl",
+                        official: "Goygol",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Goygol",
+                        official: "Göygöl",
                         common: None,
                         native: None,
                     },
@@ -5512,17 +5543,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Kalbajar",
+                        official: "Kəlbəcər",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kəlbəcər",
+                        official: "Kalbajar",
                         common: None,
                         native: None,
                     },
@@ -5534,17 +5565,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kǝngǝrli",
+                        official: "Kangarli",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Kangarli",
+                        official: "Kǝngǝrli",
                         common: None,
                         native: None,
                     },
@@ -5556,17 +5587,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kürdəmir",
+                        official: "Kurdamir",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Kurdamir",
+                        official: "Kürdəmir",
                         common: None,
                         native: None,
                     },
@@ -5578,17 +5609,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Lachin",
+                        official: "Laçın",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Laçın",
+                        official: "Lachin",
                         common: None,
                         native: None,
                     },
@@ -5600,17 +5631,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Lənkəran",
+                        official: "Lankaran",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Lankaran",
+                        official: "Lənkəran",
                         common: None,
                         native: None,
                     },
@@ -5644,17 +5675,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Masallı",
+                        official: "Masally",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Masally",
+                        official: "Masallı",
                         common: None,
                         native: None,
                     },
@@ -5688,17 +5719,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Oghuz",
+                        official: "Oğuz",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Oğuz",
+                        official: "Oghuz",
                         common: None,
                         native: None,
                     },
@@ -5710,7 +5741,7 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
                         official: "Ordubad",
                         common: None,
@@ -5718,7 +5749,7 @@ pub const AZ: &Country = &Country {
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
                         official: "Ordubad",
                         common: None,
@@ -5776,17 +5807,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Qazax",
+                        official: "Qazakh",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Qazakh",
+                        official: "Qazax",
                         common: None,
                         native: None,
                     },
@@ -5798,17 +5829,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Qobustan",
+                        official: "Gobustan",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Gobustan",
+                        official: "Qobustan",
                         common: None,
                         native: None,
                     },
@@ -5908,7 +5939,7 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
                         official: "Sabirabad",
                         common: None,
@@ -5916,7 +5947,7 @@ pub const AZ: &Country = &Country {
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
                         official: "Sabirabad",
                         common: None,
@@ -5930,17 +5961,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Shabran",
+                        official: "Şabran",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Şabran",
+                        official: "Shabran",
                         common: None,
                         native: None,
                     },
@@ -5952,17 +5983,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Sədərək",
+                        official: "Sadarak",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Sadarak",
+                        official: "Sədərək",
                         common: None,
                         native: None,
                     },
@@ -6018,7 +6049,7 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
                         official: "Salyan",
                         common: None,
@@ -6026,7 +6057,7 @@ pub const AZ: &Country = &Country {
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
                         official: "Salyan",
                         common: None,
@@ -6040,17 +6071,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Şamaxı",
+                        official: "Shamakhi",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Shamakhi",
+                        official: "Şamaxı",
                         common: None,
                         native: None,
                     },
@@ -6084,17 +6115,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Samukh",
+                        official: "Samux",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Samux",
+                        official: "Samukh",
                         common: None,
                         native: None,
                     },
@@ -6128,17 +6159,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Siazan",
+                        official: "Siyəzən",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Siyəzən",
+                        official: "Siazan",
                         common: None,
                         native: None,
                     },
@@ -6150,17 +6181,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Shusha",
+                        official: "Şuşa",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Şuşa",
+                        official: "Shusha",
                         common: None,
                         native: None,
                     },
@@ -6194,7 +6225,7 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
                         official: "Tovuz",
                         common: None,
@@ -6202,7 +6233,7 @@ pub const AZ: &Country = &Country {
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
                         official: "Tovuz",
                         common: None,
@@ -6216,17 +6247,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Ucar",
+                        official: "Ujar",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Ujar",
+                        official: "Ucar",
                         common: None,
                         native: None,
                     },
@@ -6238,17 +6269,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Xaçmaz",
+                        official: "Khachmaz",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Khachmaz",
+                        official: "Xaçmaz",
                         common: None,
                         native: None,
                     },
@@ -6282,17 +6313,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Khojaly",
+                        official: "Xocalı",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Xocalı",
+                        official: "Khojaly",
                         common: None,
                         native: None,
                     },
@@ -6304,17 +6335,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Xocavənd",
+                        official: "Khojavend",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Khojavend",
+                        official: "Xocavənd",
                         common: None,
                         native: None,
                     },
@@ -6326,17 +6357,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Yardymli",
+                        official: "Yardımlı",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Yardımlı",
+                        official: "Yardymli",
                         common: None,
                         native: None,
                     },
@@ -6348,17 +6379,17 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Yevlax",
+                        official: "Yevlakh",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
-                        official: "Yevlakh",
+                        official: "Yevlax",
                         common: None,
                         native: None,
                     },
@@ -6392,7 +6423,7 @@ pub const AZ: &Country = &Country {
             ty: Some("rayon"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "az",
                     &SubdivisionMeta {
                         official: "Zaqatala",
                         common: None,
@@ -6400,7 +6431,7 @@ pub const AZ: &Country = &Country {
                     },
                 ),
                 (
-                    "az",
+                    "en",
                     &SubdivisionMeta {
                         official: "Zaqatala",
                         common: None,
@@ -6434,7 +6465,9 @@ pub const AZ: &Country = &Country {
     ],
 };
 
+/// Republic of Azerbaijan
 pub const AZE: &Country = AZ;
+/// Commonwealth of the Bahamas
 pub const BS: &Country = &Country {
     name: &CountryMeta {
         common: "Bahamas",
@@ -6897,7 +6930,9 @@ pub const BS: &Country = &Country {
     ],
 };
 
+/// Commonwealth of the Bahamas
 pub const BHS: &Country = BS;
+/// Kingdom of Bahrain
 pub const BH: &Country = &Country {
     name: &CountryMeta {
         common: "Bahrain",
@@ -6990,19 +7025,19 @@ pub const BH: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Al Janūbīyah",
                         common: None,
                         native: Some("Southern Governorate"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -7012,19 +7047,19 @@ pub const BH: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Al Muḩarraq",
                         common: None,
                         native: Some("Muharraq Governorate"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -7034,14 +7069,6 @@ pub const BH: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
-                    &SubdivisionMeta {
-                        official: "Ash Shamālīyah",
-                        common: None,
-                        native: Some("Northern Governorate"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "",
@@ -7049,12 +7076,22 @@ pub const BH: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "ar",
+                    &SubdivisionMeta {
+                        official: "Ash Shamālīyah",
+                        common: None,
+                        native: Some("Northern Governorate"),
+                    },
+                ),
             ]),
         },
     ],
 };
 
+/// Kingdom of Bahrain
 pub const BHR: &Country = BH;
+/// People's Republic of Bangladesh
 pub const BD: &Country = &Country {
     name: &CountryMeta {
         common: "Bangladesh",
@@ -7122,8 +7159,8 @@ pub const BD: &Country = &Country {
     locale: &Locale {
         ietf: &["bn-BD", "ccp-BD"],
         date_formats: &crate::StaticMap::new(&[
-            ("bn-BD", "dd/MM/yyyy"),
             ("ccp-BD", "dddd/MMMM/yyyyyyyy"),
+            ("bn-BD", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Asia/Dhaka",
@@ -7254,17 +7291,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "D",
+                        official: "Bagerhat",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Bagerhat",
+                        official: "D",
                         common: None,
                         native: None,
                     },
@@ -7298,17 +7335,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "A",
+                        official: "Barguna",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Barguna",
+                        official: "A",
                         common: None,
                         native: None,
                     },
@@ -7342,17 +7379,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Bhola",
+                        official: "A",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "A",
+                        official: "Bhola",
                         common: None,
                         native: None,
                     },
@@ -7364,17 +7401,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Bogura",
+                        official: "E",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Bogura",
                         common: None,
                         native: None,
                     },
@@ -7386,17 +7423,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "B",
+                        official: "Brahmanbaria",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Brahmanbaria",
+                        official: "B",
                         common: None,
                         native: None,
                     },
@@ -7474,17 +7511,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "D",
+                        official: "Chuadanga",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Chuadanga",
+                        official: "D",
                         common: None,
                         native: None,
                     },
@@ -7584,17 +7621,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Faridpur",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Faridpur",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -7606,17 +7643,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Feni",
+                        official: "B",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "B",
+                        official: "Feni",
                         common: None,
                         native: None,
                     },
@@ -7628,17 +7665,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Gaibandha",
+                        official: "F",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "F",
+                        official: "Gaibandha",
                         common: None,
                         native: None,
                     },
@@ -7694,17 +7731,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Habiganj",
+                        official: "G",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "G",
+                        official: "Habiganj",
                         common: None,
                         native: None,
                     },
@@ -7716,17 +7753,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Jamalpur",
+                        official: "H",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "H",
+                        official: "Jamalpur",
                         common: None,
                         native: None,
                     },
@@ -7738,17 +7775,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Jashore",
+                        official: "D",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "D",
+                        official: "Jashore",
                         common: None,
                         native: None,
                     },
@@ -7760,17 +7797,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Jhalakathi",
+                        official: "A",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "A",
+                        official: "Jhalakathi",
                         common: None,
                         native: None,
                     },
@@ -7782,17 +7819,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "D",
+                        official: "Jhenaidah",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Jhenaidah",
+                        official: "D",
                         common: None,
                         native: None,
                     },
@@ -7804,17 +7841,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Joypurhat",
+                        official: "E",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Joypurhat",
                         common: None,
                         native: None,
                     },
@@ -7870,17 +7907,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Kishoreganj",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kishoreganj",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -7914,17 +7951,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "D",
+                        official: "Kushtia",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kushtia",
+                        official: "D",
                         common: None,
                         native: None,
                     },
@@ -7936,17 +7973,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "B",
+                        official: "Lakshmipur",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Lakshmipur",
+                        official: "B",
                         common: None,
                         native: None,
                     },
@@ -7980,17 +8017,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Madaripur",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Madaripur",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -8024,17 +8061,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Manikganj",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Manikganj",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -8046,17 +8083,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Meherpur",
+                        official: "D",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "D",
+                        official: "Meherpur",
                         common: None,
                         native: None,
                     },
@@ -8068,17 +8105,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Moulvibazar",
+                        official: "G",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "G",
+                        official: "Moulvibazar",
                         common: None,
                         native: None,
                     },
@@ -8134,17 +8171,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Naogaon",
+                        official: "E",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Naogaon",
                         common: None,
                         native: None,
                     },
@@ -8222,17 +8259,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Natore",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Natore",
+                        official: "E",
                         common: None,
                         native: None,
                     },
@@ -8288,17 +8325,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "B",
+                        official: "Noakhali",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Noakhali",
+                        official: "B",
                         common: None,
                         native: None,
                     },
@@ -8310,17 +8347,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Pabna",
+                        official: "E",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Pabna",
                         common: None,
                         native: None,
                     },
@@ -8332,17 +8369,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Panchagarh",
+                        official: "F",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "F",
+                        official: "Panchagarh",
                         common: None,
                         native: None,
                     },
@@ -8354,17 +8391,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Patuakhali",
+                        official: "A",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "A",
+                        official: "Patuakhali",
                         common: None,
                         native: None,
                     },
@@ -8376,17 +8413,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Pirojpur",
+                        official: "A",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "A",
+                        official: "Pirojpur",
                         common: None,
                         native: None,
                     },
@@ -8420,17 +8457,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Rajshahi",
+                        official: "E",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Rajshahi",
                         common: None,
                         native: None,
                     },
@@ -8442,17 +8479,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Rangamati",
+                        official: "B",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "B",
+                        official: "Rangamati",
                         common: None,
                         native: None,
                     },
@@ -8464,17 +8501,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Rangpur",
+                        official: "F",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "F",
+                        official: "Rangpur",
                         common: None,
                         native: None,
                     },
@@ -8508,17 +8545,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Shariatpur",
+                        official: "C",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Shariatpur",
                         common: None,
                         native: None,
                     },
@@ -8552,17 +8589,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Sirajganj",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Sirajganj",
+                        official: "E",
                         common: None,
                         native: None,
                     },
@@ -8640,17 +8677,17 @@ pub const BD: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bn",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Thakurgaon",
+                        official: "F",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "bn",
                     &SubdivisionMeta {
-                        official: "F",
+                        official: "Thakurgaon",
                         common: None,
                         native: None,
                     },
@@ -8660,7 +8697,9 @@ pub const BD: &Country = &Country {
     ],
 };
 
+/// People's Republic of Bangladesh
 pub const BGD: &Country = BD;
+/// Barbados
 pub const BB: &Country = &Country {
     name: &CountryMeta {
         common: "Barbados",
@@ -8871,7 +8910,9 @@ pub const BB: &Country = &Country {
     ],
 };
 
+/// Barbados
 pub const BRB: &Country = BB;
+/// Republic of Belarus
 pub const BY: &Country = &Country {
     name: &CountryMeta {
         common: "Belarus",
@@ -8952,7 +8993,7 @@ pub const BY: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["be-BY", "ru-BY"],
-        date_formats: &crate::StaticMap::new(&[("ru-BY", "dd.MM.yyyy"), ("be-BY", "dd.MM.yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("be-BY", "dd.MM.yyyy"), ("ru-BY", "dd.MM.yyyy")]),
         timezones: &[&Timezone {
             name: "Europe/Minsk",
             ty: TimezoneType::Canonical,
@@ -8974,14 +9015,6 @@ pub const BY: &Country = &Country {
             ty: Some("oblast"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "be",
-                    &SubdivisionMeta {
-                        official: "Bresckaja voblasć",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "ru",
                     &SubdivisionMeta {
                         official: "Brestskaja oblast'",
@@ -8997,6 +9030,14 @@ pub const BY: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "be",
+                    &SubdivisionMeta {
+                        official: "Bresckaja voblasć",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -9004,17 +9045,17 @@ pub const BY: &Country = &Country {
             ty: Some("oblast"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "be",
+                    "ru",
                     &SubdivisionMeta {
-                        official: "Homieĺskaja voblasć",
+                        official: "Gomel'skaja oblast'",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ru",
+                    "be",
                     &SubdivisionMeta {
-                        official: "Gomel'skaja oblast'",
+                        official: "Homieĺskaja voblasć",
                         common: None,
                         native: None,
                     },
@@ -9034,9 +9075,9 @@ pub const BY: &Country = &Country {
             ty: Some("oblast"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ru",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Grodnenskaja oblast'",
+                        official: "Grodno Region",
                         common: None,
                         native: None,
                     },
@@ -9050,9 +9091,9 @@ pub const BY: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "ru",
                     &SubdivisionMeta {
-                        official: "Grodno Region",
+                        official: "Grodnenskaja oblast'",
                         common: None,
                         native: None,
                     },
@@ -9063,14 +9104,6 @@ pub const BY: &Country = &Country {
             iso: "BY-MA",
             ty: Some("oblast"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "be",
-                    &SubdivisionMeta {
-                        official: "Mahilioŭskaja voblasć",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -9083,6 +9116,14 @@ pub const BY: &Country = &Country {
                     "ru",
                     &SubdivisionMeta {
                         official: "Mogilevskaja oblast'",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "be",
+                    &SubdivisionMeta {
+                        official: "Mahilioŭskaja voblasć",
                         common: None,
                         native: None,
                     },
@@ -9102,17 +9143,17 @@ pub const BY: &Country = &Country {
                     },
                 ),
                 (
-                    "be",
+                    "ru",
                     &SubdivisionMeta {
-                        official: "Minskaja voblasć",
+                        official: "Minskaja oblast'",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ru",
+                    "be",
                     &SubdivisionMeta {
-                        official: "Minskaja oblast'",
+                        official: "Minskaja voblasć",
                         common: None,
                         native: None,
                     },
@@ -9132,17 +9173,17 @@ pub const BY: &Country = &Country {
                     },
                 ),
                 (
-                    "ru",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Vitebskaja oblast'",
+                        official: "Vitebsk Region",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ru",
                     &SubdivisionMeta {
-                        official: "Vitebsk Region",
+                        official: "Vitebskaja oblast'",
                         common: None,
                         native: None,
                     },
@@ -9153,14 +9194,6 @@ pub const BY: &Country = &Country {
             iso: "BY-HM",
             ty: Some("city"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "ru",
-                    &SubdivisionMeta {
-                        official: "Gorod Minsk",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -9177,24 +9210,27 @@ pub const BY: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "ru",
+                    &SubdivisionMeta {
+                        official: "Gorod Minsk",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
     ],
 };
 
+/// Republic of Belarus
 pub const BLR: &Country = BY;
+/// Kingdom of Belgium
 pub const BE: &Country = &Country {
     name: &CountryMeta {
         common: "Belgium",
         official: "Kingdom of Belgium",
         native: &crate::StaticMap::new(&[
-            (
-                "deu",
-                &CountryName {
-                    common: "Belgien",
-                    official: "Königreich Belgien",
-                },
-            ),
             (
                 "fra",
                 &CountryName {
@@ -9207,6 +9243,13 @@ pub const BE: &Country = &Country {
                 &CountryName {
                     common: "België",
                     official: "Koninkrijk België",
+                },
+            ),
+            (
+                "deu",
+                &CountryName {
+                    common: "Belgien",
+                    official: "Königreich Belgien",
                 },
             ),
         ]),
@@ -9296,10 +9339,10 @@ pub const BE: &Country = &Country {
     locale: &Locale {
         ietf: &["de-BE", "en-BE", "fr-BE", "nl-BE"],
         date_formats: &crate::StaticMap::new(&[
-            ("de-BE", "dd.MM.yyyy"),
-            ("en-BE", "dd/MM/yyyy"),
             ("nl-BE", "dd/MM/yyyy"),
+            ("de-BE", "dd.MM.yyyy"),
             ("fr-BE", "dd/MM/yyyy"),
+            ("en-BE", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Europe/Brussels",
@@ -9334,9 +9377,9 @@ pub const BE: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "nl",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Brussels Hoofdstedelijk Gewest",
+                        official: "Bruxelles-Capitale, Région de",
                         common: None,
                         native: None,
                     },
@@ -9350,9 +9393,9 @@ pub const BE: &Country = &Country {
                     },
                 ),
                 (
-                    "fr",
+                    "nl",
                     &SubdivisionMeta {
-                        official: "Bruxelles-Capitale, Région de",
+                        official: "Brussels Hoofdstedelijk Gewest",
                         common: None,
                         native: None,
                     },
@@ -9364,9 +9407,9 @@ pub const BE: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "nl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Vlaams Gewest",
+                        official: "Flemish Region",
                         common: None,
                         native: None,
                     },
@@ -9380,9 +9423,9 @@ pub const BE: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "nl",
                     &SubdivisionMeta {
-                        official: "Flemish Region",
+                        official: "Vlaams Gewest",
                         common: None,
                         native: None,
                     },
@@ -9394,17 +9437,17 @@ pub const BE: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Walloon Region",
+                        official: "wallonne, Région",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "wallonne, Région",
+                        official: "Walloon Region",
                         common: None,
                         native: None,
                     },
@@ -9424,17 +9467,17 @@ pub const BE: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "nl",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Antwerpen",
+                        official: "VLG",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "nl",
                     &SubdivisionMeta {
-                        official: "VLG",
+                        official: "Antwerpen",
                         common: None,
                         native: None,
                     },
@@ -9490,17 +9533,17 @@ pub const BE: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "WAL",
+                        official: "Liège",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Liège",
+                        official: "WAL",
                         common: None,
                         native: None,
                     },
@@ -9556,17 +9599,17 @@ pub const BE: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "WAL",
+                        official: "Namur",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Namur",
+                        official: "WAL",
                         common: None,
                         native: None,
                     },
@@ -9600,17 +9643,17 @@ pub const BE: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "nl",
                     &SubdivisionMeta {
-                        official: "VLG",
+                        official: "Vlaams-Brabant",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "nl",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Vlaams-Brabant",
+                        official: "VLG",
                         common: None,
                         native: None,
                     },
@@ -9642,14 +9685,16 @@ pub const BE: &Country = &Country {
     ],
 };
 
+/// Kingdom of Belgium
 pub const BEL: &Country = BE;
+/// Belize
 pub const BZ: &Country = &Country {
     name: &CountryMeta {
         common: "Belize",
         official: "Belize",
         native: &crate::StaticMap::new(&[
             (
-                "bjz",
+                "eng",
                 &CountryName {
                     common: "Belize",
                     official: "Belize",
@@ -9663,7 +9708,7 @@ pub const BZ: &Country = &Country {
                 },
             ),
             (
-                "eng",
+                "bjz",
                 &CountryName {
                     common: "Belize",
                     official: "Belize",
@@ -9823,7 +9868,9 @@ pub const BZ: &Country = &Country {
     ],
 };
 
+/// Belize
 pub const BLZ: &Country = BZ;
+/// Republic of Benin
 pub const BJ: &Country = &Country {
     name: &CountryMeta {
         common: "Benin",
@@ -10069,7 +10116,9 @@ pub const BJ: &Country = &Country {
     ],
 };
 
+/// Republic of Benin
 pub const BEN: &Country = BJ;
+/// Bermuda
 pub const BM: &Country = &Country {
     name: &CountryMeta {
         common: "Bermuda",
@@ -10147,7 +10196,9 @@ pub const BM: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Bermuda
 pub const BMU: &Country = BM;
+/// Kingdom of Bhutan
 pub const BT: &Country = &Country {
     name: &CountryMeta {
         common: "Bhutan",
@@ -10470,17 +10521,19 @@ pub const BT: &Country = &Country {
     ],
 };
 
+/// Kingdom of Bhutan
 pub const BTN: &Country = BT;
+/// Plurinational State of Bolivia
 pub const BO: &Country = &Country {
     name: &CountryMeta {
         common: "Bolivia",
         official: "Plurinational State of Bolivia",
         native: &crate::StaticMap::new(&[
             (
-                "que",
+                "spa",
                 &CountryName {
-                    common: "Buliwya",
-                    official: "Buliwya Mamallaqta",
+                    common: "Bolivia",
+                    official: "Estado Plurinacional de Bolivia",
                 },
             ),
             (
@@ -10498,10 +10551,10 @@ pub const BO: &Country = &Country {
                 },
             ),
             (
-                "spa",
+                "que",
                 &CountryName {
-                    common: "Bolivia",
-                    official: "Estado Plurinacional de Bolivia",
+                    common: "Buliwya",
+                    official: "Buliwya Mamallaqta",
                 },
             ),
         ]),
@@ -10712,19 +10765,14 @@ pub const BO: &Country = &Country {
     ],
 };
 
+/// Plurinational State of Bolivia
 pub const BOL: &Country = BO;
+/// Bosnia and Herzegovina
 pub const BA: &Country = &Country {
     name: &CountryMeta {
         common: "Bosnia and Herzegovina",
         official: "Bosnia and Herzegovina",
         native: &crate::StaticMap::new(&[
-            (
-                "bos",
-                &CountryName {
-                    common: "Bosna i Hercegovina",
-                    official: "Bosna i Hercegovina",
-                },
-            ),
             (
                 "hrv",
                 &CountryName {
@@ -10737,6 +10785,13 @@ pub const BA: &Country = &Country {
                 &CountryName {
                     common: "Боснa и Херцеговина",
                     official: "Боснa и Херцеговина",
+                },
+            ),
+            (
+                "bos",
+                &CountryName {
+                    common: "Bosna i Hercegovina",
+                    official: "Bosna i Hercegovina",
                 },
             ),
         ]),
@@ -10806,11 +10861,11 @@ pub const BA: &Country = &Country {
             "sr-Latn-BA",
         ],
         date_formats: &crate::StaticMap::new(&[
+            ("bs-Cyrl-BA", "dd.MM.yyyy."),
+            ("sr-Cyrl-BA", "dd.MM.yyyy."),
             ("bs-Latn-BA", "dd.MM.yyyy."),
             ("sr-Latn-BA", "dd.MM.yyyy."),
             ("hr-BA", "dd. MM. yyyy."),
-            ("bs-Cyrl-BA", "dd.MM.yyyy."),
-            ("sr-Cyrl-BA", "dd.MM.yyyy."),
         ]),
         timezones: &[&Timezone {
             name: "Europe/Sarajevo",
@@ -10845,17 +10900,17 @@ pub const BA: &Country = &Country {
             ty: Some("entity"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "bs",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Federacija Bosne i Hercegovine",
+                        official: "Federation of Bosnia and Herzegovina",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "bs",
                     &SubdivisionMeta {
-                        official: "Federation of Bosnia and Herzegovina",
+                        official: "Federacija Bosne i Hercegovine",
                         common: None,
                         native: None,
                     },
@@ -10883,6 +10938,22 @@ pub const BA: &Country = &Country {
             ty: Some("entity"),
             meta: &crate::StaticMap::new(&[
                 (
+                    "bs",
+                    &SubdivisionMeta {
+                        official: "Republika Srpska",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "sr",
+                    &SubdivisionMeta {
+                        official: "Republika Srpska",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "en",
                     &SubdivisionMeta {
                         official: "Republika Srpska",
@@ -10898,22 +10969,6 @@ pub const BA: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "sr",
-                    &SubdivisionMeta {
-                        official: "Republika Srpska",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "bs",
-                    &SubdivisionMeta {
-                        official: "Republika Srpska",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
@@ -10921,23 +10976,15 @@ pub const BA: &Country = &Country {
             ty: Some("district with special status"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "hr",
-                    &SubdivisionMeta {
-                        official: "Brčko distrikt",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "sr",
-                    &SubdivisionMeta {
-                        official: "Brčko distrikt",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "bs",
+                    &SubdivisionMeta {
+                        official: "Brčko distrikt",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "hr",
                     &SubdivisionMeta {
                         official: "Brčko distrikt",
                         common: None,
@@ -10952,29 +10999,39 @@ pub const BA: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "sr",
+                    &SubdivisionMeta {
+                        official: "Brčko distrikt",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
     ],
 };
 
+/// Bosnia and Herzegovina
 pub const BIH: &Country = BA;
+/// Republic of Botswana
 pub const BW: &Country = &Country {
     name: &CountryMeta {
         common: "Botswana",
         official: "Republic of Botswana",
         native: &crate::StaticMap::new(&[
             (
-                "tsn",
-                &CountryName {
-                    common: "Botswana",
-                    official: "Lefatshe la Botswana",
-                },
-            ),
-            (
                 "eng",
                 &CountryName {
                     common: "Botswana",
                     official: "Republic of Botswana",
+                },
+            ),
+            (
+                "tsn",
+                &CountryName {
+                    common: "Botswana",
+                    official: "Lefatshe la Botswana",
                 },
             ),
         ]),
@@ -11246,7 +11303,9 @@ pub const BW: &Country = &Country {
     ],
 };
 
+/// Republic of Botswana
 pub const BWA: &Country = BW;
+/// Bouvet Island
 pub const BV: &Country = &Country {
     name: &CountryMeta {
         common: "Bouvet Island",
@@ -11336,7 +11395,9 @@ pub const BV: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Bouvet Island
 pub const BVT: &Country = BV;
+/// Federative Republic of Brazil
 pub const BR: &Country = &Country {
     name: &CountryMeta {
         common: "Brazil",
@@ -11431,7 +11492,7 @@ pub const BR: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["es-BR", "pt-BR"],
-        date_formats: &crate::StaticMap::new(&[("pt-BR", "dd/MM/yyyy"), ("es-BR", "dd/MM/yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("es-BR", "dd/MM/yyyy"), ("pt-BR", "dd/MM/yyyy")]),
         timezones: &[
             &Timezone {
                 name: "America/Noronha",
@@ -11894,7 +11955,9 @@ pub const BR: &Country = &Country {
     ],
 };
 
+/// Federative Republic of Brazil
 pub const BRA: &Country = BR;
+/// British Indian Ocean Territory
 pub const IO: &Country = &Country {
     name: &CountryMeta {
         common: "British Indian Ocean Territory",
@@ -11972,7 +12035,9 @@ pub const IO: &Country = &Country {
     subdivisions: &[],
 };
 
+/// British Indian Ocean Territory
 pub const IOT: &Country = IO;
+/// Virgin Islands
 pub const VG: &Country = &Country {
     name: &CountryMeta {
         common: "British Virgin Islands",
@@ -12061,7 +12126,9 @@ pub const VG: &Country = &Country {
     }],
 };
 
+/// Virgin Islands
 pub const VGB: &Country = VG;
+/// Nation of Brunei, Abode of Peace
 pub const BN: &Country = &Country {
     name: &CountryMeta {
         common: "Brunei",
@@ -12171,17 +12238,17 @@ pub const BN: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ms",
                     &SubdivisionMeta {
-                        official: "Brunei-Muara",
+                        official: "Brunei dan Muara",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ms",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Brunei dan Muara",
+                        official: "Brunei-Muara",
                         common: None,
                         native: None,
                     },
@@ -12193,7 +12260,7 @@ pub const BN: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ms",
                     &SubdivisionMeta {
                         official: "Temburong",
                         common: None,
@@ -12201,7 +12268,7 @@ pub const BN: &Country = &Country {
                     },
                 ),
                 (
-                    "ms",
+                    "en",
                     &SubdivisionMeta {
                         official: "Temburong",
                         common: None,
@@ -12235,7 +12302,9 @@ pub const BN: &Country = &Country {
     ],
 };
 
+/// Nation of Brunei, Abode of Peace
 pub const BRN: &Country = BN;
+/// Republic of Bulgaria
 pub const BG: &Country = &Country {
     name: &CountryMeta {
         common: "Bulgaria",
@@ -12659,7 +12728,9 @@ pub const BG: &Country = &Country {
     ],
 };
 
+/// Republic of Bulgaria
 pub const BGR: &Country = BG;
+/// Burkina Faso
 pub const BF: &Country = &Country {
     name: &CountryMeta {
         common: "Burkina Faso",
@@ -12924,7 +12995,9 @@ pub const BF: &Country = &Country {
     ],
 };
 
+/// Burkina Faso
 pub const BFA: &Country = BF;
+/// Republic of Burundi
 pub const BI: &Country = &Country {
     name: &CountryMeta {
         common: "Burundi",
@@ -13066,7 +13139,7 @@ pub const BI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "rn",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Bujumbura Mairie",
                         common: None,
@@ -13074,7 +13147,7 @@ pub const BI: &Country = &Country {
                     },
                 ),
                 (
-                    "fr",
+                    "rn",
                     &SubdivisionMeta {
                         official: "Bujumbura Mairie",
                         common: None,
@@ -13088,7 +13161,7 @@ pub const BI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "rn",
                     &SubdivisionMeta {
                         official: "Bujumbura Rural",
                         common: None,
@@ -13096,7 +13169,7 @@ pub const BI: &Country = &Country {
                     },
                 ),
                 (
-                    "rn",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Bujumbura Rural",
                         common: None,
@@ -13176,7 +13249,7 @@ pub const BI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "rn",
                     &SubdivisionMeta {
                         official: "Gitega",
                         common: None,
@@ -13184,7 +13257,7 @@ pub const BI: &Country = &Country {
                     },
                 ),
                 (
-                    "rn",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Gitega",
                         common: None,
@@ -13220,7 +13293,7 @@ pub const BI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "rn",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Kayanza",
                         common: None,
@@ -13228,7 +13301,7 @@ pub const BI: &Country = &Country {
                     },
                 ),
                 (
-                    "fr",
+                    "rn",
                     &SubdivisionMeta {
                         official: "Kayanza",
                         common: None,
@@ -13254,7 +13327,7 @@ pub const BI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "rn",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Makamba",
                         common: None,
@@ -13262,7 +13335,7 @@ pub const BI: &Country = &Country {
                     },
                 ),
                 (
-                    "fr",
+                    "rn",
                     &SubdivisionMeta {
                         official: "Makamba",
                         common: None,
@@ -13320,7 +13393,7 @@ pub const BI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "rn",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Mwaro",
                         common: None,
@@ -13328,7 +13401,7 @@ pub const BI: &Country = &Country {
                     },
                 ),
                 (
-                    "fr",
+                    "rn",
                     &SubdivisionMeta {
                         official: "Mwaro",
                         common: None,
@@ -13342,7 +13415,7 @@ pub const BI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "rn",
                     &SubdivisionMeta {
                         official: "Ngozi",
                         common: None,
@@ -13350,7 +13423,7 @@ pub const BI: &Country = &Country {
                     },
                 ),
                 (
-                    "rn",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Ngozi",
                         common: None,
@@ -13428,7 +13501,9 @@ pub const BI: &Country = &Country {
     ],
 };
 
+/// Republic of Burundi
 pub const BDI: &Country = BI;
+/// Kingdom of Cambodia
 pub const KH: &Country = &Country {
     name: &CountryMeta {
         common: "Cambodia",
@@ -13811,7 +13886,9 @@ pub const KH: &Country = &Country {
     ],
 };
 
+/// Kingdom of Cambodia
 pub const KHM: &Country = KH;
+/// Republic of Cameroon
 pub const CM: &Country = &Country {
     name: &CountryMeta {
         common: "Cameroon",
@@ -14056,22 +14133,22 @@ pub const CM: &Country = &Country {
             "yav-CM",
         ],
         date_formats: &crate::StaticMap::new(&[
-            ("ff-Latn-CM", "dd/MM/yyyy"),
-            ("nmg-CM", "dd/MM/yyyy"),
             ("bas-CM", "dd/MM/yyyy"),
-            ("ff-Adlm-CM", "yyyyyyyy-MMMM-dddd"),
-            ("ksf-CM", "dd/MM/yyyy"),
-            ("mua-CM", "dd/MM/yyyy"),
             ("agq-CM", "dd/MM/yyyy"),
-            ("kkj-CM", "dd/MM yyyy"),
-            ("fr-CM", "dd/MM/yyyy"),
-            ("mgo-CM", "yyyy-MM-dd"),
-            ("dua-CM", "dd/MM/yyyy"),
-            ("en-CM", "dd/MM/yyyy"),
-            ("yav-CM", "dd/MM/yyyy"),
-            ("nnh-CM", "dd/MM/yyyy"),
             ("jgo-CM", "MM.dd.yyyy"),
+            ("dua-CM", "dd/MM/yyyy"),
+            ("nnh-CM", "dd/MM/yyyy"),
+            ("mgo-CM", "yyyy-MM-dd"),
+            ("mua-CM", "dd/MM/yyyy"),
+            ("nmg-CM", "dd/MM/yyyy"),
+            ("fr-CM", "dd/MM/yyyy"),
+            ("kkj-CM", "dd/MM yyyy"),
+            ("ksf-CM", "dd/MM/yyyy"),
+            ("yav-CM", "dd/MM/yyyy"),
+            ("en-CM", "dd/MM/yyyy"),
             ("ewo-CM", "dd/MM/yyyy"),
+            ("ff-Latn-CM", "dd/MM/yyyy"),
+            ("ff-Adlm-CM", "yyyyyyyy-MMMM-dddd"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Lagos",
@@ -14106,7 +14183,7 @@ pub const CM: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Adamaoua",
                         common: None,
@@ -14114,7 +14191,7 @@ pub const CM: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Adamaoua",
                         common: None,
@@ -14150,17 +14227,17 @@ pub const CM: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "East",
+                        official: "Est",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Est",
+                        official: "East",
                         common: None,
                         native: None,
                     },
@@ -14172,17 +14249,17 @@ pub const CM: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Extrême-Nord",
+                        official: "Far North",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Far North",
+                        official: "Extrême-Nord",
                         common: None,
                         native: None,
                     },
@@ -14238,17 +14315,17 @@ pub const CM: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Nord-Ouest",
+                        official: "North-West",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "North-West",
+                        official: "Nord-Ouest",
                         common: None,
                         native: None,
                     },
@@ -14260,17 +14337,17 @@ pub const CM: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "South",
+                        official: "Sud",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Sud",
+                        official: "South",
                         common: None,
                         native: None,
                     },
@@ -14324,21 +14401,23 @@ pub const CM: &Country = &Country {
     ],
 };
 
+/// Republic of Cameroon
 pub const CMR: &Country = CM;
+/// Canada
 pub const CA: &Country = &Country {
     name: &CountryMeta {
         common: "Canada",
         official: "Canada",
         native: &crate::StaticMap::new(&[
             (
-                "fra",
+                "eng",
                 &CountryName {
                     common: "Canada",
                     official: "Canada",
                 },
             ),
             (
-                "eng",
+                "fra",
                 &CountryName {
                     common: "Canada",
                     official: "Canada",
@@ -14407,7 +14486,7 @@ pub const CA: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["en-CA", "fr-CA"],
-        date_formats: &crate::StaticMap::new(&[("en-CA", "yyyy-MM-dd"), ("fr-CA", "yyyy-MM-dd")]),
+        date_formats: &crate::StaticMap::new(&[("fr-CA", "yyyy-MM-dd"), ("en-CA", "yyyy-MM-dd")]),
         timezones: &[
             &Timezone {
                 name: "America/St_Johns",
@@ -14676,7 +14755,7 @@ pub const CA: &Country = &Country {
             ty: Some("Province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Manitoba",
                         common: None,
@@ -14684,7 +14763,7 @@ pub const CA: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Manitoba",
                         common: None,
@@ -14698,17 +14777,17 @@ pub const CA: &Country = &Country {
             ty: Some("Province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Nouveau-Brunswick",
+                        official: "New Brunswick",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "New Brunswick",
+                        official: "Nouveau-Brunswick",
                         common: None,
                         native: None,
                     },
@@ -14720,17 +14799,17 @@ pub const CA: &Country = &Country {
             ty: Some("Province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Terre-Neuve-et-Labrador",
+                        official: "Newfoundland and Labrador",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Newfoundland and Labrador",
+                        official: "Terre-Neuve-et-Labrador",
                         common: None,
                         native: None,
                     },
@@ -14764,7 +14843,7 @@ pub const CA: &Country = &Country {
             ty: Some("Province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Ontario",
                         common: None,
@@ -14772,7 +14851,7 @@ pub const CA: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Ontario",
                         common: None,
@@ -14786,17 +14865,17 @@ pub const CA: &Country = &Country {
             ty: Some("Province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Prince Edward Island",
+                        official: "Île-du-Prince-Édouard",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Île-du-Prince-Édouard",
+                        official: "Prince Edward Island",
                         common: None,
                         native: None,
                     },
@@ -14896,7 +14975,7 @@ pub const CA: &Country = &Country {
             ty: Some("Territory"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Yukon",
                         common: None,
@@ -14904,7 +14983,7 @@ pub const CA: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Yukon",
                         common: None,
@@ -14916,7 +14995,9 @@ pub const CA: &Country = &Country {
     ],
 };
 
+/// Canada
 pub const CAN: &Country = CA;
+/// Republic of Cabo Verde
 pub const CV: &Country = &Country {
     name: &CountryMeta {
         common: "Cape Verde",
@@ -15031,24 +15112,26 @@ pub const CV: &Country = &Country {
     ],
 };
 
+/// Republic of Cabo Verde
 pub const CPV: &Country = CV;
+/// Bonaire, Sint Eustatius and Saba
 pub const BQ: &Country = &Country {
     name: &CountryMeta {
         common: "Bonaire, Sint Eustatius and Saba",
         official: "Bonaire, Sint Eustatius and Saba",
         native: &crate::StaticMap::new(&[
             (
-                "pap",
-                &CountryName {
-                    common: "Boneiru, Sint Eustatius y Saba",
-                    official: "Boneiru, Sint Eustatius y Saba",
-                },
-            ),
-            (
                 "nld",
                 &CountryName {
                     common: "Caribisch Nederland",
                     official: "Bonaire, Sint Eustatius en Saba",
+                },
+            ),
+            (
+                "pap",
+                &CountryName {
+                    common: "Boneiru, Sint Eustatius y Saba",
+                    official: "Boneiru, Sint Eustatius y Saba",
                 },
             ),
         ]),
@@ -15151,6 +15234,14 @@ pub const BQ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
+                    "nl",
+                    &SubdivisionMeta {
+                        official: "Saba",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "en",
                     &SubdivisionMeta {
                         official: "Saba",
@@ -15160,14 +15251,6 @@ pub const BQ: &Country = &Country {
                 ),
                 (
                     "pap",
-                    &SubdivisionMeta {
-                        official: "Saba",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "nl",
                     &SubdivisionMeta {
                         official: "Saba",
                         common: None,
@@ -15181,7 +15264,7 @@ pub const BQ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "nl",
                     &SubdivisionMeta {
                         official: "Sint Eustatius",
                         common: None,
@@ -15197,7 +15280,7 @@ pub const BQ: &Country = &Country {
                     },
                 ),
                 (
-                    "nl",
+                    "en",
                     &SubdivisionMeta {
                         official: "Sint Eustatius",
                         common: None,
@@ -15209,7 +15292,9 @@ pub const BQ: &Country = &Country {
     ],
 };
 
+/// Bonaire, Sint Eustatius and Saba
 pub const BES: &Country = BQ;
+/// Cayman Islands
 pub const KY: &Country = &Country {
     name: &CountryMeta {
         common: "Cayman Islands",
@@ -15287,24 +15372,26 @@ pub const KY: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Cayman Islands
 pub const CYM: &Country = KY;
+/// Central African Republic
 pub const CF: &Country = &Country {
     name: &CountryMeta {
         common: "Central African Republic",
         official: "Central African Republic",
         native: &crate::StaticMap::new(&[
             (
-                "sag",
-                &CountryName {
-                    common: "Bêafrîka",
-                    official: "Ködörösêse tî Bêafrîka",
-                },
-            ),
-            (
                 "fra",
                 &CountryName {
                     common: "République centrafricaine",
                     official: "République centrafricaine",
+                },
+            ),
+            (
+                "sag",
+                &CountryName {
+                    common: "Bêafrîka",
+                    official: "Ködörösêse tî Bêafrîka",
                 },
             ),
         ]),
@@ -15381,9 +15468,9 @@ pub const CF: &Country = &Country {
     locale: &Locale {
         ietf: &["fr-CF", "ln-CF", "sg-CF"],
         date_formats: &crate::StaticMap::new(&[
-            ("fr-CF", "dd/MM/yyyy"),
-            ("ln-CF", "dd/MM/yyyy"),
             ("sg-CF", "dd/MM/yyyy"),
+            ("ln-CF", "dd/MM/yyyy"),
+            ("fr-CF", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Abidjan",
@@ -15418,17 +15505,17 @@ pub const CF: &Country = &Country {
             ty: Some("commune"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "sg",
                     &SubdivisionMeta {
-                        official: "Bangui",
+                        official: "Bangî",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sg",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Bangî",
+                        official: "Bangui",
                         common: None,
                         native: None,
                     },
@@ -15462,17 +15549,17 @@ pub const CF: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "sg",
                     &SubdivisionMeta {
-                        official: "Basse-Kotto",
+                        official: "Do-Kötö",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sg",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Do-Kötö",
+                        official: "Basse-Kotto",
                         common: None,
                         native: None,
                     },
@@ -15506,17 +15593,17 @@ pub const CF: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "sg",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Tö-Mbömü",
+                        official: "Haut-Mbomou",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "sg",
                     &SubdivisionMeta {
-                        official: "Haut-Mbomou",
+                        official: "Tö-Mbömü",
                         common: None,
                         native: None,
                     },
@@ -15528,17 +15615,17 @@ pub const CF: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "sg",
                     &SubdivisionMeta {
-                        official: "Haute-Sangha/Mambéré-Kadéï",
+                        official: "Tö-Sangä/Mbaere-Kadeï",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sg",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Tö-Sangä/Mbaere-Kadeï",
+                        official: "Haute-Sangha/Mambéré-Kadéï",
                         common: None,
                         native: None,
                     },
@@ -15550,17 +15637,17 @@ pub const CF: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "sg",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Kemö-Gïrïbïngï",
+                        official: "Kémo-Gribingui",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "sg",
                     &SubdivisionMeta {
-                        official: "Kémo-Gribingui",
+                        official: "Kemö-Gïrïbïngï",
                         common: None,
                         native: None,
                     },
@@ -15660,17 +15747,17 @@ pub const CF: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "sg",
                     &SubdivisionMeta {
-                        official: "Ouaka",
+                        official: "Wäkä",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sg",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Wäkä",
+                        official: "Ouaka",
                         common: None,
                         native: None,
                     },
@@ -15682,17 +15769,17 @@ pub const CF: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "sg",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Wâmo",
+                        official: "Ouham",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "sg",
                     &SubdivisionMeta {
-                        official: "Ouham",
+                        official: "Wâmo",
                         common: None,
                         native: None,
                     },
@@ -15748,17 +15835,17 @@ pub const CF: &Country = &Country {
             ty: Some("economic prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "sg",
                     &SubdivisionMeta {
-                        official: "Gribingui",
+                        official: "Gïrïbïngï",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sg",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Gïrïbïngï",
+                        official: "Gribingui",
                         common: None,
                         native: None,
                     },
@@ -15790,7 +15877,9 @@ pub const CF: &Country = &Country {
     ],
 };
 
+/// Central African Republic
 pub const CAF: &Country = CF;
+/// Republic of Chad
 pub const TD: &Country = &Country {
     name: &CountryMeta {
         common: "Chad",
@@ -15955,17 +16044,17 @@ pub const TD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Bahr el Ghazal (local variant is Barh-el-Ghazal)",
+                        official: "Baḩr al Ghazāl",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Baḩr al Ghazāl",
+                        official: "Bahr el Ghazal (local variant is Barh-el-Ghazal)",
                         common: None,
                         native: None,
                     },
@@ -15977,17 +16066,17 @@ pub const TD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Borkou",
+                        official: "Būrkū",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Būrkū",
+                        official: "Borkou",
                         common: None,
                         native: None,
                     },
@@ -16175,17 +16264,17 @@ pub const TD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Māyū Kībbī al Gharbī",
+                        official: "Mayo-Kebbi-Ouest",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Mayo-Kebbi-Ouest",
+                        official: "Māyū Kībbī al Gharbī",
                         common: None,
                         native: None,
                     },
@@ -16241,17 +16330,17 @@ pub const TD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Salāmāt",
+                        official: "Salamat",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Salamat",
+                        official: "Salāmāt",
                         common: None,
                         native: None,
                     },
@@ -16285,17 +16374,17 @@ pub const TD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Chari-Baguirmi",
+                        official: "Shārī Bāqirmī",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Shārī Bāqirmī",
+                        official: "Chari-Baguirmi",
                         common: None,
                         native: None,
                     },
@@ -16307,17 +16396,17 @@ pub const TD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Sila",
+                        official: "Sīlā",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Sīlā",
+                        official: "Sila",
                         common: None,
                         native: None,
                     },
@@ -16329,17 +16418,17 @@ pub const TD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Tānjīlī",
+                        official: "Tandjilé",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Tandjilé",
+                        official: "Tānjīlī",
                         common: None,
                         native: None,
                     },
@@ -16351,17 +16440,17 @@ pub const TD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Tibesti",
+                        official: "Tibastī",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Tibastī",
+                        official: "Tibesti",
                         common: None,
                         native: None,
                     },
@@ -16373,17 +16462,17 @@ pub const TD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Ouaddaï",
+                        official: "Waddāy",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Waddāy",
+                        official: "Ouaddaï",
                         common: None,
                         native: None,
                     },
@@ -16395,17 +16484,17 @@ pub const TD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Wādī Fīrā’",
+                        official: "Wadi Fira",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Wadi Fira",
+                        official: "Wādī Fīrā’",
                         common: None,
                         native: None,
                     },
@@ -16415,7 +16504,9 @@ pub const TD: &Country = &Country {
     ],
 };
 
+/// Republic of Chad
 pub const TCD: &Country = TD;
+/// Republic of Chile
 pub const CL: &Country = &Country {
     name: &CountryMeta {
         common: "Chile",
@@ -16508,17 +16599,17 @@ pub const CL: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "number",
                     &SubdivisionMeta {
-                        official: "Aisén del General Carlos Ibañez del Campo",
+                        official: "XI",
                         common: Some("Aysén, Aisén"),
                         native: None,
                     },
                 ),
                 (
-                    "number",
+                    "es",
                     &SubdivisionMeta {
-                        official: "XI",
+                        official: "Aisén del General Carlos Ibañez del Campo",
                         common: Some("Aysén, Aisén"),
                         native: None,
                     },
@@ -16530,17 +16621,17 @@ pub const CL: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "number",
+                    "es",
                     &SubdivisionMeta {
-                        official: "II",
+                        official: "Antofagasta",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "number",
                     &SubdivisionMeta {
-                        official: "Antofagasta",
+                        official: "II",
                         common: None,
                         native: None,
                     },
@@ -16662,17 +16753,17 @@ pub const CL: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "number",
                     &SubdivisionMeta {
-                        official: "Libertador General Bernardo O'Higgins",
+                        official: "VI",
                         common: Some("O'Higgins"),
                         native: None,
                     },
                 ),
                 (
-                    "number",
+                    "es",
                     &SubdivisionMeta {
-                        official: "VI",
+                        official: "Libertador General Bernardo O'Higgins",
                         common: Some("O'Higgins"),
                         native: None,
                     },
@@ -16728,17 +16819,17 @@ pub const CL: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "number",
                     &SubdivisionMeta {
-                        official: "Magallanes",
+                        official: "XII",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "number",
+                    "es",
                     &SubdivisionMeta {
-                        official: "XII",
+                        official: "Magallanes",
                         common: None,
                         native: None,
                     },
@@ -16816,17 +16907,17 @@ pub const CL: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "number",
+                    "es",
                     &SubdivisionMeta {
-                        official: "I",
+                        official: "Tarapacá",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "number",
                     &SubdivisionMeta {
-                        official: "Tarapacá",
+                        official: "I",
                         common: None,
                         native: None,
                     },
@@ -16838,17 +16929,17 @@ pub const CL: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "number",
+                    "es",
                     &SubdivisionMeta {
-                        official: "V",
+                        official: "Valparaíso",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "number",
                     &SubdivisionMeta {
-                        official: "Valparaíso",
+                        official: "V",
                         common: None,
                         native: None,
                     },
@@ -16858,7 +16949,9 @@ pub const CL: &Country = &Country {
     ],
 };
 
+/// Republic of Chile
 pub const CHL: &Country = CL;
+/// People's Republic of China
 pub const CN: &Country = &Country {
     name: &CountryMeta {
         common: "China",
@@ -16999,10 +17092,10 @@ pub const CN: &Country = &Country {
         ietf: &["bo-CN", "ii-CN", "ug-CN", "yue-Hans-CN", "zh-Hans-CN"],
         date_formats: &crate::StaticMap::new(&[
             ("zh-Hans-CN", "yyyy/MM/dd"),
+            ("ii-CN", "yyyy-MM-dd"),
             ("yue-Hans-CN", "yyyy/MM/dd"),
             ("ug-CN", "yyyy-dd-MM"),
             ("bo-CN", "yyyy-MM-dd"),
-            ("ii-CN", "yyyy-MM-dd"),
         ]),
         timezones: &[
             &Timezone {
@@ -17462,7 +17555,9 @@ pub const CN: &Country = &Country {
     ],
 };
 
+/// People's Republic of China
 pub const CHN: &Country = CN;
+/// Territory of Christmas Island
 pub const CX: &Country = &Country {
     name: &CountryMeta {
         common: "Christmas Island",
@@ -17562,7 +17657,9 @@ pub const CX: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Territory of Christmas Island
 pub const CXR: &Country = CX;
+/// Territory of the Cocos (Keeling) Islands
 pub const CC: &Country = &Country {
     name: &CountryMeta {
         common: "Cocos (Keeling) Islands",
@@ -17640,7 +17737,9 @@ pub const CC: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Territory of the Cocos (Keeling) Islands
 pub const CCK: &Country = CC;
+/// Republic of Colombia
 pub const CO: &Country = &Country {
     name: &CountryMeta {
         common: "Colombia",
@@ -18130,12 +18229,21 @@ pub const CO: &Country = &Country {
     ],
 };
 
+/// Republic of Colombia
 pub const COL: &Country = CO;
+/// Union of the Comoros
 pub const KM: &Country = &Country {
     name: &CountryMeta {
         common: "Comoros",
         official: "Union of the Comoros",
         native: &crate::StaticMap::new(&[
+            (
+                "zdj",
+                &CountryName {
+                    common: "Komori",
+                    official: "Udzima wa Komori",
+                },
+            ),
             (
                 "fra",
                 &CountryName {
@@ -18148,13 +18256,6 @@ pub const KM: &Country = &Country {
                 &CountryName {
                     common: "القمر",
                     official: "الاتحاد القمري",
-                },
-            ),
-            (
-                "zdj",
-                &CountryName {
-                    common: "Komori",
-                    official: "Udzima wa Komori",
                 },
             ),
         ]),
@@ -18254,9 +18355,9 @@ pub const KM: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Andjazîdja",
+                        official: "Grande Comore",
                         common: None,
                         native: None,
                     },
@@ -18270,9 +18371,9 @@ pub const KM: &Country = &Country {
                     },
                 ),
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Grande Comore",
+                        official: "Andjazîdja",
                         common: None,
                         native: None,
                     },
@@ -18283,6 +18384,14 @@ pub const KM: &Country = &Country {
             iso: "KM-A",
             ty: None,
             meta: &crate::StaticMap::new(&[
+                (
+                    "zdj",
+                    &SubdivisionMeta {
+                        official: "Ndzuwani",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "fr",
                     &SubdivisionMeta {
@@ -18295,14 +18404,6 @@ pub const KM: &Country = &Country {
                     "ar",
                     &SubdivisionMeta {
                         official: "Andjouân",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "zdj",
-                    &SubdivisionMeta {
-                        official: "Ndzuwani",
                         common: None,
                         native: None,
                     },
@@ -18342,7 +18443,9 @@ pub const KM: &Country = &Country {
     ],
 };
 
+/// Union of the Comoros
 pub const COM: &Country = KM;
+/// Cook Islands
 pub const CK: &Country = &Country {
     name: &CountryMeta {
         common: "Cook Islands",
@@ -18410,7 +18513,7 @@ pub const CK: &Country = &Country {
     spoken_languages: &["pkp", "pnh", "rar", "rkh"],
     locale: &Locale {
         ietf: &["en-CK", "mi-NZ"],
-        date_formats: &crate::StaticMap::new(&[("en-CK", "dd/MM/yyyy"), ("mi-NZ", "dd-MM-yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("mi-NZ", "dd-MM-yyyy"), ("en-CK", "dd/MM/yyyy")]),
         timezones: &[&Timezone {
             name: "Pacific/Rarotonga",
             ty: TimezoneType::Canonical,
@@ -18441,7 +18544,9 @@ pub const CK: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Cook Islands
 pub const COK: &Country = CK;
+/// Republic of Costa Rica
 pub const CR: &Country = &Country {
     name: &CountryMeta {
         common: "Costa Rica",
@@ -18606,7 +18711,9 @@ pub const CR: &Country = &Country {
     ],
 };
 
+/// Republic of Costa Rica
 pub const CRI: &Country = CR;
+/// Republic of Côte d'Ivoire
 pub const CI: &Country = &Country {
     name: &CountryMeta {
         common: "Côte d'Ivoire",
@@ -18873,7 +18980,9 @@ pub const CI: &Country = &Country {
     ],
 };
 
+/// Republic of Côte d'Ivoire
 pub const CIV: &Country = CI;
+/// Republic of Croatia
 pub const HR: &Country = &Country {
     name: &CountryMeta {
         common: "Croatia",
@@ -18964,17 +19073,17 @@ pub const HR: &Country = &Country {
             ty: Some("city"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "hr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Grad Zagreb",
+                        official: "Zagreb City",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "hr",
                     &SubdivisionMeta {
-                        official: "Zagreb City",
+                        official: "Grad Zagreb",
                         common: None,
                         native: None,
                     },
@@ -18986,17 +19095,17 @@ pub const HR: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "hr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Bjelovarsko-bilogorska županija",
+                        official: "Bjelovar-Bilogora",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "hr",
                     &SubdivisionMeta {
-                        official: "Bjelovar-Bilogora",
+                        official: "Bjelovarsko-bilogorska županija",
                         common: None,
                         native: None,
                     },
@@ -19008,17 +19117,17 @@ pub const HR: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "hr",
                     &SubdivisionMeta {
-                        official: "Brod-Posavina",
+                        official: "Brodsko-posavska županija",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "hr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Brodsko-posavska županija",
+                        official: "Brod-Posavina",
                         common: None,
                         native: None,
                     },
@@ -19140,17 +19249,17 @@ pub const HR: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "hr",
                     &SubdivisionMeta {
-                        official: "Lika-Senj",
+                        official: "Ličko-senjska županija",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "hr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Ličko-senjska županija",
+                        official: "Lika-Senj",
                         common: None,
                         native: None,
                     },
@@ -19162,17 +19271,17 @@ pub const HR: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "hr",
                     &SubdivisionMeta {
-                        official: "Međimurje",
+                        official: "Međimurska županija",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "hr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Međimurska županija",
+                        official: "Međimurje",
                         common: None,
                         native: None,
                     },
@@ -19184,17 +19293,17 @@ pub const HR: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "hr",
                     &SubdivisionMeta {
-                        official: "Osijek-Baranja",
+                        official: "Osječko-baranjska županija",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "hr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Osječko-baranjska županija",
+                        official: "Osijek-Baranja",
                         common: None,
                         native: None,
                     },
@@ -19206,17 +19315,17 @@ pub const HR: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "hr",
                     &SubdivisionMeta {
-                        official: "Požega-Slavonia",
+                        official: "Požeško-slavonska županija",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "hr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Požeško-slavonska županija",
+                        official: "Požega-Slavonia",
                         common: None,
                         native: None,
                     },
@@ -19228,17 +19337,17 @@ pub const HR: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "hr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Primorsko-goranska županija",
+                        official: "Primorje-Gorski Kotar",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "hr",
                     &SubdivisionMeta {
-                        official: "Primorje-Gorski Kotar",
+                        official: "Primorsko-goranska županija",
                         common: None,
                         native: None,
                     },
@@ -19250,17 +19359,17 @@ pub const HR: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "hr",
                     &SubdivisionMeta {
-                        official: "Sisak-Moslavina",
+                        official: "Sisačko-moslavačka županija",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "hr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Sisačko-moslavačka županija",
+                        official: "Sisak-Moslavina",
                         common: None,
                         native: None,
                     },
@@ -19316,17 +19425,17 @@ pub const HR: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "hr",
                     &SubdivisionMeta {
-                        official: "Varaždin",
+                        official: "Varaždinska županija",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "hr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Varaždinska županija",
+                        official: "Varaždin",
                         common: None,
                         native: None,
                     },
@@ -19360,17 +19469,17 @@ pub const HR: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "hr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Vukovarsko-srijemska županija",
+                        official: "Vukovar-Srijem",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "hr",
                     &SubdivisionMeta {
-                        official: "Vukovar-Srijem",
+                        official: "Vukovarsko-srijemska županija",
                         common: None,
                         native: None,
                     },
@@ -19404,17 +19513,17 @@ pub const HR: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "hr",
                     &SubdivisionMeta {
-                        official: "Zagreb County",
+                        official: "Zagrebačka županija",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "hr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Zagrebačka županija",
+                        official: "Zagreb County",
                         common: None,
                         native: None,
                     },
@@ -19424,7 +19533,9 @@ pub const HR: &Country = &Country {
     ],
 };
 
+/// Republic of Croatia
 pub const HRV: &Country = HR;
+/// Republic of Cuba
 pub const CU: &Country = &Country {
     name: &CountryMeta {
         common: "Cuba",
@@ -19683,7 +19794,9 @@ pub const CU: &Country = &Country {
     ],
 };
 
+/// Republic of Cuba
 pub const CUB: &Country = CU;
+/// Country of Curaçao
 pub const CW: &Country = &Country {
     name: &CountryMeta {
         common: "Curaçao",
@@ -19697,17 +19810,17 @@ pub const CW: &Country = &Country {
                 },
             ),
             (
-                "eng",
-                &CountryName {
-                    common: "Curaçao",
-                    official: "Country of Curaçao",
-                },
-            ),
-            (
                 "nld",
                 &CountryName {
                     common: "Curaçao",
                     official: "Land Curaçao",
+                },
+            ),
+            (
+                "eng",
+                &CountryName {
+                    common: "Curaçao",
+                    official: "Country of Curaçao",
                 },
             ),
         ]),
@@ -19783,7 +19896,9 @@ pub const CW: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Country of Curaçao
 pub const CUW: &Country = CW;
+/// Republic of Cyprus
 pub const CY: &Country = &Country {
     name: &CountryMeta {
         common: "Cyprus",
@@ -19870,9 +19985,9 @@ pub const CY: &Country = &Country {
     locale: &Locale {
         ietf: &["el-CY", "en-CY", "tr-CY"],
         date_formats: &crate::StaticMap::new(&[
-            ("en-CY", "dd/MM/yyyy"),
             ("el-CY", "dd/MM/yyyy"),
             ("tr-CY", "dd.MM.yyyy"),
+            ("en-CY", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Asia/Nicosia",
@@ -19907,19 +20022,19 @@ pub const CY: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Mağusa",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "el",
                     &SubdivisionMeta {
                         official: "Ammochostos",
                         common: None,
                         native: Some("Αμμόχωστος"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Mağusa",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -19951,19 +20066,19 @@ pub const CY: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Larnaka",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "el",
                     &SubdivisionMeta {
                         official: "Larnaka",
                         common: None,
                         native: Some("Λάρνακα"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Larnaka",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -20017,14 +20132,6 @@ pub const CY: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "el",
-                    &SubdivisionMeta {
-                        official: "Pafos",
-                        common: None,
-                        native: Some("Πάφος"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Baf",
@@ -20032,26 +20139,36 @@ pub const CY: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "el",
+                    &SubdivisionMeta {
+                        official: "Pafos",
+                        common: None,
+                        native: Some("Πάφος"),
+                    },
+                ),
             ]),
         },
     ],
 };
 
+/// Republic of Cyprus
 pub const CYP: &Country = CY;
+/// Czech Republic
 pub const CZ: &Country = &Country {
     name: &CountryMeta {
         common: "Czechia",
         official: "Czech Republic",
         native: &crate::StaticMap::new(&[
             (
-                "ces",
+                "slk",
                 &CountryName {
                     common: "Česko",
                     official: "Česká republika",
                 },
             ),
             (
-                "slk",
+                "ces",
                 &CountryName {
                     common: "Česko",
                     official: "Česká republika",
@@ -20147,17 +20264,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "20",
+                        official: "Benešov",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Benešov",
+                        official: "20",
                         common: None,
                         native: None,
                     },
@@ -20191,17 +20308,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "64",
+                        official: "Blansko",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Blansko",
+                        official: "64",
                         common: None,
                         native: None,
                     },
@@ -20213,17 +20330,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Brno-město",
+                        official: "64",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "64",
+                        official: "Brno-město",
                         common: None,
                         native: None,
                     },
@@ -20235,17 +20352,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "64",
+                        official: "Brno-venkov",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Brno-venkov",
+                        official: "64",
                         common: None,
                         native: None,
                     },
@@ -20257,17 +20374,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "80",
+                        official: "Bruntál",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Bruntál",
+                        official: "80",
                         common: None,
                         native: None,
                     },
@@ -20301,17 +20418,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "51",
+                        official: "Česká Lípa",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Česká Lípa",
+                        official: "51",
                         common: None,
                         native: None,
                     },
@@ -20323,17 +20440,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "31",
+                        official: "České Budějovice",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "České Budějovice",
+                        official: "31",
                         common: None,
                         native: None,
                     },
@@ -20367,17 +20484,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Děčín",
+                        official: "42",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "42",
+                        official: "Děčín",
                         common: None,
                         native: None,
                     },
@@ -20389,17 +20506,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "32",
+                        official: "Domažlice",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Domažlice",
+                        official: "32",
                         common: None,
                         native: None,
                     },
@@ -20433,17 +20550,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Havlíčkův Brod",
+                        official: "63",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "63",
+                        official: "Havlíčkův Brod",
                         common: None,
                         native: None,
                     },
@@ -20477,17 +20594,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Hradec Králové",
+                        official: "52",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "52",
+                        official: "Hradec Králové",
                         common: None,
                         native: None,
                     },
@@ -20521,17 +20638,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Chomutov",
+                        official: "42",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "42",
+                        official: "Chomutov",
                         common: None,
                         native: None,
                     },
@@ -20565,17 +20682,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Jablonec nad Nisou",
+                        official: "51",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "51",
+                        official: "Jablonec nad Nisou",
                         common: None,
                         native: None,
                     },
@@ -20587,17 +20704,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Jeseník",
+                        official: "71",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "71",
+                        official: "Jeseník",
                         common: None,
                         native: None,
                     },
@@ -20609,17 +20726,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "52",
+                        official: "Jičín",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Jičín",
+                        official: "52",
                         common: None,
                         native: None,
                     },
@@ -20631,17 +20748,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "63",
+                        official: "Jihlava",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Jihlava",
+                        official: "63",
                         common: None,
                         native: None,
                     },
@@ -20653,17 +20770,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "31",
+                        official: "Jindřichův Hradec",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Jindřichův Hradec",
+                        official: "31",
                         common: None,
                         native: None,
                     },
@@ -20741,17 +20858,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Klatovy",
+                        official: "32",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "32",
+                        official: "Klatovy",
                         common: None,
                         native: None,
                     },
@@ -20785,17 +20902,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kroměříž",
+                        official: "72",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "72",
+                        official: "Kroměříž",
                         common: None,
                         native: None,
                     },
@@ -20807,17 +20924,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kutná Hora",
+                        official: "20",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "20",
+                        official: "Kutná Hora",
                         common: None,
                         native: None,
                     },
@@ -20829,17 +20946,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "51",
+                        official: "Liberec",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Liberec",
+                        official: "51",
                         common: None,
                         native: None,
                     },
@@ -20851,17 +20968,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Litoměřice",
+                        official: "42",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "42",
+                        official: "Litoměřice",
                         common: None,
                         native: None,
                     },
@@ -20873,17 +20990,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "42",
+                        official: "Louny",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Louny",
+                        official: "42",
                         common: None,
                         native: None,
                     },
@@ -21005,17 +21122,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Nymburk",
+                        official: "20",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "20",
+                        official: "Nymburk",
                         common: None,
                         native: None,
                     },
@@ -21049,17 +21166,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Opava",
+                        official: "80",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "80",
+                        official: "Opava",
                         common: None,
                         native: None,
                     },
@@ -21115,17 +21232,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Pelhřimov",
+                        official: "63",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "63",
+                        official: "Pelhřimov",
                         common: None,
                         native: None,
                     },
@@ -21137,17 +21254,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Písek",
+                        official: "31",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "31",
+                        official: "Písek",
                         common: None,
                         native: None,
                     },
@@ -21159,17 +21276,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "32",
+                        official: "Plzeň-jih",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Plzeň-jih",
+                        official: "32",
                         common: None,
                         native: None,
                     },
@@ -21225,17 +21342,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "20",
+                        official: "Praha-východ",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Praha-východ",
+                        official: "20",
                         common: None,
                         native: None,
                     },
@@ -21335,17 +21452,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "20",
+                        official: "Příbram",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Příbram",
+                        official: "20",
                         common: None,
                         native: None,
                     },
@@ -21357,17 +21474,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Rakovník",
+                        official: "20",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "20",
+                        official: "Rakovník",
                         common: None,
                         native: None,
                     },
@@ -21379,17 +21496,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "32",
+                        official: "Rokycany",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Rokycany",
+                        official: "32",
                         common: None,
                         native: None,
                     },
@@ -21423,17 +21540,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Semily",
+                        official: "51",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "51",
+                        official: "Semily",
                         common: None,
                         native: None,
                     },
@@ -21467,17 +21584,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Strakonice",
+                        official: "31",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "31",
+                        official: "Strakonice",
                         common: None,
                         native: None,
                     },
@@ -21533,17 +21650,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "31",
+                        official: "Tábor",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Tábor",
+                        official: "31",
                         common: None,
                         native: None,
                     },
@@ -21555,17 +21672,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Tachov",
+                        official: "32",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "32",
+                        official: "Tachov",
                         common: None,
                         native: None,
                     },
@@ -21577,17 +21694,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "42",
+                        official: "Teplice",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Teplice",
+                        official: "42",
                         common: None,
                         native: None,
                     },
@@ -21687,17 +21804,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Ústí nad Orlicí",
+                        official: "53",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "53",
+                        official: "Ústí nad Orlicí",
                         common: None,
                         native: None,
                     },
@@ -21709,17 +21826,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "72",
+                        official: "Vsetín",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Vsetín",
+                        official: "72",
                         common: None,
                         native: None,
                     },
@@ -21797,17 +21914,17 @@ pub const CZ: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "cs",
                     &SubdivisionMeta {
-                        official: "63",
+                        official: "Žďár nad Sázavou",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cs",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Žďár nad Sázavou",
+                        official: "63",
                         common: None,
                         native: None,
                     },
@@ -21817,7 +21934,9 @@ pub const CZ: &Country = &Country {
     ],
 };
 
+/// Czech Republic
 pub const CZE: &Country = CZ;
+/// Kingdom of Denmark
 pub const DK: &Country = &Country {
     name: &CountryMeta {
         common: "Denmark",
@@ -21890,9 +22009,9 @@ pub const DK: &Country = &Country {
     locale: &Locale {
         ietf: &["da-DK", "en-DK", "fo-DK"],
         date_formats: &crate::StaticMap::new(&[
-            ("en-DK", "dd/MM/yyyy"),
-            ("fo-DK", "dd.MM.yyyy"),
             ("da-DK", "dd.MM.yyyy"),
+            ("fo-DK", "dd.MM.yyyy"),
+            ("en-DK", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Europe/Copenhagen",
@@ -21949,17 +22068,17 @@ pub const DK: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "da",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Midtjylland",
+                        official: "Central Denmark Region",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "da",
                     &SubdivisionMeta {
-                        official: "Central Denmark Region",
+                        official: "Midtjylland",
                         common: None,
                         native: None,
                     },
@@ -21971,17 +22090,17 @@ pub const DK: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "da",
                     &SubdivisionMeta {
-                        official: "North Denmark Region",
+                        official: "Nordjylland",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "da",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Nordjylland",
+                        official: "North Denmark Region",
                         common: None,
                         native: None,
                     },
@@ -22035,24 +22154,26 @@ pub const DK: &Country = &Country {
     ],
 };
 
+/// Kingdom of Denmark
 pub const DNK: &Country = DK;
+/// Republic of Djibouti
 pub const DJ: &Country = &Country {
     name: &CountryMeta {
         common: "Djibouti",
         official: "Republic of Djibouti",
         native: &crate::StaticMap::new(&[
             (
-                "fra",
-                &CountryName {
-                    common: "Djibouti",
-                    official: "République de Djibouti",
-                },
-            ),
-            (
                 "ara",
                 &CountryName {
                     common: "جيبوتي",
                     official: "جمهورية جيبوتي",
+                },
+            ),
+            (
+                "fra",
+                &CountryName {
+                    common: "Djibouti",
+                    official: "République de Djibouti",
                 },
             ),
         ]),
@@ -22180,17 +22301,17 @@ pub const DJ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "‘Artā",
+                        official: "Arta",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Arta",
+                        official: "‘Artā",
                         common: None,
                         native: None,
                     },
@@ -22202,17 +22323,17 @@ pub const DJ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Dikhil",
+                        official: "Dikhīl",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Dikhīl",
+                        official: "Dikhil",
                         common: None,
                         native: None,
                     },
@@ -22224,17 +22345,17 @@ pub const DJ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Obock",
+                        official: "Awbūk",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Awbūk",
+                        official: "Obock",
                         common: None,
                         native: None,
                     },
@@ -22246,17 +22367,17 @@ pub const DJ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Tājūrah",
+                        official: "Tadjourah",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Tadjourah",
+                        official: "Tājūrah",
                         common: None,
                         native: None,
                     },
@@ -22268,17 +22389,17 @@ pub const DJ: &Country = &Country {
             ty: Some("city"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Djibouti",
+                        official: "Jībūtī",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Jībūtī",
+                        official: "Djibouti",
                         common: None,
                         native: None,
                     },
@@ -22288,7 +22409,9 @@ pub const DJ: &Country = &Country {
     ],
 };
 
+/// Republic of Djibouti
 pub const DJI: &Country = DJ;
+/// Commonwealth of Dominica
 pub const DM: &Country = &Country {
     name: &CountryMeta {
         common: "Dominica",
@@ -22487,7 +22610,9 @@ pub const DM: &Country = &Country {
     ],
 };
 
+/// Commonwealth of Dominica
 pub const DMA: &Country = DM;
+/// Dominican Republic
 pub const DO: &Country = &Country {
     name: &CountryMeta {
         common: "Dominican Republic",
@@ -22686,12 +22811,21 @@ pub const DO: &Country = &Country {
     ],
 };
 
+/// Dominican Republic
 pub const DOM: &Country = DO;
+/// Democratic Republic of the Congo
 pub const CD: &Country = &Country {
     name: &CountryMeta {
         common: "DR Congo",
         official: "Democratic Republic of the Congo",
         native: &crate::StaticMap::new(&[
+            (
+                "lua",
+                &CountryName {
+                    common: "Ditunga dia Kongu wa Mungalaata",
+                    official: "Ditunga dia Kongu wa Mungalaata",
+                },
+            ),
             (
                 "kon",
                 &CountryName {
@@ -22718,13 +22852,6 @@ pub const CD: &Country = &Country {
                 &CountryName {
                     common: "Jamhuri ya Kidemokrasia ya Kongo",
                     official: "Jamhuri ya Kidemokrasia ya Kongo",
-                },
-            ),
-            (
-                "lua",
-                &CountryName {
-                    common: "Ditunga dia Kongu wa Mungalaata",
-                    official: "Ditunga dia Kongu wa Mungalaata",
                 },
             ),
         ]),
@@ -22829,10 +22956,10 @@ pub const CD: &Country = &Country {
     locale: &Locale {
         ietf: &["fr-CD", "ln-CD", "lu-CD", "sw-CD"],
         date_formats: &crate::StaticMap::new(&[
-            ("sw-CD", "dd/MM/yyyy"),
             ("fr-CD", "dd/MM/yyyy"),
-            ("lu-CD", "dd/MM/yyyy"),
             ("ln-CD", "dd/MM/yyyy"),
+            ("sw-CD", "dd/MM/yyyy"),
+            ("lu-CD", "dd/MM/yyyy"),
         ]),
         timezones: &[
             &Timezone {
@@ -22942,17 +23069,17 @@ pub const CD: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Kasai-Oriental",
+                        official: "Kasaï Oriental",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kasaï Oriental",
+                        official: "Kasai-Oriental",
                         common: None,
                         native: None,
                     },
@@ -23008,17 +23135,17 @@ pub const CD: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Sud-Kivu",
+                        official: "South Kivu",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "South Kivu",
+                        official: "Sud-Kivu",
                         common: None,
                         native: None,
                     },
@@ -23052,7 +23179,7 @@ pub const CD: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Haut-Katanga",
                         common: None,
@@ -23060,7 +23187,7 @@ pub const CD: &Country = &Country {
                     },
                 ),
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Haut-Katanga",
                         common: None,
@@ -23118,7 +23245,7 @@ pub const CD: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Ituri",
                         common: None,
@@ -23126,7 +23253,7 @@ pub const CD: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Ituri",
                         common: None,
@@ -23162,7 +23289,7 @@ pub const CD: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Kwango",
                         common: None,
@@ -23170,7 +23297,7 @@ pub const CD: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Kwango",
                         common: None,
@@ -23206,17 +23333,17 @@ pub const CD: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Kasai",
+                        official: "Kasaï",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kasaï",
+                        official: "Kasai",
                         common: None,
                         native: None,
                     },
@@ -23228,7 +23355,7 @@ pub const CD: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Lomami",
                         common: None,
@@ -23236,7 +23363,7 @@ pub const CD: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Lomami",
                         common: None,
@@ -23272,7 +23399,7 @@ pub const CD: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Mai-Ndombe",
                         common: None,
@@ -23280,7 +23407,7 @@ pub const CD: &Country = &Country {
                     },
                 ),
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Mai-Ndombe",
                         common: None,
@@ -23294,7 +23421,7 @@ pub const CD: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Mongala",
                         common: None,
@@ -23302,7 +23429,7 @@ pub const CD: &Country = &Country {
                     },
                 ),
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Mongala",
                         common: None,
@@ -23338,7 +23465,7 @@ pub const CD: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Sankuru",
                         common: None,
@@ -23346,7 +23473,7 @@ pub const CD: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Sankuru",
                         common: None,
@@ -23382,7 +23509,7 @@ pub const CD: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Tanganyika",
                         common: None,
@@ -23390,7 +23517,7 @@ pub const CD: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Tanganyika",
                         common: None,
@@ -23426,7 +23553,7 @@ pub const CD: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Tshuapa",
                         common: None,
@@ -23434,7 +23561,7 @@ pub const CD: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Tshuapa",
                         common: None,
@@ -23446,7 +23573,9 @@ pub const CD: &Country = &Country {
     ],
 };
 
+/// Democratic Republic of the Congo
 pub const COD: &Country = CD;
+/// Republic of Ecuador
 pub const EC: &Country = &Country {
     name: &CountryMeta {
         common: "Ecuador",
@@ -23508,7 +23637,7 @@ pub const EC: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["es-EC", "qu-EC"],
-        date_formats: &crate::StaticMap::new(&[("qu-EC", "dd-MM-yyyy"), ("es-EC", "dd/MM/yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("es-EC", "dd/MM/yyyy"), ("qu-EC", "dd-MM-yyyy")]),
         timezones: &[
             &Timezone {
                 name: "America/Guayaquil",
@@ -23837,7 +23966,9 @@ pub const EC: &Country = &Country {
     ],
 };
 
+/// Republic of Ecuador
 pub const ECU: &Country = EC;
+/// Arab Republic of Egypt
 pub const EG: &Country = &Country {
     name: &CountryMeta {
         common: "Egypt",
@@ -23948,19 +24079,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
-                    &SubdivisionMeta {
-                        official: "Al Baḩr al Aḩmar",
-                        common: Some("Red Sea"),
-                        native: Some("البحر الأحمر"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Red Sea",
                         common: Some("Red Sea"),
                         native: None,
+                    },
+                ),
+                (
+                    "ar",
+                    &SubdivisionMeta {
+                        official: "Al Baḩr al Aḩmar",
+                        common: Some("Red Sea"),
+                        native: Some("البحر الأحمر"),
                     },
                 ),
             ]),
@@ -24014,19 +24145,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
-                    &SubdivisionMeta {
-                        official: "Al Gharbīyah",
-                        common: None,
-                        native: Some("الغربية"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Gharbia",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "ar",
+                    &SubdivisionMeta {
+                        official: "Al Gharbīyah",
+                        common: None,
+                        native: Some("الغربية"),
                     },
                 ),
             ]),
@@ -24036,19 +24167,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Alexandria",
-                        common: Some("Alexandria"),
-                        native: None,
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Al Iskandarīyah",
                         common: Some("Alexandria"),
                         native: Some("الإسكندرية"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Alexandria",
+                        common: Some("Alexandria"),
+                        native: None,
                     },
                 ),
             ]),
@@ -24058,19 +24189,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
-                    &SubdivisionMeta {
-                        official: "Al Ismā'īlīyah",
-                        common: None,
-                        native: Some("الإسماعيلية"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Ismailia",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "ar",
+                    &SubdivisionMeta {
+                        official: "Al Ismā'īlīyah",
+                        common: None,
+                        native: Some("الإسماعيلية"),
                     },
                 ),
             ]),
@@ -24080,19 +24211,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Giza",
-                        common: Some("Giza"),
-                        native: None,
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Al Jīzah",
                         common: Some("Giza"),
                         native: Some("الجيزة"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Giza",
+                        common: Some("Giza"),
+                        native: None,
                     },
                 ),
             ]),
@@ -24102,19 +24233,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Monufia",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Al Minūfīyah",
                         common: None,
                         native: Some("المنُوفيّة"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Monufia",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -24124,19 +24255,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Minya",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Al Minyā",
                         common: None,
                         native: Some("المنيا"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Minya",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -24168,19 +24299,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
-                    &SubdivisionMeta {
-                        official: "Al Qalyūbīyah",
-                        common: None,
-                        native: Some("القليوبية"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Qalyubia",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "ar",
+                    &SubdivisionMeta {
+                        official: "Al Qalyūbīyah",
+                        common: None,
+                        native: Some("القليوبية"),
                     },
                 ),
             ]),
@@ -24190,19 +24321,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Luxor",
-                        common: Some("Luxor"),
-                        native: None,
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Al Uqşur",
                         common: Some("Luxor"),
                         native: Some("الأقصر"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Luxor",
+                        common: Some("Luxor"),
+                        native: None,
                     },
                 ),
             ]),
@@ -24212,19 +24343,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "New Valley",
-                        common: Some("New Valley"),
-                        native: None,
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Al Wādī al Jadīd",
                         common: Some("New Valley"),
                         native: Some("الوادي الجديد"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "New Valley",
+                        common: Some("New Valley"),
+                        native: None,
                     },
                 ),
             ]),
@@ -24234,19 +24365,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Suez",
-                        common: Some("Suez"),
-                        native: None,
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "As Suways",
                         common: Some("Suez"),
                         native: Some("السويس"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Suez",
+                        common: Some("Suez"),
+                        native: None,
                     },
                 ),
             ]),
@@ -24256,19 +24387,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
-                    &SubdivisionMeta {
-                        official: "Ash Sharqīyah",
-                        common: None,
-                        native: Some("الشرقية"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Al Sharqia",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "ar",
+                    &SubdivisionMeta {
+                        official: "Ash Sharqīyah",
+                        common: None,
+                        native: Some("الشرقية"),
                     },
                 ),
             ]),
@@ -24278,19 +24409,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
-                    &SubdivisionMeta {
-                        official: "Aswān",
-                        common: None,
-                        native: Some("أسوان"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Aswan",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "ar",
+                    &SubdivisionMeta {
+                        official: "Aswān",
+                        common: None,
+                        native: Some("أسوان"),
                     },
                 ),
             ]),
@@ -24300,19 +24431,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Asyut",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Asyūţ",
                         common: None,
                         native: Some("أسيوط"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Asyut",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -24410,19 +24541,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
-                    &SubdivisionMeta {
-                        official: "Kafr ash Shaykh",
-                        common: None,
-                        native: Some("كفر الشيخ"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Kafr el-Sheikh",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "ar",
+                    &SubdivisionMeta {
+                        official: "Kafr ash Shaykh",
+                        common: None,
+                        native: Some("كفر الشيخ"),
                     },
                 ),
             ]),
@@ -24432,19 +24563,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
-                    &SubdivisionMeta {
-                        official: "Maţrūḩ",
-                        common: None,
-                        native: Some("مطروح"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Matrouh",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "ar",
+                    &SubdivisionMeta {
+                        official: "Maţrūḩ",
+                        common: None,
+                        native: Some("مطروح"),
                     },
                 ),
             ]),
@@ -24454,19 +24585,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Qena",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Qinā",
                         common: None,
                         native: Some("قنا"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Qena",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -24476,19 +24607,19 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "North Sinai",
-                        common: Some("North Sinai"),
-                        native: None,
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Shamāl Sīnā'",
                         common: Some("North Sinai"),
                         native: Some("شمال سيناء"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "North Sinai",
+                        common: Some("North Sinai"),
+                        native: None,
                     },
                 ),
             ]),
@@ -24498,14 +24629,6 @@ pub const EG: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Sohag",
-                        common: Some("Sohag"),
-                        native: None,
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Sūhāj",
@@ -24513,12 +24636,22 @@ pub const EG: &Country = &Country {
                         native: Some("سوهاج"),
                     },
                 ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Sohag",
+                        common: Some("Sohag"),
+                        native: None,
+                    },
+                ),
             ]),
         },
     ],
 };
 
+/// Arab Republic of Egypt
 pub const EGY: &Country = EG;
+/// Republic of El Salvador
 pub const SV: &Country = &Country {
     name: &CountryMeta {
         common: "El Salvador",
@@ -24780,12 +24913,21 @@ pub const SV: &Country = &Country {
     ],
 };
 
+/// Republic of El Salvador
 pub const SLV: &Country = SV;
+/// Republic of Equatorial Guinea
 pub const GQ: &Country = &Country {
     name: &CountryMeta {
         common: "Equatorial Guinea",
         official: "Republic of Equatorial Guinea",
         native: &crate::StaticMap::new(&[
+            (
+                "por",
+                &CountryName {
+                    common: "Guiné Equatorial",
+                    official: "República da Guiné Equatorial",
+                },
+            ),
             (
                 "spa",
                 &CountryName {
@@ -24798,13 +24940,6 @@ pub const GQ: &Country = &Country {
                 &CountryName {
                     common: "Guinée équatoriale",
                     official: "République de la Guinée Équatoriale",
-                },
-            ),
-            (
-                "por",
-                &CountryName {
-                    common: "Guiné Equatorial",
-                    official: "República da Guiné Equatorial",
                 },
             ),
         ]),
@@ -24875,8 +25010,8 @@ pub const GQ: &Country = &Country {
         ietf: &["es-GQ", "fr-GQ", "pt-GQ"],
         date_formats: &crate::StaticMap::new(&[
             ("es-GQ", "dd/MM/yyyy"),
-            ("pt-GQ", "dd/MM/yyyy"),
             ("fr-GQ", "dd/MM/yyyy"),
+            ("pt-GQ", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Malabo",
@@ -24911,14 +25046,6 @@ pub const GQ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "pt",
-                    &SubdivisionMeta {
-                        official: "Região Continental",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "es",
                     &SubdivisionMeta {
                         official: "Región Continental",
@@ -24934,6 +25061,14 @@ pub const GQ: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "pt",
+                    &SubdivisionMeta {
+                        official: "Região Continental",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -24941,17 +25076,17 @@ pub const GQ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "pt",
                     &SubdivisionMeta {
-                        official: "Région Insulaire",
+                        official: "Região Insular",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "pt",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Região Insular",
+                        official: "Région Insulaire",
                         common: None,
                         native: None,
                     },
@@ -24969,12 +25104,21 @@ pub const GQ: &Country = &Country {
     ],
 };
 
+/// Republic of Equatorial Guinea
 pub const GNQ: &Country = GQ;
+/// State of Eritrea
 pub const ER: &Country = &Country {
     name: &CountryMeta {
         common: "Eritrea",
         official: "State of Eritrea",
         native: &crate::StaticMap::new(&[
+            (
+                "tir",
+                &CountryName {
+                    common: "ኤርትራ",
+                    official: "ሃገረ ኤርትራ",
+                },
+            ),
             (
                 "ara",
                 &CountryName {
@@ -24987,13 +25131,6 @@ pub const ER: &Country = &Country {
                 &CountryName {
                     common: "Eritrea",
                     official: "State of Eritrea",
-                },
-            ),
-            (
-                "tir",
-                &CountryName {
-                    common: "ኤርትራ",
-                    official: "ሃገረ ኤርትራ",
                 },
             ),
         ]),
@@ -25064,9 +25201,9 @@ pub const ER: &Country = &Country {
     locale: &Locale {
         ietf: &["ar-ER", "en-ER", "ti-ER"],
         date_formats: &crate::StaticMap::new(&[
+            ("ar-ER", "dd/MM/yyyy"),
             ("en-ER", "dd/MM/yyyy"),
             ("ti-ER", "yyyy-MM-dd"),
-            ("ar-ER", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Nairobi",
@@ -25089,14 +25226,6 @@ pub const ER: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ti",
-                    &SubdivisionMeta {
-                        official: "Ma’ĭkel",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Al Awsaţ",
@@ -25108,6 +25237,14 @@ pub const ER: &Country = &Country {
                     "en",
                     &SubdivisionMeta {
                         official: "Maekel",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "ti",
+                    &SubdivisionMeta {
+                        official: "Ma’ĭkel",
                         common: None,
                         native: None,
                     },
@@ -25149,6 +25286,14 @@ pub const ER: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Anseba",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Ansabā",
@@ -25164,14 +25309,6 @@ pub const ER: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Anseba",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
@@ -25179,9 +25316,9 @@ pub const ER: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "ti",
                     &SubdivisionMeta {
-                        official: "Janūbī al Baḩrī al Aḩmar",
+                        official: "Debubawi K’eyyĭḥ Baḥri",
                         common: None,
                         native: None,
                     },
@@ -25195,9 +25332,9 @@ pub const ER: &Country = &Country {
                     },
                 ),
                 (
-                    "ti",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Debubawi K’eyyĭḥ Baḥri",
+                        official: "Janūbī al Baḩrī al Aḩmar",
                         common: None,
                         native: None,
                     },
@@ -25209,7 +25346,7 @@ pub const ER: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ti",
                     &SubdivisionMeta {
                         official: "Gash-Barka",
                         common: None,
@@ -25225,7 +25362,7 @@ pub const ER: &Country = &Country {
                     },
                 ),
                 (
-                    "ti",
+                    "en",
                     &SubdivisionMeta {
                         official: "Gash-Barka",
                         common: None,
@@ -25239,9 +25376,9 @@ pub const ER: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Shimālī al Baḩrī al Aḩmar",
+                        official: "Northern Red Sea",
                         common: None,
                         native: None,
                     },
@@ -25255,9 +25392,9 @@ pub const ER: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Northern Red Sea",
+                        official: "Shimālī al Baḩrī al Aḩmar",
                         common: None,
                         native: None,
                     },
@@ -25267,7 +25404,9 @@ pub const ER: &Country = &Country {
     ],
 };
 
+/// State of Eritrea
 pub const ERI: &Country = ER;
+/// Republic of Estonia
 pub const EE: &Country = &Country {
     name: &CountryMeta {
         common: "Estonia",
@@ -25373,17 +25512,17 @@ pub const EE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "et",
                     &SubdivisionMeta {
-                        official: "Hiiu",
+                        official: "Hiiumaa",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "et",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Hiiumaa",
+                        official: "Hiiu",
                         common: None,
                         native: None,
                     },
@@ -25417,17 +25556,17 @@ pub const EE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "et",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Jõgevamaa",
+                        official: "Jõgeva",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "et",
                     &SubdivisionMeta {
-                        official: "Jõgeva",
+                        official: "Jõgevamaa",
                         common: None,
                         native: None,
                     },
@@ -25439,17 +25578,17 @@ pub const EE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "et",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Järvamaa",
+                        official: "Järva",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "et",
                     &SubdivisionMeta {
-                        official: "Järva",
+                        official: "Järvamaa",
                         common: None,
                         native: None,
                     },
@@ -25461,17 +25600,17 @@ pub const EE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "et",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Läänemaa",
+                        official: "Lääne",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "et",
                     &SubdivisionMeta {
-                        official: "Lääne",
+                        official: "Läänemaa",
                         common: None,
                         native: None,
                     },
@@ -25505,17 +25644,17 @@ pub const EE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "et",
                     &SubdivisionMeta {
-                        official: "Põlva",
+                        official: "Põlvamaa",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "et",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Põlvamaa",
+                        official: "Põlva",
                         common: None,
                         native: None,
                     },
@@ -25549,17 +25688,17 @@ pub const EE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "et",
                     &SubdivisionMeta {
-                        official: "Rapla",
+                        official: "Raplamaa",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "et",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Raplamaa",
+                        official: "Rapla",
                         common: None,
                         native: None,
                     },
@@ -25571,17 +25710,17 @@ pub const EE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "et",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Saaremaa",
+                        official: "Saare",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "et",
                     &SubdivisionMeta {
-                        official: "Saare",
+                        official: "Saaremaa",
                         common: None,
                         native: None,
                     },
@@ -25659,17 +25798,17 @@ pub const EE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "et",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Võrumaa",
+                        official: "Võru",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "et",
                     &SubdivisionMeta {
-                        official: "Võru",
+                        official: "Võrumaa",
                         common: None,
                         native: None,
                     },
@@ -25679,7 +25818,9 @@ pub const EE: &Country = &Country {
     ],
 };
 
+/// Republic of Estonia
 pub const EST: &Country = EE;
+/// Kingdom of Eswatini
 pub const SZ: &Country = &Country {
     name: &CountryMeta {
         common: "Eswatini",
@@ -25822,7 +25963,9 @@ pub const SZ: &Country = &Country {
     ],
 };
 
+/// Kingdom of Eswatini
 pub const SWZ: &Country = SZ;
+/// Federal Democratic Republic of Ethiopia
 pub const ET: &Country = &Country {
     name: &CountryMeta {
         common: "Ethiopia",
@@ -25921,10 +26064,10 @@ pub const ET: &Country = &Country {
     locale: &Locale {
         ietf: &["am-ET", "om-ET", "so-ET", "ti-ET"],
         date_formats: &crate::StaticMap::new(&[
+            ("ti-ET", "yyyy-MM-dd"),
+            ("om-ET", "yyyy-MM-dd"),
             ("am-ET", "dd/MM/yyyy"),
             ("so-ET", "MM/dd/yyyy"),
-            ("om-ET", "yyyy-MM-dd"),
-            ("ti-ET", "yyyy-MM-dd"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Nairobi",
@@ -26025,17 +26168,17 @@ pub const ET: &Country = &Country {
             ty: Some("regional state"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "am",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Āmara",
+                        official: "Amara",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "am",
                     &SubdivisionMeta {
-                        official: "Amara",
+                        official: "Āmara",
                         common: None,
                         native: None,
                     },
@@ -26047,17 +26190,17 @@ pub const ET: &Country = &Country {
             ty: Some("regional state"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "am",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Bīnshangul Gumuz",
+                        official: "Benshangul-Gumaz",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "am",
                     &SubdivisionMeta {
-                        official: "Benshangul-Gumaz",
+                        official: "Bīnshangul Gumuz",
                         common: None,
                         native: None,
                     },
@@ -26157,17 +26300,17 @@ pub const ET: &Country = &Country {
             ty: Some("regional state"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "am",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Tigray",
+                        official: "Tigrai",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "am",
                     &SubdivisionMeta {
-                        official: "Tigrai",
+                        official: "Tigray",
                         common: None,
                         native: None,
                     },
@@ -26179,17 +26322,17 @@ pub const ET: &Country = &Country {
             ty: Some("regional state"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "am",
                     &SubdivisionMeta {
-                        official: "Southern Nations, Nationalities and Peoples",
+                        official: "YeDebub Bihēroch Bihēreseboch na Hizboch",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "am",
+                    "en",
                     &SubdivisionMeta {
-                        official: "YeDebub Bihēroch Bihēreseboch na Hizboch",
+                        official: "Southern Nations, Nationalities and Peoples",
                         common: None,
                         native: None,
                     },
@@ -26199,7 +26342,9 @@ pub const ET: &Country = &Country {
     ],
 };
 
+/// Federal Democratic Republic of Ethiopia
 pub const ETH: &Country = ET;
+/// Falkland Islands
 pub const FK: &Country = &Country {
     name: &CountryMeta {
         common: "Falkland Islands",
@@ -26288,24 +26433,26 @@ pub const FK: &Country = &Country {
     }],
 };
 
+/// Falkland Islands
 pub const FLK: &Country = FK;
+/// Faroe Islands
 pub const FO: &Country = &Country {
     name: &CountryMeta {
         common: "Faroe Islands",
         official: "Faroe Islands",
         native: &crate::StaticMap::new(&[
             (
-                "dan",
-                &CountryName {
-                    common: "Færøerne",
-                    official: "Færøerne",
-                },
-            ),
-            (
                 "fao",
                 &CountryName {
                     common: "Føroyar",
                     official: "Føroyar",
+                },
+            ),
+            (
+                "dan",
+                &CountryName {
+                    common: "Færøerne",
+                    official: "Færøerne",
                 },
             ),
         ]),
@@ -26375,7 +26522,9 @@ pub const FO: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Faroe Islands
 pub const FRO: &Country = FO;
+/// Republic of Fiji
 pub const FJ: &Country = &Country {
     name: &CountryMeta {
         common: "Fiji",
@@ -26540,17 +26689,17 @@ pub const FJ: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Ba",
+                        official: "FJ-W",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "FJ-W",
+                        official: "Ba",
                         common: None,
                         native: None,
                     },
@@ -26584,17 +26733,17 @@ pub const FJ: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Cakaudrove",
+                        official: "FJ-N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "FJ-N",
+                        official: "Cakaudrove",
                         common: None,
                         native: None,
                     },
@@ -26650,17 +26799,17 @@ pub const FJ: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "FJ-E",
+                        official: "Lomaiviti",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Lomaiviti",
+                        official: "FJ-E",
                         common: None,
                         native: None,
                     },
@@ -26760,17 +26909,17 @@ pub const FJ: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Ra",
+                        official: "FJ-W",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "FJ-W",
+                        official: "Ra",
                         common: None,
                         native: None,
                     },
@@ -26846,7 +26995,9 @@ pub const FJ: &Country = &Country {
     ],
 };
 
+/// Republic of Fiji
 pub const FJI: &Country = FJ;
+/// Republic of Finland
 pub const FI: &Country = &Country {
     name: &CountryMeta {
         common: "Finland",
@@ -26955,10 +27106,10 @@ pub const FI: &Country = &Country {
         ietf: &["en-FI", "fi-FI", "se-FI", "smn-FI", "sv-FI"],
         date_formats: &crate::StaticMap::new(&[
             ("smn-FI", "dd.MM.yyyy"),
-            ("sv-FI", "yyyy-MM-dd"),
-            ("fi-FI", "dd.MM.yyyy"),
-            ("se-FI", "dd.MM.yyyy"),
             ("en-FI", "dd/MM/yyyy"),
+            ("sv-FI", "yyyy-MM-dd"),
+            ("se-FI", "dd.MM.yyyy"),
+            ("fi-FI", "dd.MM.yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Europe/Helsinki",
@@ -26993,14 +27144,6 @@ pub const FI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "sv",
-                    &SubdivisionMeta {
-                        official: "Landskapet Åland",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Åland",
@@ -27016,6 +27159,14 @@ pub const FI: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "sv",
+                    &SubdivisionMeta {
+                        official: "Landskapet Åland",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -27023,17 +27174,17 @@ pub const FI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fi",
+                    "sv",
                     &SubdivisionMeta {
-                        official: "Etelä-Karjala",
+                        official: "Södra Karelen",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sv",
+                    "fi",
                     &SubdivisionMeta {
-                        official: "Södra Karelen",
+                        official: "Etelä-Karjala",
                         common: None,
                         native: None,
                     },
@@ -27053,9 +27204,9 @@ pub const FI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "sv",
                     &SubdivisionMeta {
-                        official: "Southern Ostrobothnia",
+                        official: "Södra Österbotten",
                         common: None,
                         native: None,
                     },
@@ -27069,9 +27220,9 @@ pub const FI: &Country = &Country {
                     },
                 ),
                 (
-                    "sv",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Södra Österbotten",
+                        official: "Southern Ostrobothnia",
                         common: None,
                         native: None,
                     },
@@ -27091,17 +27242,17 @@ pub const FI: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fi",
                     &SubdivisionMeta {
-                        official: "Southern Savonia",
+                        official: "Etelä-Savo",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fi",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Etelä-Savo",
+                        official: "Southern Savonia",
                         common: None,
                         native: None,
                     },
@@ -27113,17 +27264,17 @@ pub const FI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "sv",
                     &SubdivisionMeta {
-                        official: "Kainuu",
+                        official: "Kajanaland",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sv",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kajanaland",
+                        official: "Kainuu",
                         common: None,
                         native: None,
                     },
@@ -27143,14 +27294,6 @@ pub const FI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Tavastia Proper",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "fi",
                     &SubdivisionMeta {
                         official: "Kanta-Häme",
@@ -27162,6 +27305,14 @@ pub const FI: &Country = &Country {
                     "sv",
                     &SubdivisionMeta {
                         official: "Egentliga Tavastland",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Tavastia Proper",
                         common: None,
                         native: None,
                     },
@@ -27181,17 +27332,17 @@ pub const FI: &Country = &Country {
                     },
                 ),
                 (
-                    "sv",
+                    "fi",
                     &SubdivisionMeta {
-                        official: "Mellersta Österbotten",
+                        official: "Keski-Pohjanmaa",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fi",
+                    "sv",
                     &SubdivisionMeta {
-                        official: "Keski-Pohjanmaa",
+                        official: "Mellersta Österbotten",
                         common: None,
                         native: None,
                     },
@@ -27211,17 +27362,17 @@ pub const FI: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fi",
                     &SubdivisionMeta {
-                        official: "Central Finland",
+                        official: "Keski-Suomi",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fi",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Keski-Suomi",
+                        official: "Central Finland",
                         common: None,
                         native: None,
                     },
@@ -27241,17 +27392,17 @@ pub const FI: &Country = &Country {
                     },
                 ),
                 (
-                    "sv",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kymmenedalen",
+                        official: "Kymenlaakso",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "sv",
                     &SubdivisionMeta {
-                        official: "Kymenlaakso",
+                        official: "Kymmenedalen",
                         common: None,
                         native: None,
                     },
@@ -27262,6 +27413,14 @@ pub const FI: &Country = &Country {
             iso: "FI-10",
             ty: None,
             meta: &crate::StaticMap::new(&[
+                (
+                    "fi",
+                    &SubdivisionMeta {
+                        official: "Lappi",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -27274,14 +27433,6 @@ pub const FI: &Country = &Country {
                     "sv",
                     &SubdivisionMeta {
                         official: "Lappland",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "fi",
-                    &SubdivisionMeta {
-                        official: "Lappi",
                         common: None,
                         native: None,
                     },
@@ -27323,17 +27474,17 @@ pub const FI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "sv",
                     &SubdivisionMeta {
-                        official: "Ostrobothnia",
+                        official: "Österbotten",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sv",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Österbotten",
+                        official: "Ostrobothnia",
                         common: None,
                         native: None,
                     },
@@ -27383,9 +27534,9 @@ pub const FI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "sv",
+                    "fi",
                     &SubdivisionMeta {
-                        official: "Norra Österbotten",
+                        official: "Pohjois-Pohjanmaa",
                         common: None,
                         native: None,
                     },
@@ -27399,9 +27550,9 @@ pub const FI: &Country = &Country {
                     },
                 ),
                 (
-                    "fi",
+                    "sv",
                     &SubdivisionMeta {
-                        official: "Pohjois-Pohjanmaa",
+                        official: "Norra Österbotten",
                         common: None,
                         native: None,
                     },
@@ -27413,17 +27564,17 @@ pub const FI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fi",
+                    "sv",
                     &SubdivisionMeta {
-                        official: "Pohjois-Savo",
+                        official: "Norra Savolax",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sv",
+                    "fi",
                     &SubdivisionMeta {
-                        official: "Norra Savolax",
+                        official: "Pohjois-Savo",
                         common: None,
                         native: None,
                     },
@@ -27473,14 +27624,6 @@ pub const FI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Satakunta",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "fi",
                     &SubdivisionMeta {
                         official: "Satakunta",
@@ -27492,6 +27635,14 @@ pub const FI: &Country = &Country {
                     "sv",
                     &SubdivisionMeta {
                         official: "Satakunda",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Satakunta",
                         common: None,
                         native: None,
                     },
@@ -27533,14 +27684,6 @@ pub const FI: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "sv",
-                    &SubdivisionMeta {
-                        official: "Egentliga Finland",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "fi",
                     &SubdivisionMeta {
                         official: "Varsinais-Suomi",
@@ -27556,12 +27699,22 @@ pub const FI: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "sv",
+                    &SubdivisionMeta {
+                        official: "Egentliga Finland",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
     ],
 };
 
+/// Republic of Finland
 pub const FIN: &Country = FI;
+/// French Republic
 pub const FR: &Country = &Country {
     name: &CountryMeta {
         common: "France",
@@ -27907,7 +28060,9 @@ pub const FR: &Country = &Country {
     ],
 };
 
+/// French Republic
 pub const FRA: &Country = FR;
+/// Guiana
 pub const GF: &Country = &Country {
     name: &CountryMeta {
         common: "French Guiana",
@@ -27988,7 +28143,9 @@ pub const GF: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Guiana
 pub const GUF: &Country = GF;
+/// French Polynesia
 pub const PF: &Country = &Country {
     name: &CountryMeta {
         common: "French Polynesia",
@@ -28088,7 +28245,9 @@ pub const PF: &Country = &Country {
     subdivisions: &[],
 };
 
+/// French Polynesia
 pub const PYF: &Country = PF;
+/// Territory of the French Southern and Antarctic Lands
 pub const TF: &Country = &Country {
     name: &CountryMeta {
         common: "French Southern and Antarctic Lands",
@@ -28177,7 +28336,9 @@ pub const TF: &Country = &Country {
     }],
 };
 
+/// Territory of the French Southern and Antarctic Lands
 pub const ATF: &Country = TF;
+/// Gabonese Republic
 pub const GA: &Country = &Country {
     name: &CountryMeta {
         common: "Gabon",
@@ -28369,7 +28530,9 @@ pub const GA: &Country = &Country {
     ],
 };
 
+/// Gabonese Republic
 pub const GAB: &Country = GA;
+/// Republic of the Gambia
 pub const GM: &Country = &Country {
     name: &CountryMeta {
         common: "Gambia",
@@ -28432,9 +28595,9 @@ pub const GM: &Country = &Country {
     locale: &Locale {
         ietf: &["en-GM", "ff-Adlm-GM", "ff-Latn-GM"],
         date_formats: &crate::StaticMap::new(&[
-            ("en-GM", "dd/MM/yyyy"),
             ("ff-Adlm-GM", "yyyyyyyy-MMMM-dddd"),
             ("ff-Latn-GM", "dd/MM/yyyy"),
+            ("en-GM", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Abidjan",
@@ -28539,7 +28702,9 @@ pub const GM: &Country = &Country {
     ],
 };
 
+/// Republic of the Gambia
 pub const GMB: &Country = GM;
+/// Georgia
 pub const GE: &Country = &Country {
     name: &CountryMeta {
         common: "Georgia",
@@ -28607,7 +28772,7 @@ pub const GE: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["ka-GE", "os-GE"],
-        date_formats: &crate::StaticMap::new(&[("ka-GE", "dd.MM.yyyy"), ("os-GE", "dd.MM.yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("os-GE", "dd.MM.yyyy"), ("ka-GE", "dd.MM.yyyy")]),
         timezones: &[&Timezone {
             name: "Asia/Tbilisi",
             ty: TimezoneType::Canonical,
@@ -28783,7 +28948,9 @@ pub const GE: &Country = &Country {
     ],
 };
 
+/// Georgia
 pub const GEO: &Country = GE;
+/// Federal Republic of Germany
 pub const DE: &Country = &Country {
     name: &CountryMeta {
         common: "Germany",
@@ -28901,12 +29068,12 @@ pub const DE: &Country = &Country {
     locale: &Locale {
         ietf: &["de-DE", "dsb-DE", "en-DE", "hsb-DE", "ksh-DE", "nds-DE"],
         date_formats: &crate::StaticMap::new(&[
-            ("de-DE", "dd.MM.yyyy"),
-            ("en-DE", "dd/MM/yyyy"),
-            ("ksh-DE", "yyyy-MM-dd"),
             ("dsb-DE", "dd.MM.yyyy"),
-            ("hsb-DE", "dd.MM.yyyy"),
+            ("en-DE", "dd/MM/yyyy"),
+            ("de-DE", "dd.MM.yyyy"),
+            ("ksh-DE", "yyyy-MM-dd"),
             ("nds-DE", "MM/dd/yyyy"),
+            ("hsb-DE", "dd.MM.yyyy"),
         ]),
         timezones: &[
             &Timezone {
@@ -28950,7 +29117,7 @@ pub const DE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
                         official: "Baden-Württemberg",
                         common: None,
@@ -28958,7 +29125,7 @@ pub const DE: &Country = &Country {
                     },
                 ),
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
                         official: "Baden-Württemberg",
                         common: None,
@@ -29016,7 +29183,7 @@ pub const DE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
                         official: "Brandenburg",
                         common: None,
@@ -29024,7 +29191,7 @@ pub const DE: &Country = &Country {
                     },
                 ),
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
                         official: "Brandenburg",
                         common: None,
@@ -29038,7 +29205,7 @@ pub const DE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
                         official: "Bremen",
                         common: None,
@@ -29046,7 +29213,7 @@ pub const DE: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
                         official: "Bremen",
                         common: None,
@@ -29060,7 +29227,7 @@ pub const DE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
                         official: "Hamburg",
                         common: None,
@@ -29068,7 +29235,7 @@ pub const DE: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
                         official: "Hamburg",
                         common: None,
@@ -29126,17 +29293,17 @@ pub const DE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Niedersachsen",
+                        official: "Lower Saxony",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
-                        official: "Lower Saxony",
+                        official: "Niedersachsen",
                         common: None,
                         native: None,
                     },
@@ -29148,17 +29315,17 @@ pub const DE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Nordrhein-Westfalen",
+                        official: "North Rhine-Westphalia",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
-                        official: "North Rhine-Westphalia",
+                        official: "Nordrhein-Westfalen",
                         common: None,
                         native: None,
                     },
@@ -29170,17 +29337,17 @@ pub const DE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Rheinland-Pfalz",
+                        official: "Rhineland-Palatinate",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
-                        official: "Rhineland-Palatinate",
+                        official: "Rheinland-Pfalz",
                         common: None,
                         native: None,
                     },
@@ -29192,7 +29359,7 @@ pub const DE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
                         official: "Saarland",
                         common: None,
@@ -29200,7 +29367,7 @@ pub const DE: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
                         official: "Saarland",
                         common: None,
@@ -29214,17 +29381,17 @@ pub const DE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Sachsen",
+                        official: "Saxony",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
-                        official: "Saxony",
+                        official: "Sachsen",
                         common: None,
                         native: None,
                     },
@@ -29236,17 +29403,17 @@ pub const DE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
-                        official: "Saxony-Anhalt",
+                        official: "Sachsen-Anhalt",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Sachsen-Anhalt",
+                        official: "Saxony-Anhalt",
                         common: None,
                         native: None,
                     },
@@ -29258,7 +29425,7 @@ pub const DE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
                         official: "Schleswig-Holstein",
                         common: None,
@@ -29266,7 +29433,7 @@ pub const DE: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
                         official: "Schleswig-Holstein",
                         common: None,
@@ -29280,17 +29447,17 @@ pub const DE: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Thüringen",
+                        official: "Thuringia",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
-                        official: "Thuringia",
+                        official: "Thüringen",
                         common: None,
                         native: None,
                     },
@@ -29300,7 +29467,9 @@ pub const DE: &Country = &Country {
     ],
 };
 
+/// Federal Republic of Germany
 pub const DEU: &Country = DE;
+/// Republic of Ghana
 pub const GH: &Country = &Country {
     name: &CountryMeta {
         common: "Ghana",
@@ -29405,12 +29574,12 @@ pub const GH: &Country = &Country {
             "ha-GH",
         ],
         date_formats: &crate::StaticMap::new(&[
-            ("ha-GH", "yyyy-MM-dd"),
-            ("ff-Adlm-GH", "yyyyyyyy-MMMM-dddd"),
-            ("en-GH", "dd/MM/yyyy"),
-            ("ee-GH", "MM/dd/yyyy"),
-            ("ak-GH", "yyyy/MM/dd"),
             ("ff-Latn-GH", "dd/MM/yyyy"),
+            ("ff-Adlm-GH", "yyyyyyyy-MMMM-dddd"),
+            ("ak-GH", "yyyy/MM/dd"),
+            ("ee-GH", "MM/dd/yyyy"),
+            ("ha-GH", "yyyy-MM-dd"),
+            ("en-GH", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Abidjan",
@@ -29635,7 +29804,9 @@ pub const GH: &Country = &Country {
     ],
 };
 
+/// Republic of Ghana
 pub const GHA: &Country = GH;
+/// Gibraltar
 pub const GI: &Country = &Country {
     name: &CountryMeta {
         common: "Gibraltar",
@@ -29713,7 +29884,9 @@ pub const GI: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Gibraltar
 pub const GIB: &Country = GI;
+/// Hellenic Republic
 pub const GR: &Country = &Country {
     name: &CountryMeta {
         common: "Greece",
@@ -29803,19 +29976,19 @@ pub const GR: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "el",
-                    &SubdivisionMeta {
-                        official: "Anatolikí Makedonía kai Thráki",
-                        common: None,
-                        native: Some("Ανατολική Μακεδονία και Θράκη"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Eastern Macedonia and Thrace",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "el",
+                    &SubdivisionMeta {
+                        official: "Anatolikí Makedonía kai Thráki",
+                        common: None,
+                        native: Some("Ανατολική Μακεδονία και Θράκη"),
                     },
                 ),
             ]),
@@ -29825,19 +29998,19 @@ pub const GR: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Attica",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "el",
                     &SubdivisionMeta {
                         official: "Attikí",
                         common: None,
                         native: Some("Αττική"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Attica",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -29891,19 +30064,19 @@ pub const GR: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "el",
-                    &SubdivisionMeta {
-                        official: "Ionía Nísia",
-                        common: None,
-                        native: Some("Ιόνια Νησιά"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Ionian Islands",
                         common: None,
                         native: None,
+                    },
+                ),
+                (
+                    "el",
+                    &SubdivisionMeta {
+                        official: "Ionía Nísia",
+                        common: None,
+                        native: Some("Ιόνια Νησιά"),
                     },
                 ),
             ]),
@@ -29935,19 +30108,19 @@ pub const GR: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Central Macedonia",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "el",
                     &SubdivisionMeta {
                         official: "Kentrikí Makedonía",
                         common: None,
                         native: Some("Κεντρική Μακεδονία"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Central Macedonia",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -30001,19 +30174,19 @@ pub const GR: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Peloponnese",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "el",
                     &SubdivisionMeta {
                         official: "Pelopónnisos",
                         common: None,
                         native: Some("Πελοπόννησος"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Peloponnese",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -30045,19 +30218,19 @@ pub const GR: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Thessaly",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "el",
                     &SubdivisionMeta {
                         official: "Thessalía",
                         common: None,
                         native: Some("Θεσσαλία"),
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Thessaly",
+                        common: None,
+                        native: None,
                     },
                 ),
             ]),
@@ -30067,14 +30240,6 @@ pub const GR: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "el",
-                    &SubdivisionMeta {
-                        official: "Vóreio Aigaío",
-                        common: None,
-                        native: Some("Βόρειο Αιγαίο"),
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Northern Aegean",
@@ -30082,12 +30247,22 @@ pub const GR: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "el",
+                    &SubdivisionMeta {
+                        official: "Vóreio Aigaío",
+                        common: None,
+                        native: Some("Βόρειο Αιγαίο"),
+                    },
+                ),
             ]),
         },
     ],
 };
 
+/// Hellenic Republic
 pub const GRC: &Country = GR;
+/// Greenland
 pub const GL: &Country = &Country {
     name: &CountryMeta {
         common: "Greenland",
@@ -30146,7 +30321,7 @@ pub const GL: &Country = &Country {
     spoken_languages: &["dsl"],
     locale: &Locale {
         ietf: &["da-GL", "kl-GL"],
-        date_formats: &crate::StaticMap::new(&[("da-GL", "dd.MM.yyyy"), ("kl-GL", "yyyy-MM-dd")]),
+        date_formats: &crate::StaticMap::new(&[("kl-GL", "yyyy-MM-dd"), ("da-GL", "dd.MM.yyyy")]),
         timezones: &[
             &Timezone {
                 name: "America/Godthab",
@@ -30261,7 +30436,9 @@ pub const GL: &Country = &Country {
     ],
 };
 
+/// Greenland
 pub const GRL: &Country = GL;
+/// Grenada
 pub const GD: &Country = &Country {
     name: &CountryMeta {
         common: "Grenada",
@@ -30424,7 +30601,9 @@ pub const GD: &Country = &Country {
     ],
 };
 
+/// Grenada
 pub const GRD: &Country = GD;
+/// Guadeloupe
 pub const GP: &Country = &Country {
     name: &CountryMeta {
         common: "Guadeloupe",
@@ -30502,19 +30681,14 @@ pub const GP: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Guadeloupe
 pub const GLP: &Country = GP;
+/// Guam
 pub const GU: &Country = &Country {
     name: &CountryMeta {
         common: "Guam",
         official: "Guam",
         native: &crate::StaticMap::new(&[
-            (
-                "spa",
-                &CountryName {
-                    common: "Guam",
-                    official: "Guam",
-                },
-            ),
             (
                 "eng",
                 &CountryName {
@@ -30527,6 +30701,13 @@ pub const GU: &Country = &Country {
                 &CountryName {
                     common: "Guåhån",
                     official: "Guåhån",
+                },
+            ),
+            (
+                "spa",
+                &CountryName {
+                    common: "Guam",
+                    official: "Guam",
                 },
             ),
         ]),
@@ -30598,7 +30779,9 @@ pub const GU: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Guam
 pub const GUM: &Country = GU;
+/// Republic of Guatemala
 pub const GT: &Country = &Country {
     name: &CountryMeta {
         common: "Guatemala",
@@ -30949,19 +31132,14 @@ pub const GT: &Country = &Country {
     ],
 };
 
+/// Republic of Guatemala
 pub const GTM: &Country = GT;
+/// Bailiwick of Guernsey
 pub const GG: &Country = &Country {
     name: &CountryMeta {
         common: "Guernsey",
         official: "Bailiwick of Guernsey",
         native: &crate::StaticMap::new(&[
-            (
-                "nfr",
-                &CountryName {
-                    common: "Dgèrnésiais",
-                    official: "Dgèrnésiais",
-                },
-            ),
             (
                 "eng",
                 &CountryName {
@@ -30974,6 +31152,13 @@ pub const GG: &Country = &Country {
                 &CountryName {
                     common: "Guernesey",
                     official: "Bailliage de Guernesey",
+                },
+            ),
+            (
+                "nfr",
+                &CountryName {
+                    common: "Dgèrnésiais",
+                    official: "Dgèrnésiais",
                 },
             ),
         ]),
@@ -31043,7 +31228,9 @@ pub const GG: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Bailiwick of Guernsey
 pub const GGY: &Country = GG;
+/// Republic of Guinea
 pub const GN: &Country = &Country {
     name: &CountryMeta {
         common: "Guinea",
@@ -31115,8 +31302,8 @@ pub const GN: &Country = &Country {
         ietf: &["ff-Adlm-GN", "ff-Latn-GN", "fr-GN"],
         date_formats: &crate::StaticMap::new(&[
             ("ff-Latn-GN", "dd/MM/yyyy"),
-            ("ff-Adlm-GN", "yyyyyyyy-MMMM-dddd"),
             ("fr-GN", "dd/MM/yyyy"),
+            ("ff-Adlm-GN", "yyyyyyyy-MMMM-dddd"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Abidjan",
@@ -31291,17 +31478,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Boké",
+                        official: "B",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "B",
+                        official: "Boké",
                         common: None,
                         native: None,
                     },
@@ -31313,17 +31500,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "D",
+                        official: "Coyah",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Coyah",
+                        official: "D",
                         common: None,
                         native: None,
                     },
@@ -31335,17 +31522,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Dabola",
+                        official: "F",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "F",
+                        official: "Dabola",
                         common: None,
                         native: None,
                     },
@@ -31357,17 +31544,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Dalaba",
+                        official: "M",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "M",
+                        official: "Dalaba",
                         common: None,
                         native: None,
                     },
@@ -31379,17 +31566,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Dinguiraye",
+                        official: "F",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "F",
+                        official: "Dinguiraye",
                         common: None,
                         native: None,
                     },
@@ -31401,17 +31588,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Dubréka",
+                        official: "D",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "D",
+                        official: "Dubréka",
                         common: None,
                         native: None,
                     },
@@ -31423,17 +31610,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Faranah",
+                        official: "F",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "F",
+                        official: "Faranah",
                         common: None,
                         native: None,
                     },
@@ -31489,17 +31676,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "B",
+                        official: "Gaoual",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Gaoual",
+                        official: "B",
                         common: None,
                         native: None,
                     },
@@ -31555,17 +31742,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "K",
+                        official: "Kérouané",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kérouané",
+                        official: "K",
                         common: None,
                         native: None,
                     },
@@ -31665,17 +31852,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kouroussa",
+                        official: "K",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "K",
+                        official: "Kouroussa",
                         common: None,
                         native: None,
                     },
@@ -31687,17 +31874,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "L",
+                        official: "Labé",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Labé",
+                        official: "L",
                         common: None,
                         native: None,
                     },
@@ -31709,17 +31896,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "L",
+                        official: "Lélouma",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Lélouma",
+                        official: "L",
                         common: None,
                         native: None,
                     },
@@ -31753,17 +31940,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Macenta",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Macenta",
+                        official: "N",
                         common: None,
                         native: None,
                     },
@@ -31797,17 +31984,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Mamou",
+                        official: "M",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "M",
+                        official: "Mamou",
                         common: None,
                         native: None,
                     },
@@ -31863,17 +32050,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Pita",
+                        official: "M",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "M",
+                        official: "Pita",
                         common: None,
                         native: None,
                     },
@@ -31929,17 +32116,17 @@ pub const GN: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "L",
+                        official: "Tougué",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Tougué",
+                        official: "L",
                         common: None,
                         native: None,
                     },
@@ -31971,7 +32158,9 @@ pub const GN: &Country = &Country {
     ],
 };
 
+/// Republic of Guinea
 pub const GIN: &Country = GN;
+/// Republic of Guinea-Bissau
 pub const GW: &Country = &Country {
     name: &CountryMeta {
         common: "Guinea-Bissau",
@@ -32044,8 +32233,8 @@ pub const GW: &Country = &Country {
     locale: &Locale {
         ietf: &["ff-Adlm-GW", "ff-Latn-GW", "pt-GW"],
         date_formats: &crate::StaticMap::new(&[
-            ("ff-Latn-GW", "dd/MM/yyyy"),
             ("pt-GW", "dd/MM/yyyy"),
+            ("ff-Latn-GW", "dd/MM/yyyy"),
             ("ff-Adlm-GW", "yyyyyyyy-MMMM-dddd"),
         ]),
         timezones: &[&Timezone {
@@ -32115,7 +32304,9 @@ pub const GW: &Country = &Country {
     ],
 };
 
+/// Republic of Guinea-Bissau
 pub const GNB: &Country = GW;
+/// Co-operative Republic of Guyana
 pub const GY: &Country = &Country {
     name: &CountryMeta {
         common: "Guyana",
@@ -32317,24 +32508,26 @@ pub const GY: &Country = &Country {
     ],
 };
 
+/// Co-operative Republic of Guyana
 pub const GUY: &Country = GY;
+/// Republic of Haiti
 pub const HT: &Country = &Country {
     name: &CountryMeta {
         common: "Haiti",
         official: "Republic of Haiti",
         native: &crate::StaticMap::new(&[
             (
-                "fra",
-                &CountryName {
-                    common: "Haïti",
-                    official: "République d'Haïti",
-                },
-            ),
-            (
                 "hat",
                 &CountryName {
                     common: "Ayiti",
                     official: "Repiblik Ayiti",
+                },
+            ),
+            (
+                "fra",
+                &CountryName {
+                    common: "Haïti",
+                    official: "République d'Haïti",
                 },
             ),
         ]),
@@ -32444,17 +32637,17 @@ pub const HT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "ht",
                     &SubdivisionMeta {
-                        official: "Centre",
+                        official: "Sant",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ht",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Sant",
+                        official: "Centre",
                         common: None,
                         native: None,
                     },
@@ -32466,17 +32659,17 @@ pub const HT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ht",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Grandans",
+                        official: "Grande’Anse",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "ht",
                     &SubdivisionMeta {
-                        official: "Grande’Anse",
+                        official: "Grandans",
                         common: None,
                         native: None,
                     },
@@ -32532,17 +32725,17 @@ pub const HT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ht",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Nòdès",
+                        official: "Nord-Est",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "ht",
                     &SubdivisionMeta {
-                        official: "Nord-Est",
+                        official: "Nòdès",
                         common: None,
                         native: None,
                     },
@@ -32554,17 +32747,17 @@ pub const HT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "ht",
                     &SubdivisionMeta {
-                        official: "Nord-Ouest",
+                        official: "Nòdwès",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ht",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Nòdwès",
+                        official: "Nord-Ouest",
                         common: None,
                         native: None,
                     },
@@ -32640,7 +32833,9 @@ pub const HT: &Country = &Country {
     ],
 };
 
+/// Republic of Haiti
 pub const HTI: &Country = HT;
+/// Heard Island and McDonald Islands
 pub const HM: &Country = &Country {
     name: &CountryMeta {
         common: "Heard Island and McDonald Islands",
@@ -32717,7 +32912,9 @@ pub const HM: &Country = &Country {
     }],
 };
 
+/// Heard Island and McDonald Islands
 pub const HMD: &Country = HM;
+/// Republic of Honduras
 pub const HN: &Country = &Country {
     name: &CountryMeta {
         common: "Honduras",
@@ -33014,7 +33211,9 @@ pub const HN: &Country = &Country {
     ],
 };
 
+/// Republic of Honduras
 pub const HND: &Country = HN;
+/// Hong Kong Special Administrative Region of the People's Republic of China
 pub const HK: &Country = &Country {
     name: &CountryMeta {
         common: "Hong Kong",
@@ -33094,10 +33293,10 @@ pub const HK: &Country = &Country {
     locale: &Locale {
         ietf: &["en-HK", "yue-Hant-HK", "zh-Hans-HK", "zh-Hant-HK"],
         date_formats: &crate::StaticMap::new(&[
-            ("en-HK", "dd/MM/yyyy"),
-            ("zh-Hant-HK", "dd/MM/yyyy"),
             ("yue-Hant-HK", "yyyy/MM/dd"),
+            ("zh-Hant-HK", "dd/MM/yyyy"),
             ("zh-Hans-HK", "dd/MM/yyyy"),
+            ("en-HK", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Asia/Hong_Kong",
@@ -33129,7 +33328,9 @@ pub const HK: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Hong Kong Special Administrative Region of the People's Republic of China
 pub const HKG: &Country = HK;
+/// Hungary
 pub const HU: &Country = &Country {
     name: &CountryMeta {
         common: "Hungary",
@@ -33735,7 +33936,9 @@ pub const HU: &Country = &Country {
     ],
 };
 
+/// Hungary
 pub const HUN: &Country = HU;
+/// Iceland
 pub const IS: &Country = &Country {
     name: &CountryMeta {
         common: "Iceland",
@@ -33910,17 +34113,19 @@ pub const IS: &Country = &Country {
     ],
 };
 
+/// Iceland
 pub const ISL: &Country = IS;
+/// Republic of India
 pub const IN: &Country = &Country {
     name: &CountryMeta {
         common: "India",
         official: "Republic of India",
         native: &crate::StaticMap::new(&[
             (
-                "eng",
+                "tam",
                 &CountryName {
-                    common: "India",
-                    official: "Republic of India",
+                    common: "இந்தியா",
+                    official: "இந்தியக் குடியரசு",
                 },
             ),
             (
@@ -33931,10 +34136,10 @@ pub const IN: &Country = &Country {
                 },
             ),
             (
-                "tam",
+                "eng",
                 &CountryName {
-                    common: "இந்தியா",
-                    official: "இந்தியக் குடியரசு",
+                    common: "India",
+                    official: "Republic of India",
                 },
             ),
         ]),
@@ -34245,28 +34450,28 @@ pub const IN: &Country = &Country {
         ],
         date_formats: &crate::StaticMap::new(&[
             ("sat-Olck-IN", "dd/MM/yyyy"),
-            ("bn-IN", "dd/MM/yyyy"),
-            ("te-IN", "dd/MM/yyyy"),
-            ("kok-IN", "dd-MM-yyyy"),
             ("en-IN", "dd/MM/yyyy"),
-            ("kn-IN", "dd/MM/yyyy"),
-            ("ccp-IN", "dddd/MMMM/yyyyyyyy"),
-            ("or-IN", "MM/dd/yyyy"),
-            ("bo-IN", "yyyy-MM-dd"),
-            ("mai-IN", "dd/MM/yyyy"),
-            ("mni-Beng-IN", "dd/MM/yyyy"),
-            ("ur-IN", "dd/MM/yyyy"),
-            ("sd-Deva-IN", "MM/dd/yyyy"),
             ("gu-IN", "dd/MM/yyyy"),
-            ("brx-IN", "MM/dd/yyyy"),
-            ("pa-Guru-IN", "dd/MM/yyyy"),
             ("mr-IN", "dd/MM/yyyy"),
-            ("ta-IN", "dd/MM/yyyy"),
-            ("as-IN", "dd-MM-yyyy"),
+            ("kok-IN", "dd-MM-yyyy"),
+            ("or-IN", "MM/dd/yyyy"),
+            ("ccp-IN", "dddd/MMMM/yyyyyyyy"),
+            ("ks-Arab-IN", "MM/dd/yyyy"),
+            ("bo-IN", "yyyy-MM-dd"),
+            ("bn-IN", "dd/MM/yyyy"),
+            ("mni-Beng-IN", "dd/MM/yyyy"),
             ("hi-IN", "dd/MM/yyyy"),
             ("ne-IN", "yyyy-MM-dd"),
             ("ml-IN", "dd/MM/yyyy"),
-            ("ks-Arab-IN", "MM/dd/yyyy"),
+            ("te-IN", "dd/MM/yyyy"),
+            ("ta-IN", "dd/MM/yyyy"),
+            ("sd-Deva-IN", "MM/dd/yyyy"),
+            ("kn-IN", "dd/MM/yyyy"),
+            ("mai-IN", "dd/MM/yyyy"),
+            ("brx-IN", "MM/dd/yyyy"),
+            ("ur-IN", "dd/MM/yyyy"),
+            ("pa-Guru-IN", "dd/MM/yyyy"),
+            ("as-IN", "dd-MM-yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Asia/Kolkata",
@@ -34731,7 +34936,9 @@ pub const IN: &Country = &Country {
     ],
 };
 
+/// Republic of India
 pub const IND: &Country = IN;
+/// Republic of Indonesia
 pub const ID: &Country = &Country {
     name: &CountryMeta {
         common: "Indonesia",
@@ -34870,8 +35077,8 @@ pub const ID: &Country = &Country {
         date_formats: &crate::StaticMap::new(&[
             ("id-ID", "dd/MM/yyyy"),
             ("jv-ID", "dd-MM-yyyy"),
-            ("ms-ID", "dd/MM/yyyy"),
             ("su-Latn-ID", "dd/MM/yyyy"),
+            ("ms-ID", "dd/MM/yyyy"),
         ]),
         timezones: &[
             &Timezone {
@@ -34999,7 +35206,9 @@ pub const ID: &Country = &Country {
     ],
 };
 
+/// Republic of Indonesia
 pub const IDN: &Country = ID;
+/// Islamic Republic of Iran
 pub const IR: &Country = &Country {
     name: &CountryMeta {
         common: "Iran",
@@ -35099,10 +35308,10 @@ pub const IR: &Country = &Country {
     locale: &Locale {
         ietf: &["ckb-IR", "fa-IR", "lrc-IR", "mzn-IR"],
         date_formats: &crate::StaticMap::new(&[
-            ("lrc-IR", "GG yyyy-MM-dd"),
-            ("ckb-IR", "dd/M/yyyy"),
             ("mzn-IR", "GG yyyy-MM-dd"),
+            ("ckb-IR", "dd/M/yyyy"),
             ("fa-IR", "yyyy/M/dd"),
+            ("lrc-IR", "GG yyyy-MM-dd"),
         ]),
         timezones: &[&Timezone {
             name: "Asia/Tehran",
@@ -35495,19 +35704,14 @@ pub const IR: &Country = &Country {
     ],
 };
 
+/// Islamic Republic of Iran
 pub const IRN: &Country = IR;
+/// Republic of Iraq
 pub const IQ: &Country = &Country {
     name: &CountryMeta {
         common: "Iraq",
         official: "Republic of Iraq",
         native: &crate::StaticMap::new(&[
-            (
-                "ara",
-                &CountryName {
-                    common: "العراق",
-                    official: "جمهورية العراق",
-                },
-            ),
             (
                 "ckb",
                 &CountryName {
@@ -35520,6 +35724,13 @@ pub const IQ: &Country = &Country {
                 &CountryName {
                     common: "ܩܘܼܛܢܵܐ",
                     official: "ܩܘܼܛܢܵܐ ܐܝܼܪܲܩ",
+                },
+            ),
+            (
+                "ara",
+                &CountryName {
+                    common: "العراق",
+                    official: "جمهورية العراق",
                 },
             ),
         ]),
@@ -35592,8 +35803,8 @@ pub const IQ: &Country = &Country {
         ietf: &["ar-IQ", "ckb-IQ", "lrc-IQ"],
         date_formats: &crate::StaticMap::new(&[
             ("ar-IQ", "dd/MM/yyyy"),
-            ("lrc-IQ", "yyyy-MM-dd"),
             ("ckb-IQ", "dd/MM/yyyy"),
+            ("lrc-IQ", "yyyy-MM-dd"),
         ]),
         timezones: &[&Timezone {
             name: "Asia/Baghdad",
@@ -35638,17 +35849,17 @@ pub const IQ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "ku",
                     &SubdivisionMeta {
-                        official: "Al Başrah",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ku",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Al Başrah",
                         common: None,
                         native: None,
                     },
@@ -35726,17 +35937,17 @@ pub const IQ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ku",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Arbīl",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "ku",
                     &SubdivisionMeta {
-                        official: "Arbīl",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -35836,17 +36047,17 @@ pub const IQ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ku",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Dhī Qār",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "ku",
                     &SubdivisionMeta {
-                        official: "Dhī Qār",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -35858,17 +36069,17 @@ pub const IQ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "ku",
                     &SubdivisionMeta {
-                        official: "Diyālá",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ku",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Diyālá",
                         common: None,
                         native: None,
                     },
@@ -35880,17 +36091,17 @@ pub const IQ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ku",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Karbalā’",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "ku",
                     &SubdivisionMeta {
-                        official: "Karbalā’",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -35902,17 +36113,17 @@ pub const IQ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ku",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Kirkūk",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "ku",
                     &SubdivisionMeta {
-                        official: "Kirkūk",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -35946,17 +36157,17 @@ pub const IQ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ku",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Nīnawá",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "ku",
                     &SubdivisionMeta {
-                        official: "Nīnawá",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -35990,17 +36201,17 @@ pub const IQ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "ku",
                     &SubdivisionMeta {
-                        official: "Wāsiţ",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ku",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Wāsiţ",
                         common: None,
                         native: None,
                     },
@@ -36012,17 +36223,17 @@ pub const IQ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ku",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Halabja",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "ku",
                     &SubdivisionMeta {
-                        official: "Halabja",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -36032,24 +36243,26 @@ pub const IQ: &Country = &Country {
     ],
 };
 
+/// Republic of Iraq
 pub const IRQ: &Country = IQ;
+/// Republic of Ireland
 pub const IE: &Country = &Country {
     name: &CountryMeta {
         common: "Ireland",
         official: "Republic of Ireland",
         native: &crate::StaticMap::new(&[
             (
-                "gle",
-                &CountryName {
-                    common: "Éire",
-                    official: "Poblacht na hÉireann",
-                },
-            ),
-            (
                 "eng",
                 &CountryName {
                     common: "Ireland",
                     official: "Republic of Ireland",
+                },
+            ),
+            (
+                "gle",
+                &CountryName {
+                    common: "Éire",
+                    official: "Poblacht na hÉireann",
                 },
             ),
         ]),
@@ -36136,17 +36349,17 @@ pub const IE: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Connaught",
+                        official: "Connacht",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Connacht",
+                        official: "Connaught",
                         common: None,
                         native: None,
                     },
@@ -36180,17 +36393,17 @@ pub const IE: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "An Mhumhain",
+                        official: "Munster",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Munster",
+                        official: "An Mhumhain",
                         common: None,
                         native: None,
                     },
@@ -36202,17 +36415,17 @@ pub const IE: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Ulaidh",
+                        official: "Ulster",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Ulster",
+                        official: "Ulaidh",
                         common: None,
                         native: None,
                     },
@@ -36224,17 +36437,17 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Carlow",
+                        official: "Ceatharlach",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Ceatharlach",
+                        official: "Carlow",
                         common: None,
                         native: None,
                     },
@@ -36246,17 +36459,17 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Cavan",
+                        official: "An Cabhán",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "An Cabhán",
+                        official: "Cavan",
                         common: None,
                         native: None,
                     },
@@ -36290,17 +36503,17 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Cork",
+                        official: "Corcaigh",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Corcaigh",
+                        official: "Cork",
                         common: None,
                         native: None,
                     },
@@ -36334,17 +36547,17 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Dublin",
+                        official: "Baile Átha Cliath",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Baile Átha Cliath",
+                        official: "Dublin",
                         common: None,
                         native: None,
                     },
@@ -36356,17 +36569,17 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Gaillimh",
+                        official: "Galway",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Galway",
+                        official: "Gaillimh",
                         common: None,
                         native: None,
                     },
@@ -36422,17 +36635,17 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Cill Chainnigh",
+                        official: "Kilkenny",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Kilkenny",
+                        official: "Cill Chainnigh",
                         common: None,
                         native: None,
                     },
@@ -36444,7 +36657,7 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
                         official: "Laois",
                         common: None,
@@ -36452,7 +36665,7 @@ pub const IE: &Country = &Country {
                     },
                 ),
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
                         official: "Laois",
                         common: None,
@@ -36488,17 +36701,17 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Limerick",
+                        official: "Luimneach",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Luimneach",
+                        official: "Limerick",
                         common: None,
                         native: None,
                     },
@@ -36510,17 +36723,17 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Longford",
+                        official: "An Longfort",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "An Longfort",
+                        official: "Longford",
                         common: None,
                         native: None,
                     },
@@ -36532,17 +36745,17 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Lú",
+                        official: "Louth",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Louth",
+                        official: "Lú",
                         common: None,
                         native: None,
                     },
@@ -36554,17 +36767,17 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Mayo",
+                        official: "Maigh Eo",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Maigh Eo",
+                        official: "Mayo",
                         common: None,
                         native: None,
                     },
@@ -36598,17 +36811,17 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Monaghan",
+                        official: "Muineachán",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Muineachán",
+                        official: "Monaghan",
                         common: None,
                         native: None,
                     },
@@ -36620,17 +36833,17 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Uíbh Fhailí",
+                        official: "Offaly",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Offaly",
+                        official: "Uíbh Fhailí",
                         common: None,
                         native: None,
                     },
@@ -36642,17 +36855,17 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Ros Comáin",
+                        official: "Roscommon",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Roscommon",
+                        official: "Ros Comáin",
                         common: None,
                         native: None,
                     },
@@ -36708,17 +36921,17 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Waterford",
+                        official: "Port Láirge",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Port Láirge",
+                        official: "Waterford",
                         common: None,
                         native: None,
                     },
@@ -36774,17 +36987,17 @@ pub const IE: &Country = &Country {
             ty: Some("county"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ga",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Cill Mhantáin",
+                        official: "Wicklow",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ga",
                     &SubdivisionMeta {
-                        official: "Wicklow",
+                        official: "Cill Mhantáin",
                         common: None,
                         native: None,
                     },
@@ -36794,24 +37007,26 @@ pub const IE: &Country = &Country {
     ],
 };
 
+/// Republic of Ireland
 pub const IRL: &Country = IE;
+/// Isle of Man
 pub const IM: &Country = &Country {
     name: &CountryMeta {
         common: "Isle of Man",
         official: "Isle of Man",
         native: &crate::StaticMap::new(&[
             (
-                "glv",
-                &CountryName {
-                    common: "Mannin",
-                    official: "Ellan Vannin or Mannin",
-                },
-            ),
-            (
                 "eng",
                 &CountryName {
                     common: "Isle of Man",
                     official: "Isle of Man",
+                },
+            ),
+            (
+                "glv",
+                &CountryName {
+                    common: "Mannin",
+                    official: "Ellan Vannin or Mannin",
                 },
             ),
         ]),
@@ -36893,7 +37108,9 @@ pub const IM: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Isle of Man
 pub const IMN: &Country = IM;
+/// State of Israel
 pub const IL: &Country = &Country {
     name: &CountryMeta {
         common: "Israel",
@@ -36984,8 +37201,8 @@ pub const IL: &Country = &Country {
     locale: &Locale {
         ietf: &["ar-IL", "en-IL", "he-IL"],
         date_formats: &crate::StaticMap::new(&[
-            ("en-IL", "dd/MM/yyyy"),
             ("he-IL", "dd.MM.yyyy"),
+            ("en-IL", "dd/MM/yyyy"),
             ("ar-IL", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
@@ -37021,19 +37238,19 @@ pub const IL: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "arCommon",
-                    &SubdivisionMeta {
-                        official: "El Janūbī",
-                        common: Some("Southern"),
-                        native: None,
-                    },
-                ),
-                (
                     "he",
                     &SubdivisionMeta {
                         official: "HaDarom",
                         common: Some("Southern"),
                         native: Some("מחוז הדרום"),
+                    },
+                ),
+                (
+                    "arCommon",
+                    &SubdivisionMeta {
+                        official: "El Janūbī",
+                        common: Some("Southern"),
+                        native: None,
                     },
                 ),
                 (
@@ -37059,19 +37276,19 @@ pub const IL: &Country = &Country {
                     },
                 ),
                 (
-                    "he",
-                    &SubdivisionMeta {
-                        official: "HaMerkaz",
-                        common: Some("Central"),
-                        native: Some("מָחוֹז הַמֶרְכָּז"),
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Al Awsaţ",
                         common: Some("Central"),
                         native: Some("المنطقة الوسطى"),
+                    },
+                ),
+                (
+                    "he",
+                    &SubdivisionMeta {
+                        official: "HaMerkaz",
+                        common: Some("Central"),
+                        native: Some("מָחוֹז הַמֶרְכָּז"),
                     },
                 ),
             ]),
@@ -37081,11 +37298,11 @@ pub const IL: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "arCommon",
+                    "he",
                     &SubdivisionMeta {
-                        official: "Esh Shamālī",
+                        official: "HaTsafon",
                         common: Some("Northern"),
-                        native: None,
+                        native: Some("מחוז הצפון"),
                     },
                 ),
                 (
@@ -37097,11 +37314,11 @@ pub const IL: &Country = &Country {
                     },
                 ),
                 (
-                    "he",
+                    "arCommon",
                     &SubdivisionMeta {
-                        official: "HaTsafon",
+                        official: "Esh Shamālī",
                         common: Some("Northern"),
-                        native: Some("מחוז הצפון"),
+                        native: None,
                     },
                 ),
             ]),
@@ -37110,6 +37327,14 @@ pub const IL: &Country = &Country {
             iso: "IL-HA",
             ty: None,
             meta: &crate::StaticMap::new(&[
+                (
+                    "ar",
+                    &SubdivisionMeta {
+                        official: "Ḩayfā",
+                        common: Some("Haifa"),
+                        native: Some("منطقة حيفا"),
+                    },
+                ),
                 (
                     "arCommon",
                     &SubdivisionMeta {
@@ -37124,14 +37349,6 @@ pub const IL: &Country = &Country {
                         official: "H̱efa",
                         common: Some("Haifa"),
                         native: Some("מחוז חיפה"),
-                    },
-                ),
-                (
-                    "ar",
-                    &SubdivisionMeta {
-                        official: "Ḩayfā",
-                        common: Some("Haifa"),
-                        native: Some("منطقة حيفا"),
                     },
                 ),
             ]),
@@ -37149,19 +37366,19 @@ pub const IL: &Country = &Country {
                     },
                 ),
                 (
-                    "he",
-                    &SubdivisionMeta {
-                        official: "Tel Aviv",
-                        common: None,
-                        native: Some("מָחוֹז תֵּל אָבִיב"),
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Tall Abīb",
                         common: None,
                         native: Some("منطقة تل أبيب"),
+                    },
+                ),
+                (
+                    "he",
+                    &SubdivisionMeta {
+                        official: "Tel Aviv",
+                        common: None,
+                        native: Some("מָחוֹז תֵּל אָבִיב"),
                     },
                 ),
             ]),
@@ -37171,11 +37388,11 @@ pub const IL: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "he",
                     &SubdivisionMeta {
-                        official: "Al Quds",
+                        official: "Yerushalayim",
                         common: Some("Jerusalem"),
-                        native: Some("منطقة القدس"),
+                        native: Some("מחוז ירושלים"),
                     },
                 ),
                 (
@@ -37187,11 +37404,11 @@ pub const IL: &Country = &Country {
                     },
                 ),
                 (
-                    "he",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Yerushalayim",
+                        official: "Al Quds",
                         common: Some("Jerusalem"),
-                        native: Some("מחוז ירושלים"),
+                        native: Some("منطقة القدس"),
                     },
                 ),
             ]),
@@ -37199,7 +37416,9 @@ pub const IL: &Country = &Country {
     ],
 };
 
+/// State of Israel
 pub const ISR: &Country = IL;
+/// Italian Republic
 pub const IT: &Country = &Country {
     name: &CountryMeta {
         common: "Italy",
@@ -37292,10 +37511,10 @@ pub const IT: &Country = &Country {
     locale: &Locale {
         ietf: &["ca-IT", "de-IT", "fur-IT", "it-IT"],
         date_formats: &crate::StaticMap::new(&[
+            ("it-IT", "dd/MM/yyyy"),
             ("fur-IT", "dd/MM/yyyy"),
             ("de-IT", "dd.MM.yyyy"),
             ("ca-IT", "dd/MM/yyyy"),
-            ("it-IT", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Europe/Rome",
@@ -37330,14 +37549,6 @@ pub const IT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "arCommon",
-                    &SubdivisionMeta {
-                        official: "El Janūbī",
-                        common: Some("Southern"),
-                        native: None,
-                    },
-                ),
-                (
                     "he",
                     &SubdivisionMeta {
                         official: "HaDarom",
@@ -37351,6 +37562,14 @@ pub const IT: &Country = &Country {
                         official: "Al Janūbī",
                         common: Some("Southern"),
                         native: Some("لواء الجنوب"),
+                    },
+                ),
+                (
+                    "arCommon",
+                    &SubdivisionMeta {
+                        official: "El Janūbī",
+                        common: Some("Southern"),
+                        native: None,
                     },
                 ),
             ]),
@@ -37390,14 +37609,6 @@ pub const IT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "arCommon",
-                    &SubdivisionMeta {
-                        official: "Esh Shamālī",
-                        common: Some("Northern"),
-                        native: None,
-                    },
-                ),
-                (
                     "he",
                     &SubdivisionMeta {
                         official: "HaTsafon",
@@ -37413,6 +37624,14 @@ pub const IT: &Country = &Country {
                         native: Some("منطقة الشمال"),
                     },
                 ),
+                (
+                    "arCommon",
+                    &SubdivisionMeta {
+                        official: "Esh Shamālī",
+                        common: Some("Northern"),
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -37420,11 +37639,11 @@ pub const IT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "arCommon",
+                    "he",
                     &SubdivisionMeta {
-                        official: "Ḥeifa",
+                        official: "H̱efa",
                         common: Some("Haifa"),
-                        native: None,
+                        native: Some("מחוז חיפה"),
                     },
                 ),
                 (
@@ -37436,11 +37655,11 @@ pub const IT: &Country = &Country {
                     },
                 ),
                 (
-                    "he",
+                    "arCommon",
                     &SubdivisionMeta {
-                        official: "H̱efa",
+                        official: "Ḥeifa",
                         common: Some("Haifa"),
-                        native: Some("מחוז חיפה"),
+                        native: None,
                     },
                 ),
             ]),
@@ -37449,14 +37668,6 @@ pub const IT: &Country = &Country {
             iso: "IL-TA",
             ty: None,
             meta: &crate::StaticMap::new(&[
-                (
-                    "ar",
-                    &SubdivisionMeta {
-                        official: "Tall Abīb",
-                        common: None,
-                        native: Some("منطقة تل أبيب"),
-                    },
-                ),
                 (
                     "arCommon",
                     &SubdivisionMeta {
@@ -37471,6 +37682,14 @@ pub const IT: &Country = &Country {
                         official: "Tel Aviv",
                         common: None,
                         native: Some("מָחוֹז תֵּל אָבִיב"),
+                    },
+                ),
+                (
+                    "ar",
+                    &SubdivisionMeta {
+                        official: "Tall Abīb",
+                        common: None,
+                        native: Some("منطقة تل أبيب"),
                     },
                 ),
             ]),
@@ -37488,14 +37707,6 @@ pub const IT: &Country = &Country {
                     },
                 ),
                 (
-                    "he",
-                    &SubdivisionMeta {
-                        official: "Yerushalayim",
-                        common: Some("Jerusalem"),
-                        native: Some("מחוז ירושלים"),
-                    },
-                ),
-                (
                     "ar",
                     &SubdivisionMeta {
                         official: "Al Quds",
@@ -37503,26 +37714,36 @@ pub const IT: &Country = &Country {
                         native: Some("منطقة القدس"),
                     },
                 ),
+                (
+                    "he",
+                    &SubdivisionMeta {
+                        official: "Yerushalayim",
+                        common: Some("Jerusalem"),
+                        native: Some("מחוז ירושלים"),
+                    },
+                ),
             ]),
         },
     ],
 };
 
+/// Italian Republic
 pub const ITA: &Country = IT;
+/// Jamaica
 pub const JM: &Country = &Country {
     name: &CountryMeta {
         common: "Jamaica",
         official: "Jamaica",
         native: &crate::StaticMap::new(&[
             (
-                "eng",
+                "jam",
                 &CountryName {
                     common: "Jamaica",
                     official: "Jamaica",
                 },
             ),
             (
-                "jam",
+                "eng",
                 &CountryName {
                     common: "Jamaica",
                     official: "Jamaica",
@@ -37764,7 +37985,9 @@ pub const JM: &Country = &Country {
     ],
 };
 
+/// Jamaica
 pub const JAM: &Country = JM;
+/// Japan
 pub const JP: &Country = &Country {
     name: &CountryMeta {
         common: "Japan",
@@ -37848,17 +38071,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Aiti",
+                        official: "Aichi",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "Aichi",
+                        official: "Aiti",
                         common: None,
                         native: None,
                     },
@@ -37958,17 +38181,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Gunma",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Gunma",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -37980,17 +38203,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Hirosima",
+                        official: "Hiroshima",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "Hiroshima",
+                        official: "Hirosima",
                         common: None,
                         native: None,
                     },
@@ -38156,17 +38379,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Iwate",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Iwate",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -38244,17 +38467,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "Kochi",
+                        official: "Kôti",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kôti",
+                        official: "Kochi",
                         common: None,
                         native: None,
                     },
@@ -38266,17 +38489,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Kumamoto",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kumamoto",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -38288,17 +38511,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "Kyoto",
+                        official: "Kyôto",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kyôto",
+                        official: "Kyoto",
                         common: None,
                         native: None,
                     },
@@ -38354,17 +38577,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Miyazaki",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Miyazaki",
                         common: None,
                         native: None,
                     },
@@ -38376,17 +38599,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Nagano",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Nagano",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -38398,17 +38621,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Nagasaki",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Nagasaki",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -38420,17 +38643,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Nara",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Nara",
                         common: None,
                         native: None,
                     },
@@ -38464,17 +38687,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Ôita",
+                        official: "Oita",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "Oita",
+                        official: "Ôita",
                         common: None,
                         native: None,
                     },
@@ -38486,17 +38709,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Okayama",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Okayama",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -38530,17 +38753,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Ôsaka",
+                        official: "Osaka",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "Osaka",
+                        official: "Ôsaka",
                         common: None,
                         native: None,
                     },
@@ -38574,17 +38797,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Saitama",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Saitama",
                         common: None,
                         native: None,
                     },
@@ -38640,17 +38863,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Sizuoka",
+                        official: "Shizuoka",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "Shizuoka",
+                        official: "Sizuoka",
                         common: None,
                         native: None,
                     },
@@ -38684,17 +38907,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Totigi",
+                        official: "Tochigi",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "Tochigi",
+                        official: "Totigi",
                         common: None,
                         native: None,
                     },
@@ -38706,17 +38929,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Tokusima",
+                        official: "Tokushima",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "Tokushima",
+                        official: "Tokusima",
                         common: None,
                         native: None,
                     },
@@ -38728,17 +38951,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "Tokyo",
+                        official: "Tôkyô",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Tôkyô",
+                        official: "Tokyo",
                         common: None,
                         native: None,
                     },
@@ -38750,17 +38973,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Tottori",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Tottori",
                         common: None,
                         native: None,
                     },
@@ -38772,17 +38995,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Toyama",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Toyama",
                         common: None,
                         native: None,
                     },
@@ -38794,17 +39017,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Wakayama",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Wakayama",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -38860,17 +39083,17 @@ pub const JP: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "jp",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Yamanasi",
+                        official: "Yamanashi",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "jp",
                     &SubdivisionMeta {
-                        official: "Yamanashi",
+                        official: "Yamanasi",
                         common: None,
                         native: None,
                     },
@@ -38880,19 +39103,14 @@ pub const JP: &Country = &Country {
     ],
 };
 
+/// Japan
 pub const JPN: &Country = JP;
+/// Bailiwick of Jersey
 pub const JE: &Country = &Country {
     name: &CountryMeta {
         common: "Jersey",
         official: "Bailiwick of Jersey",
         native: &crate::StaticMap::new(&[
-            (
-                "fra",
-                &CountryName {
-                    common: "Jersey",
-                    official: "Bailliage de Jersey",
-                },
-            ),
             (
                 "eng",
                 &CountryName {
@@ -38905,6 +39123,13 @@ pub const JE: &Country = &Country {
                 &CountryName {
                     common: "Jèrri",
                     official: "Bailliage dé Jèrri",
+                },
+            ),
+            (
+                "fra",
+                &CountryName {
+                    common: "Jersey",
+                    official: "Bailliage de Jersey",
                 },
             ),
         ]),
@@ -38978,7 +39203,9 @@ pub const JE: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Bailiwick of Jersey
 pub const JEY: &Country = JE;
+/// Hashemite Kingdom of Jordan
 pub const JO: &Country = &Country {
     name: &CountryMeta {
         common: "Jordan",
@@ -39201,24 +39428,26 @@ pub const JO: &Country = &Country {
     ],
 };
 
+/// Hashemite Kingdom of Jordan
 pub const JOR: &Country = JO;
+/// Republic of Kazakhstan
 pub const KZ: &Country = &Country {
     name: &CountryMeta {
         common: "Kazakhstan",
         official: "Republic of Kazakhstan",
         native: &crate::StaticMap::new(&[
             (
-                "rus",
-                &CountryName {
-                    common: "Казахстан",
-                    official: "Республика Казахстан",
-                },
-            ),
-            (
                 "kaz",
                 &CountryName {
                     common: "Қазақстан",
                     official: "Қазақстан Республикасы",
+                },
+            ),
+            (
+                "rus",
+                &CountryName {
+                    common: "Казахстан",
+                    official: "Республика Казахстан",
                 },
             ),
         ]),
@@ -39288,7 +39517,7 @@ pub const KZ: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["kk-KZ", "ru-KZ"],
-        date_formats: &crate::StaticMap::new(&[("kk-KZ", "dd.MM.yyyy"), ("ru-KZ", "dd.MM.yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("ru-KZ", "dd.MM.yyyy"), ("kk-KZ", "dd.MM.yyyy")]),
         timezones: &[
             &Timezone {
                 name: "Asia/Almaty",
@@ -39352,7 +39581,7 @@ pub const KZ: &Country = &Country {
             ty: Some("city"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "kk",
+                    "ru",
                     &SubdivisionMeta {
                         official: "Almaty",
                         common: None,
@@ -39360,7 +39589,7 @@ pub const KZ: &Country = &Country {
                     },
                 ),
                 (
-                    "ru",
+                    "kk",
                     &SubdivisionMeta {
                         official: "Almaty",
                         common: None,
@@ -39396,17 +39625,17 @@ pub const KZ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "kk",
+                    "ru",
                     &SubdivisionMeta {
-                        official: "Aqmola oblysy",
+                        official: "Akmolinskaya oblast'",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ru",
+                    "kk",
                     &SubdivisionMeta {
-                        official: "Akmolinskaya oblast'",
+                        official: "Aqmola oblysy",
                         common: None,
                         native: None,
                     },
@@ -39418,17 +39647,17 @@ pub const KZ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "kk",
+                    "ru",
                     &SubdivisionMeta {
-                        official: "Aqtöbe oblysy",
+                        official: "Aktyubinskaya oblast'",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ru",
+                    "kk",
                     &SubdivisionMeta {
-                        official: "Aktyubinskaya oblast'",
+                        official: "Aqtöbe oblysy",
                         common: None,
                         native: None,
                     },
@@ -39550,17 +39779,17 @@ pub const KZ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ru",
+                    "kk",
                     &SubdivisionMeta {
-                        official: "Karagandinskaya oblast'",
+                        official: "Qaraghandy oblysy",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "kk",
+                    "ru",
                     &SubdivisionMeta {
-                        official: "Qaraghandy oblysy",
+                        official: "Karagandinskaya oblast'",
                         common: None,
                         native: None,
                     },
@@ -39594,17 +39823,17 @@ pub const KZ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "kk",
+                    "ru",
                     &SubdivisionMeta {
-                        official: "Qyzylorda oblysy",
+                        official: "Kyzylordinskaya oblast'",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ru",
+                    "kk",
                     &SubdivisionMeta {
-                        official: "Kyzylordinskaya oblast'",
+                        official: "Qyzylorda oblysy",
                         common: None,
                         native: None,
                     },
@@ -39616,17 +39845,17 @@ pub const KZ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "kk",
+                    "ru",
                     &SubdivisionMeta {
-                        official: "Shyghys Qazaqstan oblysy",
+                        official: "Vostochno-Kazakhstanskaya oblast'",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ru",
+                    "kk",
                     &SubdivisionMeta {
-                        official: "Vostochno-Kazakhstanskaya oblast'",
+                        official: "Shyghys Qazaqstan oblysy",
                         common: None,
                         native: None,
                     },
@@ -39638,7 +39867,7 @@ pub const KZ: &Country = &Country {
             ty: Some("city"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "kk",
+                    "ru",
                     &SubdivisionMeta {
                         official: "Shymkent",
                         common: None,
@@ -39646,7 +39875,7 @@ pub const KZ: &Country = &Country {
                     },
                 ),
                 (
-                    "ru",
+                    "kk",
                     &SubdivisionMeta {
                         official: "Shymkent",
                         common: None,
@@ -39660,17 +39889,17 @@ pub const KZ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "kk",
+                    "ru",
                     &SubdivisionMeta {
-                        official: "Soltüstik Qazaqstan oblysy",
+                        official: "Severo-Kazakhstanskaya oblast'",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ru",
+                    "kk",
                     &SubdivisionMeta {
-                        official: "Severo-Kazakhstanskaya oblast'",
+                        official: "Soltüstik Qazaqstan oblysy",
                         common: None,
                         native: None,
                     },
@@ -39682,17 +39911,17 @@ pub const KZ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "kk",
+                    "ru",
                     &SubdivisionMeta {
-                        official: "Türkistan oblysy",
+                        official: "Turkestankaya oblast'",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ru",
+                    "kk",
                     &SubdivisionMeta {
-                        official: "Turkestankaya oblast'",
+                        official: "Türkistan oblysy",
                         common: None,
                         native: None,
                     },
@@ -39724,7 +39953,9 @@ pub const KZ: &Country = &Country {
     ],
 };
 
+/// Republic of Kazakhstan
 pub const KAZ: &Country = KZ;
+/// Republic of Kenya
 pub const KE: &Country = &Country {
     name: &CountryMeta {
         common: "Kenya",
@@ -39948,21 +40179,21 @@ pub const KE: &Country = &Country {
             "mas-KE", "mer-KE", "om-KE", "saq-KE", "so-KE", "sw-KE", "teo-KE",
         ],
         date_formats: &crate::StaticMap::new(&[
-            ("saq-KE", "dd/MM/yyyy"),
-            ("teo-KE", "dd/MM/yyyy"),
+            ("om-KE", "yyyy-MM-dd"),
+            ("dav-KE", "dd/MM/yyyy"),
+            ("sw-KE", "dd/MM/yyyy"),
+            ("ebu-KE", "dd/MM/yyyy"),
             ("kam-KE", "dd/MM/yyyy"),
             ("luo-KE", "dd/MM/yyyy"),
-            ("mer-KE", "dd/MM/yyyy"),
-            ("ebu-KE", "dd/MM/yyyy"),
-            ("dav-KE", "dd/MM/yyyy"),
-            ("om-KE", "yyyy-MM-dd"),
-            ("sw-KE", "dd/MM/yyyy"),
-            ("luy-KE", "dd/MM/yyyy"),
-            ("so-KE", "MM/dd/yyyy"),
-            ("ki-KE", "dd/MM/yyyy"),
             ("kln-KE", "dd/MM/yyyy"),
             ("en-KE", "dd/MM/yyyy"),
+            ("saq-KE", "dd/MM/yyyy"),
+            ("so-KE", "MM/dd/yyyy"),
+            ("mer-KE", "dd/MM/yyyy"),
+            ("ki-KE", "dd/MM/yyyy"),
+            ("teo-KE", "dd/MM/yyyy"),
             ("guz-KE", "dd/MM/yyyy"),
+            ("luy-KE", "dd/MM/yyyy"),
             ("mas-KE", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
@@ -40560,7 +40791,9 @@ pub const KE: &Country = &Country {
     ],
 };
 
+/// Republic of Kenya
 pub const KEN: &Country = KE;
+/// Independent and Sovereign Republic of Kiribati
 pub const KI: &Country = &Country {
     name: &CountryMeta {
         common: "Kiribati",
@@ -40700,24 +40933,26 @@ pub const KI: &Country = &Country {
     ],
 };
 
+/// Independent and Sovereign Republic of Kiribati
 pub const KIR: &Country = KI;
+/// Republic of Kosovo
 pub const XK: &Country = &Country {
     name: &CountryMeta {
         common: "Kosovo",
         official: "Republic of Kosovo",
         native: &crate::StaticMap::new(&[
             (
-                "sqi",
-                &CountryName {
-                    common: "Kosova",
-                    official: "Republika e Kosovës",
-                },
-            ),
-            (
                 "srp",
                 &CountryName {
                     common: "Косово",
                     official: "Република Косово",
+                },
+            ),
+            (
+                "sqi",
+                &CountryName {
+                    common: "Kosova",
+                    official: "Republika e Kosovës",
                 },
             ),
         ]),
@@ -40774,8 +41009,8 @@ pub const XK: &Country = &Country {
     locale: &Locale {
         ietf: &["sq-XK", "sr-Cyrl-XK", "sr-Latn-XK"],
         date_formats: &crate::StaticMap::new(&[
-            ("sr-Cyrl-XK", "dd.MM.yyyy."),
             ("sq-XK", "dd.MM.yyyy"),
+            ("sr-Cyrl-XK", "dd.MM.yyyy."),
             ("sr-Latn-XK", "dd.MM.yyyy."),
         ]),
         timezones: &[&Timezone {
@@ -40808,7 +41043,9 @@ pub const XK: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Republic of Kosovo
 pub const UNK: &Country = XK;
+/// State of Kuwait
 pub const KW: &Country = &Country {
     name: &CountryMeta {
         common: "Kuwait",
@@ -40949,7 +41186,9 @@ pub const KW: &Country = &Country {
     ],
 };
 
+/// State of Kuwait
 pub const KWT: &Country = KW;
+/// Kyrgyz Republic
 pub const KG: &Country = &Country {
     name: &CountryMeta {
         common: "Kyrgyzstan",
@@ -41031,7 +41270,7 @@ pub const KG: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["ky-KG", "ru-KG"],
-        date_formats: &crate::StaticMap::new(&[("ru-KG", "dd.MM.yyyy"), ("ky-KG", "yyyy-dd-MM")]),
+        date_formats: &crate::StaticMap::new(&[("ky-KG", "yyyy-dd-MM"), ("ru-KG", "dd.MM.yyyy")]),
         timezones: &[&Timezone {
             name: "Asia/Bishkek",
             ty: TimezoneType::Canonical,
@@ -41064,17 +41303,17 @@ pub const KG: &Country = &Country {
         ty: Some("region"),
         meta: &crate::StaticMap::new(&[
             (
-                "ru",
+                "ky",
                 &SubdivisionMeta {
-                    official: "Issyk-Kul'skaya oblast'",
+                    official: "Ysyk-Köl",
                     common: None,
                     native: None,
                 },
             ),
             (
-                "ky",
+                "ru",
                 &SubdivisionMeta {
-                    official: "Ysyk-Köl",
+                    official: "Issyk-Kul'skaya oblast'",
                     common: None,
                     native: None,
                 },
@@ -41083,7 +41322,9 @@ pub const KG: &Country = &Country {
     }],
 };
 
+/// Kyrgyz Republic
 pub const KGZ: &Country = KG;
+/// Lao People's Democratic Republic
 pub const LA: &Country = &Country {
     name: &CountryMeta {
         common: "Laos",
@@ -41397,7 +41638,9 @@ pub const LA: &Country = &Country {
     ],
 };
 
+/// Lao People's Democratic Republic
 pub const LAO: &Country = LA;
+/// Republic of Latvia
 pub const LV: &Country = &Country {
     name: &CountryMeta {
         common: "Latvia",
@@ -42912,7 +43155,9 @@ pub const LV: &Country = &Country {
     ],
 };
 
+/// Republic of Latvia
 pub const LVA: &Country = LV;
+/// Lebanese Republic
 pub const LB: &Country = &Country {
     name: &CountryMeta {
         common: "Lebanon",
@@ -43098,21 +43343,23 @@ pub const LB: &Country = &Country {
     ],
 };
 
+/// Lebanese Republic
 pub const LBN: &Country = LB;
+/// Kingdom of Lesotho
 pub const LS: &Country = &Country {
     name: &CountryMeta {
         common: "Lesotho",
         official: "Kingdom of Lesotho",
         native: &crate::StaticMap::new(&[
             (
-                "sot",
+                "eng",
                 &CountryName {
                     common: "Lesotho",
                     official: "Kingdom of Lesotho",
                 },
             ),
             (
-                "eng",
+                "sot",
                 &CountryName {
                     common: "Lesotho",
                     official: "Kingdom of Lesotho",
@@ -43321,7 +43568,9 @@ pub const LS: &Country = &Country {
     ],
 };
 
+/// Kingdom of Lesotho
 pub const LSO: &Country = LS;
+/// Republic of Liberia
 pub const LR: &Country = &Country {
     name: &CountryMeta {
         common: "Liberia",
@@ -43401,10 +43650,10 @@ pub const LR: &Country = &Country {
             "vai-Vaii-LR",
         ],
         date_formats: &crate::StaticMap::new(&[
-            ("ff-Adlm-LR", "yyyyyyyy-MMMM-dddd"),
-            ("en-LR", "dd/MM/yyyy"),
-            ("ff-Latn-LR", "dd/MM/yyyy"),
             ("vai-Latn-LR", "MM/dd/yyyy"),
+            ("en-LR", "dd/MM/yyyy"),
+            ("ff-Adlm-LR", "yyyyyyyy-MMMM-dddd"),
+            ("ff-Latn-LR", "dd/MM/yyyy"),
             ("vai-Vaii-LR", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
@@ -43618,7 +43867,9 @@ pub const LR: &Country = &Country {
     ],
 };
 
+/// Republic of Liberia
 pub const LBR: &Country = LR;
+/// State of Libya
 pub const LY: &Country = &Country {
     name: &CountryMeta {
         common: "Libya",
@@ -43960,7 +44211,9 @@ pub const LY: &Country = &Country {
     ],
 };
 
+/// State of Libya
 pub const LBY: &Country = LY;
+/// Principality of Liechtenstein
 pub const LI: &Country = &Country {
     name: &CountryMeta {
         common: "Liechtenstein",
@@ -44019,7 +44272,7 @@ pub const LI: &Country = &Country {
     spoken_languages: &["ita", "sgg", "wae"],
     locale: &Locale {
         ietf: &["de-LI", "gsw-LI"],
-        date_formats: &crate::StaticMap::new(&[("gsw-LI", "dd.MM.yyyy"), ("de-LI", "dd.MM.yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("de-LI", "dd.MM.yyyy"), ("gsw-LI", "dd.MM.yyyy")]),
         timezones: &[&Timezone {
             name: "Europe/Vaduz",
             ty: TimezoneType::Link,
@@ -44183,7 +44436,9 @@ pub const LI: &Country = &Country {
     ],
 };
 
+/// Principality of Liechtenstein
 pub const LIE: &Country = LI;
+/// Republic of Lithuania
 pub const LT: &Country = &Country {
     name: &CountryMeta {
         common: "Lithuania",
@@ -44338,17 +44593,17 @@ pub const LT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "lt",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Marijampolės apskritis",
+                        official: "Marijampolė County",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "lt",
                     &SubdivisionMeta {
-                        official: "Marijampolė County",
+                        official: "Marijampolės apskritis",
                         common: None,
                         native: None,
                     },
@@ -44404,17 +44659,17 @@ pub const LT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "lt",
                     &SubdivisionMeta {
-                        official: "Tauragė County",
+                        official: "Tauragės apskritis",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "lt",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Tauragės apskritis",
+                        official: "Tauragė County",
                         common: None,
                         native: None,
                     },
@@ -44448,17 +44703,17 @@ pub const LT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "lt",
                     &SubdivisionMeta {
-                        official: "Utena County",
+                        official: "Utenos apskritis",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "lt",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Utenos apskritis",
+                        official: "Utena County",
                         common: None,
                         native: None,
                     },
@@ -44470,17 +44725,17 @@ pub const LT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "lt",
                     &SubdivisionMeta {
-                        official: "Vilnius County",
+                        official: "Vilniaus apskritis",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "lt",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Vilniaus apskritis",
+                        official: "Vilnius County",
                         common: None,
                         native: None,
                     },
@@ -44490,24 +44745,26 @@ pub const LT: &Country = &Country {
     ],
 };
 
+/// Republic of Lithuania
 pub const LTU: &Country = LT;
+/// Grand Duchy of Luxembourg
 pub const LU: &Country = &Country {
     name: &CountryMeta {
         common: "Luxembourg",
         official: "Grand Duchy of Luxembourg",
         native: &crate::StaticMap::new(&[
             (
-                "fra",
-                &CountryName {
-                    common: "Luxembourg",
-                    official: "Grand-Duché de Luxembourg",
-                },
-            ),
-            (
                 "deu",
                 &CountryName {
                     common: "Luxemburg",
                     official: "Großherzogtum Luxemburg",
+                },
+            ),
+            (
+                "fra",
+                &CountryName {
+                    common: "Luxembourg",
+                    official: "Grand-Duché de Luxembourg",
                 },
             ),
             (
@@ -44593,10 +44850,10 @@ pub const LU: &Country = &Country {
     locale: &Locale {
         ietf: &["de-LU", "fr-LU", "lb-LU", "pt-LU"],
         date_formats: &crate::StaticMap::new(&[
-            ("pt-LU", "dd/MM/yyyy"),
-            ("de-LU", "dd.MM.yyyy"),
             ("lb-LU", "dd.MM.yyyy"),
             ("fr-LU", "dd/MM/yyyy"),
+            ("pt-LU", "dd/MM/yyyy"),
+            ("de-LU", "dd.MM.yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Europe/Luxembourg",
@@ -44631,17 +44888,17 @@ pub const LU: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "lb",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kapellen",
+                        official: "Capellen",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "de",
+                    "lb",
                     &SubdivisionMeta {
-                        official: "Capellen",
+                        official: "Kapellen",
                         common: None,
                         native: None,
                     },
@@ -44655,7 +44912,7 @@ pub const LU: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "de",
                     &SubdivisionMeta {
                         official: "Capellen",
                         common: None,
@@ -44669,14 +44926,6 @@ pub const LU: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "lb",
-                    &SubdivisionMeta {
-                        official: "Klierf",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "de",
                     &SubdivisionMeta {
                         official: "Clerf",
@@ -44685,7 +44934,15 @@ pub const LU: &Country = &Country {
                     },
                 ),
                 (
-                    "fr",
+                    "lb",
+                    &SubdivisionMeta {
+                        official: "Klierf",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
                     &SubdivisionMeta {
                         official: "Clervaux",
                         common: None,
@@ -44693,7 +44950,7 @@ pub const LU: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Clervaux",
                         common: None,
@@ -44707,9 +44964,9 @@ pub const LU: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
+                    "lb",
                     &SubdivisionMeta {
-                        official: "Diekirch",
+                        official: "Diekrech",
                         common: None,
                         native: None,
                     },
@@ -44723,15 +44980,15 @@ pub const LU: &Country = &Country {
                     },
                 ),
                 (
-                    "lb",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Diekrech",
+                        official: "Diekirch",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "de",
                     &SubdivisionMeta {
                         official: "Diekirch",
                         common: None,
@@ -44753,14 +45010,6 @@ pub const LU: &Country = &Country {
                     },
                 ),
                 (
-                    "fr",
-                    &SubdivisionMeta {
-                        official: "Echternach",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "de",
                     &SubdivisionMeta {
                         official: "Echternach",
@@ -44770,6 +45019,14 @@ pub const LU: &Country = &Country {
                 ),
                 (
                     "en",
+                    &SubdivisionMeta {
+                        official: "Echternach",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "fr",
                     &SubdivisionMeta {
                         official: "Echternach",
                         common: None,
@@ -44783,6 +45040,14 @@ pub const LU: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Esch-sur-Alzette",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "fr",
                     &SubdivisionMeta {
                         official: "Esch-sur-Alzette",
@@ -44794,14 +45059,6 @@ pub const LU: &Country = &Country {
                     "de",
                     &SubdivisionMeta {
                         official: "Esch an der Alzette",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Esch-sur-Alzette",
                         common: None,
                         native: None,
                     },
@@ -44821,22 +45078,6 @@ pub const LU: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "lb",
-                    &SubdivisionMeta {
-                        official: "Gréivemaacher",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "fr",
-                    &SubdivisionMeta {
-                        official: "Grevenmacher",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Grevenmacher",
@@ -44846,6 +45087,22 @@ pub const LU: &Country = &Country {
                 ),
                 (
                     "de",
+                    &SubdivisionMeta {
+                        official: "Grevenmacher",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "lb",
+                    &SubdivisionMeta {
+                        official: "Gréivemaacher",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "fr",
                     &SubdivisionMeta {
                         official: "Grevenmacher",
                         common: None,
@@ -44867,17 +45124,17 @@ pub const LU: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "lb",
                     &SubdivisionMeta {
-                        official: "Luxembourg",
+                        official: "Lëtzebuerg",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "lb",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Lëtzebuerg",
+                        official: "Luxembourg",
                         common: None,
                         native: None,
                     },
@@ -44897,17 +45154,17 @@ pub const LU: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "lb",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Miersch",
+                        official: "Mersch",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "lb",
                     &SubdivisionMeta {
-                        official: "Mersch",
+                        official: "Miersch",
                         common: None,
                         native: None,
                     },
@@ -44943,7 +45200,7 @@ pub const LU: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Redange",
                         common: None,
@@ -44951,7 +45208,7 @@ pub const LU: &Country = &Country {
                     },
                 ),
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Redange",
                         common: None,
@@ -44973,14 +45230,6 @@ pub const LU: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
-                    &SubdivisionMeta {
-                        official: "Remich",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "lb",
                     &SubdivisionMeta {
                         official: "Réimech",
@@ -44989,7 +45238,7 @@ pub const LU: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Remich",
                         common: None,
@@ -44997,7 +45246,15 @@ pub const LU: &Country = &Country {
                     },
                 ),
                 (
-                    "fr",
+                    "de",
+                    &SubdivisionMeta {
+                        official: "Remich",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
                     &SubdivisionMeta {
                         official: "Remich",
                         common: None,
@@ -45011,7 +45268,7 @@ pub const LU: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Vianden",
                         common: None,
@@ -45020,6 +45277,14 @@ pub const LU: &Country = &Country {
                 ),
                 (
                     "en",
+                    &SubdivisionMeta {
+                        official: "Vianden",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "de",
                     &SubdivisionMeta {
                         official: "Vianden",
                         common: None,
@@ -45034,14 +45299,6 @@ pub const LU: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "fr",
-                    &SubdivisionMeta {
-                        official: "Vianden",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
@@ -45049,7 +45306,7 @@ pub const LU: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Wiltz",
                         common: None,
@@ -45065,7 +45322,7 @@ pub const LU: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Wiltz",
                         common: None,
@@ -45085,25 +45342,27 @@ pub const LU: &Country = &Country {
     ],
 };
 
+/// Grand Duchy of Luxembourg
 pub const LUX: &Country = LU;
+/// Macao Special Administrative Region of the People's Republic of China
 pub const MO: &Country = &Country {
     name: &CountryMeta {
         common: "Macau",
         official: "Macao Special Administrative Region of the People's Republic of China",
         native: &crate::StaticMap::new(&[
             (
-                "zho",
-                &CountryName {
-                    common: "澳门",
-                    official: "中华人民共和国澳门特别行政区",
-                },
-            ),
-            (
                 "por",
                 &CountryName {
                     common: "Macau",
                     official:
                         "Região Administrativa Especial de Macau da República Popular da China",
+                },
+            ),
+            (
+                "zho",
+                &CountryName {
+                    common: "澳门",
+                    official: "中华人民共和国澳门特别行政区",
                 },
             ),
         ]),
@@ -45206,24 +45465,26 @@ pub const MO: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Macao Special Administrative Region of the People's Republic of China
 pub const MAC: &Country = MO;
+/// Republic of Madagascar
 pub const MG: &Country = &Country {
     name: &CountryMeta {
         common: "Madagascar",
         official: "Republic of Madagascar",
         native: &crate::StaticMap::new(&[
             (
-                "fra",
-                &CountryName {
-                    common: "Madagascar",
-                    official: "République de Madagascar",
-                },
-            ),
-            (
                 "mlg",
                 &CountryName {
                     common: "Madagasikara",
                     official: "Repoblikan'i Madagasikara",
+                },
+            ),
+            (
+                "fra",
+                &CountryName {
+                    common: "Madagascar",
+                    official: "République de Madagascar",
                 },
             ),
         ]),
@@ -45293,8 +45554,8 @@ pub const MG: &Country = &Country {
         ietf: &["en-MG", "fr-MG", "mg-MG"],
         date_formats: &crate::StaticMap::new(&[
             ("en-MG", "dd/MM/yyyy"),
-            ("mg-MG", "yyyy-MM-dd"),
             ("fr-MG", "dd/MM/yyyy"),
+            ("mg-MG", "yyyy-MM-dd"),
         ]),
         timezones: &[&Timezone {
             name: "Indian/Antananarivo",
@@ -45399,24 +45660,26 @@ pub const MG: &Country = &Country {
     ],
 };
 
+/// Republic of Madagascar
 pub const MDG: &Country = MG;
+/// Republic of Malawi
 pub const MW: &Country = &Country {
     name: &CountryMeta {
         common: "Malawi",
         official: "Republic of Malawi",
         native: &crate::StaticMap::new(&[
             (
-                "nya",
-                &CountryName {
-                    common: "Malaŵi",
-                    official: "Chalo cha Malawi, Dziko la Malaŵi",
-                },
-            ),
-            (
                 "eng",
                 &CountryName {
                     common: "Malawi",
                     official: "Republic of Malawi",
+                },
+            ),
+            (
+                "nya",
+                &CountryName {
+                    common: "Malaŵi",
+                    official: "Chalo cha Malawi, Dziko la Malaŵi",
                 },
             ),
         ]),
@@ -45536,17 +45799,17 @@ pub const MW: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "Southern Region",
+                        official: "Chakumwera",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ny",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Chakumwera",
+                        official: "Southern Region",
                         common: None,
                         native: None,
                     },
@@ -45580,17 +45843,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "S",
+                        official: "Blantyre",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Blantyre",
+                        official: "S",
                         common: None,
                         native: None,
                     },
@@ -45602,17 +45865,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "S",
+                        official: "Chikwawa",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Chikwawa",
+                        official: "S",
                         common: None,
                         native: None,
                     },
@@ -45646,17 +45909,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Chitipa",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Chitipa",
                         common: None,
                         native: None,
                     },
@@ -45668,17 +45931,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Dedza",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Dedza",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -45690,17 +45953,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Dowa",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Dowa",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -45712,17 +45975,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Karonga",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Karonga",
                         common: None,
                         native: None,
                     },
@@ -45734,17 +45997,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Kasungu",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kasungu",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -45756,17 +46019,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Likoma",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Likoma",
                         common: None,
                         native: None,
                     },
@@ -45800,17 +46063,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Machinga",
+                        official: "S",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "S",
+                        official: "Machinga",
                         common: None,
                         native: None,
                     },
@@ -45822,17 +46085,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "S",
+                        official: "Mangochi",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Mangochi",
+                        official: "S",
                         common: None,
                         native: None,
                     },
@@ -45866,17 +46129,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "S",
+                        official: "Mulanje",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Mulanje",
+                        official: "S",
                         common: None,
                         native: None,
                     },
@@ -45954,17 +46217,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Nkhata Bay",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Nkhata Bay",
+                        official: "N",
                         common: None,
                         native: None,
                     },
@@ -46020,17 +46283,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Ntcheu",
+                        official: "C",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Ntcheu",
                         common: None,
                         native: None,
                     },
@@ -46064,17 +46327,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Phalombe",
+                        official: "S",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "S",
+                        official: "Phalombe",
                         common: None,
                         native: None,
                     },
@@ -46108,17 +46371,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Salima",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Salima",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -46152,17 +46415,17 @@ pub const MW: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ny",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Zomba",
+                        official: "S",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ny",
                     &SubdivisionMeta {
-                        official: "S",
+                        official: "Zomba",
                         common: None,
                         native: None,
                     },
@@ -46172,24 +46435,26 @@ pub const MW: &Country = &Country {
     ],
 };
 
+/// Republic of Malawi
 pub const MWI: &Country = MW;
+/// Malaysia
 pub const MY: &Country = &Country {
     name: &CountryMeta {
         common: "Malaysia",
         official: "Malaysia",
         native: &crate::StaticMap::new(&[
             (
-                "eng",
-                &CountryName {
-                    common: "Malaysia",
-                    official: "Malaysia",
-                },
-            ),
-            (
                 "msa",
                 &CountryName {
                     common: "مليسيا",
                     official: "مليسيا",
+                },
+            ),
+            (
+                "eng",
+                &CountryName {
+                    common: "Malaysia",
+                    official: "Malaysia",
                 },
             ),
         ]),
@@ -46265,8 +46530,8 @@ pub const MY: &Country = &Country {
         ietf: &["en-MY", "ms-MY", "ta-MY"],
         date_formats: &crate::StaticMap::new(&[
             ("en-MY", "dd/MM/yyyy"),
-            ("ta-MY", "dd/MM/yyyy"),
             ("ms-MY", "dd/MM/yyyy"),
+            ("ta-MY", "dd/MM/yyyy"),
         ]),
         timezones: &[
             &Timezone {
@@ -46500,7 +46765,9 @@ pub const MY: &Country = &Country {
     ],
 };
 
+/// Malaysia
 pub const MYS: &Country = MY;
+/// Republic of the Maldives
 pub const MV: &Country = &Country {
     name: &CountryMeta {
         common: "Maldives",
@@ -46609,14 +46876,6 @@ pub const MV: &Country = &Country {
             ty: Some("atoll"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "North Ari Atoll",
-                        common: Some("Alifu Alifu"),
-                        native: None,
-                    },
-                ),
-                (
                     "dv",
                     &SubdivisionMeta {
                         official: "Ariatholhu Uthuruburi",
@@ -46632,20 +46891,20 @@ pub const MV: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "North Ari Atoll",
+                        common: Some("Alifu Alifu"),
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "MV-00",
             ty: Some("atoll"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "NC",
-                        common: Some("Alifu Dhaalu"),
-                        native: None,
-                    },
-                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -46662,12 +46921,28 @@ pub const MV: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "NC",
+                        common: Some("Alifu Dhaalu"),
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "MV-20",
             ty: Some("atoll"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "NO",
+                        common: Some("Baa"),
+                        native: None,
+                    },
+                ),
                 (
                     "dv",
                     &SubdivisionMeta {
@@ -46684,20 +46959,20 @@ pub const MV: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "NO",
-                        common: Some("Baa"),
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "MV-17",
             ty: Some("atoll"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "CE",
+                        common: Some("Dhaalu"),
+                        native: None,
+                    },
+                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -46714,28 +46989,12 @@ pub const MV: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "CE",
-                        common: Some("Dhaalu"),
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "MV-14",
             ty: Some("atoll"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "dv",
-                    &SubdivisionMeta {
-                        official: "Nilandheatholhu Uthuruburi",
-                        common: Some("Faafu"),
-                        native: None,
-                    },
-                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -46752,12 +47011,28 @@ pub const MV: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "dv",
+                    &SubdivisionMeta {
+                        official: "Nilandheatholhu Uthuruburi",
+                        common: Some("Faafu"),
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "MV-27",
             ty: Some("atoll"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "US",
+                        common: Some("Gaafu Alifu"),
+                        native: None,
+                    },
+                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -46774,14 +47049,6 @@ pub const MV: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "US",
-                        common: Some("Gaafu Alifu"),
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
@@ -46789,17 +47056,17 @@ pub const MV: &Country = &Country {
             ty: Some("atoll"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "dv",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Huvadhuatholhu Dhekunuburi",
+                        official: "US",
                         common: Some("Gaafu Dhaalu"),
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "dv",
                     &SubdivisionMeta {
-                        official: "US",
+                        official: "Huvadhuatholhu Dhekunuburi",
                         common: Some("Gaafu Dhaalu"),
                         native: None,
                     },
@@ -46819,14 +47086,6 @@ pub const MV: &Country = &Country {
             ty: Some("atoll"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "dv",
-                    &SubdivisionMeta {
-                        official: "Fuvammulah",
-                        common: Some("Gnaviyani"),
-                        native: None,
-                    },
-                ),
-                (
                     "inRegion",
                     &SubdivisionMeta {
                         official: "SU",
@@ -46836,6 +47095,14 @@ pub const MV: &Country = &Country {
                 ),
                 (
                     "en",
+                    &SubdivisionMeta {
+                        official: "Fuvammulah",
+                        common: Some("Gnaviyani"),
+                        native: None,
+                    },
+                ),
+                (
+                    "dv",
                     &SubdivisionMeta {
                         official: "Fuvammulah",
                         common: Some("Gnaviyani"),
@@ -46879,17 +47146,17 @@ pub const MV: &Country = &Country {
             ty: Some("atoll"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "dv",
                     &SubdivisionMeta {
-                        official: "UN",
+                        official: "Thiladhunmathee Dhekunuburi",
                         common: Some("Haa Dhaalu"),
                         native: None,
                     },
                 ),
                 (
-                    "dv",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Thiladhunmathee Dhekunuburi",
+                        official: "UN",
                         common: Some("Haa Dhaalu"),
                         native: None,
                     },
@@ -46909,6 +47176,14 @@ pub const MV: &Country = &Country {
             ty: Some("atoll"),
             meta: &crate::StaticMap::new(&[
                 (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Male Atoll",
+                        common: Some("Kaafu"),
+                        native: None,
+                    },
+                ),
+                (
                     "inRegion",
                     &SubdivisionMeta {
                         official: "NC",
@@ -46924,28 +47199,12 @@ pub const MV: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Male Atoll",
-                        common: Some("Kaafu"),
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "MV-05",
             ty: Some("atoll"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "SC",
-                        common: Some("Laamu"),
-                        native: None,
-                    },
-                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -46958,6 +47217,14 @@ pub const MV: &Country = &Country {
                     "dv",
                     &SubdivisionMeta {
                         official: "Hahdhunmathi",
+                        common: Some("Laamu"),
+                        native: None,
+                    },
+                ),
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "SC",
                         common: Some("Laamu"),
                         native: None,
                     },
@@ -46969,7 +47236,7 @@ pub const MV: &Country = &Country {
             ty: Some("atoll"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "dv",
+                    "en",
                     &SubdivisionMeta {
                         official: "Faadhippolhu",
                         common: Some("Lhaviyani"),
@@ -46985,7 +47252,7 @@ pub const MV: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "dv",
                     &SubdivisionMeta {
                         official: "Faadhippolhu",
                         common: Some("Lhaviyani"),
@@ -46999,17 +47266,17 @@ pub const MV: &Country = &Country {
             ty: Some("atoll"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "dv",
                     &SubdivisionMeta {
-                        official: "Mulaku Atoll",
+                        official: "Mulakatholhu",
                         common: Some("Meemu"),
                         native: None,
                     },
                 ),
                 (
-                    "dv",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Mulakatholhu",
+                        official: "Mulaku Atoll",
                         common: Some("Meemu"),
                         native: None,
                     },
@@ -47059,14 +47326,6 @@ pub const MV: &Country = &Country {
             ty: Some("atoll"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "dv",
-                    &SubdivisionMeta {
-                        official: "Maalhosmadulu Uthuruburi",
-                        common: Some("Raa"),
-                        native: None,
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "North Maalhosmadulu",
@@ -47078,6 +47337,14 @@ pub const MV: &Country = &Country {
                     "inRegion",
                     &SubdivisionMeta {
                         official: "NO",
+                        common: Some("Raa"),
+                        native: None,
+                    },
+                ),
+                (
+                    "dv",
+                    &SubdivisionMeta {
+                        official: "Maalhosmadulu Uthuruburi",
                         common: Some("Raa"),
                         native: None,
                     },
@@ -47119,7 +47386,7 @@ pub const MV: &Country = &Country {
             ty: Some("atoll"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "dv",
                     &SubdivisionMeta {
                         official: "Kolhumadulu",
                         common: Some("Thaa"),
@@ -47135,7 +47402,7 @@ pub const MV: &Country = &Country {
                     },
                 ),
                 (
-                    "dv",
+                    "en",
                     &SubdivisionMeta {
                         official: "Kolhumadulu",
                         common: Some("Thaa"),
@@ -47177,7 +47444,9 @@ pub const MV: &Country = &Country {
     ],
 };
 
+/// Republic of the Maldives
 pub const MDV: &Country = MV;
+/// Republic of Mali
 pub const ML: &Country = &Country {
     name: &CountryMeta {
         common: "Mali",
@@ -47272,8 +47541,8 @@ pub const ML: &Country = &Country {
     locale: &Locale {
         ietf: &["bm-ML", "fr-ML", "khq-ML", "ses-ML"],
         date_formats: &crate::StaticMap::new(&[
-            ("bm-ML", "dd/MM/yyyy"),
             ("ses-ML", "dd/MM/yyyy"),
+            ("bm-ML", "dd/MM/yyyy"),
             ("khq-ML", "dd/MM/yyyy"),
             ("fr-ML", "dd/MM/yyyy"),
         ]),
@@ -47440,24 +47709,26 @@ pub const ML: &Country = &Country {
     ],
 };
 
+/// Republic of Mali
 pub const MLI: &Country = ML;
+/// Republic of Malta
 pub const MT: &Country = &Country {
     name: &CountryMeta {
         common: "Malta",
         official: "Republic of Malta",
         native: &crate::StaticMap::new(&[
             (
-                "mlt",
-                &CountryName {
-                    common: "Malta",
-                    official: "Repubblika ta ' Malta",
-                },
-            ),
-            (
                 "eng",
                 &CountryName {
                     common: "Malta",
                     official: "Republic of Malta",
+                },
+            ),
+            (
+                "mlt",
+                &CountryName {
+                    common: "Malta",
+                    official: "Repubblika ta ' Malta",
                 },
             ),
         ]),
@@ -47564,7 +47835,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Balzan",
                         common: None,
@@ -47572,7 +47843,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Balzan",
                         common: None,
@@ -47630,7 +47901,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Birżebbuġa",
                         common: None,
@@ -47638,7 +47909,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Birżebbuġa",
                         common: None,
@@ -47674,7 +47945,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Dingli",
                         common: None,
@@ -47682,7 +47953,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Dingli",
                         common: None,
@@ -47696,7 +47967,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Fgura",
                         common: None,
@@ -47704,7 +47975,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Fgura",
                         common: None,
@@ -47762,7 +48033,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Gudja",
                         common: None,
@@ -47770,7 +48041,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Gudja",
                         common: None,
@@ -47784,7 +48055,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Gżira",
                         common: None,
@@ -47792,7 +48063,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Gżira",
                         common: None,
@@ -47828,7 +48099,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Għarb",
                         common: None,
@@ -47836,7 +48107,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Għarb",
                         common: None,
@@ -47872,7 +48143,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Għasri",
                         common: None,
@@ -47880,7 +48151,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Għasri",
                         common: None,
@@ -47894,7 +48165,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Għaxaq",
                         common: None,
@@ -47902,7 +48173,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Għaxaq",
                         common: None,
@@ -47916,7 +48187,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Ħamrun",
                         common: None,
@@ -47924,7 +48195,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Ħamrun",
                         common: None,
@@ -47938,7 +48209,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Iklin",
                         common: None,
@@ -47946,7 +48217,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Iklin",
                         common: None,
@@ -47960,7 +48231,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Isla",
                         common: None,
@@ -47968,7 +48239,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Isla",
                         common: None,
@@ -47982,7 +48253,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Kalkara",
                         common: None,
@@ -47990,7 +48261,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Kalkara",
                         common: None,
@@ -48158,7 +48429,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Mdina",
                         common: None,
@@ -48166,7 +48437,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Mdina",
                         common: None,
@@ -48202,7 +48473,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Mġarr",
                         common: None,
@@ -48210,7 +48481,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Mġarr",
                         common: None,
@@ -48268,7 +48539,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Msida",
                         common: None,
@@ -48276,7 +48547,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Msida",
                         common: None,
@@ -48312,7 +48583,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Munxar",
                         common: None,
@@ -48320,7 +48591,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Munxar",
                         common: None,
@@ -48334,7 +48605,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Nadur",
                         common: None,
@@ -48342,7 +48613,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Nadur",
                         common: None,
@@ -48400,7 +48671,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Pembroke",
                         common: None,
@@ -48408,7 +48679,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Pembroke",
                         common: None,
@@ -48466,7 +48737,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Qormi",
                         common: None,
@@ -48474,7 +48745,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Qormi",
                         common: None,
@@ -48510,17 +48781,17 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Rabat Għawdex",
+                        official: "Rabat Gozo",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
-                        official: "Rabat Gozo",
+                        official: "Rabat Għawdex",
                         common: None,
                         native: None,
                     },
@@ -48554,7 +48825,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Safi",
                         common: None,
@@ -48562,7 +48833,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Safi",
                         common: None,
@@ -48576,17 +48847,17 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
-                        official: "San Ġiljan",
+                        official: "Saint Julian's",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
-                        official: "Saint Julian's",
+                        official: "San Ġiljan",
                         common: None,
                         native: None,
                     },
@@ -48664,7 +48935,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Sannat",
                         common: None,
@@ -48672,7 +48943,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Sannat",
                         common: None,
@@ -48686,17 +48957,17 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
-                        official: "Saint Lucia's",
+                        official: "Santa Luċija",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Santa Luċija",
+                        official: "Saint Lucia's",
                         common: None,
                         native: None,
                     },
@@ -48708,7 +48979,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Santa Venera",
                         common: None,
@@ -48716,7 +48987,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Santa Venera",
                         common: None,
@@ -48730,7 +49001,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Siġġiewi",
                         common: None,
@@ -48738,7 +49009,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Siġġiewi",
                         common: None,
@@ -48774,7 +49045,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Swieqi",
                         common: None,
@@ -48782,7 +49053,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Swieqi",
                         common: None,
@@ -48818,7 +49089,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Tarxien",
                         common: None,
@@ -48826,7 +49097,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Tarxien",
                         common: None,
@@ -48840,7 +49111,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Valletta",
                         common: None,
@@ -48848,7 +49119,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Valletta",
                         common: None,
@@ -48884,7 +49155,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Xewkija",
                         common: None,
@@ -48892,7 +49163,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Xewkija",
                         common: None,
@@ -48928,7 +49199,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Żabbar",
                         common: None,
@@ -48936,7 +49207,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Żabbar",
                         common: None,
@@ -48994,7 +49265,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Żejtun",
                         common: None,
@@ -49002,7 +49273,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Żejtun",
                         common: None,
@@ -49016,7 +49287,7 @@ pub const MT: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mt",
                     &SubdivisionMeta {
                         official: "Żurrieq",
                         common: None,
@@ -49024,7 +49295,7 @@ pub const MT: &Country = &Country {
                     },
                 ),
                 (
-                    "mt",
+                    "en",
                     &SubdivisionMeta {
                         official: "Żurrieq",
                         common: None,
@@ -49036,7 +49307,9 @@ pub const MT: &Country = &Country {
     ],
 };
 
+/// Republic of Malta
 pub const MLT: &Country = MT;
+/// Republic of the Marshall Islands
 pub const MH: &Country = &Country {
     name: &CountryMeta {
         common: "Marshall Islands",
@@ -49135,7 +49408,7 @@ pub const MH: &Country = &Country {
             ty: Some("chain"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "mh",
+                    "en",
                     &SubdivisionMeta {
                         official: "Ralik",
                         common: None,
@@ -49143,7 +49416,7 @@ pub const MH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mh",
                     &SubdivisionMeta {
                         official: "Ralik",
                         common: None,
@@ -49179,17 +49452,17 @@ pub const MH: &Country = &Country {
             ty: Some("municipality"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "mh",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Aelōn̄ḷapḷap",
+                        official: "L",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "mh",
                     &SubdivisionMeta {
-                        official: "L",
+                        official: "Aelōn̄ḷapḷap",
                         common: None,
                         native: None,
                     },
@@ -49209,17 +49482,17 @@ pub const MH: &Country = &Country {
             ty: Some("municipality"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "mh",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Aelok",
+                        official: "T",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "mh",
                     &SubdivisionMeta {
-                        official: "T",
+                        official: "Aelok",
                         common: None,
                         native: None,
                     },
@@ -49247,17 +49520,17 @@ pub const MH: &Country = &Country {
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "T",
+                        official: "Arno",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Arno",
+                        official: "T",
                         common: None,
                         native: None,
                     },
@@ -49277,7 +49550,7 @@ pub const MH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mh",
                     &SubdivisionMeta {
                         official: "Aur",
                         common: None,
@@ -49285,7 +49558,7 @@ pub const MH: &Country = &Country {
                     },
                 ),
                 (
-                    "mh",
+                    "en",
                     &SubdivisionMeta {
                         official: "Aur",
                         common: None,
@@ -49298,6 +49571,14 @@ pub const MH: &Country = &Country {
             iso: "MH-KIL",
             ty: Some("municipality"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Bikini & Kili",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -49314,28 +49595,12 @@ pub const MH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Bikini & Kili",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "MH-EBO",
             ty: Some("municipality"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "mh",
-                    &SubdivisionMeta {
-                        official: "Epoon",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -49348,6 +49613,14 @@ pub const MH: &Country = &Country {
                     "en",
                     &SubdivisionMeta {
                         official: "Ebon",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "mh",
+                    &SubdivisionMeta {
+                        official: "Epoon",
                         common: None,
                         native: None,
                     },
@@ -49397,17 +49670,17 @@ pub const MH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mh",
                     &SubdivisionMeta {
-                        official: "Jabat",
+                        official: "Jebat",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "mh",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Jebat",
+                        official: "Jabat",
                         common: None,
                         native: None,
                     },
@@ -49449,14 +49722,6 @@ pub const MH: &Country = &Country {
             ty: Some("municipality"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "mh",
-                    &SubdivisionMeta {
-                        official: "Kuwajleen",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "inRegion",
                     &SubdivisionMeta {
                         official: "L",
@@ -49472,6 +49737,14 @@ pub const MH: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "mh",
+                    &SubdivisionMeta {
+                        official: "Kuwajleen",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -49479,17 +49752,17 @@ pub const MH: &Country = &Country {
             ty: Some("municipality"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Lae",
+                        official: "L",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "L",
+                        official: "Lae",
                         common: None,
                         native: None,
                     },
@@ -49517,17 +49790,17 @@ pub const MH: &Country = &Country {
                     },
                 ),
                 (
-                    "mh",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Ellep",
+                        official: "L",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "mh",
                     &SubdivisionMeta {
-                        official: "L",
+                        official: "Ellep",
                         common: None,
                         native: None,
                     },
@@ -49539,6 +49812,14 @@ pub const MH: &Country = &Country {
             ty: Some("municipality"),
             meta: &crate::StaticMap::new(&[
                 (
+                    "mh",
+                    &SubdivisionMeta {
+                        official: "Likiep",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "en",
                     &SubdivisionMeta {
                         official: "Likiep",
@@ -49550,14 +49831,6 @@ pub const MH: &Country = &Country {
                     "inRegion",
                     &SubdivisionMeta {
                         official: "T",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "mh",
-                    &SubdivisionMeta {
-                        official: "Likiep",
                         common: None,
                         native: None,
                     },
@@ -49569,17 +49842,17 @@ pub const MH: &Country = &Country {
             ty: Some("municipality"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "T",
+                        official: "Majuro",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Majuro",
+                        official: "T",
                         common: None,
                         native: None,
                     },
@@ -49599,14 +49872,6 @@ pub const MH: &Country = &Country {
             ty: Some("municipality"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "T",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Maloelap",
@@ -49618,6 +49883,14 @@ pub const MH: &Country = &Country {
                     "mh",
                     &SubdivisionMeta {
                         official: "Ṃaḷoeḷap",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "T",
                         common: None,
                         native: None,
                     },
@@ -49637,17 +49910,17 @@ pub const MH: &Country = &Country {
                     },
                 ),
                 (
-                    "mh",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Mājej",
+                        official: "Mejit",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "mh",
                     &SubdivisionMeta {
-                        official: "Mejit",
+                        official: "Mājej",
                         common: None,
                         native: None,
                     },
@@ -49667,17 +49940,17 @@ pub const MH: &Country = &Country {
                     },
                 ),
                 (
-                    "mh",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Mile",
+                        official: "T",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "mh",
                     &SubdivisionMeta {
-                        official: "T",
+                        official: "Mile",
                         common: None,
                         native: None,
                     },
@@ -49697,17 +49970,17 @@ pub const MH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "mh",
                     &SubdivisionMeta {
-                        official: "Namdrik",
+                        official: "Naṃdik",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "mh",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Naṃdik",
+                        official: "Namdrik",
                         common: None,
                         native: None,
                     },
@@ -49718,14 +49991,6 @@ pub const MH: &Country = &Country {
             iso: "MH-NMU",
             ty: Some("municipality"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Namu",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "mh",
                     &SubdivisionMeta {
@@ -49738,6 +50003,14 @@ pub const MH: &Country = &Country {
                     "inRegion",
                     &SubdivisionMeta {
                         official: "L",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Namu",
                         common: None,
                         native: None,
                     },
@@ -49779,14 +50052,6 @@ pub const MH: &Country = &Country {
             ty: Some("municipality"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "L",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Ujae",
@@ -49798,6 +50063,14 @@ pub const MH: &Country = &Country {
                     "mh",
                     &SubdivisionMeta {
                         official: "Ujae",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "L",
                         common: None,
                         native: None,
                     },
@@ -49817,17 +50090,17 @@ pub const MH: &Country = &Country {
                     },
                 ),
                 (
-                    "mh",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Utrōk",
+                        official: "Utrik",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "mh",
                     &SubdivisionMeta {
-                        official: "Utrik",
+                        official: "Utrōk",
                         common: None,
                         native: None,
                     },
@@ -49839,17 +50112,17 @@ pub const MH: &Country = &Country {
             ty: Some("municipality"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Wotho",
+                        official: "L",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "L",
+                        official: "Wotho",
                         common: None,
                         native: None,
                     },
@@ -49877,17 +50150,17 @@ pub const MH: &Country = &Country {
                     },
                 ),
                 (
-                    "mh",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Wōjjā",
+                        official: "Wotje",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "mh",
                     &SubdivisionMeta {
-                        official: "Wotje",
+                        official: "Wōjjā",
                         common: None,
                         native: None,
                     },
@@ -49897,7 +50170,9 @@ pub const MH: &Country = &Country {
     ],
 };
 
+/// Republic of the Marshall Islands
 pub const MHL: &Country = MH;
+/// Martinique
 pub const MQ: &Country = &Country {
     name: &CountryMeta {
         common: "Martinique",
@@ -49975,7 +50250,9 @@ pub const MQ: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Martinique
 pub const MTQ: &Country = MQ;
+/// Islamic Republic of Mauritania
 pub const MR: &Country = &Country {
     name: &CountryMeta {
         common: "Mauritania",
@@ -50053,10 +50330,10 @@ pub const MR: &Country = &Country {
     locale: &Locale {
         ietf: &["ar-MR", "ff-Adlm-MR", "ff-Latn-MR", "fr-MR"],
         date_formats: &crate::StaticMap::new(&[
-            ("fr-MR", "dd/MM/yyyy"),
+            ("ff-Adlm-MR", "yyyyyyyy-MMMM-dddd"),
             ("ff-Latn-MR", "dd/MM/yyyy"),
             ("ar-MR", "dd/MM/yyyy"),
-            ("ff-Adlm-MR", "yyyyyyyy-MMMM-dddd"),
+            ("fr-MR", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Abidjan",
@@ -50199,17 +50476,17 @@ pub const MR: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Nuwākshūţ ash Shamālīyah",
+                        official: "Nouakchott Nord",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Nouakchott Nord",
+                        official: "Nuwākshūţ ash Shamālīyah",
                         common: None,
                         native: None,
                     },
@@ -50221,17 +50498,17 @@ pub const MR: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Nouakchott Ouest",
+                        official: "Nuwākshūţ al Gharbīyah",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Nuwākshūţ al Gharbīyah",
+                        official: "Nouakchott Ouest",
                         common: None,
                         native: None,
                     },
@@ -50243,17 +50520,17 @@ pub const MR: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Nouakchott Sud",
+                        official: "Nuwākshūţ al Janūbīyah",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Nuwākshūţ al Janūbīyah",
+                        official: "Nouakchott Sud",
                         common: None,
                         native: None,
                     },
@@ -50289,17 +50566,17 @@ pub const MR: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "ar__1",
                     &SubdivisionMeta {
-                        official: "Trarza",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar__1",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Trarza",
                         common: None,
                         native: None,
                     },
@@ -50317,12 +50594,21 @@ pub const MR: &Country = &Country {
     ],
 };
 
+/// Islamic Republic of Mauritania
 pub const MRT: &Country = MR;
+/// Republic of Mauritius
 pub const MU: &Country = &Country {
     name: &CountryMeta {
         common: "Mauritius",
         official: "Republic of Mauritius",
         native: &crate::StaticMap::new(&[
+            (
+                "eng",
+                &CountryName {
+                    common: "Mauritius",
+                    official: "Republic of Mauritius",
+                },
+            ),
             (
                 "mfe",
                 &CountryName {
@@ -50335,13 +50621,6 @@ pub const MU: &Country = &Country {
                 &CountryName {
                     common: "Maurice",
                     official: "République de Maurice",
-                },
-            ),
-            (
-                "eng",
-                &CountryName {
-                    common: "Mauritius",
-                    official: "Republic of Mauritius",
                 },
             ),
         ]),
@@ -50405,9 +50684,9 @@ pub const MU: &Country = &Country {
     locale: &Locale {
         ietf: &["en-MU", "fr-MU", "mfe-MU"],
         date_formats: &crate::StaticMap::new(&[
-            ("fr-MU", "dd/MM/yyyy"),
             ("en-MU", "dd/MM/yyyy"),
             ("mfe-MU", "dd/MM/yyyy"),
+            ("fr-MU", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Indian/Mauritius",
@@ -50584,7 +50863,9 @@ pub const MU: &Country = &Country {
     ],
 };
 
+/// Republic of Mauritius
 pub const MUS: &Country = MU;
+/// Department of Mayotte
 pub const YT: &Country = &Country {
     name: &CountryMeta {
         common: "Mayotte",
@@ -50662,7 +50943,9 @@ pub const YT: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Department of Mayotte
 pub const MYT: &Country = YT;
+/// United Mexican States
 pub const MX: &Country = &Country {
     name: &CountryMeta {
         common: "Mexico",
@@ -51226,7 +51509,9 @@ pub const MX: &Country = &Country {
     ],
 };
 
+/// United Mexican States
 pub const MEX: &Country = MX;
+/// Federated States of Micronesia
 pub const FM: &Country = &Country {
     name: &CountryMeta {
         common: "Micronesia",
@@ -51375,7 +51660,9 @@ pub const FM: &Country = &Country {
     ],
 };
 
+/// Federated States of Micronesia
 pub const FSM: &Country = FM;
+/// Republic of Moldova
 pub const MD: &Country = &Country {
     name: &CountryMeta {
         common: "Moldova",
@@ -51916,7 +52203,9 @@ pub const MD: &Country = &Country {
     ],
 };
 
+/// Republic of Moldova
 pub const MDA: &Country = MD;
+/// Principality of Monaco
 pub const MC: &Country = &Country {
     name: &CountryMeta {
         common: "Monaco",
@@ -52199,7 +52488,9 @@ pub const MC: &Country = &Country {
     ],
 };
 
+/// Principality of Monaco
 pub const MCO: &Country = MC;
+/// Mongolia
 pub const MN: &Country = &Country {
     name: &CountryMeta {
         common: "Mongolia",
@@ -52561,7 +52852,9 @@ pub const MN: &Country = &Country {
     ],
 };
 
+/// Mongolia
 pub const MNG: &Country = MN;
+/// Montenegro
 pub const ME: &Country = &Country {
     name: &CountryMeta {
         common: "Montenegro",
@@ -52639,8 +52932,8 @@ pub const ME: &Country = &Country {
     locale: &Locale {
         ietf: &["sr-Cyrl-ME", "sr-Latn-ME"],
         date_formats: &crate::StaticMap::new(&[
-            ("sr-Cyrl-ME", "dd.MM.yyyy."),
             ("sr-Latn-ME", "dd.MM.yyyy."),
+            ("sr-Cyrl-ME", "dd.MM.yyyy."),
         ]),
         timezones: &[&Timezone {
             name: "Europe/Podgorica",
@@ -52961,7 +53254,9 @@ pub const ME: &Country = &Country {
     ],
 };
 
+/// Montenegro
 pub const MNE: &Country = ME;
+/// Montserrat
 pub const MS: &Country = &Country {
     name: &CountryMeta {
         common: "Montserrat",
@@ -53039,24 +53334,26 @@ pub const MS: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Montserrat
 pub const MSR: &Country = MS;
+/// Kingdom of Morocco
 pub const MA: &Country = &Country {
     name: &CountryMeta {
         common: "Morocco",
         official: "Kingdom of Morocco",
         native: &crate::StaticMap::new(&[
             (
-                "ber",
-                &CountryName {
-                    common: "ⵍⵎⴰⵖⵔⵉⴱ",
-                    official: "ⵜⴰⴳⵍⴷⵉⵜ ⵏ ⵍⵎⵖⵔⵉⴱ",
-                },
-            ),
-            (
                 "ara",
                 &CountryName {
                     common: "المغرب",
                     official: "المملكة المغربية",
+                },
+            ),
+            (
+                "ber",
+                &CountryName {
+                    common: "ⵍⵎⴰⵖⵔⵉⴱ",
+                    official: "ⵜⴰⴳⵍⴷⵉⵜ ⵏ ⵍⵎⵖⵔⵉⴱ",
                 },
             ),
         ]),
@@ -53147,12 +53444,12 @@ pub const MA: &Country = &Country {
             "zgh-MA",
         ],
         date_formats: &crate::StaticMap::new(&[
-            ("fr-MA", "dd/MM/yyyy"),
-            ("shi-Latn-MA", "dd/MM/yyyy"),
-            ("zgh-MA", "yyyy-MM-dd"),
-            ("tzm-MA", "dd/MM/yyyy"),
-            ("shi-Tfng-MA", "dd/MM/yyyy"),
             ("ar-MA", "dd/MM/yyyy"),
+            ("zgh-MA", "yyyy-MM-dd"),
+            ("fr-MA", "dd/MM/yyyy"),
+            ("tzm-MA", "dd/MM/yyyy"),
+            ("shi-Latn-MA", "dd/MM/yyyy"),
+            ("shi-Tfng-MA", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Casablanca",
@@ -53353,17 +53650,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "12",
+                        official: "Aousserd (EH)",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Aousserd (EH)",
+                        official: "12",
                         common: None,
                         native: None,
                     },
@@ -53375,17 +53672,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Assa-Zag",
+                        official: "10",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "10",
+                        official: "Assa-Zag",
                         common: None,
                         native: None,
                     },
@@ -53397,17 +53694,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "05",
+                        official: "Azilal",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Azilal",
+                        official: "05",
                         common: None,
                         native: None,
                     },
@@ -53463,17 +53760,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "02",
+                        official: "Berkane",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Berkane",
+                        official: "02",
                         common: None,
                         native: None,
                     },
@@ -53485,17 +53782,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "06",
+                        official: "Berrechid",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Berrechid",
+                        official: "06",
                         common: None,
                         native: None,
                     },
@@ -53529,17 +53826,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "03",
+                        official: "Boulemane",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Boulemane",
+                        official: "03",
                         common: None,
                         native: None,
                     },
@@ -53595,17 +53892,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "07",
+                        official: "Chichaoua",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Chichaoua",
+                        official: "07",
                         common: None,
                         native: None,
                     },
@@ -53683,17 +53980,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Es-Semara",
+                        official: "11",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "11",
+                        official: "Es-Semara",
                         common: None,
                         native: None,
                     },
@@ -53727,17 +54024,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Fahs-Anjra",
+                        official: "01",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "01",
+                        official: "Fahs-Anjra",
                         common: None,
                         native: None,
                     },
@@ -53771,17 +54068,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Figuig",
+                        official: "02",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "02",
+                        official: "Figuig",
                         common: None,
                         native: None,
                     },
@@ -53837,17 +54134,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "02",
+                        official: "Guercif",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Guercif",
+                        official: "02",
                         common: None,
                         native: None,
                     },
@@ -53903,17 +54200,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Al Hoceïma",
+                        official: "01",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "01",
+                        official: "Al Hoceïma",
                         common: None,
                         native: None,
                     },
@@ -54035,17 +54332,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "04",
+                        official: "Kénitra",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kénitra",
+                        official: "04",
                         common: None,
                         native: None,
                     },
@@ -54079,17 +54376,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "05",
+                        official: "Khénifra",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Khénifra",
+                        official: "05",
                         common: None,
                         native: None,
                     },
@@ -54101,17 +54398,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "05",
+                        official: "Khouribga",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Khouribga",
+                        official: "05",
                         common: None,
                         native: None,
                     },
@@ -54167,17 +54464,17 @@ pub const MA: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Marrakech",
+                        official: "07",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "07",
+                        official: "Marrakech",
                         common: None,
                         native: None,
                     },
@@ -54211,17 +54508,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "06",
+                        official: "Médiouna",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Médiouna",
+                        official: "06",
                         common: None,
                         native: None,
                     },
@@ -54233,17 +54530,17 @@ pub const MA: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Meknès",
+                        official: "03",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "03",
+                        official: "Meknès",
                         common: None,
                         native: None,
                     },
@@ -54255,17 +54552,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Midelt",
+                        official: "08",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "08",
+                        official: "Midelt",
                         common: None,
                         native: None,
                     },
@@ -54299,17 +54596,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Moulay Yacoub",
+                        official: "03",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "03",
+                        official: "Moulay Yacoub",
                         common: None,
                         native: None,
                     },
@@ -54321,17 +54618,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Nador",
+                        official: "02",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "02",
+                        official: "Nador",
                         common: None,
                         native: None,
                     },
@@ -54365,17 +54662,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "08",
+                        official: "Ouarzazate",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Ouarzazate",
+                        official: "08",
                         common: None,
                         native: None,
                     },
@@ -54453,17 +54750,17 @@ pub const MA: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Rabat",
+                        official: "04",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "04",
+                        official: "Rabat",
                         common: None,
                         native: None,
                     },
@@ -54541,17 +54838,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "03",
+                        official: "Sefrou",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Sefrou",
+                        official: "03",
                         common: None,
                         native: None,
                     },
@@ -54585,17 +54882,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "06",
+                        official: "Sidi Bennour",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Sidi Bennour",
+                        official: "06",
                         common: None,
                         native: None,
                     },
@@ -54607,17 +54904,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Sidi Ifni",
+                        official: "10",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "10",
+                        official: "Sidi Ifni",
                         common: None,
                         native: None,
                     },
@@ -54651,17 +54948,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "04",
+                        official: "Sidi Slimane",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Sidi Slimane",
+                        official: "04",
                         common: None,
                         native: None,
                     },
@@ -54673,17 +54970,17 @@ pub const MA: &Country = &Country {
             ty: Some("prefecture"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Skhirate-Témara",
+                        official: "04",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "04",
+                        official: "Skhirate-Témara",
                         common: None,
                         native: None,
                     },
@@ -54695,17 +54992,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Tan-Tan",
+                        official: "10",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "10",
+                        official: "Tan-Tan",
                         common: None,
                         native: None,
                     },
@@ -54739,17 +55036,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Taounate",
+                        official: "03",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "03",
+                        official: "Taounate",
                         common: None,
                         native: None,
                     },
@@ -54761,17 +55058,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "02",
+                        official: "Taourirt",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Taourirt",
+                        official: "02",
                         common: None,
                         native: None,
                     },
@@ -54783,17 +55080,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Tarfaya",
+                        official: "11",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "11",
+                        official: "Tarfaya",
                         common: None,
                         native: None,
                     },
@@ -54827,17 +55124,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "09",
+                        official: "Tata",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Tata",
+                        official: "09",
                         common: None,
                         native: None,
                     },
@@ -54871,17 +55168,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "01",
+                        official: "Tétouan",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Tétouan",
+                        official: "01",
                         common: None,
                         native: None,
                     },
@@ -54893,17 +55190,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "08",
+                        official: "Tinghir",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Tinghir",
+                        official: "08",
                         common: None,
                         native: None,
                     },
@@ -54915,17 +55212,17 @@ pub const MA: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "09",
+                        official: "Tiznit",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Tiznit",
+                        official: "09",
                         common: None,
                         native: None,
                     },
@@ -54979,7 +55276,9 @@ pub const MA: &Country = &Country {
     ],
 };
 
+/// Kingdom of Morocco
 pub const MAR: &Country = MA;
+/// Republic of Mozambique
 pub const MZ: &Country = &Country {
     name: &CountryMeta {
         common: "Mozambique",
@@ -55062,8 +55361,8 @@ pub const MZ: &Country = &Country {
         ietf: &["mgh-MZ", "pt-MZ", "seh-MZ"],
         date_formats: &crate::StaticMap::new(&[
             ("pt-MZ", "dd/MM/yyyy"),
-            ("mgh-MZ", "dd/MM/yyyy"),
             ("seh-MZ", "dd/MM/yyyy"),
+            ("mgh-MZ", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Maputo",
@@ -55228,7 +55527,9 @@ pub const MZ: &Country = &Country {
     ],
 };
 
+/// Republic of Mozambique
 pub const MOZ: &Country = MZ;
+/// Republic of the Union of Myanmar
 pub const MM: &Country = &Country {
     name: &CountryMeta {
         common: "Myanmar",
@@ -55508,7 +55809,9 @@ pub const MM: &Country = &Country {
     ],
 };
 
+/// Republic of the Union of Myanmar
 pub const MMR: &Country = MM;
+/// Republic of Namibia
 pub const NA: &Country = &Country {
     name: &CountryMeta {
         common: "Namibia",
@@ -55522,31 +55825,10 @@ pub const NA: &Country = &Country {
                 },
             ),
             (
-                "tsn",
-                &CountryName {
-                    common: "Namibia",
-                    official: "Lefatshe la Namibia",
-                },
-            ),
-            (
-                "eng",
-                &CountryName {
-                    common: "Namibia",
-                    official: "Republic of Namibia",
-                },
-            ),
-            (
                 "deu",
                 &CountryName {
                     common: "Namibia",
                     official: "Republik Namibia",
-                },
-            ),
-            (
-                "hgm",
-                &CountryName {
-                    common: "Namibia",
-                    official: "Republic of Namibia",
                 },
             ),
             (
@@ -55557,6 +55839,13 @@ pub const NA: &Country = &Country {
                 },
             ),
             (
+                "tsn",
+                &CountryName {
+                    common: "Namibia",
+                    official: "Lefatshe la Namibia",
+                },
+            ),
+            (
                 "loz",
                 &CountryName {
                     common: "Namibia",
@@ -55564,7 +55853,21 @@ pub const NA: &Country = &Country {
                 },
             ),
             (
+                "hgm",
+                &CountryName {
+                    common: "Namibia",
+                    official: "Republic of Namibia",
+                },
+            ),
+            (
                 "ndo",
+                &CountryName {
+                    common: "Namibia",
+                    official: "Republic of Namibia",
+                },
+            ),
+            (
+                "eng",
                 &CountryName {
                     common: "Namibia",
                     official: "Republic of Namibia",
@@ -55645,9 +55948,9 @@ pub const NA: &Country = &Country {
     locale: &Locale {
         ietf: &["af-NA", "en-NA", "naq-NA"],
         date_formats: &crate::StaticMap::new(&[
-            ("naq-NA", "dd/MM/yyyy"),
-            ("af-NA", "yyyy-MM-dd"),
             ("en-NA", "dd/MM/yyyy"),
+            ("af-NA", "yyyy-MM-dd"),
+            ("naq-NA", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Windhoek",
@@ -55863,21 +56166,23 @@ pub const NA: &Country = &Country {
     ],
 };
 
+/// Republic of Namibia
 pub const NAM: &Country = NA;
+/// Republic of Nauru
 pub const NR: &Country = &Country {
     name: &CountryMeta {
         common: "Nauru",
         official: "Republic of Nauru",
         native: &crate::StaticMap::new(&[
             (
-                "nau",
+                "eng",
                 &CountryName {
                     common: "Nauru",
                     official: "Republic of Nauru",
                 },
             ),
             (
-                "eng",
+                "nau",
                 &CountryName {
                     common: "Nauru",
                     official: "Republic of Nauru",
@@ -56124,7 +56429,9 @@ pub const NR: &Country = &Country {
     ],
 };
 
+/// Republic of Nauru
 pub const NRU: &Country = NR;
+/// Federal Democratic Republic of Nepal
 pub const NP: &Country = &Country {
     name: &CountryMeta {
         common: "Nepal",
@@ -56219,17 +56526,17 @@ pub const NP: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ne",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Madhyamanchal",
+                        official: "Central",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ne",
                     &SubdivisionMeta {
-                        official: "Central",
+                        official: "Madhyamanchal",
                         common: None,
                         native: None,
                     },
@@ -56307,17 +56614,17 @@ pub const NP: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ne",
                     &SubdivisionMeta {
-                        official: "Far Western",
+                        official: "Sudur Pashchimanchal",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ne",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Sudur Pashchimanchal",
+                        official: "Far Western",
                         common: None,
                         native: None,
                     },
@@ -56395,7 +56702,7 @@ pub const NP: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ne",
                     &SubdivisionMeta {
                         official: "Gandaki",
                         common: None,
@@ -56403,7 +56710,7 @@ pub const NP: &Country = &Country {
                     },
                 ),
                 (
-                    "ne",
+                    "en",
                     &SubdivisionMeta {
                         official: "Gandaki",
                         common: None,
@@ -56417,17 +56724,17 @@ pub const NP: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ne",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Lumbini",
+                        official: "Province 5",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ne",
                     &SubdivisionMeta {
-                        official: "Province 5",
+                        official: "Lumbini",
                         common: None,
                         native: None,
                     },
@@ -56505,17 +56812,17 @@ pub const NP: &Country = &Country {
             ty: Some("zone"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ne",
                     &SubdivisionMeta {
-                        official: "2",
+                        official: "Bheri",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ne",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Bheri",
+                        official: "2",
                         common: None,
                         native: None,
                     },
@@ -56571,17 +56878,17 @@ pub const NP: &Country = &Country {
             ty: Some("zone"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ne",
                     &SubdivisionMeta {
-                        official: "1",
+                        official: "Janakpur",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ne",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Janakpur",
+                        official: "1",
                         common: None,
                         native: None,
                     },
@@ -56593,17 +56900,17 @@ pub const NP: &Country = &Country {
             ty: Some("zone"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ne",
                     &SubdivisionMeta {
-                        official: "2",
+                        official: "Karnali",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ne",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Karnali",
+                        official: "2",
                         common: None,
                         native: None,
                     },
@@ -56637,17 +56944,17 @@ pub const NP: &Country = &Country {
             ty: Some("zone"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ne",
                     &SubdivisionMeta {
-                        official: "3",
+                        official: "Lumbini",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ne",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Lumbini",
+                        official: "3",
                         common: None,
                         native: None,
                     },
@@ -56681,17 +56988,17 @@ pub const NP: &Country = &Country {
             ty: Some("zone"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ne",
                     &SubdivisionMeta {
-                        official: "4",
+                        official: "Mechi",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ne",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Mechi",
+                        official: "4",
                         common: None,
                         native: None,
                     },
@@ -56725,17 +57032,17 @@ pub const NP: &Country = &Country {
             ty: Some("zone"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ne",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Rapti",
+                        official: "2",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ne",
                     &SubdivisionMeta {
-                        official: "2",
+                        official: "Rapti",
                         common: None,
                         native: None,
                     },
@@ -56747,17 +57054,17 @@ pub const NP: &Country = &Country {
             ty: Some("zone"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ne",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Sagarmatha",
+                        official: "4",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ne",
                     &SubdivisionMeta {
-                        official: "4",
+                        official: "Sagarmatha",
                         common: None,
                         native: None,
                     },
@@ -56789,7 +57096,9 @@ pub const NP: &Country = &Country {
     ],
 };
 
+/// Federal Democratic Republic of Nepal
 pub const NPL: &Country = NP;
+/// Kingdom of the Netherlands
 pub const NL: &Country = &Country {
     name: &CountryMeta {
         common: "Netherlands",
@@ -56875,8 +57184,8 @@ pub const NL: &Country = &Country {
         ietf: &["en-NL", "fy-NL", "nds-NL", "nl-NL"],
         date_formats: &crate::StaticMap::new(&[
             ("en-NL", "dd/MM/yyyy"),
-            ("fy-NL", "dd-MM-yyyy"),
             ("nds-NL", "MM/dd/yyyy"),
+            ("fy-NL", "dd-MM-yyyy"),
             ("nl-NL", "dd-MM-yyyy"),
         ]),
         timezones: &[&Timezone {
@@ -56912,7 +57221,7 @@ pub const NL: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "nl",
+                    "en",
                     &SubdivisionMeta {
                         official: "Drenthe",
                         common: None,
@@ -56920,7 +57229,7 @@ pub const NL: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "nl",
                     &SubdivisionMeta {
                         official: "Drenthe",
                         common: None,
@@ -56956,17 +57265,17 @@ pub const NL: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "nl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Fryslân",
+                        official: "Friesland",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "nl",
                     &SubdivisionMeta {
-                        official: "Friesland",
+                        official: "Fryslân",
                         common: None,
                         native: None,
                     },
@@ -56978,7 +57287,7 @@ pub const NL: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "nl",
                     &SubdivisionMeta {
                         official: "Gelderland",
                         common: None,
@@ -56986,7 +57295,7 @@ pub const NL: &Country = &Country {
                     },
                 ),
                 (
-                    "nl",
+                    "en",
                     &SubdivisionMeta {
                         official: "Gelderland",
                         common: None,
@@ -57044,17 +57353,17 @@ pub const NL: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "nl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Noord-Brabant",
+                        official: "North Brabant",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "nl",
                     &SubdivisionMeta {
-                        official: "North Brabant",
+                        official: "Noord-Brabant",
                         common: None,
                         native: None,
                     },
@@ -57066,17 +57375,17 @@ pub const NL: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "nl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Noord-Holland",
+                        official: "North Holland",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "nl",
                     &SubdivisionMeta {
-                        official: "North Holland",
+                        official: "Noord-Holland",
                         common: None,
                         native: None,
                     },
@@ -57088,7 +57397,7 @@ pub const NL: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "nl",
                     &SubdivisionMeta {
                         official: "Overijssel",
                         common: None,
@@ -57096,7 +57405,7 @@ pub const NL: &Country = &Country {
                     },
                 ),
                 (
-                    "nl",
+                    "en",
                     &SubdivisionMeta {
                         official: "Overijssel",
                         common: None,
@@ -57132,7 +57441,7 @@ pub const NL: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "nl",
                     &SubdivisionMeta {
                         official: "Zeeland",
                         common: None,
@@ -57140,7 +57449,7 @@ pub const NL: &Country = &Country {
                     },
                 ),
                 (
-                    "nl",
+                    "en",
                     &SubdivisionMeta {
                         official: "Zeeland",
                         common: None,
@@ -57242,17 +57551,17 @@ pub const NL: &Country = &Country {
             ty: Some("speciaMunicipality"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cca2",
+                    "nl",
                     &SubdivisionMeta {
-                        official: "BQ",
+                        official: "Bonaire",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "nl",
+                    "cca2",
                     &SubdivisionMeta {
-                        official: "Bonaire",
+                        official: "BQ",
                         common: None,
                         native: None,
                     },
@@ -57264,17 +57573,17 @@ pub const NL: &Country = &Country {
             ty: Some("speciaMunicipality"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "cca2",
+                    "nl",
                     &SubdivisionMeta {
-                        official: "BQ",
+                        official: "Saba",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "nl",
+                    "cca2",
                     &SubdivisionMeta {
-                        official: "Saba",
+                        official: "BQ",
                         common: None,
                         native: None,
                     },
@@ -57306,7 +57615,9 @@ pub const NL: &Country = &Country {
     ],
 };
 
+/// Kingdom of the Netherlands
 pub const NLD: &Country = NL;
+/// New Caledonia
 pub const NC: &Country = &Country {
     name: &CountryMeta {
         common: "New Caledonia",
@@ -57389,7 +57700,9 @@ pub const NC: &Country = &Country {
     subdivisions: &[],
 };
 
+/// New Caledonia
 pub const NCL: &Country = NC;
+/// New Zealand
 pub const NZ: &Country = &Country {
     name: &CountryMeta {
         common: "New Zealand",
@@ -57403,17 +57716,17 @@ pub const NZ: &Country = &Country {
                 },
             ),
             (
-                "nzs",
-                &CountryName {
-                    common: "New Zealand",
-                    official: "New Zealand",
-                },
-            ),
-            (
                 "mri",
                 &CountryName {
                     common: "Aotearoa",
                     official: "Aotearoa",
+                },
+            ),
+            (
+                "nzs",
+                &CountryName {
+                    common: "New Zealand",
+                    official: "New Zealand",
                 },
             ),
         ]),
@@ -57467,7 +57780,7 @@ pub const NZ: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["en-NZ", "mi-NZ"],
-        date_formats: &crate::StaticMap::new(&[("mi-NZ", "dd-MM-yyyy"), ("en-NZ", "dd/MM/yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("en-NZ", "dd/MM/yyyy"), ("mi-NZ", "dd-MM-yyyy")]),
         timezones: &[
             &Timezone {
                 name: "Pacific/Auckland",
@@ -57576,17 +57889,17 @@ pub const NZ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mi",
                     &SubdivisionMeta {
-                        official: "Gisborne",
+                        official: "Tūranga nui a Kiwa",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "mi",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Tūranga nui a Kiwa",
+                        official: "Gisborne",
                         common: None,
                         native: None,
                     },
@@ -57598,17 +57911,17 @@ pub const NZ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mi",
                     &SubdivisionMeta {
-                        official: "Hawke's Bay",
+                        official: "Te Matau a Māui",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "mi",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Te Matau a Māui",
+                        official: "Hawke's Bay",
                         common: None,
                         native: None,
                     },
@@ -57664,17 +57977,17 @@ pub const NZ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mi",
                     &SubdivisionMeta {
-                        official: "Nelson",
+                        official: "Whakatū",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "mi",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Whakatū",
+                        official: "Nelson",
                         common: None,
                         native: None,
                     },
@@ -57796,17 +58109,17 @@ pub const NZ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "mi",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Waikato",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "mi",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Waikato",
                         common: None,
                         native: None,
                     },
@@ -57840,17 +58153,17 @@ pub const NZ: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "mi",
                     &SubdivisionMeta {
-                        official: "West Coast",
+                        official: "Te Taihau ā uru",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "mi",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Te Taihau ā uru",
+                        official: "West Coast",
                         common: None,
                         native: None,
                     },
@@ -57882,7 +58195,9 @@ pub const NZ: &Country = &Country {
     ],
 };
 
+/// New Zealand
 pub const NZL: &Country = NZ;
+/// Republic of Nicaragua
 pub const NI: &Country = &Country {
     name: &CountryMeta {
         common: "Nicaragua",
@@ -58167,7 +58482,9 @@ pub const NI: &Country = &Country {
     ],
 };
 
+/// Republic of Nicaragua
 pub const NIC: &Country = NI;
+/// Republic of Niger
 pub const NE: &Country = &Country {
     name: &CountryMeta {
         common: "Niger",
@@ -58275,12 +58592,12 @@ pub const NE: &Country = &Country {
             "twq-NE",
         ],
         date_formats: &crate::StaticMap::new(&[
-            ("ff-Adlm-NE", "yyyyyyyy-MMMM-dddd"),
-            ("fr-NE", "dd/MM/yyyy"),
-            ("ha-NE", "yyyy-MM-dd"),
             ("twq-NE", "dd/MM/yyyy"),
             ("dje-NE", "dd/MM/yyyy"),
+            ("ff-Adlm-NE", "yyyyyyyy-MMMM-dddd"),
+            ("fr-NE", "dd/MM/yyyy"),
             ("ff-Latn-NE", "dd/MM/yyyy"),
+            ("ha-NE", "yyyy-MM-dd"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Lagos",
@@ -58409,7 +58726,9 @@ pub const NE: &Country = &Country {
     ],
 };
 
+/// Republic of Niger
 pub const NER: &Country = NE;
+/// Federal Republic of Nigeria
 pub const NG: &Country = &Country {
     name: &CountryMeta {
         common: "Nigeria",
@@ -58565,13 +58884,13 @@ pub const NG: &Country = &Country {
             "yo-NG",
         ],
         date_formats: &crate::StaticMap::new(&[
-            ("ig-NG", "dd/MM/yyyy"),
-            ("yo-NG", "dd/MM/yyyy"),
-            ("ha-NG", "yyyy-MM-dd"),
-            ("ff-Latn-NG", "dd/MM/yyyy"),
-            ("en-NG", "dd/MM/yyyy"),
-            ("pcm-NG", "dd/MM/yyyy"),
             ("ff-Adlm-NG", "yyyyyyyy-MMMM-dddd"),
+            ("ig-NG", "dd/MM/yyyy"),
+            ("pcm-NG", "dd/MM/yyyy"),
+            ("en-NG", "dd/MM/yyyy"),
+            ("yo-NG", "dd/MM/yyyy"),
+            ("ff-Latn-NG", "dd/MM/yyyy"),
+            ("ha-NG", "yyyy-MM-dd"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Lagos",
@@ -59048,7 +59367,9 @@ pub const NG: &Country = &Country {
     ],
 };
 
+/// Federal Republic of Nigeria
 pub const NGA: &Country = NG;
+/// Niue
 pub const NU: &Country = &Country {
     name: &CountryMeta {
         common: "Niue",
@@ -59135,24 +59456,26 @@ pub const NU: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Niue
 pub const NIU: &Country = NU;
+/// Territory of Norfolk Island
 pub const NF: &Country = &Country {
     name: &CountryMeta {
         common: "Norfolk Island",
         official: "Territory of Norfolk Island",
         native: &crate::StaticMap::new(&[
             (
-                "pih",
-                &CountryName {
-                    common: "Norf'k Ailen",
-                    official: "Teratri of Norf'k Ailen",
-                },
-            ),
-            (
                 "eng",
                 &CountryName {
                     common: "Norfolk Island",
                     official: "Territory of Norfolk Island",
+                },
+            ),
+            (
+                "pih",
+                &CountryName {
+                    common: "Norf'k Ailen",
+                    official: "Teratri of Norf'k Ailen",
                 },
             ),
         ]),
@@ -59222,7 +59545,9 @@ pub const NF: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Territory of Norfolk Island
 pub const NFK: &Country = NF;
+/// Democratic People's Republic of Korea
 pub const KP: &Country = &Country {
     name: &CountryMeta {
         common: "North Korea",
@@ -59299,17 +59624,17 @@ pub const KP: &Country = &Country {
             ty: Some("capital city"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "P'yǒngyang",
+                        official: "Pyongyang",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "Pyongyang",
+                        official: "P'yǒngyang",
                         common: None,
                         native: None,
                     },
@@ -59321,17 +59646,17 @@ pub const KP: &Country = &Country {
             ty: Some("special city"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Rasǒn",
+                        official: "Rason",
                         common: Some("Najin Sǒnbong"),
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "Rason",
+                        official: "Rasǒn",
                         common: Some("Najin Sǒnbong"),
                         native: None,
                     },
@@ -59387,17 +59712,17 @@ pub const KP: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "P'yǒngan-bukto",
+                        official: "North Pyongan",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "North Pyongan",
+                        official: "P'yǒngan-bukto",
                         common: None,
                         native: None,
                     },
@@ -59431,17 +59756,17 @@ pub const KP: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Hwanghae-namdo",
+                        official: "South Hwanghae",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "South Hwanghae",
+                        official: "Hwanghae-namdo",
                         common: None,
                         native: None,
                     },
@@ -59453,17 +59778,17 @@ pub const KP: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Hwanghae-bukto",
+                        official: "North Hwanghae",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "North Hwanghae",
+                        official: "Hwanghae-bukto",
                         common: None,
                         native: None,
                     },
@@ -59475,17 +59800,17 @@ pub const KP: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kangwǒn-do",
+                        official: "Kangwon",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "Kangwon",
+                        official: "Kangwǒn-do",
                         common: None,
                         native: None,
                     },
@@ -59519,17 +59844,17 @@ pub const KP: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "North Hamgyong",
+                        official: "Hamgyǒng-bukto",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Hamgyǒng-bukto",
+                        official: "North Hamgyong",
                         common: None,
                         native: None,
                     },
@@ -59561,7 +59886,9 @@ pub const KP: &Country = &Country {
     ],
 };
 
+/// Democratic People's Republic of Korea
 pub const PRK: &Country = KP;
+/// Republic of North Macedonia
 pub const MK: &Country = &Country {
     name: &CountryMeta {
         common: "North Macedonia",
@@ -59634,7 +59961,7 @@ pub const MK: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["mk-MK", "sq-MK"],
-        date_formats: &crate::StaticMap::new(&[("mk-MK", "dd.MM.yyyy"), ("sq-MK", "dd.MM.yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("sq-MK", "dd.MM.yyyy"), ("mk-MK", "dd.MM.yyyy")]),
         timezones: &[&Timezone {
             name: "Europe/Skopje",
             ty: TimezoneType::Link,
@@ -60626,12 +60953,21 @@ pub const MK: &Country = &Country {
     ],
 };
 
+/// Republic of North Macedonia
 pub const MKD: &Country = MK;
+/// Commonwealth of the Northern Mariana Islands
 pub const MP: &Country = &Country {
     name: &CountryMeta {
         common: "Northern Mariana Islands",
         official: "Commonwealth of the Northern Mariana Islands",
         native: &crate::StaticMap::new(&[
+            (
+                "cal",
+                &CountryName {
+                    common: "Northern Mariana Islands",
+                    official: "Commonwealth of the Northern Mariana Islands",
+                },
+            ),
             (
                 "eng",
                 &CountryName {
@@ -60644,13 +60980,6 @@ pub const MP: &Country = &Country {
                 &CountryName {
                     common: "Na Islas Mariånas",
                     official: "Sankattan Siha Na Islas Mariånas",
-                },
-            ),
-            (
-                "cal",
-                &CountryName {
-                    common: "Northern Mariana Islands",
-                    official: "Commonwealth of the Northern Mariana Islands",
                 },
             ),
         ]),
@@ -60723,12 +61052,14 @@ pub const MP: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Commonwealth of the Northern Mariana Islands
 pub const MNP: &Country = MP;
+/// Kingdom of Norway
 pub const NO: &Country = &Country {
 	name: &CountryMeta {
 		common: "Norway",
 		official: "Kingdom of Norway",
-		native: &crate::StaticMap::new(&[("nno", &CountryName { common: "Noreg", official: "Kongeriket Noreg" }), ("nob", &CountryName { common: "Norge", official: "Kongeriket Norge" }), ("smi", &CountryName { common: "Norgga", official: "Norgga gonagasriika" }), ]),
+		native: &crate::StaticMap::new(&[("nob", &CountryName { common: "Norge", official: "Kongeriket Norge" }), ("smi", &CountryName { common: "Norgga", official: "Norgga gonagasriika" }), ("nno", &CountryName { common: "Noreg", official: "Kongeriket Noreg" }), ]),
 		alternates: &["Norge","Noreg","Kingdom of Norway","Kongeriket Norge","Kongeriket Noreg",],
 	},
 	flag: "🇳🇴",
@@ -60741,12 +61072,14 @@ pub const NO: &Country = &Country {
 	geography: &Geography { latitude: 62f64, longitude: 10f64, land_locked: false, capital: &["Oslo",], area: 323802f64, region: "Europe", subregion: "Northern Europe", border_countries: &[crate::CCA3::FIN,crate::CCA3::SWE,crate::CCA3::RUS,] },
 	official_languages: &[ &Language { name: "Norwegian Bokmål", native_name: Some("Norvégien Bokmål"), iana: &["Norwegian Bokmål",], iso_639_3: "nob", bcp_47: "nb", iso_15924: "Latn", extinct: false, spurious: false, }, &Language { name: "Norwegian Nynorsk", native_name: Some("Norvégien Nynorsk"), iana: &["Norwegian Nynorsk",], iso_639_3: "nno", bcp_47: "nn", iso_15924: "Latn", extinct: false, spurious: false, }, &Language { name: "Saami, North", native_name: None, iana: &["Northern Sami",], iso_639_3: "sme", bcp_47: "se", iso_15924: "Latn", extinct: false, spurious: false, },],
 	spoken_languages: &["aln","bod","dan","eng","spa","fin","fkv","fra","kur","nor","nsl","rmg","rom","rmy","rus","sje","sju","sma","smj","sms","swe","urd","vie",],
-	locale: &Locale { ietf: &["nb-NO","nn-NO","se-NO",], date_formats: &crate::StaticMap::new(&[("se-NO", "yyyy-MM-dd"),("nn-NO", "dd.MM.yyyy"),("nb-NO", "MM/dd/yyyy"),]), timezones: &[&Timezone { name: "Europe/Oslo", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+01:00", dst_offset: "+02:00" },], measurement_system: MeasurementSystem::Metric, hour_clock: HourClock::TwentyFour, driving_side: DrivingSide::Right, distance_unit: DistanceUint::Kilometer, temperature_unit: TemperatureUint::Celsius, week_start_on: Day::Monday},
+	locale: &Locale { ietf: &["nb-NO","nn-NO","se-NO",], date_formats: &crate::StaticMap::new(&[("nn-NO", "dd.MM.yyyy"),("se-NO", "yyyy-MM-dd"),("nb-NO", "MM/dd/yyyy"),]), timezones: &[&Timezone { name: "Europe/Oslo", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+01:00", dst_offset: "+02:00" },], measurement_system: MeasurementSystem::Metric, hour_clock: HourClock::TwentyFour, driving_side: DrivingSide::Right, distance_unit: DistanceUint::Kilometer, temperature_unit: TemperatureUint::Celsius, week_start_on: Day::Monday},
 	currencies: &[&Currency { name: "Norwegian Krone", short_name: Some("Krone"), iso_4217: "NOK", iso_numeric: Some("578"), symbol: "kr", subunit: Some("Øre"), prefix: Some(""), suffix: Some(" kr"), decimal_mark: Some(','), decimal_places: 2, thousands_separator: Some(' ') }, ],
-	subdivisions: &[&Subdivision { iso: "NO-42", ty: Some("county"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Agder", common: None, native: None },),("nb", &SubdivisionMeta { official: "Agder", common: None, native: None },),]), },&Subdivision { iso: "NO-34", ty: Some("county"), meta: &crate::StaticMap::new(&[("nb", &SubdivisionMeta { official: "Innlandet", common: None, native: None },),("nn", &SubdivisionMeta { official: "Innlandet", common: None, native: None },),]), },&Subdivision { iso: "NO-15", ty: Some("county"), meta: &crate::StaticMap::new(&[("nb", &SubdivisionMeta { official: "Møre og Romsdal", common: None, native: None },),("nn", &SubdivisionMeta { official: "Møre og Romsdal", common: None, native: None },),]), },&Subdivision { iso: "NO-18", ty: Some("county"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Nordland", common: None, native: None },),("nb", &SubdivisionMeta { official: "Nordland", common: None, native: None },),]), },&Subdivision { iso: "NO-03", ty: Some("county"), meta: &crate::StaticMap::new(&[("nb", &SubdivisionMeta { official: "Oslo", common: None, native: None },),("nn", &SubdivisionMeta { official: "Oslo", common: None, native: None },),]), },&Subdivision { iso: "NO-11", ty: Some("county"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Rogaland", common: None, native: None },),("nb", &SubdivisionMeta { official: "Rogaland", common: None, native: None },),]), },&Subdivision { iso: "NO-54", ty: Some("county"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Troms og Finnmark / Romsa ja Finnmárku (se) / Tromssan ja Finmarkun (-)", common: None, native: None },),("nb", &SubdivisionMeta { official: "Troms og Finnmark / Romsa ja Finnmárku (se) / Tromssan ja Finmarkun (-)", common: None, native: None },),]), },&Subdivision { iso: "NO-50", ty: Some("county"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Trøndelag / Trööndelage (-)", common: None, native: None },),("nb", &SubdivisionMeta { official: "Trøndelag / Trööndelage (-)", common: None, native: None },),]), },&Subdivision { iso: "NO-38", ty: Some("county"), meta: &crate::StaticMap::new(&[("nb", &SubdivisionMeta { official: "Vestfold og Telemark", common: None, native: None },),("nn", &SubdivisionMeta { official: "Vestfold og Telemark", common: None, native: None },),]), },&Subdivision { iso: "NO-46", ty: Some("county"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Vestland", common: None, native: None },),("nb", &SubdivisionMeta { official: "Vestland", common: None, native: None },),]), },&Subdivision { iso: "NO-30", ty: Some("county"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Viken", common: None, native: None },),("nb", &SubdivisionMeta { official: "Viken", common: None, native: None },),]), },&Subdivision { iso: "NO-22", ty: Some("arctic region"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Jan Mayen", common: None, native: None },),("nb", &SubdivisionMeta { official: "Jan Mayen", common: None, native: None },),]), },&Subdivision { iso: "NO-21", ty: Some("arctic region"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Svalbard", common: None, native: None },),("nb", &SubdivisionMeta { official: "Svalbard", common: None, native: None },),]), },],
+	subdivisions: &[&Subdivision { iso: "NO-42", ty: Some("county"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Agder", common: None, native: None },),("nb", &SubdivisionMeta { official: "Agder", common: None, native: None },),]), },&Subdivision { iso: "NO-34", ty: Some("county"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Innlandet", common: None, native: None },),("nb", &SubdivisionMeta { official: "Innlandet", common: None, native: None },),]), },&Subdivision { iso: "NO-15", ty: Some("county"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Møre og Romsdal", common: None, native: None },),("nb", &SubdivisionMeta { official: "Møre og Romsdal", common: None, native: None },),]), },&Subdivision { iso: "NO-18", ty: Some("county"), meta: &crate::StaticMap::new(&[("nb", &SubdivisionMeta { official: "Nordland", common: None, native: None },),("nn", &SubdivisionMeta { official: "Nordland", common: None, native: None },),]), },&Subdivision { iso: "NO-03", ty: Some("county"), meta: &crate::StaticMap::new(&[("nb", &SubdivisionMeta { official: "Oslo", common: None, native: None },),("nn", &SubdivisionMeta { official: "Oslo", common: None, native: None },),]), },&Subdivision { iso: "NO-11", ty: Some("county"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Rogaland", common: None, native: None },),("nb", &SubdivisionMeta { official: "Rogaland", common: None, native: None },),]), },&Subdivision { iso: "NO-54", ty: Some("county"), meta: &crate::StaticMap::new(&[("nb", &SubdivisionMeta { official: "Troms og Finnmark / Romsa ja Finnmárku (se) / Tromssan ja Finmarkun (-)", common: None, native: None },),("nn", &SubdivisionMeta { official: "Troms og Finnmark / Romsa ja Finnmárku (se) / Tromssan ja Finmarkun (-)", common: None, native: None },),]), },&Subdivision { iso: "NO-50", ty: Some("county"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Trøndelag / Trööndelage (-)", common: None, native: None },),("nb", &SubdivisionMeta { official: "Trøndelag / Trööndelage (-)", common: None, native: None },),]), },&Subdivision { iso: "NO-38", ty: Some("county"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Vestfold og Telemark", common: None, native: None },),("nb", &SubdivisionMeta { official: "Vestfold og Telemark", common: None, native: None },),]), },&Subdivision { iso: "NO-46", ty: Some("county"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Vestland", common: None, native: None },),("nb", &SubdivisionMeta { official: "Vestland", common: None, native: None },),]), },&Subdivision { iso: "NO-30", ty: Some("county"), meta: &crate::StaticMap::new(&[("nb", &SubdivisionMeta { official: "Viken", common: None, native: None },),("nn", &SubdivisionMeta { official: "Viken", common: None, native: None },),]), },&Subdivision { iso: "NO-22", ty: Some("arctic region"), meta: &crate::StaticMap::new(&[("nn", &SubdivisionMeta { official: "Jan Mayen", common: None, native: None },),("nb", &SubdivisionMeta { official: "Jan Mayen", common: None, native: None },),]), },&Subdivision { iso: "NO-21", ty: Some("arctic region"), meta: &crate::StaticMap::new(&[("nb", &SubdivisionMeta { official: "Svalbard", common: None, native: None },),("nn", &SubdivisionMeta { official: "Svalbard", common: None, native: None },),]), },],
 };
 
+/// Kingdom of Norway
 pub const NOR: &Country = NO;
+/// Sultanate of Oman
 pub const OM: &Country = &Country {
     name: &CountryMeta {
         common: "Oman",
@@ -60948,24 +61281,26 @@ pub const OM: &Country = &Country {
     ],
 };
 
+/// Sultanate of Oman
 pub const OMN: &Country = OM;
+/// Islamic Republic of Pakistan
 pub const PK: &Country = &Country {
     name: &CountryMeta {
         common: "Pakistan",
         official: "Islamic Republic of Pakistan",
         native: &crate::StaticMap::new(&[
             (
-                "urd",
-                &CountryName {
-                    common: "پاكستان",
-                    official: "اسلامی جمہوریۂ پاكستان",
-                },
-            ),
-            (
                 "eng",
                 &CountryName {
                     common: "Pakistan",
                     official: "Islamic Republic of Pakistan",
+                },
+            ),
+            (
+                "urd",
+                &CountryName {
+                    common: "پاكستان",
+                    official: "اسلامی جمہوریۂ پاكستان",
                 },
             ),
         ]),
@@ -61064,9 +61399,9 @@ pub const PK: &Country = &Country {
     locale: &Locale {
         ietf: &["en-PK", "pa-Arab-PK", "ps-PK", "sd-Arab-PK", "ur-PK"],
         date_formats: &crate::StaticMap::new(&[
-            ("pa-Arab-PK", "dd/MM/yyyy"),
-            ("ps-PK", "yyyy/MM/dd"),
             ("en-PK", "dd/MM/yyyy"),
+            ("ps-PK", "yyyy/MM/dd"),
+            ("pa-Arab-PK", "dd/MM/yyyy"),
             ("ur-PK", "dd/MM/yyyy"),
             ("sd-Arab-PK", "yyyy-MM-dd"),
         ]),
@@ -61103,17 +61438,17 @@ pub const PK: &Country = &Country {
             ty: Some("federal capital territory"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ur",
                     &SubdivisionMeta {
-                        official: "Islamabad",
+                        official: "Islāmābād",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ur",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Islāmābād",
+                        official: "Islamabad",
                         common: None,
                         native: None,
                     },
@@ -61125,17 +61460,17 @@ pub const PK: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ur",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Balōchistān",
+                        official: "Balochistan",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ur",
                     &SubdivisionMeta {
-                        official: "Balochistan",
+                        official: "Balōchistān",
                         common: None,
                         native: None,
                     },
@@ -61191,7 +61526,7 @@ pub const PK: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ur",
                     &SubdivisionMeta {
                         official: "Sindh",
                         common: None,
@@ -61199,7 +61534,7 @@ pub const PK: &Country = &Country {
                     },
                 ),
                 (
-                    "ur",
+                    "en",
                     &SubdivisionMeta {
                         official: "Sindh",
                         common: None,
@@ -61213,17 +61548,17 @@ pub const PK: &Country = &Country {
             ty: Some("Pakistan administered area"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ur",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Āzād Jammūñ o Kashmīr",
+                        official: "Azad Jammu and Kashmir(local variant is AJ&K)",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ur",
                     &SubdivisionMeta {
-                        official: "Azad Jammu and Kashmir(local variant is AJ&K)",
+                        official: "Āzād Jammūñ o Kashmīr",
                         common: None,
                         native: None,
                     },
@@ -61235,17 +61570,17 @@ pub const PK: &Country = &Country {
             ty: Some("Pakistan administered area"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ur",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Gilgit-Baltistān",
+                        official: "Gilgit-Baltistan",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ur",
                     &SubdivisionMeta {
-                        official: "Gilgit-Baltistan",
+                        official: "Gilgit-Baltistān",
                         common: None,
                         native: None,
                     },
@@ -61255,7 +61590,9 @@ pub const PK: &Country = &Country {
     ],
 };
 
+/// Islamic Republic of Pakistan
 pub const PAK: &Country = PK;
+/// Republic of Palau
 pub const PW: &Country = &Country {
     name: &CountryMeta {
         common: "Palau",
@@ -61535,7 +61872,9 @@ pub const PW: &Country = &Country {
     ],
 };
 
+/// Republic of Palau
 pub const PLW: &Country = PW;
+/// State of Palestine
 pub const PS: &Country = &Country {
     name: &CountryMeta {
         common: "Palestine",
@@ -61619,17 +61958,17 @@ pub const PS: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Bayt Laḩm",
+                        official: "Bethlehem",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Bethlehem",
+                        official: "Bayt Laḩm",
                         common: None,
                         native: None,
                     },
@@ -61641,17 +61980,17 @@ pub const PS: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Deir El Balah",
+                        official: "Dayr al Balaḩ",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Dayr al Balaḩ",
+                        official: "Deir El Balah",
                         common: None,
                         native: None,
                     },
@@ -61685,17 +62024,17 @@ pub const PS: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Hebron",
+                        official: "Al Khalīl",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Al Khalīl",
+                        official: "Hebron",
                         common: None,
                         native: None,
                     },
@@ -61729,17 +62068,17 @@ pub const PS: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Arīḩā wal Aghwār",
+                        official: "Jericho and Al Aghwar",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Jericho and Al Aghwar",
+                        official: "Arīḩā wal Aghwār",
                         common: None,
                         native: None,
                     },
@@ -61751,17 +62090,17 @@ pub const PS: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Al Quds",
+                        official: "Jerusalem",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Jerusalem",
+                        official: "Al Quds",
                         common: None,
                         native: None,
                     },
@@ -61795,17 +62134,17 @@ pub const PS: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Nāblus",
+                        official: "Nablus",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Nablus",
+                        official: "Nāblus",
                         common: None,
                         native: None,
                     },
@@ -61817,17 +62156,17 @@ pub const PS: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "North Gaza",
+                        official: "Shamāl Ghazzah",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Shamāl Ghazzah",
+                        official: "North Gaza",
                         common: None,
                         native: None,
                     },
@@ -61883,17 +62222,17 @@ pub const PS: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Rām Allāh wal Bīrah",
+                        official: "Ramallah",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Ramallah",
+                        official: "Rām Allāh wal Bīrah",
                         common: None,
                         native: None,
                     },
@@ -61949,17 +62288,17 @@ pub const PS: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Tulkarm",
+                        official: "Ţūlkarm",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Ţūlkarm",
+                        official: "Tulkarm",
                         common: None,
                         native: None,
                     },
@@ -61969,7 +62308,9 @@ pub const PS: &Country = &Country {
     ],
 };
 
+/// State of Palestine
 pub const PSE: &Country = PS;
+/// Republic of Panama
 pub const PA: &Country = &Country {
     name: &CountryMeta {
         common: "Panama",
@@ -62222,17 +62563,19 @@ pub const PA: &Country = &Country {
     ],
 };
 
+/// Republic of Panama
 pub const PAN: &Country = PA;
+/// Independent State of Papua New Guinea
 pub const PG: &Country = &Country {
     name: &CountryMeta {
         common: "Papua New Guinea",
         official: "Independent State of Papua New Guinea",
         native: &crate::StaticMap::new(&[
             (
-                "hmo",
+                "eng",
                 &CountryName {
-                    common: "Papua Niu Gini",
-                    official: "Independen Stet bilong Papua Niugini",
+                    common: "Papua New Guinea",
+                    official: "Independent State of Papua New Guinea",
                 },
             ),
             (
@@ -62243,10 +62586,10 @@ pub const PG: &Country = &Country {
                 },
             ),
             (
-                "eng",
+                "hmo",
                 &CountryName {
-                    common: "Papua New Guinea",
-                    official: "Independent State of Papua New Guinea",
+                    common: "Papua Niu Gini",
+                    official: "Independen Stet bilong Papua Niugini",
                 },
             ),
         ]),
@@ -62660,24 +63003,26 @@ pub const PG: &Country = &Country {
     ],
 };
 
+/// Independent State of Papua New Guinea
 pub const PNG: &Country = PG;
+/// Republic of Paraguay
 pub const PY: &Country = &Country {
     name: &CountryMeta {
         common: "Paraguay",
         official: "Republic of Paraguay",
         native: &crate::StaticMap::new(&[
             (
-                "spa",
-                &CountryName {
-                    common: "Paraguay",
-                    official: "República de Paraguay",
-                },
-            ),
-            (
                 "grn",
                 &CountryName {
                     common: "Paraguái",
                     official: "Tetã Paraguái",
+                },
+            ),
+            (
+                "spa",
+                &CountryName {
+                    common: "Paraguay",
+                    official: "República de Paraguay",
                 },
             ),
         ]),
@@ -62971,7 +63316,9 @@ pub const PY: &Country = &Country {
     ],
 };
 
+/// Republic of Paraguay
 pub const PRY: &Country = PY;
+/// Republic of Peru
 pub const PE: &Country = &Country {
     name: &CountryMeta {
         common: "Peru",
@@ -63106,9 +63453,9 @@ pub const PE: &Country = &Country {
             ty: Some("municipality"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ay",
+                    "es",
                     &SubdivisionMeta {
-                        official: "Lima hatun llaqta",
+                        official: "Municipalidad Metropolitana de Lima",
                         common: None,
                         native: None,
                     },
@@ -63122,9 +63469,9 @@ pub const PE: &Country = &Country {
                     },
                 ),
                 (
-                    "es",
+                    "ay",
                     &SubdivisionMeta {
-                        official: "Municipalidad Metropolitana de Lima",
+                        official: "Lima hatun llaqta",
                         common: None,
                         native: None,
                     },
@@ -63136,9 +63483,9 @@ pub const PE: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "qu",
+                    "es",
                     &SubdivisionMeta {
-                        official: "Amarumayu",
+                        official: "Amazonas",
                         common: None,
                         native: None,
                     },
@@ -63152,9 +63499,9 @@ pub const PE: &Country = &Country {
                     },
                 ),
                 (
-                    "es",
+                    "qu",
                     &SubdivisionMeta {
-                        official: "Amazonas",
+                        official: "Amarumayu",
                         common: None,
                         native: None,
                     },
@@ -63165,6 +63512,14 @@ pub const PE: &Country = &Country {
             iso: "PE-ANC",
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "qu",
+                    &SubdivisionMeta {
+                        official: "Anqash",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "ay",
                     &SubdivisionMeta {
@@ -63181,28 +63536,12 @@ pub const PE: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "qu",
-                    &SubdivisionMeta {
-                        official: "Anqash",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PE-APU",
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "qu",
-                    &SubdivisionMeta {
-                        official: "Apurimaq",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "es",
                     &SubdivisionMeta {
@@ -63219,6 +63558,14 @@ pub const PE: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "qu",
+                    &SubdivisionMeta {
+                        official: "Apurimaq",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -63226,17 +63573,17 @@ pub const PE: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ay",
+                    "qu",
                     &SubdivisionMeta {
-                        official: "Arikipa",
+                        official: "Ariqipa",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "qu",
+                    "ay",
                     &SubdivisionMeta {
-                        official: "Ariqipa",
+                        official: "Arikipa",
                         common: None,
                         native: None,
                     },
@@ -63256,6 +63603,14 @@ pub const PE: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
+                    "ay",
+                    &SubdivisionMeta {
+                        official: "Ayaquchu",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "qu",
                     &SubdivisionMeta {
                         official: "Ayakuchu",
@@ -63271,28 +63626,12 @@ pub const PE: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "ay",
-                    &SubdivisionMeta {
-                        official: "Ayaquchu",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PE-CAJ",
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "qu",
-                    &SubdivisionMeta {
-                        official: "Kashamarka",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "es",
                     &SubdivisionMeta {
@@ -63305,6 +63644,14 @@ pub const PE: &Country = &Country {
                     "ay",
                     &SubdivisionMeta {
                         official: "Qajamarka",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "qu",
+                    &SubdivisionMeta {
+                        official: "Kashamarka",
                         common: None,
                         native: None,
                     },
@@ -63346,6 +63693,14 @@ pub const PE: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
+                    "qu",
+                    &SubdivisionMeta {
+                        official: "Qallaw",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "ay",
                     &SubdivisionMeta {
                         official: "Kallao",
@@ -63361,20 +63716,20 @@ pub const PE: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "qu",
-                    &SubdivisionMeta {
-                        official: "Qallaw",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PE-HUV",
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "ay",
+                    &SubdivisionMeta {
+                        official: "Wankawelika",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "es",
                     &SubdivisionMeta {
@@ -63391,14 +63746,6 @@ pub const PE: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "ay",
-                    &SubdivisionMeta {
-                        official: "Wankawelika",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
@@ -63406,17 +63753,17 @@ pub const PE: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "qu",
                     &SubdivisionMeta {
-                        official: "Huánuco",
+                        official: "Wanuku",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "qu",
+                    "es",
                     &SubdivisionMeta {
-                        official: "Wanuku",
+                        official: "Huánuco",
                         common: None,
                         native: None,
                     },
@@ -63436,14 +63783,6 @@ pub const PE: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ay",
-                    &SubdivisionMeta {
-                        official: "Ika",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "es",
                     &SubdivisionMeta {
                         official: "Ica",
@@ -63453,6 +63792,14 @@ pub const PE: &Country = &Country {
                 ),
                 (
                     "qu",
+                    &SubdivisionMeta {
+                        official: "Ika",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "ay",
                     &SubdivisionMeta {
                         official: "Ika",
                         common: None,
@@ -63474,17 +63821,17 @@ pub const PE: &Country = &Country {
                     },
                 ),
                 (
-                    "es",
+                    "ay",
                     &SubdivisionMeta {
-                        official: "Junín",
+                        official: "Junin",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ay",
+                    "es",
                     &SubdivisionMeta {
-                        official: "Junin",
+                        official: "Junín",
                         common: None,
                         native: None,
                     },
@@ -63496,9 +63843,9 @@ pub const PE: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "qu",
+                    "ay",
                     &SubdivisionMeta {
-                        official: "Qispi kay",
+                        official: "La Libertad",
                         common: None,
                         native: None,
                     },
@@ -63512,9 +63859,9 @@ pub const PE: &Country = &Country {
                     },
                 ),
                 (
-                    "ay",
+                    "qu",
                     &SubdivisionMeta {
-                        official: "La Libertad",
+                        official: "Qispi kay",
                         common: None,
                         native: None,
                     },
@@ -63525,6 +63872,14 @@ pub const PE: &Country = &Country {
             iso: "PE-LAM",
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "es",
+                    &SubdivisionMeta {
+                        official: "Lambayeque",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "ay",
                     &SubdivisionMeta {
@@ -63537,14 +63892,6 @@ pub const PE: &Country = &Country {
                     "qu",
                     &SubdivisionMeta {
                         official: "Lampalliqi",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "es",
-                    &SubdivisionMeta {
-                        official: "Lambayeque",
                         common: None,
                         native: None,
                     },
@@ -63586,7 +63933,7 @@ pub const PE: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "qu",
+                    "ay",
                     &SubdivisionMeta {
                         official: "Luritu",
                         common: None,
@@ -63602,7 +63949,7 @@ pub const PE: &Country = &Country {
                     },
                 ),
                 (
-                    "ay",
+                    "qu",
                     &SubdivisionMeta {
                         official: "Luritu",
                         common: None,
@@ -63714,7 +64061,7 @@ pub const PE: &Country = &Country {
                     },
                 ),
                 (
-                    "es",
+                    "ay",
                     &SubdivisionMeta {
                         official: "Piura",
                         common: None,
@@ -63722,7 +64069,7 @@ pub const PE: &Country = &Country {
                     },
                 ),
                 (
-                    "ay",
+                    "es",
                     &SubdivisionMeta {
                         official: "Piura",
                         common: None,
@@ -63744,17 +64091,17 @@ pub const PE: &Country = &Country {
                     },
                 ),
                 (
-                    "qu",
+                    "ay",
                     &SubdivisionMeta {
-                        official: "Punu",
+                        official: "Puno",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ay",
+                    "qu",
                     &SubdivisionMeta {
-                        official: "Puno",
+                        official: "Punu",
                         common: None,
                         native: None,
                     },
@@ -63765,14 +64112,6 @@ pub const PE: &Country = &Country {
             iso: "PE-SAM",
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "qu",
-                    &SubdivisionMeta {
-                        official: "San Martin",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "ay",
                     &SubdivisionMeta {
@@ -63789,20 +64128,20 @@ pub const PE: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "qu",
+                    &SubdivisionMeta {
+                        official: "San Martin",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "PE-TAC",
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "qu",
-                    &SubdivisionMeta {
-                        official: "Taqna",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "ay",
                     &SubdivisionMeta {
@@ -63819,6 +64158,14 @@ pub const PE: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "qu",
+                    &SubdivisionMeta {
+                        official: "Taqna",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -63826,17 +64173,17 @@ pub const PE: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "qu",
                     &SubdivisionMeta {
-                        official: "Tumbes",
+                        official: "Tumpis",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "qu",
+                    "es",
                     &SubdivisionMeta {
-                        official: "Tumpis",
+                        official: "Tumbes",
                         common: None,
                         native: None,
                     },
@@ -63856,6 +64203,14 @@ pub const PE: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
+                    "qu",
+                    &SubdivisionMeta {
+                        official: "Ukayali",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "ay",
                     &SubdivisionMeta {
                         official: "Ukayali",
@@ -63871,20 +64226,14 @@ pub const PE: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "qu",
-                    &SubdivisionMeta {
-                        official: "Ukayali",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
     ],
 };
 
+/// Republic of Peru
 pub const PER: &Country = PE;
+/// Republic of the Philippines
 pub const PH: &Country = &Country {
     name: &CountryMeta {
         common: "Philippines",
@@ -63989,9 +64338,9 @@ pub const PH: &Country = &Country {
     locale: &Locale {
         ietf: &["ceb-PH", "en-PH", "es-PH", "fil-PH"],
         date_formats: &crate::StaticMap::new(&[
-            ("en-PH", "dd/MM/yyyy"),
-            ("fil-PH", "MM/dd/yyyy"),
             ("ceb-PH", "MM/dd/yyyy"),
+            ("fil-PH", "MM/dd/yyyy"),
+            ("en-PH", "dd/MM/yyyy"),
             ("es-PH", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
@@ -64027,9 +64376,9 @@ pub const PH: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "acronym",
+                    "en",
                     &SubdivisionMeta {
-                        official: "ARMM",
+                        official: "Autonomous Region in Muslim Mindanao",
                         common: None,
                         native: None,
                     },
@@ -64043,9 +64392,9 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "acronym",
                     &SubdivisionMeta {
-                        official: "Autonomous Region in Muslim Mindanao",
+                        official: "ARMM",
                         common: None,
                         native: None,
                     },
@@ -64056,14 +64405,6 @@ pub const PH: &Country = &Country {
             iso: "PH-05",
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Bicol",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "tl",
                     &SubdivisionMeta {
@@ -64080,20 +64421,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Bicol",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "PH-02",
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Cagayan Valley",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "acronym",
                     &SubdivisionMeta {
@@ -64106,6 +64447,14 @@ pub const PH: &Country = &Country {
                     "tl",
                     &SubdivisionMeta {
                         official: "Rehiyon ng Lambak ng Kagayan",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Cagayan Valley",
                         common: None,
                         native: None,
                     },
@@ -64125,17 +64474,17 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Rehiyon ng Calabarzon",
+                        official: "Calabarzon",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "Calabarzon",
+                        official: "Rehiyon ng Calabarzon",
                         common: None,
                         native: None,
                     },
@@ -64147,17 +64496,17 @@ pub const PH: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "acronym",
                     &SubdivisionMeta {
-                        official: "Caraga",
+                        official: "XIII",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "acronym",
+                    "en",
                     &SubdivisionMeta {
-                        official: "XIII",
+                        official: "Caraga",
                         common: None,
                         native: None,
                     },
@@ -64207,9 +64556,9 @@ pub const PH: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "acronym",
+                    "en",
                     &SubdivisionMeta {
-                        official: "VII",
+                        official: "Central Visayas",
                         common: None,
                         native: None,
                     },
@@ -64223,9 +64572,9 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "acronym",
                     &SubdivisionMeta {
-                        official: "Central Visayas",
+                        official: "VII",
                         common: None,
                         native: None,
                     },
@@ -64245,17 +64594,17 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "acronym",
+                    "en",
                     &SubdivisionMeta {
-                        official: "CAR",
+                        official: "Cordillera Administrative Region",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "acronym",
                     &SubdivisionMeta {
-                        official: "Cordillera Administrative Region",
+                        official: "CAR",
                         common: None,
                         native: None,
                     },
@@ -64266,6 +64615,14 @@ pub const PH: &Country = &Country {
             iso: "PH-11",
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Davao",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "acronym",
                     &SubdivisionMeta {
@@ -64278,14 +64635,6 @@ pub const PH: &Country = &Country {
                     "tl",
                     &SubdivisionMeta {
                         official: "Rehiyon ng Dabaw",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Davao",
                         common: None,
                         native: None,
                     },
@@ -64305,17 +64654,17 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Rehiyon ng Silangang Bisaya",
+                        official: "Eastern Visayas",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "Eastern Visayas",
+                        official: "Rehiyon ng Silangang Bisaya",
                         common: None,
                         native: None,
                     },
@@ -64387,9 +64736,9 @@ pub const PH: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "acronym",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "NCR",
+                        official: "Pambansang Punong Rehiyon",
                         common: None,
                         native: None,
                     },
@@ -64403,9 +64752,9 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "tl",
+                    "acronym",
                     &SubdivisionMeta {
-                        official: "Pambansang Punong Rehiyon",
+                        official: "NCR",
                         common: None,
                         native: None,
                     },
@@ -64417,17 +64766,17 @@ pub const PH: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "Northern Mindanao",
+                        official: "Rehiyon ng Hilagang Mindanaw",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Rehiyon ng Hilagang Mindanaw",
+                        official: "Northern Mindanao",
                         common: None,
                         native: None,
                     },
@@ -64447,9 +64796,9 @@ pub const PH: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "acronym",
                     &SubdivisionMeta {
-                        official: "Soccsksargen",
+                        official: "XII",
                         common: None,
                         native: None,
                     },
@@ -64463,9 +64812,9 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "acronym",
+                    "en",
                     &SubdivisionMeta {
-                        official: "XII",
+                        official: "Soccsksargen",
                         common: None,
                         native: None,
                     },
@@ -64477,9 +64826,9 @@ pub const PH: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "acronym",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "VI",
+                        official: "Rehiyon ng Kanlurang Bisaya",
                         common: None,
                         native: None,
                     },
@@ -64493,9 +64842,9 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "tl",
+                    "acronym",
                     &SubdivisionMeta {
-                        official: "Rehiyon ng Kanlurang Bisaya",
+                        official: "VI",
                         common: None,
                         native: None,
                     },
@@ -64507,17 +64856,17 @@ pub const PH: &Country = &Country {
             ty: Some("region"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Rehiyon ng Tangway ng Sambuwangga",
+                        official: "Zamboanga Peninsula",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "Zamboanga Peninsula",
+                        official: "Rehiyon ng Tangway ng Sambuwangga",
                         common: None,
                         native: None,
                     },
@@ -64537,14 +64886,6 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Abra",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "tl",
                     &SubdivisionMeta {
                         official: "Abra",
@@ -64560,20 +64901,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Abra",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "PH-AGN",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Agusan del Norte",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -64590,12 +64931,28 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Agusan del Norte",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "PH-AGS",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Agusan del Sur",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "tl",
                     &SubdivisionMeta {
@@ -64612,14 +64969,6 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Agusan del Sur",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
@@ -64627,17 +64976,17 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "06",
+                        official: "Aklan",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Aklan",
+                        official: "06",
                         common: None,
                         native: None,
                     },
@@ -64657,9 +65006,9 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "05",
+                        official: "Albay",
                         common: None,
                         native: None,
                     },
@@ -64673,9 +65022,9 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Albay",
+                        official: "05",
                         common: None,
                         native: None,
                     },
@@ -64717,9 +65066,9 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "Apayao",
+                        official: "Apayaw",
                         common: None,
                         native: None,
                     },
@@ -64733,9 +65082,9 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Apayaw",
+                        official: "Apayao",
                         common: None,
                         native: None,
                     },
@@ -64755,7 +65104,7 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
                         official: "Aurora",
                         common: None,
@@ -64763,7 +65112,7 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
                         official: "Aurora",
                         common: None,
@@ -64777,9 +65126,9 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "09[a]",
+                        official: "Basilan",
                         common: None,
                         native: None,
                     },
@@ -64793,9 +65142,9 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Basilan",
+                        official: "09[a]",
                         common: None,
                         native: None,
                     },
@@ -64815,17 +65164,17 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "03",
+                        official: "Bataan",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Bataan",
+                        official: "03",
                         common: None,
                         native: None,
                     },
@@ -64836,14 +65185,6 @@ pub const PH: &Country = &Country {
             iso: "PH-BTN",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Batanes",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -64860,6 +65201,14 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Batanes",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -64867,7 +65216,7 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
                         official: "Batangas",
                         common: None,
@@ -64875,7 +65224,7 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
                         official: "Batangas",
                         common: None,
@@ -64927,17 +65276,17 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Biliran",
+                        official: "08",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "08",
+                        official: "Biliran",
                         common: None,
                         native: None,
                     },
@@ -64957,6 +65306,14 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "07",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "en",
                     &SubdivisionMeta {
                         official: "Bohol",
@@ -64968,14 +65325,6 @@ pub const PH: &Country = &Country {
                     "tl",
                     &SubdivisionMeta {
                         official: "Bohol",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "07",
                         common: None,
                         native: None,
                     },
@@ -64987,7 +65336,7 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
                         official: "Bukidnon",
                         common: None,
@@ -64995,7 +65344,7 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
                         official: "Bukidnon",
                         common: None,
@@ -65017,17 +65366,17 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "03",
+                        official: "Bulakan",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "tl",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Bulakan",
+                        official: "03",
                         common: None,
                         native: None,
                     },
@@ -65047,9 +65396,9 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "tl",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kagayan",
+                        official: "02",
                         common: None,
                         native: None,
                     },
@@ -65063,9 +65412,9 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "inRegion",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "02",
+                        official: "Kagayan",
                         common: None,
                         native: None,
                     },
@@ -65085,17 +65434,17 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "tl",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Hilagang Kamarines",
+                        official: "05",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "05",
+                        official: "Hilagang Kamarines",
                         common: None,
                         native: None,
                     },
@@ -65106,14 +65455,6 @@ pub const PH: &Country = &Country {
             iso: "PH-CAS",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "tl",
-                    &SubdivisionMeta {
-                        official: "Timog Kamarines",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -65130,20 +65471,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "tl",
+                    &SubdivisionMeta {
+                        official: "Timog Kamarines",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "PH-CAM",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "10",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "tl",
                     &SubdivisionMeta {
@@ -65160,20 +65501,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "10",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "PH-CAP",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Capiz",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "tl",
                     &SubdivisionMeta {
@@ -65186,6 +65527,14 @@ pub const PH: &Country = &Country {
                     "inRegion",
                     &SubdivisionMeta {
                         official: "06",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Capiz",
                         common: None,
                         native: None,
                     },
@@ -65227,6 +65576,14 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "40",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "en",
                     &SubdivisionMeta {
                         official: "Cavite",
@@ -65242,20 +65599,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "40",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PH-CEB",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "07",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "tl",
                     &SubdivisionMeta {
@@ -65272,20 +65629,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "07",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PH-NCO",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "tl",
+                    &SubdivisionMeta {
+                        official: "Kotabato",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -65302,20 +65659,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "tl",
-                    &SubdivisionMeta {
-                        official: "Kotabato",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PH-COM",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "tl",
+                    &SubdivisionMeta {
+                        official: "",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -65332,14 +65689,6 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "tl",
-                    &SubdivisionMeta {
-                        official: "",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
@@ -65347,9 +65696,9 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Davao del Norte",
+                        official: "11",
                         common: None,
                         native: None,
                     },
@@ -65363,9 +65712,9 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "11",
+                        official: "Davao del Norte",
                         common: None,
                         native: None,
                     },
@@ -65376,6 +65725,14 @@ pub const PH: &Country = &Country {
             iso: "PH-DAS",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "tl",
+                    &SubdivisionMeta {
+                        official: "Timog Dabaw",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -65388,14 +65745,6 @@ pub const PH: &Country = &Country {
                     "inRegion",
                     &SubdivisionMeta {
                         official: "11",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "tl",
-                    &SubdivisionMeta {
-                        official: "Timog Dabaw",
                         common: None,
                         native: None,
                     },
@@ -65415,17 +65764,17 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "inRegion",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "11",
+                        official: "Kanlurang Dabaw",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "tl",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kanlurang Dabaw",
+                        official: "11",
                         common: None,
                         native: None,
                     },
@@ -65436,14 +65785,6 @@ pub const PH: &Country = &Country {
             iso: "PH-DAO",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Davao Oriental",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "tl",
                     &SubdivisionMeta {
@@ -65460,6 +65801,14 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Davao Oriental",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -65467,17 +65816,17 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "13",
+                        official: "Pulo ng Dinagat",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "tl",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Pulo ng Dinagat",
+                        official: "13",
                         common: None,
                         native: None,
                     },
@@ -65535,17 +65884,17 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "06",
+                        official: "Guimaras",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Guimaras",
+                        official: "06",
                         common: None,
                         native: None,
                     },
@@ -65556,6 +65905,14 @@ pub const PH: &Country = &Country {
             iso: "PH-IFU",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Ifugao",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -65572,14 +65929,6 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Ifugao",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
@@ -65587,9 +65936,9 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Hilagang Iloko",
+                        official: "Ilocos Norte",
                         common: None,
                         native: None,
                     },
@@ -65603,9 +65952,9 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "Ilocos Norte",
+                        official: "Hilagang Iloko",
                         common: None,
                         native: None,
                     },
@@ -65616,14 +65965,6 @@ pub const PH: &Country = &Country {
             iso: "PH-ILS",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "tl",
-                    &SubdivisionMeta {
-                        official: "Timog Iloko",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -65640,20 +65981,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "tl",
+                    &SubdivisionMeta {
+                        official: "Timog Iloko",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "PH-ILI",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "06",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "tl",
                     &SubdivisionMeta {
@@ -65670,12 +66011,28 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "06",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "PH-ISA",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Isabela",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "tl",
                     &SubdivisionMeta {
@@ -65692,20 +66049,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Isabela",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PH-KAL",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "15",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -65722,20 +66079,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "15",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PH-LUN",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "La Union",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "tl",
                     &SubdivisionMeta {
@@ -65752,20 +66109,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "La Union",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PH-LAG",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Laguna",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -65782,20 +66139,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Laguna",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PH-LAN",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "tl",
+                    &SubdivisionMeta {
+                        official: "Hilagang Lanaw",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -65808,14 +66165,6 @@ pub const PH: &Country = &Country {
                     "en",
                     &SubdivisionMeta {
                         official: "Lanao del Norte",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "tl",
-                    &SubdivisionMeta {
-                        official: "Hilagang Lanaw",
                         common: None,
                         native: None,
                     },
@@ -65857,6 +66206,14 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "08",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "tl",
                     &SubdivisionMeta {
                         official: "Leyte",
@@ -65872,20 +66229,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "08",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PH-MAG",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "14",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -65898,14 +66255,6 @@ pub const PH: &Country = &Country {
                     "tl",
                     &SubdivisionMeta {
                         official: "Magindanaw",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "14",
                         common: None,
                         native: None,
                     },
@@ -65925,17 +66274,17 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "Marinduque",
+                        official: "Marinduke",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Marinduke",
+                        official: "Marinduque",
                         common: None,
                         native: None,
                     },
@@ -66007,6 +66356,14 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "41",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "en",
                     &SubdivisionMeta {
                         official: "Mindoro Oriental",
@@ -66022,14 +66379,6 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "41",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
@@ -66037,17 +66386,17 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kanlurang Misamis",
+                        official: "Misamis Occidental",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "Misamis Occidental",
+                        official: "Kanlurang Misamis",
                         common: None,
                         native: None,
                     },
@@ -66075,17 +66424,17 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "Misamis Oriental",
+                        official: "Silangang Misamis",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Silangang Misamis",
+                        official: "Misamis Oriental",
                         common: None,
                         native: None,
                     },
@@ -66105,17 +66454,17 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "Mountain Province",
+                        official: "Lalawigang Bulubundukin",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Lalawigang Bulubundukin",
+                        official: "Mountain Province",
                         common: None,
                         native: None,
                     },
@@ -66126,6 +66475,14 @@ pub const PH: &Country = &Country {
             iso: "PH-NEC",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "06",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "tl",
                     &SubdivisionMeta {
@@ -66142,20 +66499,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "06",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PH-NER",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "07",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "tl",
                     &SubdivisionMeta {
@@ -66168,14 +66525,6 @@ pub const PH: &Country = &Country {
                     "en",
                     &SubdivisionMeta {
                         official: "Negros Oriental",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "07",
                         common: None,
                         native: None,
                     },
@@ -66195,17 +66544,17 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "Northern Samar",
+                        official: "Hilagang Samar",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Hilagang Samar",
+                        official: "Northern Samar",
                         common: None,
                         native: None,
                     },
@@ -66217,17 +66566,17 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "Nueva Ecija",
+                        official: "Nuweva Esiha",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Nuweva Esiha",
+                        official: "Nueva Ecija",
                         common: None,
                         native: None,
                     },
@@ -66247,14 +66596,6 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "02",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "tl",
                     &SubdivisionMeta {
                         official: "Nuweva Biskaya",
@@ -66270,12 +66611,28 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "02",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "PH-PLW",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "41",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -66292,20 +66649,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "41",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PH-PAM",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Pampanga",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -66322,20 +66679,20 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Pampanga",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PH-PAN",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "tl",
+                    &SubdivisionMeta {
+                        official: "Pangasinan",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -66352,28 +66709,12 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "tl",
-                    &SubdivisionMeta {
-                        official: "Pangasinan",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PH-QUE",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Quezon",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "tl",
                     &SubdivisionMeta {
@@ -66390,12 +66731,28 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Quezon",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "PH-QUI",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "02",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -66412,28 +66769,12 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "02",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "PH-RIZ",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Rizal",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -66446,6 +66787,14 @@ pub const PH: &Country = &Country {
                     "tl",
                     &SubdivisionMeta {
                         official: "Risal",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Rizal",
                         common: None,
                         native: None,
                     },
@@ -66465,17 +66814,17 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "inRegion",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "41",
+                        official: "Romblon",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "tl",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Romblon",
+                        official: "41",
                         common: None,
                         native: None,
                     },
@@ -66487,6 +66836,14 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Samar",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "inRegion",
                     &SubdivisionMeta {
                         official: "08",
@@ -66496,14 +66853,6 @@ pub const PH: &Country = &Country {
                 ),
                 (
                     "tl",
-                    &SubdivisionMeta {
-                        official: "Samar",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "en",
                     &SubdivisionMeta {
                         official: "Samar",
                         common: None,
@@ -66525,17 +66874,17 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "tl",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Sarangani",
+                        official: "11",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "11",
+                        official: "Sarangani",
                         common: None,
                         native: None,
                     },
@@ -66546,6 +66895,14 @@ pub const PH: &Country = &Country {
             iso: "PH-SIG",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "tl",
+                    &SubdivisionMeta {
+                        official: "Sikihor",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -66558,14 +66915,6 @@ pub const PH: &Country = &Country {
                     "en",
                     &SubdivisionMeta {
                         official: "Siquijor",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "tl",
-                    &SubdivisionMeta {
-                        official: "Sikihor",
                         common: None,
                         native: None,
                     },
@@ -66615,17 +66964,17 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "South Cotabato",
+                        official: "Timog Kotabato",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Timog Kotabato",
+                        official: "South Cotabato",
                         common: None,
                         native: None,
                     },
@@ -66645,17 +66994,17 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Katimogang Leyte",
+                        official: "Southern Leyte",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "Southern Leyte",
+                        official: "Katimogang Leyte",
                         common: None,
                         native: None,
                     },
@@ -66667,9 +67016,9 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "12",
+                        official: "Sultan Kudarat",
                         common: None,
                         native: None,
                     },
@@ -66683,9 +67032,9 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "tl",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Sultan Kudarat",
+                        official: "12",
                         common: None,
                         native: None,
                     },
@@ -66696,14 +67045,6 @@ pub const PH: &Country = &Country {
             iso: "PH-SLU",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Sulu",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -66720,6 +67061,14 @@ pub const PH: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Sulu",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -66727,9 +67076,9 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "Surigao del Norte",
+                        official: "Hilagang Surigaw",
                         common: None,
                         native: None,
                     },
@@ -66743,9 +67092,9 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Hilagang Surigaw",
+                        official: "Surigao del Norte",
                         common: None,
                         native: None,
                     },
@@ -66825,7 +67174,7 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "tl",
+                    "en",
                     &SubdivisionMeta {
                         official: "Tawi-Tawi",
                         common: None,
@@ -66833,7 +67182,7 @@ pub const PH: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "tl",
                     &SubdivisionMeta {
                         official: "Tawi-Tawi",
                         common: None,
@@ -66847,17 +67196,17 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Zambales",
+                        official: "03",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "03",
+                        official: "Zambales",
                         common: None,
                         native: None,
                     },
@@ -66937,17 +67286,17 @@ pub const PH: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "tl",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Sambuwangga Sibugay",
+                        official: "09",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "tl",
                     &SubdivisionMeta {
-                        official: "09",
+                        official: "Sambuwangga Sibugay",
                         common: None,
                         native: None,
                     },
@@ -66965,7 +67314,9 @@ pub const PH: &Country = &Country {
     ],
 };
 
+/// Republic of the Philippines
 pub const PHL: &Country = PH;
+/// Pitcairn Group of Islands
 pub const PN: &Country = &Country {
     name: &CountryMeta {
         common: "Pitcairn Islands",
@@ -67054,7 +67405,9 @@ pub const PN: &Country = &Country {
     }],
 };
 
+/// Pitcairn Group of Islands
 pub const PCN: &Country = PN;
+/// Republic of Poland
 pub const PL: &Country = &Country {
     name: &CountryMeta {
         common: "Poland",
@@ -67337,7 +67690,9 @@ pub const PL: &Country = &Country {
     ],
 };
 
+/// Republic of Poland
 pub const POL: &Country = PL;
+/// Portuguese Republic
 pub const PT: &Country = &Country {
     name: &CountryMeta {
         common: "Portugal",
@@ -67675,7 +68030,9 @@ pub const PT: &Country = &Country {
     ],
 };
 
+/// Portuguese Republic
 pub const PRT: &Country = PT;
+/// Commonwealth of Puerto Rico
 pub const PR: &Country = &Country {
     name: &CountryMeta {
         common: "Puerto Rico",
@@ -67748,7 +68105,7 @@ pub const PR: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["en-PR", "es-PR"],
-        date_formats: &crate::StaticMap::new(&[("es-PR", "MM/dd/yyyy"), ("en-PR", "MM/dd/yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("en-PR", "MM/dd/yyyy"), ("es-PR", "MM/dd/yyyy")]),
         timezones: &[&Timezone {
             name: "America/Puerto_Rico",
             ty: TimezoneType::Canonical,
@@ -67779,7 +68136,9 @@ pub const PR: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Commonwealth of Puerto Rico
 pub const PRI: &Country = PR;
+/// State of Qatar
 pub const QA: &Country = &Country {
     name: &CountryMeta {
         common: "Qatar",
@@ -67957,19 +68316,14 @@ pub const QA: &Country = &Country {
     ],
 };
 
+/// State of Qatar
 pub const QAT: &Country = QA;
+/// Republic of the Congo
 pub const CG: &Country = &Country {
     name: &CountryMeta {
         common: "Republic of the Congo",
         official: "Republic of the Congo",
         native: &crate::StaticMap::new(&[
-            (
-                "kon",
-                &CountryName {
-                    common: "Repubilika ya Kongo",
-                    official: "Repubilika ya Kongo",
-                },
-            ),
             (
                 "lin",
                 &CountryName {
@@ -67982,6 +68336,13 @@ pub const CG: &Country = &Country {
                 &CountryName {
                     common: "République du Congo",
                     official: "République du Congo",
+                },
+            ),
+            (
+                "kon",
+                &CountryName {
+                    common: "Repubilika ya Kongo",
+                    official: "Repubilika ya Kongo",
                 },
             ),
         ]),
@@ -68220,7 +68581,9 @@ pub const CG: &Country = &Country {
     ],
 };
 
+/// Republic of the Congo
 pub const COG: &Country = CG;
+/// Réunion Island
 pub const RE: &Country = &Country {
     name: &CountryMeta {
         common: "Réunion",
@@ -68309,7 +68672,9 @@ pub const RE: &Country = &Country {
     }],
 };
 
+/// Réunion Island
 pub const REU: &Country = RE;
+/// Romania
 pub const RO: &Country = &Country {
     name: &CountryMeta {
         common: "Romania",
@@ -68902,7 +69267,9 @@ pub const RO: &Country = &Country {
     ],
 };
 
+/// Romania
 pub const ROU: &Country = RO;
+/// Russian Federation
 pub const RU: &Country = &Country {
 	name: &CountryMeta {
 		common: "Russia",
@@ -68920,17 +69287,26 @@ pub const RU: &Country = &Country {
 	geography: &Geography { latitude: 60f64, longitude: 100f64, land_locked: false, capital: &["Moscow",], area: 17098242f64, region: "Europe", subregion: "Eastern Europe", border_countries: &[crate::CCA3::AZE,crate::CCA3::BLR,crate::CCA3::CHN,crate::CCA3::EST,crate::CCA3::FIN,crate::CCA3::GEO,crate::CCA3::KAZ,crate::CCA3::PRK,crate::CCA3::LVA,crate::CCA3::LTU,crate::CCA3::MNG,crate::CCA3::NOR,crate::CCA3::POL,crate::CCA3::UKR,] },
 	official_languages: &[ &Language { name: "Chechen", native_name: Some("Нохчийн мотт"), iana: &["Chechen",], iso_639_3: "che", bcp_47: "ce", iso_15924: "Cyrl", extinct: false, spurious: false, }, &Language { name: "Slavonic, Church", native_name: None, iana: &["Church Slavic","Church Slavonic","Old Bulgarian","Old Church Slavonic","Old Slavonic",], iso_639_3: "chu", bcp_47: "cu", iso_15924: "Cyrl", extinct: false, spurious: false, }, &Language { name: "Ossetic", native_name: None, iana: &["Ossetian","Ossetic",], iso_639_3: "oss", bcp_47: "os", iso_15924: "Cyrl", extinct: false, spurious: false, }, &Language { name: "Russian", native_name: Some("русский язык"), iana: &["Russian",], iso_639_3: "rus", bcp_47: "ru", iso_15924: "Cyrl", extinct: false, spurious: false, }, &Language { name: "Yakut", native_name: None, iana: &["Yakut",], iso_639_3: "sah", bcp_47: "sah", iso_15924: "Cyrl", extinct: false, spurious: false, }, &Language { name: "Tatar", native_name: Some("tatar tele"), iana: &["Tatar",], iso_639_3: "tat", bcp_47: "tt", iso_15924: "Cyrl", extinct: false, spurious: false, },],
 	spoken_languages: &["abk","abq","ady","agx","aii","akv","ale","alr","alt","ani","aqc","atv","ava","aze","bak","bel","bul","bhn","bph","bua","chm","cji","cjs","ckt","clw","crh","ces","chv","dar","ddo","deu","dlg","dng","ell","eng","enf","enh","spa","ess","est","eve","evn","fas","fin","fra","gag","gdo","gin","gld","heb","hin","hun","huz","hye","hyw","inh","ita","itl","izh","jpn","jct","jdt","kat","kaa","kap","kbd","kca","ket","khv","kim","kjh","kaz","kor","koi","kpt","kpy","krc","krk","krl","kur","kmr","kum","kom","kpv","kva","kir","lbe","lez","lit","ltg","lud","lav","mdf","mon","khk","mns","mrj","mtm","mud","myv","ndf","neg","nio","niv","nor","nog","oaa","oac","oav","olo","omk","orv","pdt","pol","pnt","prg","por","qwm","rmi","rml","rmt","rom","rmy","rsl","rts","rut","sel","sia","sjd","sjt","slk","slv","sms","srp","sty","swe","tab","tin","tuk","tkr","tur","ttt","tyv","ude","udi","udm","uig","ukr","ulc","uzb","vep","vie","vot","vro","xal","xas","xmf","xpm","xrm","xrn","xss","xwo","ykg","ynk","yrk","ysr","yug","yux","cmn","zkb","zko","zkz",],
-	locale: &Locale { ietf: &["ce-RU","cu-RU","os-RU","ru-RU","sah-RU","tt-RU",], date_formats: &crate::StaticMap::new(&[("cu-RU", "MM/dd/yyyy"),("sah-RU", "yyyy-MM-dd"),("ru-RU", "dd.MM.yyyy"),("tt-RU", "dd.MM.yyyy"),("ce-RU", "yyyy-MM-dd"),("os-RU", "dd.MM.yyyy"),]), timezones: &[&Timezone { name: "Europe/Kaliningrad", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+02:00", dst_offset: "+02:00" },&Timezone { name: "Europe/Moscow", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+03:00", dst_offset: "+03:00" },&Timezone { name: "Europe/Simferopol", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+03:00", dst_offset: "+03:00" },&Timezone { name: "Europe/Volgograd", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+03:00", dst_offset: "+03:00" },&Timezone { name: "Europe/Kirov", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+03:00", dst_offset: "+03:00" },&Timezone { name: "Europe/Astrakhan", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+04:00", dst_offset: "+04:00" },&Timezone { name: "Europe/Samara", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+04:00", dst_offset: "+04:00" },&Timezone { name: "Europe/Ulyanovsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+04:00", dst_offset: "+04:00" },&Timezone { name: "Asia/Yekaterinburg", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+05:00", dst_offset: "+05:00" },&Timezone { name: "Asia/Omsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+06:00", dst_offset: "+06:00" },&Timezone { name: "Asia/Novosibirsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+07:00", dst_offset: "+07:00" },&Timezone { name: "Asia/Barnaul", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+07:00", dst_offset: "+07:00" },&Timezone { name: "Asia/Tomsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+07:00", dst_offset: "+07:00" },&Timezone { name: "Asia/Novokuznetsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+07:00", dst_offset: "+07:00" },&Timezone { name: "Asia/Krasnoyarsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+07:00", dst_offset: "+07:00" },&Timezone { name: "Asia/Irkutsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+08:00", dst_offset: "+08:00" },&Timezone { name: "Asia/Chita", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+09:00", dst_offset: "+09:00" },&Timezone { name: "Asia/Yakutsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+09:00", dst_offset: "+09:00" },&Timezone { name: "Asia/Khandyga", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+09:00", dst_offset: "+09:00" },&Timezone { name: "Asia/Vladivostok", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+10:00", dst_offset: "+10:00" },&Timezone { name: "Asia/Ust-Nera", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+10:00", dst_offset: "+10:00" },&Timezone { name: "Asia/Magadan", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+11:00", dst_offset: "+11:00" },&Timezone { name: "Asia/Sakhalin", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+11:00", dst_offset: "+11:00" },&Timezone { name: "Asia/Srednekolymsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+11:00", dst_offset: "+11:00" },&Timezone { name: "Asia/Kamchatka", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+12:00", dst_offset: "+12:00" },&Timezone { name: "Asia/Anadyr", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+12:00", dst_offset: "+12:00" },], measurement_system: MeasurementSystem::Metric, hour_clock: HourClock::TwentyFour, driving_side: DrivingSide::Right, distance_unit: DistanceUint::Kilometer, temperature_unit: TemperatureUint::Celsius, week_start_on: Day::Monday},
+	locale: &Locale { ietf: &["ce-RU","cu-RU","os-RU","ru-RU","sah-RU","tt-RU",], date_formats: &crate::StaticMap::new(&[("ce-RU", "yyyy-MM-dd"),("cu-RU", "MM/dd/yyyy"),("sah-RU", "yyyy-MM-dd"),("tt-RU", "dd.MM.yyyy"),("os-RU", "dd.MM.yyyy"),("ru-RU", "dd.MM.yyyy"),]), timezones: &[&Timezone { name: "Europe/Kaliningrad", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+02:00", dst_offset: "+02:00" },&Timezone { name: "Europe/Moscow", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+03:00", dst_offset: "+03:00" },&Timezone { name: "Europe/Simferopol", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+03:00", dst_offset: "+03:00" },&Timezone { name: "Europe/Volgograd", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+03:00", dst_offset: "+03:00" },&Timezone { name: "Europe/Kirov", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+03:00", dst_offset: "+03:00" },&Timezone { name: "Europe/Astrakhan", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+04:00", dst_offset: "+04:00" },&Timezone { name: "Europe/Samara", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+04:00", dst_offset: "+04:00" },&Timezone { name: "Europe/Ulyanovsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+04:00", dst_offset: "+04:00" },&Timezone { name: "Asia/Yekaterinburg", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+05:00", dst_offset: "+05:00" },&Timezone { name: "Asia/Omsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+06:00", dst_offset: "+06:00" },&Timezone { name: "Asia/Novosibirsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+07:00", dst_offset: "+07:00" },&Timezone { name: "Asia/Barnaul", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+07:00", dst_offset: "+07:00" },&Timezone { name: "Asia/Tomsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+07:00", dst_offset: "+07:00" },&Timezone { name: "Asia/Novokuznetsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+07:00", dst_offset: "+07:00" },&Timezone { name: "Asia/Krasnoyarsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+07:00", dst_offset: "+07:00" },&Timezone { name: "Asia/Irkutsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+08:00", dst_offset: "+08:00" },&Timezone { name: "Asia/Chita", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+09:00", dst_offset: "+09:00" },&Timezone { name: "Asia/Yakutsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+09:00", dst_offset: "+09:00" },&Timezone { name: "Asia/Khandyga", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+09:00", dst_offset: "+09:00" },&Timezone { name: "Asia/Vladivostok", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+10:00", dst_offset: "+10:00" },&Timezone { name: "Asia/Ust-Nera", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+10:00", dst_offset: "+10:00" },&Timezone { name: "Asia/Magadan", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+11:00", dst_offset: "+11:00" },&Timezone { name: "Asia/Sakhalin", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+11:00", dst_offset: "+11:00" },&Timezone { name: "Asia/Srednekolymsk", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+11:00", dst_offset: "+11:00" },&Timezone { name: "Asia/Kamchatka", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+12:00", dst_offset: "+12:00" },&Timezone { name: "Asia/Anadyr", ty: TimezoneType::Canonical, linked_to: None, utc_offset: "+12:00", dst_offset: "+12:00" },], measurement_system: MeasurementSystem::Metric, hour_clock: HourClock::TwentyFour, driving_side: DrivingSide::Right, distance_unit: DistanceUint::Kilometer, temperature_unit: TemperatureUint::Celsius, week_start_on: Day::Monday},
 	currencies: &[&Currency { name: "Russian Rubel", short_name: Some("Rubel"), iso_4217: "RUB", iso_numeric: Some("643"), symbol: "руб", subunit: Some("Kopek"), prefix: Some(""), suffix: Some("руб"), decimal_mark: Some('.'), decimal_places: 2, thousands_separator: Some(',') }, ],
 	subdivisions: &[&Subdivision { iso: "RU-AD", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Adygeya, Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-AL", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Altay, Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-BA", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Bashkortostan, Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-BU", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Buryatiya, Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-CE", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Chechenskaya Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-CU", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Chuvashskaya Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-DA", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Dagestan, Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-IN", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Ingushetiya, Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-KB", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Kabardino-Balkarskaya Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-KL", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Kalmykiya, Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-KC", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Karachayevo-Cherkesskaya Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-KR", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Kareliya, Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-KK", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Khakasiya, Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-KO", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Komi, Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-ME", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Mariy El, Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-MO", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Mordoviya, Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-SA", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Saha, Respublika(local variant is Jakutija)", common: None, native: None },),]), },&Subdivision { iso: "RU-SE", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Severnaya Osetiya, Respublika(local variant is Alaniya [Respublika Severnaya Osetiya – Alaniya])", common: None, native: None },),]), },&Subdivision { iso: "RU-TA", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Tatarstan, Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-TY", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Tyva, Respublika(local variant is Tuva)", common: None, native: None },),]), },&Subdivision { iso: "RU-UD", ty: Some("republic"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Udmurtskaya Respublika", common: None, native: None },),]), },&Subdivision { iso: "RU-ALT", ty: Some("administrative territory"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Altayskiy kray", common: None, native: None },),]), },&Subdivision { iso: "RU-KAM", ty: Some("administrative territory"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Kamchatskiy kray", common: None, native: None },),]), },&Subdivision { iso: "RU-KHA", ty: Some("administrative territory"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Khabarovskiy kray", common: None, native: None },),]), },&Subdivision { iso: "RU-KDA", ty: Some("administrative territory"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Krasnodarskiy kray", common: None, native: None },),]), },&Subdivision { iso: "RU-KYA", ty: Some("administrative territory"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Krasnoyarskiy kray", common: None, native: None },),]), },&Subdivision { iso: "RU-PER", ty: Some("administrative territory"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Permskiy kray", common: None, native: None },),]), },&Subdivision { iso: "RU-PRI", ty: Some("administrative territory"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Primorskiy kray", common: None, native: None },),]), },&Subdivision { iso: "RU-STA", ty: Some("administrative territory"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Stavropol'skiy kray", common: None, native: None },),]), },&Subdivision { iso: "RU-ZAB", ty: Some("administrative territory"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Zabaykal'skiy kray", common: None, native: None },),]), },&Subdivision { iso: "RU-AMU", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Amurskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-ARK", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Arkhangel'skaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-AST", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Astrakhanskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-BEL", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Belgorodskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-BRY", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Bryanskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-CHE", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Chelyabinskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-IRK", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Irkutskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-IVA", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Ivanovskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-KGD", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Kaliningradskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-KLU", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Kaluzhskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-KEM", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Kemerovskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-KIR", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Kirovskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-KOS", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Kostromskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-KGN", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Kurganskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-KRS", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Kurskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-LEN", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Leningradskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-LIP", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Lipetskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-MAG", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Magadanskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-MOS", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Moskovskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-MUR", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Murmanskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-NIZ", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Nizhegorodskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-NGR", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Novgorodskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-NVS", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Novosibirskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-OMS", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Omskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-ORE", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Orenburgskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-ORL", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Orlovskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-PNZ", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Penzenskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-PSK", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Pskovskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-ROS", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Rostovskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-RYA", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Ryazanskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-SAK", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Sakhalinskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-SAM", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Samarskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-SAR", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Saratovskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-SMO", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Smolenskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-SVE", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Sverdlovskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-TAM", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Tambovskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-TOM", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Tomskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-TUL", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Tul'skaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-TVE", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Tverskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-TYU", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Tyumenskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-ULY", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Ul'yanovskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-VLA", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Vladimirskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-VGG", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Volgogradskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-VLG", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Vologodskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-VOR", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Voronezhskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-YAR", ty: Some("administrative region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Yaroslavskaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-MOW", ty: Some("autonomous city"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Moskva", common: None, native: None },),]), },&Subdivision { iso: "RU-SPE", ty: Some("autonomous city"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Sankt-Peterburg", common: None, native: None },),]), },&Subdivision { iso: "RU-YEV", ty: Some("autonomous region"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Yevreyskaya avtonomnaya oblast'", common: None, native: None },),]), },&Subdivision { iso: "RU-CHU", ty: Some("autonomous district"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Chukotskiy avtonomnyy okrug", common: None, native: None },),]), },&Subdivision { iso: "RU-KHM", ty: Some("autonomous district"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Khanty-Mansiyskiy avtonomnyy okrug(local variant is Yugra)", common: None, native: None },),]), },&Subdivision { iso: "RU-NEN", ty: Some("autonomous district"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Nenetskiy avtonomnyy okrug", common: None, native: None },),]), },&Subdivision { iso: "RU-YAN", ty: Some("autonomous district"), meta: &crate::StaticMap::new(&[("ru", &SubdivisionMeta { official: "Yamalo-Nenetskiy avtonomnyy okrug", common: None, native: None },),]), },],
 };
 
+/// Russian Federation
 pub const RUS: &Country = RU;
+/// Republic of Rwanda
 pub const RW: &Country = &Country {
     name: &CountryMeta {
         common: "Rwanda",
         official: "Republic of Rwanda",
         native: &crate::StaticMap::new(&[
+            (
+                "kin",
+                &CountryName {
+                    common: "Rwanda",
+                    official: "Repubulika y'u Rwanda",
+                },
+            ),
             (
                 "eng",
                 &CountryName {
@@ -68943,13 +69319,6 @@ pub const RW: &Country = &Country {
                 &CountryName {
                     common: "Rwanda",
                     official: "République rwandaise",
-                },
-            ),
-            (
-                "kin",
-                &CountryName {
-                    common: "Rwanda",
-                    official: "Repubulika y'u Rwanda",
                 },
             ),
         ]),
@@ -69087,17 +69456,17 @@ pub const RW: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "rw",
                     &SubdivisionMeta {
-                        official: "Est",
+                        official: "Iburasirazuba",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "rw",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Iburasirazuba",
+                        official: "Est",
                         common: None,
                         native: None,
                     },
@@ -69185,17 +69554,17 @@ pub const RW: &Country = &Country {
                     },
                 ),
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Sud",
+                        official: "Southern",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Southern",
+                        official: "Sud",
                         common: None,
                         native: None,
                     },
@@ -69205,7 +69574,9 @@ pub const RW: &Country = &Country {
     ],
 };
 
+/// Republic of Rwanda
 pub const RWA: &Country = RW;
+/// Collectivity of Saint Barthélemy
 pub const BL: &Country = &Country {
     name: &CountryMeta {
         common: "Saint Barthélemy",
@@ -69287,7 +69658,9 @@ pub const BL: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Collectivity of Saint Barthélemy
 pub const BLM: &Country = BL;
+/// Saint Helena, Ascension and Tristan da Cunha
 pub const SH: &Country = &Country {
     name: &CountryMeta {
         common: "Saint Helena, Ascension and Tristan da Cunha",
@@ -69402,7 +69775,9 @@ pub const SH: &Country = &Country {
     ],
 };
 
+/// Saint Helena, Ascension and Tristan da Cunha
 pub const SHN: &Country = SH;
+/// Federation of Saint Christopher and Nevis
 pub const KN: &Country = &Country {
     name: &CountryMeta {
         common: "Saint Kitts and Nevis",
@@ -69505,7 +69880,9 @@ pub const KN: &Country = &Country {
     ],
 };
 
+/// Federation of Saint Christopher and Nevis
 pub const KNA: &Country = KN;
+/// Saint Lucia
 pub const LC: &Country = &Country {
     name: &CountryMeta {
         common: "Saint Lucia",
@@ -69704,7 +70081,9 @@ pub const LC: &Country = &Country {
     ],
 };
 
+/// Saint Lucia
 pub const LCA: &Country = LC;
+/// Saint Martin
 pub const MF: &Country = &Country {
     name: &CountryMeta {
         common: "Saint Martin",
@@ -69786,7 +70165,9 @@ pub const MF: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Saint Martin
 pub const MAF: &Country = MF;
+/// Saint Pierre and Miquelon
 pub const PM: &Country = &Country {
     name: &CountryMeta {
         common: "Saint Pierre and Miquelon",
@@ -69875,7 +70256,9 @@ pub const PM: &Country = &Country {
     }],
 };
 
+/// Saint Pierre and Miquelon
 pub const SPM: &Country = PM;
+/// Saint Vincent and the Grenadines
 pub const VC: &Country = &Country {
     name: &CountryMeta {
         common: "Saint Vincent and the Grenadines",
@@ -70026,7 +70409,9 @@ pub const VC: &Country = &Country {
     ],
 };
 
+/// Saint Vincent and the Grenadines
 pub const VCT: &Country = VC;
+/// Independent State of Samoa
 pub const WS: &Country = &Country {
     name: &CountryMeta {
         common: "Samoa",
@@ -70261,7 +70646,9 @@ pub const WS: &Country = &Country {
     ],
 };
 
+/// Independent State of Samoa
 pub const WSM: &Country = WS;
+/// Most Serene Republic of San Marino
 pub const SM: &Country = &Country {
     name: &CountryMeta {
         common: "San Marino",
@@ -70448,7 +70835,9 @@ pub const SM: &Country = &Country {
     ],
 };
 
+/// Most Serene Republic of San Marino
 pub const SMR: &Country = SM;
+/// Democratic Republic of São Tomé and Príncipe
 pub const ST: &Country = &Country {
     name: &CountryMeta {
         common: "São Tomé and Príncipe",
@@ -70603,7 +70992,9 @@ pub const ST: &Country = &Country {
     ],
 };
 
+/// Democratic Republic of São Tomé and Príncipe
 pub const STP: &Country = ST;
+/// Kingdom of Saudi Arabia
 pub const SA: &Country = &Country {
     name: &CountryMeta {
         common: "Saudi Arabia",
@@ -70853,7 +71244,9 @@ pub const SA: &Country = &Country {
     ],
 };
 
+/// Kingdom of Saudi Arabia
 pub const SAU: &Country = SA;
+/// Republic of Senegal
 pub const SN: &Country = &Country {
     name: &CountryMeta {
         common: "Senegal",
@@ -70944,10 +71337,10 @@ pub const SN: &Country = &Country {
     locale: &Locale {
         ietf: &["dyo-SN", "ff-Adlm-SN", "ff-Latn-SN", "fr-SN", "wo-SN"],
         date_formats: &crate::StaticMap::new(&[
-            ("fr-SN", "dd/MM/yyyy"),
+            ("ff-Latn-SN", "dd/MM/yyyy"),
             ("wo-SN", "dd-MM-yyyy"),
             ("dyo-SN", "dd/MM/yyyy"),
-            ("ff-Latn-SN", "dd/MM/yyyy"),
+            ("fr-SN", "dd/MM/yyyy"),
             ("ff-Adlm-SN", "yyyyyyyy-MMMM-dddd"),
         ]),
         timezones: &[&Timezone {
@@ -71149,7 +71542,9 @@ pub const SN: &Country = &Country {
     ],
 };
 
+/// Republic of Senegal
 pub const SEN: &Country = SN;
+/// Republic of Serbia
 pub const RS: &Country = &Country {
     name: &CountryMeta {
         common: "Serbia",
@@ -71275,17 +71670,17 @@ pub const RS: &Country = &Country {
             ty: Some("city"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Beograd",
+                        official: "—",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "—",
+                        official: "Beograd",
                         common: None,
                         native: None,
                     },
@@ -71297,17 +71692,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "—",
+                        official: "Borski okrug",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Borski okrug",
+                        official: "—",
                         common: None,
                         native: None,
                     },
@@ -71319,17 +71714,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Braničevski okrug",
+                        official: "—",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "—",
+                        official: "Braničevski okrug",
                         common: None,
                         native: None,
                     },
@@ -71341,17 +71736,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "—",
+                        official: "Jablanički okrug",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Jablanički okrug",
+                        official: "—",
                         common: None,
                         native: None,
                     },
@@ -71385,17 +71780,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "RS-VO",
+                        official: "Južnobanatski okrug",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Južnobanatski okrug",
+                        official: "RS-VO",
                         common: None,
                         native: None,
                     },
@@ -71407,17 +71802,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kolubarski okrug",
+                        official: "—",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "—",
+                        official: "Kolubarski okrug",
                         common: None,
                         native: None,
                     },
@@ -71429,17 +71824,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kosovski okrug",
+                        official: "RS-KM",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "RS-KM",
+                        official: "Kosovski okrug",
                         common: None,
                         native: None,
                     },
@@ -71451,17 +71846,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "RS-KM",
+                        official: "Kosovsko-Mitrovački okrug",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kosovsko-Mitrovački okrug",
+                        official: "RS-KM",
                         common: None,
                         native: None,
                     },
@@ -71473,17 +71868,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kosovsko-Pomoravski okrug",
+                        official: "RS-KM",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "RS-KM",
+                        official: "Kosovsko-Pomoravski okrug",
                         common: None,
                         native: None,
                     },
@@ -71517,17 +71912,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Moravički okrug",
+                        official: "—",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "—",
+                        official: "Moravički okrug",
                         common: None,
                         native: None,
                     },
@@ -71561,17 +71956,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "—",
+                        official: "Pčinjski okrug",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Pčinjski okrug",
+                        official: "—",
                         common: None,
                         native: None,
                     },
@@ -71583,17 +71978,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "RS-KM",
+                        official: "Pećki okrug",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Pećki okrug",
+                        official: "RS-KM",
                         common: None,
                         native: None,
                     },
@@ -71605,17 +72000,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Pirotski okrug",
+                        official: "—",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "—",
+                        official: "Pirotski okrug",
                         common: None,
                         native: None,
                     },
@@ -71627,17 +72022,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Podunavski okrug",
+                        official: "—",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "—",
+                        official: "Podunavski okrug",
                         common: None,
                         native: None,
                     },
@@ -71693,17 +72088,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "—",
+                        official: "Rasinski okrug",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Rasinski okrug",
+                        official: "—",
                         common: None,
                         native: None,
                     },
@@ -71803,17 +72198,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "RS-VO",
+                        official: "Sremski okrug",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Sremski okrug",
+                        official: "RS-VO",
                         common: None,
                         native: None,
                     },
@@ -71825,17 +72220,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Šumadijski okrug",
+                        official: "—",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "—",
+                        official: "Šumadijski okrug",
                         common: None,
                         native: None,
                     },
@@ -71847,17 +72242,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Toplički okrug",
+                        official: "—",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "—",
+                        official: "Toplički okrug",
                         common: None,
                         native: None,
                     },
@@ -71869,17 +72264,17 @@ pub const RS: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "sr",
                     &SubdivisionMeta {
-                        official: "—",
+                        official: "Zaječarski okrug",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sr",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Zaječarski okrug",
+                        official: "—",
                         common: None,
                         native: None,
                     },
@@ -71933,7 +72328,9 @@ pub const RS: &Country = &Country {
     ],
 };
 
+/// Republic of Serbia
 pub const SRB: &Country = RS;
+/// Republic of Seychelles
 pub const SC: &Country = &Country {
     name: &CountryMeta {
         common: "Seychelles",
@@ -71947,17 +72344,17 @@ pub const SC: &Country = &Country {
                 },
             ),
             (
-                "eng",
-                &CountryName {
-                    common: "Seychelles",
-                    official: "Republic of Seychelles",
-                },
-            ),
-            (
                 "fra",
                 &CountryName {
                     common: "Seychelles",
                     official: "République des Seychelles",
+                },
+            ),
+            (
+                "eng",
+                &CountryName {
+                    common: "Seychelles",
+                    official: "Republic of Seychelles",
                 },
             ),
         ]),
@@ -72022,7 +72419,7 @@ pub const SC: &Country = &Country {
     spoken_languages: &[],
     locale: &Locale {
         ietf: &["en-SC", "fr-SC"],
-        date_formats: &crate::StaticMap::new(&[("en-SC", "dd/MM/yyyy"), ("fr-SC", "dd/MM/yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("fr-SC", "dd/MM/yyyy"), ("en-SC", "dd/MM/yyyy")]),
         timezones: &[&Timezone {
             name: "Indian/Mahe",
             ty: TimezoneType::Canonical,
@@ -72056,14 +72453,6 @@ pub const SC: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "crs",
-                    &SubdivisionMeta {
-                        official: "Ans o Pen",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Anse aux Pins",
@@ -72079,20 +72468,20 @@ pub const SC: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "crs",
+                    &SubdivisionMeta {
+                        official: "Ans o Pen",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "SC-02",
             ty: None,
             meta: &crate::StaticMap::new(&[
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Anse Boileau",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "fr",
                     &SubdivisionMeta {
@@ -72105,6 +72494,14 @@ pub const SC: &Country = &Country {
                     "crs",
                     &SubdivisionMeta {
                         official: "Ans Bwalo",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Anse Boileau",
                         common: None,
                         native: None,
                     },
@@ -72176,6 +72573,14 @@ pub const SC: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
+                    "crs",
+                    &SubdivisionMeta {
+                        official: "O Kap",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "fr",
                     &SubdivisionMeta {
                         official: "Au Cap",
@@ -72187,14 +72592,6 @@ pub const SC: &Country = &Country {
                     "en",
                     &SubdivisionMeta {
                         official: "Au Cap",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "crs",
-                    &SubdivisionMeta {
-                        official: "O Kap",
                         common: None,
                         native: None,
                     },
@@ -72206,6 +72603,14 @@ pub const SC: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
+                    "crs",
+                    &SubdivisionMeta {
+                        official: "Be Lazar",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "fr",
                     &SubdivisionMeta {
                         official: "Baie Lazare",
@@ -72221,28 +72626,12 @@ pub const SC: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "crs",
-                    &SubdivisionMeta {
-                        official: "Be Lazar",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "SC-07",
             ty: None,
             meta: &crate::StaticMap::new(&[
-                (
-                    "crs",
-                    &SubdivisionMeta {
-                        official: "Be Sent Ann",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -72259,6 +72648,14 @@ pub const SC: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "crs",
+                    &SubdivisionMeta {
+                        official: "Be Sent Ann",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -72266,7 +72663,7 @@ pub const SC: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "en",
                     &SubdivisionMeta {
                         official: "Beau Vallon",
                         common: None,
@@ -72274,7 +72671,7 @@ pub const SC: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "fr",
                     &SubdivisionMeta {
                         official: "Beau Vallon",
                         common: None,
@@ -72296,14 +72693,6 @@ pub const SC: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
-                    &SubdivisionMeta {
-                        official: "Bel Air",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "en",
                     &SubdivisionMeta {
                         official: "Bel Air",
@@ -72319,6 +72708,14 @@ pub const SC: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "fr",
+                    &SubdivisionMeta {
+                        official: "Bel Air",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -72326,9 +72723,9 @@ pub const SC: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "crs",
                     &SubdivisionMeta {
-                        official: "Bel Ombre",
+                        official: "Belonm",
                         common: None,
                         native: None,
                     },
@@ -72342,9 +72739,9 @@ pub const SC: &Country = &Country {
                     },
                 ),
                 (
-                    "crs",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Belonm",
+                        official: "Bel Ombre",
                         common: None,
                         native: None,
                     },
@@ -72364,17 +72761,17 @@ pub const SC: &Country = &Country {
                     },
                 ),
                 (
-                    "crs",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Kaskad",
+                        official: "Cascade",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "crs",
                     &SubdivisionMeta {
-                        official: "Cascade",
+                        official: "Kaskad",
                         common: None,
                         native: None,
                     },
@@ -72446,6 +72843,14 @@ pub const SC: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
+                    "fr",
+                    &SubdivisionMeta {
+                        official: "Grand'Anse Praslin",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "crs",
                     &SubdivisionMeta {
                         official: "Grand Ans Pralen",
@@ -72457,14 +72862,6 @@ pub const SC: &Country = &Country {
                     "en",
                     &SubdivisionMeta {
                         official: "Grand Anse Praslin",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "fr",
-                    &SubdivisionMeta {
-                        official: "Grand'Anse Praslin",
                         common: None,
                         native: None,
                     },
@@ -72506,9 +72903,9 @@ pub const SC: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "fr",
+                    "crs",
                     &SubdivisionMeta {
-                        official: "La Rivière Anglaise",
+                        official: "Larivyer Anglez",
                         common: None,
                         native: None,
                     },
@@ -72522,9 +72919,9 @@ pub const SC: &Country = &Country {
                     },
                 ),
                 (
-                    "crs",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Larivyer Anglez",
+                        official: "La Rivière Anglaise",
                         common: None,
                         native: None,
                     },
@@ -72535,14 +72932,6 @@ pub const SC: &Country = &Country {
             iso: "SC-26",
             ty: None,
             meta: &crate::StaticMap::new(&[
-                (
-                    "crs",
-                    &SubdivisionMeta {
-                        official: "",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "fr",
                     &SubdivisionMeta {
@@ -72555,6 +72944,14 @@ pub const SC: &Country = &Country {
                     "en",
                     &SubdivisionMeta {
                         official: "Ile Perseverance I",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "crs",
+                    &SubdivisionMeta {
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -72574,17 +72971,17 @@ pub const SC: &Country = &Country {
                     },
                 ),
                 (
-                    "fr",
+                    "crs",
                     &SubdivisionMeta {
-                        official: "Île Persévérance II",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "crs",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Île Persévérance II",
                         common: None,
                         native: None,
                     },
@@ -72596,9 +72993,9 @@ pub const SC: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "crs",
                     &SubdivisionMeta {
-                        official: "Les Mamelles",
+                        official: "Lemamel",
                         common: None,
                         native: None,
                     },
@@ -72612,9 +73009,9 @@ pub const SC: &Country = &Country {
                     },
                 ),
                 (
-                    "crs",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Lemamel",
+                        official: "Les Mamelles",
                         common: None,
                         native: None,
                     },
@@ -72625,6 +73022,14 @@ pub const SC: &Country = &Country {
             iso: "SC-17",
             ty: None,
             meta: &crate::StaticMap::new(&[
+                (
+                    "fr",
+                    &SubdivisionMeta {
+                        official: "Mont Buxton",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -72641,20 +73046,20 @@ pub const SC: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "fr",
-                    &SubdivisionMeta {
-                        official: "Mont Buxton",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "SC-18",
             ty: None,
             meta: &crate::StaticMap::new(&[
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Mont Fleuri",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "fr",
                     &SubdivisionMeta {
@@ -72671,20 +73076,20 @@ pub const SC: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Mont Fleuri",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "SC-19",
             ty: None,
             meta: &crate::StaticMap::new(&[
+                (
+                    "crs",
+                    &SubdivisionMeta {
+                        official: "Plezans",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "fr",
                     &SubdivisionMeta {
@@ -72697,14 +73102,6 @@ pub const SC: &Country = &Country {
                     "en",
                     &SubdivisionMeta {
                         official: "Plaisance",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "crs",
-                    &SubdivisionMeta {
-                        official: "Plezans",
                         common: None,
                         native: None,
                     },
@@ -72746,14 +73143,6 @@ pub const SC: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "crs",
-                    &SubdivisionMeta {
-                        official: "Porglo",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "fr",
                     &SubdivisionMeta {
                         official: "Port Glaud",
@@ -72765,6 +73154,14 @@ pub const SC: &Country = &Country {
                     "en",
                     &SubdivisionMeta {
                         official: "Port Glaud",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "crs",
+                    &SubdivisionMeta {
+                        official: "Porglo",
                         common: None,
                         native: None,
                     },
@@ -72806,9 +73203,9 @@ pub const SC: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "crs",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Sen Lwi",
+                        official: "Saint Louis",
                         common: None,
                         native: None,
                     },
@@ -72822,9 +73219,9 @@ pub const SC: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "crs",
                     &SubdivisionMeta {
-                        official: "Saint Louis",
+                        official: "Sen Lwi",
                         common: None,
                         native: None,
                     },
@@ -72864,7 +73261,9 @@ pub const SC: &Country = &Country {
     ],
 };
 
+/// Republic of Seychelles
 pub const SYC: &Country = SC;
+/// Republic of Sierra Leone
 pub const SL: &Country = &Country {
     name: &CountryMeta {
         common: "Sierra Leone",
@@ -72927,9 +73326,9 @@ pub const SL: &Country = &Country {
     locale: &Locale {
         ietf: &["en-SL", "ff-Adlm-SL", "ff-Latn-SL"],
         date_formats: &crate::StaticMap::new(&[
+            ("en-SL", "dd/MM/yyyy"),
             ("ff-Adlm-SL", "yyyyyyyy-MMMM-dddd"),
             ("ff-Latn-SL", "dd/MM/yyyy"),
-            ("en-SL", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Abidjan",
@@ -73022,17 +73421,19 @@ pub const SL: &Country = &Country {
     ],
 };
 
+/// Republic of Sierra Leone
 pub const SLE: &Country = SL;
+/// Republic of Singapore
 pub const SG: &Country = &Country {
     name: &CountryMeta {
         common: "Singapore",
         official: "Republic of Singapore",
         native: &crate::StaticMap::new(&[
             (
-                "zho",
+                "tam",
                 &CountryName {
-                    common: "新加坡",
-                    official: "新加坡共和国",
+                    common: "சிங்கப்பூர்",
+                    official: "சிங்கப்பூர் குடியரசு",
                 },
             ),
             (
@@ -73043,17 +73444,17 @@ pub const SG: &Country = &Country {
                 },
             ),
             (
+                "zho",
+                &CountryName {
+                    common: "新加坡",
+                    official: "新加坡共和国",
+                },
+            ),
+            (
                 "eng",
                 &CountryName {
                     common: "Singapore",
                     official: "Republic of Singapore",
-                },
-            ),
-            (
-                "tam",
-                &CountryName {
-                    common: "சிங்கப்பூர்",
-                    official: "சிங்கப்பூர் குடியரசு",
                 },
             ),
         ]),
@@ -73225,19 +73626,14 @@ pub const SG: &Country = &Country {
     ],
 };
 
+/// Republic of Singapore
 pub const SGP: &Country = SG;
+/// Sint Maarten
 pub const SX: &Country = &Country {
     name: &CountryMeta {
         common: "Sint Maarten",
         official: "Sint Maarten",
         native: &crate::StaticMap::new(&[
-            (
-                "eng",
-                &CountryName {
-                    common: "Sint Maarten",
-                    official: "Sint Maarten",
-                },
-            ),
             (
                 "fra",
                 &CountryName {
@@ -73247,6 +73643,13 @@ pub const SX: &Country = &Country {
             ),
             (
                 "nld",
+                &CountryName {
+                    common: "Sint Maarten",
+                    official: "Sint Maarten",
+                },
+            ),
+            (
+                "eng",
                 &CountryName {
                     common: "Sint Maarten",
                     official: "Sint Maarten",
@@ -73300,7 +73703,7 @@ pub const SX: &Country = &Country {
     spoken_languages: &["aig", "spa", "hin", "ind", "pap", "srn", "vic", "zlm"],
     locale: &Locale {
         ietf: &["en-SX", "nl-SX"],
-        date_formats: &crate::StaticMap::new(&[("nl-SX", "dd-MM-yyyy"), ("en-SX", "dd/MM/yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("en-SX", "dd/MM/yyyy"), ("nl-SX", "dd-MM-yyyy")]),
         timezones: &[&Timezone {
             name: "America/Lower_Princes",
             ty: TimezoneType::Link,
@@ -73331,7 +73734,9 @@ pub const SX: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Sint Maarten
 pub const SXM: &Country = SX;
+/// Slovak Republic
 pub const SK: &Country = &Country {
     name: &CountryMeta {
         common: "Slovakia",
@@ -73515,7 +73920,9 @@ pub const SK: &Country = &Country {
     ],
 };
 
+/// Slovak Republic
 pub const SVK: &Country = SK;
+/// Republic of Slovenia
 pub const SI: &Country = &Country {
     name: &CountryMeta {
         common: "Slovenia",
@@ -76160,7 +76567,9 @@ pub const SI: &Country = &Country {
     ],
 };
 
+/// Republic of Slovenia
 pub const SVN: &Country = SI;
+/// Solomon Islands
 pub const SB: &Country = &Country {
     name: &CountryMeta {
         common: "Solomon Islands",
@@ -76366,7 +76775,9 @@ pub const SB: &Country = &Country {
     ],
 };
 
+/// Solomon Islands
 pub const SLB: &Country = SB;
+/// Federal Republic of Somalia
 pub const SO: &Country = &Country {
     name: &CountryMeta {
         common: "Somalia",
@@ -76451,7 +76862,7 @@ pub const SO: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["ar-SO", "so-SO"],
-        date_formats: &crate::StaticMap::new(&[("so-SO", "MM/dd/yyyy"), ("ar-SO", "dd/MM/yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("ar-SO", "dd/MM/yyyy"), ("so-SO", "MM/dd/yyyy")]),
         timezones: &[&Timezone {
             name: "Africa/Nairobi",
             ty: TimezoneType::Canonical,
@@ -76699,31 +77110,33 @@ pub const SO: &Country = &Country {
     ],
 };
 
+/// Federal Republic of Somalia
 pub const SOM: &Country = SO;
+/// Republic of South Africa
 pub const ZA: &Country = &Country {
     name: &CountryMeta {
         common: "South Africa",
         official: "Republic of South Africa",
         native: &crate::StaticMap::new(&[
             (
-                "xho",
+                "ven",
                 &CountryName {
-                    common: "Mzantsi Afrika",
-                    official: "IRiphabliki yaseMzantsi Afrika",
+                    common: "Afurika Tshipembe",
+                    official: "Riphabuḽiki ya Afurika Tshipembe",
                 },
             ),
             (
-                "eng",
+                "zul",
                 &CountryName {
-                    common: "South Africa",
-                    official: "Republic of South Africa",
+                    common: "Ningizimu Afrika",
+                    official: "IRiphabliki yaseNingizimu Afrika",
                 },
             ),
             (
-                "nso",
+                "ssw",
                 &CountryName {
-                    common: "Afrika-Borwa",
-                    official: "Rephaboliki ya Afrika-Borwa ",
+                    common: "Ningizimu Afrika",
+                    official: "IRiphabhulikhi yeNingizimu Afrika",
                 },
             ),
             (
@@ -76731,6 +77144,20 @@ pub const ZA: &Country = &Country {
                 &CountryName {
                     common: "Afrika Borwa",
                     official: "Rephaboliki ya Afrika Borwa",
+                },
+            ),
+            (
+                "afr",
+                &CountryName {
+                    common: "South Africa",
+                    official: "Republiek van Suid-Afrika",
+                },
+            ),
+            (
+                "eng",
+                &CountryName {
+                    common: "South Africa",
+                    official: "Republic of South Africa",
                 },
             ),
             (
@@ -76755,31 +77182,17 @@ pub const ZA: &Country = &Country {
                 },
             ),
             (
-                "zul",
+                "nso",
                 &CountryName {
-                    common: "Ningizimu Afrika",
-                    official: "IRiphabliki yaseNingizimu Afrika",
+                    common: "Afrika-Borwa",
+                    official: "Rephaboliki ya Afrika-Borwa ",
                 },
             ),
             (
-                "ven",
+                "xho",
                 &CountryName {
-                    common: "Afurika Tshipembe",
-                    official: "Riphabuḽiki ya Afurika Tshipembe",
-                },
-            ),
-            (
-                "afr",
-                &CountryName {
-                    common: "South Africa",
-                    official: "Republiek van Suid-Afrika",
-                },
-            ),
-            (
-                "ssw",
-                &CountryName {
-                    common: "Ningizimu Afrika",
-                    official: "IRiphabhulikhi yeNingizimu Afrika",
+                    common: "Mzantsi Afrika",
+                    official: "IRiphabliki yaseMzantsi Afrika",
                 },
             ),
         ]),
@@ -76863,10 +77276,10 @@ pub const ZA: &Country = &Country {
     locale: &Locale {
         ietf: &["af-ZA", "en-ZA", "xh-ZA", "zu-ZA"],
         date_formats: &crate::StaticMap::new(&[
+            ("zu-ZA", "yyyy-MM-dd"),
             ("xh-ZA", "yyyy-MM-dd"),
             ("af-ZA", "yyyy-MM-dd"),
             ("en-ZA", "yyyy/MM/dd"),
-            ("zu-ZA", "yyyy-MM-dd"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Johannesburg",
@@ -76901,25 +77314,9 @@ pub const ZA: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "tn",
-                    &SubdivisionMeta {
-                        official: "Kapa Botlhaba",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "ve",
                     &SubdivisionMeta {
                         official: "Kapa Vhubvaḓuvha",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "xh",
-                    &SubdivisionMeta {
-                        official: "Mpuma-Koloni",
                         common: None,
                         native: None,
                     },
@@ -76941,25 +77338,9 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "af",
+                    "tn",
                     &SubdivisionMeta {
-                        official: "Oos-Kaap",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "ts",
-                    &SubdivisionMeta {
-                        official: "Kapa-Vuxa",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "st",
-                    &SubdivisionMeta {
-                        official: "Kapa Botjhabela",
+                        official: "Kapa Botlhaba",
                         common: None,
                         native: None,
                     },
@@ -76973,9 +77354,25 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
+                    "st",
+                    &SubdivisionMeta {
+                        official: "Kapa Botjhabela",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "nr",
                     &SubdivisionMeta {
                         official: "iPumalanga-Kapa",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "xh",
+                    &SubdivisionMeta {
+                        official: "Mpuma-Koloni",
                         common: None,
                         native: None,
                     },
@@ -76988,6 +77385,22 @@ pub const ZA: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "ts",
+                    &SubdivisionMeta {
+                        official: "Kapa-Vuxa",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "af",
+                    &SubdivisionMeta {
+                        official: "Oos-Kaap",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -76995,57 +77408,9 @@ pub const ZA: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "nr",
-                    &SubdivisionMeta {
-                        official: "iFreyistata",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "tn",
                     &SubdivisionMeta {
                         official: "Foreisetata",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "xh",
-                    &SubdivisionMeta {
-                        official: "Freyistata",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Free State",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "zu",
-                    &SubdivisionMeta {
-                        official: "Fuleyisitata",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "ss",
-                    &SubdivisionMeta {
-                        official: "",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "nso",
-                    &SubdivisionMeta {
-                        official: "Freistata",
                         common: None,
                         native: None,
                     },
@@ -77059,9 +77424,49 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
+                    "xh",
+                    &SubdivisionMeta {
+                        official: "Freyistata",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "nr",
+                    &SubdivisionMeta {
+                        official: "iFreyistata",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "ve",
                     &SubdivisionMeta {
                         official: "Fureisitata",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "zu",
+                    &SubdivisionMeta {
+                        official: "Fuleyisitata",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "ts",
+                    &SubdivisionMeta {
+                        official: "Free State",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Free State",
                         common: None,
                         native: None,
                     },
@@ -77075,9 +77480,17 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "ts",
+                    "nso",
                     &SubdivisionMeta {
-                        official: "Free State",
+                        official: "Freistata",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "ss",
+                    &SubdivisionMeta {
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -77089,7 +77502,7 @@ pub const ZA: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ve",
+                    "en",
                     &SubdivisionMeta {
                         official: "Gauteng",
                         common: None,
@@ -77097,9 +77510,17 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "nr",
+                    "ts",
                     &SubdivisionMeta {
-                        official: "iGauteng",
+                        official: "Gauteng",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "tn",
+                    &SubdivisionMeta {
+                        official: "Gauteng",
                         common: None,
                         native: None,
                     },
@@ -77113,7 +77534,7 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "nso",
+                    "ss",
                     &SubdivisionMeta {
                         official: "Gauteng",
                         common: None,
@@ -77129,31 +77550,15 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "nr",
                     &SubdivisionMeta {
-                        official: "Gauteng",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "ss",
-                    &SubdivisionMeta {
-                        official: "Gauteng",
+                        official: "iGauteng",
                         common: None,
                         native: None,
                     },
                 ),
                 (
                     "af",
-                    &SubdivisionMeta {
-                        official: "Gauteng",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "tn",
                     &SubdivisionMeta {
                         official: "Gauteng",
                         common: None,
@@ -77169,7 +77574,15 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "ts",
+                    "ve",
+                    &SubdivisionMeta {
+                        official: "Gauteng",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "nso",
                     &SubdivisionMeta {
                         official: "Gauteng",
                         common: None,
@@ -77183,17 +77596,9 @@ pub const ZA: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "nr",
+                    "zu",
                     &SubdivisionMeta {
-                        official: "iKwaZulu-Natal",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "af",
-                    &SubdivisionMeta {
-                        official: "KwaZulu-Natal",
+                        official: "KwaZulu-Natali",
                         common: None,
                         native: None,
                     },
@@ -77207,7 +77612,7 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "zu",
+                    "ss",
                     &SubdivisionMeta {
                         official: "KwaZulu-Natali",
                         common: None,
@@ -77215,9 +77620,9 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "st",
+                    "tn",
                     &SubdivisionMeta {
-                        official: "Hazolo-Natala",
+                        official: "KwaZulu-Natal",
                         common: None,
                         native: None,
                     },
@@ -77231,25 +77636,17 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "ts",
+                    "st",
                     &SubdivisionMeta {
-                        official: "Kwazulu-Natal",
+                        official: "Hazolo-Natala",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "nr",
                     &SubdivisionMeta {
-                        official: "Kwazulu-Natal",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "ss",
-                    &SubdivisionMeta {
-                        official: "KwaZulu-Natali",
+                        official: "iKwaZulu-Natal",
                         common: None,
                         native: None,
                     },
@@ -77263,9 +77660,25 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "tn",
+                    "ts",
+                    &SubdivisionMeta {
+                        official: "Kwazulu-Natal",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "af",
                     &SubdivisionMeta {
                         official: "KwaZulu-Natal",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Kwazulu-Natal",
                         common: None,
                         native: None,
                     },
@@ -77277,15 +77690,39 @@ pub const ZA: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ve",
+                    "nr",
                     &SubdivisionMeta {
-                        official: "Vhembe",
+                        official: "Limpopo",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "nr",
+                    "af",
+                    &SubdivisionMeta {
+                        official: "Limpopo",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "tn",
+                    &SubdivisionMeta {
+                        official: "Limpopo",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "zu",
+                    &SubdivisionMeta {
+                        official: "Limpopo",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "ss",
                     &SubdivisionMeta {
                         official: "Limpopo",
                         common: None,
@@ -77309,7 +77746,15 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "af",
+                    "ve",
+                    &SubdivisionMeta {
+                        official: "Vhembe",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
                     &SubdivisionMeta {
                         official: "Limpopo",
                         common: None,
@@ -77317,7 +77762,7 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "ss",
+                    "ts",
                     &SubdivisionMeta {
                         official: "Limpopo",
                         common: None,
@@ -77332,38 +77777,6 @@ pub const ZA: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "tn",
-                    &SubdivisionMeta {
-                        official: "Limpopo",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Limpopo",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "zu",
-                    &SubdivisionMeta {
-                        official: "Limpopo",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "ts",
-                    &SubdivisionMeta {
-                        official: "Limpopo",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
@@ -77371,31 +77784,7 @@ pub const ZA: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ts",
-                    &SubdivisionMeta {
-                        official: "Mpumalanga",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "xh",
-                    &SubdivisionMeta {
-                        official: "Mpumalanga",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "af",
-                    &SubdivisionMeta {
-                        official: "Mpumalanga",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "tn",
+                    "ss",
                     &SubdivisionMeta {
                         official: "Mpumalanga",
                         common: None,
@@ -77411,6 +77800,22 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
+                    "xh",
+                    &SubdivisionMeta {
+                        official: "Mpumalanga",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "nso",
+                    &SubdivisionMeta {
+                        official: "Mpumalanga",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "ve",
                     &SubdivisionMeta {
                         official: "Mpumalanga",
@@ -77419,7 +77824,7 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "ss",
+                    "tn",
                     &SubdivisionMeta {
                         official: "Mpumalanga",
                         common: None,
@@ -77443,7 +77848,7 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "nso",
+                    "en",
                     &SubdivisionMeta {
                         official: "Mpumalanga",
                         common: None,
@@ -77451,7 +77856,15 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "ts",
+                    &SubdivisionMeta {
+                        official: "Mpumalanga",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "af",
                     &SubdivisionMeta {
                         official: "Mpumalanga",
                         common: None,
@@ -77465,57 +77878,9 @@ pub const ZA: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "tn",
-                    &SubdivisionMeta {
-                        official: "Kapa Bokone",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "ts",
                     &SubdivisionMeta {
                         official: "Kapa-N'walungu",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "zu",
-                    &SubdivisionMeta {
-                        official: "Nyakatho-Kapa",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "ve",
-                    &SubdivisionMeta {
-                        official: "Kapa Devhula",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "st",
-                    &SubdivisionMeta {
-                        official: "Kapa Leboya",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Northern Cape",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "nso",
-                    &SubdivisionMeta {
-                        official: "Kapa Leboya",
                         common: None,
                         native: None,
                     },
@@ -77529,9 +77894,25 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "ss",
+                    "st",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Kapa Leboya",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "nso",
+                    &SubdivisionMeta {
+                        official: "Kapa Leboya",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "zu",
+                    &SubdivisionMeta {
+                        official: "Nyakatho-Kapa",
                         common: None,
                         native: None,
                     },
@@ -77545,9 +77926,41 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
+                    "tn",
+                    &SubdivisionMeta {
+                        official: "Kapa Bokone",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "ss",
+                    &SubdivisionMeta {
+                        official: "",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Northern Cape",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "af",
                     &SubdivisionMeta {
                         official: "Noord-Kaap",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "ve",
+                    &SubdivisionMeta {
+                        official: "Kapa Devhula",
                         common: None,
                         native: None,
                     },
@@ -77559,17 +77972,9 @@ pub const ZA: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ve",
+                    "zu",
                     &SubdivisionMeta {
-                        official: "",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "nr",
-                    &SubdivisionMeta {
-                        official: "iTlhagwini-Tjhingalanga",
+                        official: "Nyakatho-Ntshonalanga",
                         common: None,
                         native: None,
                     },
@@ -77578,6 +77983,38 @@ pub const ZA: &Country = &Country {
                     "af",
                     &SubdivisionMeta {
                         official: "Noordwes",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "xh",
+                    &SubdivisionMeta {
+                        official: "Mntla-Ntshona",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "ss",
+                    &SubdivisionMeta {
+                        official: "",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "ts",
+                    &SubdivisionMeta {
+                        official: "N'walungu-Vupeladyambu",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "ve",
+                    &SubdivisionMeta {
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -77599,17 +78036,17 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "ss",
+                    "st",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Leboya Bophirima",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "xh",
+                    "nr",
                     &SubdivisionMeta {
-                        official: "Mntla-Ntshona",
+                        official: "iTlhagwini-Tjhingalanga",
                         common: None,
                         native: None,
                     },
@@ -77622,60 +78059,12 @@ pub const ZA: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "ts",
-                    &SubdivisionMeta {
-                        official: "N'walungu-Vupeladyambu",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "zu",
-                    &SubdivisionMeta {
-                        official: "Nyakatho-Ntshonalanga",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "st",
-                    &SubdivisionMeta {
-                        official: "Leboya Bophirima",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "ZA-WC",
             ty: None,
             meta: &crate::StaticMap::new(&[
-                (
-                    "xh",
-                    &SubdivisionMeta {
-                        official: "Ntshona-Koloni",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "ve",
-                    &SubdivisionMeta {
-                        official: "Kapa Vhukovhela",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "st",
-                    &SubdivisionMeta {
-                        official: "Kapa Bophirimela",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "nr",
                     &SubdivisionMeta {
@@ -77685,17 +78074,17 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "nso",
+                    "zu",
                     &SubdivisionMeta {
-                        official: "Kapa Bodikela",
+                        official: "Ntshonalanga-Kapa",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "zu",
+                    "ve",
                     &SubdivisionMeta {
-                        official: "Ntshonalanga-Kapa",
+                        official: "Kapa Vhukovhela",
                         common: None,
                         native: None,
                     },
@@ -77717,6 +78106,30 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Western Cape",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "xh",
+                    &SubdivisionMeta {
+                        official: "Ntshona-Koloni",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "st",
+                    &SubdivisionMeta {
+                        official: "Kapa Bophirimela",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "ss",
                     &SubdivisionMeta {
                         official: "",
@@ -77725,9 +78138,9 @@ pub const ZA: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "nso",
                     &SubdivisionMeta {
-                        official: "Western Cape",
+                        official: "Kapa Bodikela",
                         common: None,
                         native: None,
                     },
@@ -77745,7 +78158,9 @@ pub const ZA: &Country = &Country {
     ],
 };
 
+/// Republic of South Africa
 pub const ZAF: &Country = ZA;
+/// South Georgia and the South Sandwich Islands
 pub const GS: &Country = &Country {
     name: &CountryMeta {
         common: "South Georgia",
@@ -77822,7 +78237,9 @@ pub const GS: &Country = &Country {
     }],
 };
 
+/// South Georgia and the South Sandwich Islands
 pub const SGS: &Country = GS;
+/// Republic of Korea
 pub const KR: &Country = &Country {
     name: &CountryMeta {
         common: "South Korea",
@@ -77927,17 +78344,17 @@ pub const KR: &Country = &Country {
             ty: Some("metropolitan city"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "Busan",
+                        official: "Busan-gwangyeoksi",
                         common: Some("Busan"),
                         native: None,
                     },
                 ),
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Busan-gwangyeoksi",
+                        official: "Busan",
                         common: Some("Busan"),
                         native: None,
                     },
@@ -77949,17 +78366,17 @@ pub const KR: &Country = &Country {
             ty: Some("metropolitan city"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Daegu-gwangyeoksi",
+                        official: "Daegu",
                         common: Some("Daegu"),
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "Daegu",
+                        official: "Daegu-gwangyeoksi",
                         common: Some("Daegu"),
                         native: None,
                     },
@@ -77971,17 +78388,17 @@ pub const KR: &Country = &Country {
             ty: Some("metropolitan city"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Daejeon-gwangyeoksi",
+                        official: "Daejeon",
                         common: Some("Daejeon"),
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "Daejeon",
+                        official: "Daejeon-gwangyeoksi",
                         common: Some("Daejeon"),
                         native: None,
                     },
@@ -77993,17 +78410,17 @@ pub const KR: &Country = &Country {
             ty: Some("metropolitan city"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Gwangju-gwangyeoksi",
+                        official: "Gwangju",
                         common: Some("Gwangju"),
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "Gwangju",
+                        official: "Gwangju-gwangyeoksi",
                         common: Some("Gwangju"),
                         native: None,
                     },
@@ -78015,17 +78432,17 @@ pub const KR: &Country = &Country {
             ty: Some("metropolitan city"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "Incheon",
+                        official: "Incheon-gwangyeoksi",
                         common: Some("Incheon"),
                         native: None,
                     },
                 ),
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Incheon-gwangyeoksi",
+                        official: "Incheon",
                         common: Some("Incheon"),
                         native: None,
                     },
@@ -78059,17 +78476,17 @@ pub const KR: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Chungcheongbuk-do",
+                        official: "North Chungcheong",
                         common: Some("Chungbuk"),
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "North Chungcheong",
+                        official: "Chungcheongbuk-do",
                         common: Some("Chungbuk"),
                         native: None,
                     },
@@ -78081,17 +78498,17 @@ pub const KR: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "South Chungcheong",
+                        official: "Chungcheongnam-do",
                         common: Some("Chungnam"),
                         native: None,
                     },
                 ),
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Chungcheongnam-do",
+                        official: "South Chungcheong",
                         common: Some("Chungnam"),
                         native: None,
                     },
@@ -78103,17 +78520,17 @@ pub const KR: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Gangwon-do",
+                        official: "Gangwon",
                         common: Some("Gangwon"),
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "Gangwon",
+                        official: "Gangwon-do",
                         common: Some("Gangwon"),
                         native: None,
                     },
@@ -78125,17 +78542,17 @@ pub const KR: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "Gyeonggi",
+                        official: "Gyeonggi-do",
                         common: Some("Gyeonggi"),
                         native: None,
                     },
                 ),
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Gyeonggi-do",
+                        official: "Gyeonggi",
                         common: Some("Gyeonggi"),
                         native: None,
                     },
@@ -78191,17 +78608,17 @@ pub const KR: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Jeollabuk-do",
+                        official: "North Jeolla",
                         common: Some("Jeonbuk"),
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "North Jeolla",
+                        official: "Jeollabuk-do",
                         common: Some("Jeonbuk"),
                         native: None,
                     },
@@ -78213,17 +78630,17 @@ pub const KR: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "South Jeolla",
+                        official: "Jeollanam-do",
                         common: Some("Jeonnam"),
                         native: None,
                     },
                 ),
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Jeollanam-do",
+                        official: "South Jeolla",
                         common: Some("Jeonnam"),
                         native: None,
                     },
@@ -78257,17 +78674,17 @@ pub const KR: &Country = &Country {
             ty: Some("special self-governing city"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ko",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Sejong-teukbyeoljachisi",
+                        official: "Sejong",
                         common: Some("Sejong"),
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ko",
                     &SubdivisionMeta {
-                        official: "Sejong",
+                        official: "Sejong-teukbyeoljachisi",
                         common: Some("Sejong"),
                         native: None,
                     },
@@ -78277,7 +78694,9 @@ pub const KR: &Country = &Country {
     ],
 };
 
+/// Republic of Korea
 pub const KOR: &Country = KR;
+/// Republic of South Sudan
 pub const SS: &Country = &Country {
     name: &CountryMeta {
         common: "South Sudan",
@@ -78361,9 +78780,9 @@ pub const SS: &Country = &Country {
     locale: &Locale {
         ietf: &["ar-SS", "en-SS", "nus-SS"],
         date_formats: &crate::StaticMap::new(&[
-            ("nus-SS", "dd/MM/yyyy"),
-            ("en-SS", "dd/MM/yyyy"),
             ("ar-SS", "dd/MM/yyyy"),
+            ("en-SS", "dd/MM/yyyy"),
+            ("nus-SS", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Juba",
@@ -78504,7 +78923,9 @@ pub const SS: &Country = &Country {
     ],
 };
 
+/// Republic of South Sudan
 pub const SSD: &Country = SS;
+/// Kingdom of Spain
 pub const ES: &Country = &Country {
     name: &CountryMeta {
         common: "Spain",
@@ -78611,10 +79032,10 @@ pub const ES: &Country = &Country {
             "gl-ES",
         ],
         date_formats: &crate::StaticMap::new(&[
+            ("ca-ES", "dd/MM/yyyy"),
             ("ast-ES", "dd/MM/yyyy"),
             ("gl-ES", "dd/MM/yyyy"),
             ("es-ES", "dd/MM/yyyy"),
-            ("ca-ES", "dd/MM/yyyy"),
             ("eu-ES", "yyyy/MM/dd"),
             ("ca-ES-VALENCIA", "dd/MM/yyyy"),
         ]),
@@ -78667,17 +79088,17 @@ pub const ES: &Country = &Country {
             ty: Some("autonomous community"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "es",
                     &SubdivisionMeta {
-                        official: "Andalusia",
+                        official: "Andalucía",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Andalucía",
+                        official: "Andalusia",
                         common: None,
                         native: None,
                     },
@@ -78689,17 +79110,17 @@ pub const ES: &Country = &Country {
             ty: Some("autonomous community"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Aragón",
+                        official: "Aragon",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "es",
                     &SubdivisionMeta {
-                        official: "Aragon",
+                        official: "Aragón",
                         common: None,
                         native: None,
                     },
@@ -78733,17 +79154,17 @@ pub const ES: &Country = &Country {
             ty: Some("autonomous community"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "es",
                     &SubdivisionMeta {
-                        official: "Canary Islands",
+                        official: "Canarias",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Canarias",
+                        official: "Canary Islands",
                         common: None,
                         native: None,
                     },
@@ -78821,6 +79242,14 @@ pub const ES: &Country = &Country {
             ty: Some("autonomous community"),
             meta: &crate::StaticMap::new(&[
                 (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Catalonia",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "es",
                     &SubdivisionMeta {
                         official: "Cataluña]",
@@ -78832,14 +79261,6 @@ pub const ES: &Country = &Country {
                     "ca",
                     &SubdivisionMeta {
                         official: "Catalunya",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Catalonia",
                         common: None,
                         native: None,
                     },
@@ -78873,7 +79294,7 @@ pub const ES: &Country = &Country {
             ty: Some("autonomous community"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "en",
                     &SubdivisionMeta {
                         official: "Extremadura",
                         common: None,
@@ -78881,7 +79302,7 @@ pub const ES: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "es",
                     &SubdivisionMeta {
                         official: "Extremadura",
                         common: None,
@@ -78895,7 +79316,7 @@ pub const ES: &Country = &Country {
             ty: Some("autonomous community"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "en",
                     &SubdivisionMeta {
                         official: "Galicia",
                         common: None,
@@ -78911,7 +79332,7 @@ pub const ES: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "es",
                     &SubdivisionMeta {
                         official: "Galicia",
                         common: None,
@@ -78925,9 +79346,9 @@ pub const ES: &Country = &Country {
             ty: Some("autonomous community"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ca",
+                    "es",
                     &SubdivisionMeta {
-                        official: "Illes Balears",
+                        official: "Islas Baleares",
                         common: None,
                         native: None,
                     },
@@ -78941,9 +79362,9 @@ pub const ES: &Country = &Country {
                     },
                 ),
                 (
-                    "es",
+                    "ca",
                     &SubdivisionMeta {
-                        official: "Islas Baleares",
+                        official: "Illes Balears",
                         common: None,
                         native: None,
                     },
@@ -78999,7 +79420,7 @@ pub const ES: &Country = &Country {
             ty: Some("autonomous city in North Africa"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "en",
                     &SubdivisionMeta {
                         official: "Melilla",
                         common: None,
@@ -79007,7 +79428,7 @@ pub const ES: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "es",
                     &SubdivisionMeta {
                         official: "Melilla",
                         common: None,
@@ -79021,17 +79442,17 @@ pub const ES: &Country = &Country {
             ty: Some("autonomous community"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Murcia, Región de",
+                        official: "Region of Murcia",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "es",
                     &SubdivisionMeta {
-                        official: "Region of Murcia",
+                        official: "Murcia, Región de",
                         common: None,
                         native: None,
                     },
@@ -79043,17 +79464,17 @@ pub const ES: &Country = &Country {
             ty: Some("autonomous community"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "es",
                     &SubdivisionMeta {
-                        official: "Chartered Community of Navarre",
+                        official: "Navarra, Comunidad Foral deNafarroako Foru Komunitatea",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Navarra, Comunidad Foral deNafarroako Foru Komunitatea",
+                        official: "Chartered Community of Navarre",
                         common: None,
                         native: None,
                     },
@@ -79065,17 +79486,17 @@ pub const ES: &Country = &Country {
             ty: Some("autonomous community"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "en",
                     &SubdivisionMeta {
-                        official: "País VascoEuskal Herria",
+                        official: "Basque Country",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "es",
                     &SubdivisionMeta {
-                        official: "Basque Country",
+                        official: "País VascoEuskal Herria",
                         common: None,
                         native: None,
                     },
@@ -79117,9 +79538,9 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "gl",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "La Coruña",
+                        official: "GA",
                         common: None,
                         native: None,
                     },
@@ -79133,9 +79554,9 @@ pub const ES: &Country = &Country {
                     },
                 ),
                 (
-                    "inRegion",
+                    "gl",
                     &SubdivisionMeta {
-                        official: "GA",
+                        official: "La Coruña",
                         common: None,
                         native: None,
                     },
@@ -79146,14 +79567,6 @@ pub const ES: &Country = &Country {
             iso: "ES-VI",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "es",
-                    &SubdivisionMeta {
-                        official: "Álava",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -79166,6 +79579,14 @@ pub const ES: &Country = &Country {
                     "eu",
                     &SubdivisionMeta {
                         official: "Araba",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "es",
+                    &SubdivisionMeta {
+                        official: "Álava",
                         common: None,
                         native: None,
                     },
@@ -79199,9 +79620,9 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ca",
+                    "es",
                     &SubdivisionMeta {
-                        official: "Alacant",
+                        official: "Alicante",
                         common: None,
                         native: None,
                     },
@@ -79215,9 +79636,9 @@ pub const ES: &Country = &Country {
                     },
                 ),
                 (
-                    "es",
+                    "ca",
                     &SubdivisionMeta {
-                        official: "Alicante",
+                        official: "Alacant",
                         common: None,
                         native: None,
                     },
@@ -79273,17 +79694,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "CL",
+                        official: "Ávila",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Ávila",
+                        official: "CL",
                         common: None,
                         native: None,
                     },
@@ -79317,14 +79738,6 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "CT",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "ca",
                     &SubdivisionMeta {
                         official: "Barcelona",
@@ -79340,6 +79753,14 @@ pub const ES: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "CT",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -79347,17 +79768,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "eu",
                     &SubdivisionMeta {
-                        official: "PV",
+                        official: "Bizkaia",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "eu",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Bizkaia",
+                        official: "PV",
                         common: None,
                         native: None,
                     },
@@ -79391,17 +79812,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Cáceres",
+                        official: "EX",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "EX",
+                        official: "Cáceres",
                         common: None,
                         native: None,
                     },
@@ -79413,17 +79834,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "AN",
+                        official: "Cádiz",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Cádiz",
+                        official: "AN",
                         common: None,
                         native: None,
                     },
@@ -79435,17 +79856,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "CB",
+                        official: "Cantabria",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Cantabria",
+                        official: "CB",
                         common: None,
                         native: None,
                     },
@@ -79457,9 +79878,9 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "VC",
+                        official: "Castelló",
                         common: None,
                         native: None,
                     },
@@ -79473,9 +79894,9 @@ pub const ES: &Country = &Country {
                     },
                 ),
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Castelló",
+                        official: "VC",
                         common: None,
                         native: None,
                     },
@@ -79649,17 +80070,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Huelva",
+                        official: "AN",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "AN",
+                        official: "Huelva",
                         common: None,
                         native: None,
                     },
@@ -79671,17 +80092,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "AR",
+                        official: "Huesca",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Huesca",
+                        official: "AR",
                         common: None,
                         native: None,
                     },
@@ -79767,17 +80188,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "CN",
+                        official: "Las Palmas",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Las Palmas",
+                        official: "CN",
                         common: None,
                         native: None,
                     },
@@ -79819,17 +80240,17 @@ pub const ES: &Country = &Country {
                     },
                 ),
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Lérida",
+                        official: "CT",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "CT",
+                        official: "Lérida",
                         common: None,
                         native: None,
                     },
@@ -79849,17 +80270,17 @@ pub const ES: &Country = &Country {
                     },
                 ),
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "GA",
+                        official: "Lugo",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Lugo",
+                        official: "GA",
                         common: None,
                         native: None,
                     },
@@ -79893,17 +80314,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "AN",
+                        official: "Málaga",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Málaga",
+                        official: "AN",
                         common: None,
                         native: None,
                     },
@@ -79915,17 +80336,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "MC",
+                        official: "Murcia",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Murcia",
+                        official: "MC",
                         common: None,
                         native: None,
                     },
@@ -79937,17 +80358,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Navarra",
+                        official: "NC",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "NC",
+                        official: "Navarra",
                         common: None,
                         native: None,
                     },
@@ -79997,17 +80418,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "CL",
+                        official: "Palencia",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Palencia",
+                        official: "CL",
                         common: None,
                         native: None,
                     },
@@ -80018,6 +80439,14 @@ pub const ES: &Country = &Country {
             iso: "ES-PO",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "es",
+                    &SubdivisionMeta {
+                        official: "Pontevedra",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "inRegion",
                     &SubdivisionMeta {
@@ -80034,14 +80463,6 @@ pub const ES: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "es",
-                    &SubdivisionMeta {
-                        official: "Pontevedra",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
@@ -80049,17 +80470,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Salamanca",
+                        official: "CL",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "CL",
+                        official: "Salamanca",
                         common: None,
                         native: None,
                     },
@@ -80071,17 +80492,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Santa Cruz de Tenerife",
+                        official: "CN",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "CN",
+                        official: "Santa Cruz de Tenerife",
                         common: None,
                         native: None,
                     },
@@ -80115,17 +80536,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "AN",
+                        official: "Sevilla",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Sevilla",
+                        official: "AN",
                         common: None,
                         native: None,
                     },
@@ -80137,17 +80558,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Soria",
+                        official: "CL",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "CL",
+                        official: "Soria",
                         common: None,
                         native: None,
                     },
@@ -80159,7 +80580,7 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ca",
+                    "es",
                     &SubdivisionMeta {
                         official: "Tarragona",
                         common: None,
@@ -80175,7 +80596,7 @@ pub const ES: &Country = &Country {
                     },
                 ),
                 (
-                    "es",
+                    "ca",
                     &SubdivisionMeta {
                         official: "Tarragona",
                         common: None,
@@ -80211,17 +80632,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Toledo",
+                        official: "CM",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "CM",
+                        official: "Toledo",
                         common: None,
                         native: None,
                     },
@@ -80255,17 +80676,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "CL",
+                        official: "Valladolid",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Valladolid",
+                        official: "CL",
                         common: None,
                         native: None,
                     },
@@ -80299,17 +80720,17 @@ pub const ES: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "es",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Zaragoza",
+                        official: "AR",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "es",
                     &SubdivisionMeta {
-                        official: "AR",
+                        official: "Zaragoza",
                         common: None,
                         native: None,
                     },
@@ -80319,24 +80740,26 @@ pub const ES: &Country = &Country {
     ],
 };
 
+/// Kingdom of Spain
 pub const ESP: &Country = ES;
+/// Democratic Socialist Republic of Sri Lanka
 pub const LK: &Country = &Country {
     name: &CountryMeta {
         common: "Sri Lanka",
         official: "Democratic Socialist Republic of Sri Lanka",
         native: &crate::StaticMap::new(&[
             (
-                "sin",
-                &CountryName {
-                    common: "ශ්‍රී ලංකාව",
-                    official: "ශ්‍රී ලංකා ප්‍රජාතාන්ත්‍රික සමාජවාදී ජනරජය",
-                },
-            ),
-            (
                 "tam",
                 &CountryName {
                     common: "இலங்கை",
                     official: "இலங்கை சனநாயக சோசலிசக் குடியரசு",
+                },
+            ),
+            (
+                "sin",
+                &CountryName {
+                    common: "ශ්‍රී ලංකාව",
+                    official: "ශ්‍රී ලංකා ප්‍රජාතාන්ත්‍රික සමාජවාදී ජනරජය",
                 },
             ),
         ]),
@@ -80423,6 +80846,14 @@ pub const LK: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Western Province",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "si",
                     &SubdivisionMeta {
                         official: "Basnāhira paḷāta",
@@ -80438,14 +80869,6 @@ pub const LK: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Western Province",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
@@ -80453,9 +80876,9 @@ pub const LK: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "si",
+                    "ta",
                     &SubdivisionMeta {
-                        official: "Madhyama paḷāta",
+                        official: "Mattiya mākāṇam",
                         common: None,
                         native: None,
                     },
@@ -80469,9 +80892,9 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
-                    "ta",
+                    "si",
                     &SubdivisionMeta {
-                        official: "Mattiya mākāṇam",
+                        official: "Madhyama paḷāta",
                         common: None,
                         native: None,
                     },
@@ -80482,14 +80905,6 @@ pub const LK: &Country = &Country {
             iso: "LK-3",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Southern Province",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "ta",
                     &SubdivisionMeta {
@@ -80502,6 +80917,14 @@ pub const LK: &Country = &Country {
                     "si",
                     &SubdivisionMeta {
                         official: "Dakuṇu paḷāta",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Southern Province",
                         common: None,
                         native: None,
                     },
@@ -80551,17 +80974,17 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
-                    "si",
+                    "ta",
                     &SubdivisionMeta {
-                        official: "Næ̆gĕnahira paḷāta",
+                        official: "Kil̮akku mākāṇam",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ta",
+                    "si",
                     &SubdivisionMeta {
-                        official: "Kil̮akku mākāṇam",
+                        official: "Næ̆gĕnahira paḷāta",
                         common: None,
                         native: None,
                     },
@@ -80572,14 +80995,6 @@ pub const LK: &Country = &Country {
             iso: "LK-6",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "ta",
-                    &SubdivisionMeta {
-                        official: "Vaṭamel mākāṇam",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -80596,12 +81011,28 @@ pub const LK: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "ta",
+                    &SubdivisionMeta {
+                        official: "Vaṭamel mākāṇam",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "LK-7",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "North Central Province",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "ta",
                     &SubdivisionMeta {
@@ -80618,20 +81049,20 @@ pub const LK: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "North Central Province",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "LK-8",
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "si",
+                    &SubdivisionMeta {
+                        official: "Ūva paḷāta",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -80648,14 +81079,6 @@ pub const LK: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "si",
-                    &SubdivisionMeta {
-                        official: "Ūva paḷāta",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
@@ -80663,17 +81086,17 @@ pub const LK: &Country = &Country {
             ty: Some("province"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ta",
                     &SubdivisionMeta {
-                        official: "Sabaragamuwa Province",
+                        official: "Chappirakamuva mākāṇam",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ta",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Chappirakamuva mākāṇam",
+                        official: "Sabaragamuwa Province",
                         common: None,
                         native: None,
                     },
@@ -80693,6 +81116,14 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "LK-1",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "ta",
                     &SubdivisionMeta {
                         official: "Kŏl̮umpu",
@@ -80704,14 +81135,6 @@ pub const LK: &Country = &Country {
                     "si",
                     &SubdivisionMeta {
                         official: "Kŏḷamba",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "LK-1",
                         common: None,
                         native: None,
                     },
@@ -80731,9 +81154,9 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ta",
                     &SubdivisionMeta {
-                        official: "Gampaha",
+                        official: "Kampahā",
                         common: None,
                         native: None,
                     },
@@ -80747,17 +81170,17 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
-                    "ta",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kampahā",
+                        official: "LK-1",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "LK-1",
+                        official: "Gampaha",
                         common: None,
                         native: None,
                     },
@@ -80769,9 +81192,9 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "si",
                     &SubdivisionMeta {
-                        official: "LK-1",
+                        official: "Kaḷutara",
                         common: None,
                         native: None,
                     },
@@ -80785,17 +81208,17 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kalutara",
+                        official: "LK-1",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "si",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kaḷutara",
+                        official: "Kalutara",
                         common: None,
                         native: None,
                     },
@@ -80807,22 +81230,6 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Kandy",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "LK-2",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "si",
                     &SubdivisionMeta {
                         official: "Mahanuvara",
@@ -80831,9 +81238,25 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Kandy",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "ta",
                     &SubdivisionMeta {
                         official: "Kaṇṭi",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "LK-2",
                         common: None,
                         native: None,
                     },
@@ -80853,17 +81276,17 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Matale",
+                        official: "LK-2",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "LK-2",
+                        official: "Matale",
                         common: None,
                         native: None,
                     },
@@ -80883,9 +81306,9 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ta",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Nuvarĕliyā",
+                        official: "LK-2",
                         common: None,
                         native: None,
                     },
@@ -80899,17 +81322,17 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
-                    "si",
+                    "ta",
                     &SubdivisionMeta {
-                        official: "Nuvara Ĕliya",
+                        official: "Nuvarĕliyā",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "si",
                     &SubdivisionMeta {
-                        official: "LK-2",
+                        official: "Nuvara Ĕliya",
                         common: None,
                         native: None,
                     },
@@ -80921,17 +81344,17 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "ta",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kāli",
+                        official: "Galle",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ta",
                     &SubdivisionMeta {
-                        official: "LK-3",
+                        official: "Kāli",
                         common: None,
                         native: None,
                     },
@@ -80945,9 +81368,9 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Galle",
+                        official: "LK-3",
                         common: None,
                         native: None,
                     },
@@ -80959,17 +81382,17 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "si",
                     &SubdivisionMeta {
-                        official: "LK-3",
+                        official: "Mātara",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "si",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Mātara",
+                        official: "LK-3",
                         common: None,
                         native: None,
                     },
@@ -80997,17 +81420,17 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "si",
                     &SubdivisionMeta {
-                        official: "LK-3",
+                        official: "Hambantŏṭa",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Hambantota",
+                        official: "LK-3",
                         common: None,
                         native: None,
                     },
@@ -81021,9 +81444,9 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
-                    "si",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Hambantŏṭa",
+                        official: "Hambantota",
                         common: None,
                         native: None,
                     },
@@ -81034,14 +81457,6 @@ pub const LK: &Country = &Country {
             iso: "LK-41",
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "ta",
-                    &SubdivisionMeta {
-                        official: "Yāl̮ppāṇam",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "en",
                     &SubdivisionMeta {
@@ -81054,6 +81469,14 @@ pub const LK: &Country = &Country {
                     "inRegion",
                     &SubdivisionMeta {
                         official: "LK-4",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "ta",
+                    &SubdivisionMeta {
+                        official: "Yāl̮ppāṇam",
                         common: None,
                         native: None,
                     },
@@ -81073,17 +81496,17 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ta",
                     &SubdivisionMeta {
-                        official: "LK-4",
+                        official: "Kiḷinochchi",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ta",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kiḷinochchi",
+                        official: "LK-4",
                         common: None,
                         native: None,
                     },
@@ -81111,17 +81534,17 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Mannar",
+                        official: "LK-4",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "LK-4",
+                        official: "Mannar",
                         common: None,
                         native: None,
                     },
@@ -81187,17 +81610,17 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "LK-4",
+                        official: "Mullaittivu",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Mullaittivu",
+                        official: "LK-4",
                         common: None,
                         native: None,
                     },
@@ -81233,6 +81656,14 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
+                    "ta",
+                    &SubdivisionMeta {
+                        official: "Maṭṭakkaḷappu",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "si",
                     &SubdivisionMeta {
                         official: "Maḍakalapuva",
@@ -81248,36 +81679,12 @@ pub const LK: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "ta",
-                    &SubdivisionMeta {
-                        official: "Maṭṭakkaḷappu",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "LK-52",
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "LK-5",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Ampara",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "si",
                     &SubdivisionMeta {
@@ -81294,6 +81701,22 @@ pub const LK: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Ampara",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "LK-5",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -81301,9 +81724,9 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Trincomalee",
+                        official: "LK-5",
                         common: None,
                         native: None,
                     },
@@ -81317,17 +81740,17 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
-                    "inRegion",
+                    "ta",
                     &SubdivisionMeta {
-                        official: "LK-5",
+                        official: "Tirukŏṇamalai",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ta",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Tirukŏṇamalai",
+                        official: "Trincomalee",
                         common: None,
                         native: None,
                     },
@@ -81347,17 +81770,17 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
-                    "ta",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kurunākal",
+                        official: "LK-6",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "ta",
                     &SubdivisionMeta {
-                        official: "LK-6",
+                        official: "Kurunākal",
                         common: None,
                         native: None,
                     },
@@ -81376,6 +81799,14 @@ pub const LK: &Country = &Country {
             iso: "LK-62",
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Puttalam",
+                        common: None,
+                        native: None,
+                    },
+                ),
                 (
                     "si",
                     &SubdivisionMeta {
@@ -81400,28 +81831,12 @@ pub const LK: &Country = &Country {
                         native: None,
                     },
                 ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Puttalam",
-                        common: None,
-                        native: None,
-                    },
-                ),
             ]),
         },
         &Subdivision {
             iso: "LK-71",
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Anuradhapura",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "ta",
                     &SubdivisionMeta {
@@ -81446,20 +81861,20 @@ pub const LK: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Anuradhapura",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
             iso: "LK-72",
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
-                (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "LK-7",
-                        common: None,
-                        native: None,
-                    },
-                ),
                 (
                     "si",
                     &SubdivisionMeta {
@@ -81469,9 +81884,9 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
-                    "ta",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Pŏlaṉṉaṛuvai",
+                        official: "LK-7",
                         common: None,
                         native: None,
                     },
@@ -81484,6 +81899,14 @@ pub const LK: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "ta",
+                    &SubdivisionMeta {
+                        official: "Pŏlaṉṉaṛuvai",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
         &Subdivision {
@@ -81491,17 +81914,17 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "ta",
                     &SubdivisionMeta {
-                        official: "LK-8",
+                        official: "Patuḷai",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ta",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Patuḷai",
+                        official: "LK-8",
                         common: None,
                         native: None,
                     },
@@ -81529,9 +81952,9 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "si",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Mŏṇarāgala",
+                        official: "LK-8",
                         common: None,
                         native: None,
                     },
@@ -81545,17 +81968,17 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
-                    "inRegion",
+                    "ta",
                     &SubdivisionMeta {
-                        official: "LK-8",
+                        official: "Mŏṉarākalai",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ta",
+                    "si",
                     &SubdivisionMeta {
-                        official: "Mŏṉarākalai",
+                        official: "Mŏṇarāgala",
                         common: None,
                         native: None,
                     },
@@ -81567,22 +81990,6 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "LK-9",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
-                    "en",
-                    &SubdivisionMeta {
-                        official: "Ratnapura",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "ta",
                     &SubdivisionMeta {
                         official: "Irattiṉapuri",
@@ -81591,7 +81998,23 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
+                    "inRegion",
+                    &SubdivisionMeta {
+                        official: "LK-9",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
                     "si",
+                    &SubdivisionMeta {
+                        official: "Ratnapura",
+                        common: None,
+                        native: None,
+                    },
+                ),
+                (
+                    "en",
                     &SubdivisionMeta {
                         official: "Ratnapura",
                         common: None,
@@ -81605,14 +82028,6 @@ pub const LK: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
-                    &SubdivisionMeta {
-                        official: "LK-9",
-                        common: None,
-                        native: None,
-                    },
-                ),
-                (
                     "ta",
                     &SubdivisionMeta {
                         official: "Kekālai",
@@ -81621,9 +82036,9 @@ pub const LK: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kegalla",
+                        official: "LK-9",
                         common: None,
                         native: None,
                     },
@@ -81636,29 +82051,39 @@ pub const LK: &Country = &Country {
                         native: None,
                     },
                 ),
+                (
+                    "en",
+                    &SubdivisionMeta {
+                        official: "Kegalla",
+                        common: None,
+                        native: None,
+                    },
+                ),
             ]),
         },
     ],
 };
 
+/// Democratic Socialist Republic of Sri Lanka
 pub const LKA: &Country = LK;
+/// Republic of the Sudan
 pub const SD: &Country = &Country {
     name: &CountryMeta {
         common: "Sudan",
         official: "Republic of the Sudan",
         native: &crate::StaticMap::new(&[
             (
-                "ara",
-                &CountryName {
-                    common: "السودان",
-                    official: "جمهورية السودان",
-                },
-            ),
-            (
                 "eng",
                 &CountryName {
                     common: "Sudan",
                     official: "Republic of the Sudan",
+                },
+            ),
+            (
+                "ara",
+                &CountryName {
+                    common: "السودان",
+                    official: "جمهورية السودان",
                 },
             ),
         ]),
@@ -81747,17 +82172,17 @@ pub const SD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Red Sea",
+                        official: "Al Baḩr al Aḩmar",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Al Baḩr al Aḩmar",
+                        official: "Red Sea",
                         common: None,
                         native: None,
                     },
@@ -81835,17 +82260,17 @@ pub const SD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Nahr an Nīl",
+                        official: "River Nile",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "River Nile",
+                        official: "Nahr an Nīl",
                         common: None,
                         native: None,
                     },
@@ -81945,17 +82370,17 @@ pub const SD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Gharb Kurdufān",
+                        official: "West Kordofan",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "West Kordofan",
+                        official: "Gharb Kurdufān",
                         common: None,
                         native: None,
                     },
@@ -81967,17 +82392,17 @@ pub const SD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "South Darfur",
+                        official: "Janūb Dārfūr",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Janūb Dārfūr",
+                        official: "South Darfur",
                         common: None,
                         native: None,
                     },
@@ -82077,17 +82502,17 @@ pub const SD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "East Darfur",
+                        official: "Sharq Dārfūr",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Sharq Dārfūr",
+                        official: "East Darfur",
                         common: None,
                         native: None,
                     },
@@ -82099,17 +82524,17 @@ pub const SD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Sinnār",
+                        official: "Sennar",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Sennar",
+                        official: "Sinnār",
                         common: None,
                         native: None,
                     },
@@ -82121,17 +82546,17 @@ pub const SD: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "ar",
                     &SubdivisionMeta {
-                        official: "Central Darfur(local variant is Zalingei)",
+                        official: "Wasaţ Dārfūr(local variant is Zālinjay)",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "ar",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Wasaţ Dārfūr(local variant is Zālinjay)",
+                        official: "Central Darfur(local variant is Zalingei)",
                         common: None,
                         native: None,
                     },
@@ -82141,7 +82566,9 @@ pub const SD: &Country = &Country {
     ],
 };
 
+/// Republic of the Sudan
 pub const SDN: &Country = SD;
+/// Republic of Suriname
 pub const SR: &Country = &Country {
     name: &CountryMeta {
         common: "Suriname",
@@ -82348,7 +82775,9 @@ pub const SR: &Country = &Country {
     ],
 };
 
+/// Republic of Suriname
 pub const SUR: &Country = SR;
+/// Svalbard og Jan Mayen
 pub const SJ: &Country = &Country {
     name: &CountryMeta {
         common: "Svalbard and Jan Mayen",
@@ -82437,7 +82866,9 @@ pub const SJ: &Country = &Country {
     }],
 };
 
+/// Svalbard og Jan Mayen
 pub const SJM: &Country = SJ;
+/// Kingdom of Sweden
 pub const SE: &Country = &Country {
     name: &CountryMeta {
         common: "Sweden",
@@ -82798,17 +83229,19 @@ pub const SE: &Country = &Country {
     ],
 };
 
+/// Kingdom of Sweden
 pub const SWE: &Country = SE;
+/// Swiss Confederation
 pub const CH: &Country = &Country {
     name: &CountryMeta {
         common: "Switzerland",
         official: "Swiss Confederation",
         native: &crate::StaticMap::new(&[
             (
-                "roh",
+                "ita",
                 &CountryName {
-                    common: "Svizra",
-                    official: "Confederaziun svizra",
+                    common: "Svizzera",
+                    official: "Confederazione Svizzera",
                 },
             ),
             (
@@ -82819,10 +83252,10 @@ pub const CH: &Country = &Country {
                 },
             ),
             (
-                "ita",
+                "roh",
                 &CountryName {
-                    common: "Svizzera",
-                    official: "Confederazione Svizzera",
+                    common: "Svizra",
+                    official: "Confederaziun svizra",
                 },
             ),
             (
@@ -82958,14 +83391,14 @@ pub const CH: &Country = &Country {
             "de-CH", "en-CH", "fr-CH", "gsw-CH", "it-CH", "pt-CH", "rm-CH", "wae-CH",
         ],
         date_formats: &crate::StaticMap::new(&[
-            ("en-CH", "dd/MM/yyyy"),
-            ("pt-CH", "dd/MM/yyyy"),
-            ("de-CH", "dd.MM.yyyy"),
-            ("it-CH", "dd/MM/yyyy"),
-            ("wae-CH", "yyyy-MM-dd"),
             ("rm-CH", "dd-MM-yyyy"),
+            ("pt-CH", "dd/MM/yyyy"),
+            ("en-CH", "dd/MM/yyyy"),
             ("gsw-CH", "dd.MM.yyyy"),
+            ("it-CH", "dd/MM/yyyy"),
             ("fr-CH", "dd.MM.yyyy"),
+            ("wae-CH", "yyyy-MM-dd"),
+            ("de-CH", "dd.MM.yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Europe/Zurich",
@@ -83082,17 +83515,17 @@ pub const CH: &Country = &Country {
             ty: Some("canton"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Freiburg",
+                        official: "Fribourg",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "de",
                     &SubdivisionMeta {
-                        official: "Fribourg",
+                        official: "Freiburg",
                         common: None,
                         native: None,
                     },
@@ -83128,17 +83561,17 @@ pub const CH: &Country = &Country {
             ty: Some("canton"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "rm",
+                    "de",
                     &SubdivisionMeta {
-                        official: "Grischun",
+                        official: "Graubünden",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "de",
+                    "rm",
                     &SubdivisionMeta {
-                        official: "Graubünden",
+                        official: "Grischun",
                         common: None,
                         native: None,
                     },
@@ -83302,17 +83735,17 @@ pub const CH: &Country = &Country {
             ty: Some("canton"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "de",
+                    "fr",
                     &SubdivisionMeta {
-                        official: "Wallis",
+                        official: "Valais",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "fr",
+                    "de",
                     &SubdivisionMeta {
-                        official: "Valais",
+                        official: "Wallis",
                         common: None,
                         native: None,
                     },
@@ -83358,7 +83791,9 @@ pub const CH: &Country = &Country {
     ],
 };
 
+/// Swiss Confederation
 pub const CHE: &Country = CH;
+/// Syrian Arab Republic
 pub const SY: &Country = &Country {
     name: &CountryMeta {
         common: "Syria",
@@ -83430,7 +83865,7 @@ pub const SY: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["ar-SY", "fr-SY"],
-        date_formats: &crate::StaticMap::new(&[("fr-SY", "dd/MM/yyyy"), ("ar-SY", "dd/MM/yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("ar-SY", "dd/MM/yyyy"), ("fr-SY", "dd/MM/yyyy")]),
         timezones: &[&Timezone {
             name: "Asia/Damascus",
             ty: TimezoneType::Canonical,
@@ -83618,7 +84053,9 @@ pub const SY: &Country = &Country {
     ],
 };
 
+/// Syrian Arab Republic
 pub const SYR: &Country = SY;
+/// Republic of China (Taiwan)
 pub const TW: &Country = &Country {
     name: &CountryMeta {
         common: "Taiwan",
@@ -83971,7 +84408,9 @@ pub const TW: &Country = &Country {
     ],
 };
 
+/// Republic of China (Taiwan)
 pub const TWN: &Country = TW;
+/// Republic of Tajikistan
 pub const TJ: &Country = &Country {
     name: &CountryMeta {
         common: "Tajikistan",
@@ -84133,24 +84572,26 @@ pub const TJ: &Country = &Country {
     ],
 };
 
+/// Republic of Tajikistan
 pub const TJK: &Country = TJ;
+/// United Republic of Tanzania
 pub const TZ: &Country = &Country {
     name: &CountryMeta {
         common: "Tanzania",
         official: "United Republic of Tanzania",
         native: &crate::StaticMap::new(&[
             (
-                "swa",
-                &CountryName {
-                    common: "Tanzania",
-                    official: "Jamhuri ya Muungano wa Tanzania",
-                },
-            ),
-            (
                 "eng",
                 &CountryName {
                     common: "Tanzania",
                     official: "United Republic of Tanzania",
+                },
+            ),
+            (
+                "swa",
+                &CountryName {
+                    common: "Tanzania",
+                    official: "Jamhuri ya Muungano wa Tanzania",
                 },
             ),
         ]),
@@ -84338,19 +84779,19 @@ pub const TZ: &Country = &Country {
             "rof-TZ", "rwk-TZ", "sbp-TZ", "sw-TZ", "vun-TZ",
         ],
         date_formats: &crate::StaticMap::new(&[
-            ("lag-TZ", "dd/MM/yyyy"),
-            ("rof-TZ", "dd/MM/yyyy"),
-            ("asa-TZ", "dd/MM/yyyy"),
-            ("kde-TZ", "dd/MM/yyyy"),
-            ("rwk-TZ", "dd/MM/yyyy"),
-            ("jmc-TZ", "dd/MM/yyyy"),
             ("mas-TZ", "dd/MM/yyyy"),
+            ("ksb-TZ", "dd/MM/yyyy"),
+            ("en-TZ", "dd/MM/yyyy"),
             ("vun-TZ", "dd/MM/yyyy"),
+            ("sbp-TZ", "MM/dd/yyyy"),
             ("sw-TZ", "dd/MM/yyyy"),
             ("bez-TZ", "dd/MM/yyyy"),
-            ("ksb-TZ", "dd/MM/yyyy"),
-            ("sbp-TZ", "MM/dd/yyyy"),
-            ("en-TZ", "dd/MM/yyyy"),
+            ("lag-TZ", "dd/MM/yyyy"),
+            ("rwk-TZ", "dd/MM/yyyy"),
+            ("asa-TZ", "dd/MM/yyyy"),
+            ("kde-TZ", "dd/MM/yyyy"),
+            ("rof-TZ", "dd/MM/yyyy"),
+            ("jmc-TZ", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Nairobi",
@@ -84385,17 +84826,17 @@ pub const TZ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "sw",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Arusha",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sw",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Arusha",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -84495,17 +84936,17 @@ pub const TZ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "sw",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kagera",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "sw",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Kagera",
                         common: None,
                         native: None,
                     },
@@ -84517,17 +84958,17 @@ pub const TZ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "sw",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Kaskazini Pemba",
+                        official: "Pemba North",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "sw",
                     &SubdivisionMeta {
-                        official: "Pemba North",
+                        official: "Kaskazini Pemba",
                         common: None,
                         native: None,
                     },
@@ -84561,17 +85002,17 @@ pub const TZ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "sw",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Katavi",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sw",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Katavi",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -84671,17 +85112,17 @@ pub const TZ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "sw",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Lindi",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sw",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Lindi",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -84715,17 +85156,17 @@ pub const TZ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "sw",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Mara",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "sw",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Mara",
+                        official: "",
                         common: None,
                         native: None,
                     },
@@ -84737,17 +85178,17 @@ pub const TZ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "sw",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Mbeya",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "sw",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Mbeya",
                         common: None,
                         native: None,
                     },
@@ -84781,17 +85222,17 @@ pub const TZ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "sw",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Morogoro",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "sw",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Morogoro",
                         common: None,
                         native: None,
                     },
@@ -84847,17 +85288,17 @@ pub const TZ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "sw",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Njombe",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "sw",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Njombe",
                         common: None,
                         native: None,
                     },
@@ -84935,17 +85376,17 @@ pub const TZ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "sw",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Shinyanga",
+                        official: "",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "sw",
                     &SubdivisionMeta {
-                        official: "",
+                        official: "Shinyanga",
                         common: None,
                         native: None,
                     },
@@ -85001,7 +85442,7 @@ pub const TZ: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "sw",
+                    "en",
                     &SubdivisionMeta {
                         official: "Songwe",
                         common: None,
@@ -85009,7 +85450,7 @@ pub const TZ: &Country = &Country {
                     },
                 ),
                 (
-                    "en",
+                    "sw",
                     &SubdivisionMeta {
                         official: "Songwe",
                         common: None,
@@ -85065,7 +85506,9 @@ pub const TZ: &Country = &Country {
     ],
 };
 
+/// United Republic of Tanzania
 pub const TZA: &Country = TZ;
+/// Kingdom of Thailand
 pub const TH: &Country = &Country {
     name: &CountryMeta {
         common: "Thailand",
@@ -86099,7 +86542,9 @@ pub const TH: &Country = &Country {
     ],
 };
 
+/// Kingdom of Thailand
 pub const THA: &Country = TH;
+/// Democratic Republic of Timor-Leste
 pub const TL: &Country = &Country {
     name: &CountryMeta {
         common: "Timor-Leste",
@@ -86343,7 +86788,7 @@ pub const TL: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "pt",
+                    "tdt",
                     &SubdivisionMeta {
                         official: "Ermera",
                         common: None,
@@ -86351,7 +86796,7 @@ pub const TL: &Country = &Country {
                     },
                 ),
                 (
-                    "tdt",
+                    "pt",
                     &SubdivisionMeta {
                         official: "Ermera",
                         common: None,
@@ -86387,17 +86832,17 @@ pub const TL: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "tdt",
+                    "pt",
                     &SubdivisionMeta {
-                        official: "Likisá",
+                        official: "Liquiça",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "pt",
+                    "tdt",
                     &SubdivisionMeta {
-                        official: "Liquiça",
+                        official: "Likisá",
                         common: None,
                         native: None,
                     },
@@ -86409,17 +86854,17 @@ pub const TL: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "tdt",
+                    "pt",
                     &SubdivisionMeta {
-                        official: "Manatutu",
+                        official: "Manatuto",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "pt",
+                    "tdt",
                     &SubdivisionMeta {
-                        official: "Manatuto",
+                        official: "Manatutu",
                         common: None,
                         native: None,
                     },
@@ -86431,7 +86876,7 @@ pub const TL: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "tdt",
+                    "pt",
                     &SubdivisionMeta {
                         official: "Manufahi",
                         common: None,
@@ -86439,7 +86884,7 @@ pub const TL: &Country = &Country {
                     },
                 ),
                 (
-                    "pt",
+                    "tdt",
                     &SubdivisionMeta {
                         official: "Manufahi",
                         common: None,
@@ -86475,17 +86920,17 @@ pub const TL: &Country = &Country {
             ty: None,
             meta: &crate::StaticMap::new(&[
                 (
-                    "pt",
+                    "tdt",
                     &SubdivisionMeta {
-                        official: "Viqueque",
+                        official: "Vikeke",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "tdt",
+                    "pt",
                     &SubdivisionMeta {
-                        official: "Vikeke",
+                        official: "Viqueque",
                         common: None,
                         native: None,
                     },
@@ -86495,7 +86940,9 @@ pub const TL: &Country = &Country {
     ],
 };
 
+/// Democratic Republic of Timor-Leste
 pub const TLS: &Country = TL;
+/// Togolese Republic
 pub const TG: &Country = &Country {
     name: &CountryMeta {
         common: "Togo",
@@ -86651,14 +87098,16 @@ pub const TG: &Country = &Country {
     ],
 };
 
+/// Togolese Republic
 pub const TGO: &Country = TG;
+/// Tokelau
 pub const TK: &Country = &Country {
     name: &CountryMeta {
         common: "Tokelau",
         official: "Tokelau",
         native: &crate::StaticMap::new(&[
             (
-                "eng",
+                "smo",
                 &CountryName {
                     common: "Tokelau",
                     official: "Tokelau",
@@ -86672,7 +87121,7 @@ pub const TK: &Country = &Country {
                 },
             ),
             (
-                "smo",
+                "eng",
                 &CountryName {
                     common: "Tokelau",
                     official: "Tokelau",
@@ -86745,7 +87194,9 @@ pub const TK: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Tokelau
 pub const TKL: &Country = TK;
+/// Kingdom of Tonga
 pub const TO: &Country = &Country {
     name: &CountryMeta {
         common: "Tonga",
@@ -86813,7 +87264,7 @@ pub const TO: &Country = &Country {
     spoken_languages: &["niu", "nkp", "num"],
     locale: &Locale {
         ietf: &["en-TO", "to-TO"],
-        date_formats: &crate::StaticMap::new(&[("en-TO", "dd/MM/yyyy"), ("to-TO", "dd/MM/yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("to-TO", "dd/MM/yyyy"), ("en-TO", "dd/MM/yyyy")]),
         timezones: &[&Timezone {
             name: "Pacific/Tongatapu",
             ty: TimezoneType::Canonical,
@@ -86905,7 +87356,9 @@ pub const TO: &Country = &Country {
     ],
 };
 
+/// Kingdom of Tonga
 pub const TON: &Country = TO;
+/// Republic of Trinidad and Tobago
 pub const TT: &Country = &Country {
     name: &CountryMeta {
         common: "Trinidad and Tobago",
@@ -87164,7 +87617,9 @@ pub const TT: &Country = &Country {
     ],
 };
 
+/// Republic of Trinidad and Tobago
 pub const TTO: &Country = TT;
+/// Tunisian Republic
 pub const TN: &Country = &Country {
     name: &CountryMeta {
         common: "Tunisia",
@@ -87534,7 +87989,9 @@ pub const TN: &Country = &Country {
     ],
 };
 
+/// Tunisian Republic
 pub const TUN: &Country = TN;
+/// Republic of Turkey
 pub const TR: &Country = &Country {
     name: &CountryMeta {
         common: "Turkey",
@@ -88613,24 +89070,26 @@ pub const TR: &Country = &Country {
     ],
 };
 
+/// Republic of Turkey
 pub const TUR: &Country = TR;
+/// Turkmenistan
 pub const TM: &Country = &Country {
     name: &CountryMeta {
         common: "Turkmenistan",
         official: "Turkmenistan",
         native: &crate::StaticMap::new(&[
             (
-                "rus",
-                &CountryName {
-                    common: "Туркмения",
-                    official: "Туркменистан",
-                },
-            ),
-            (
                 "tuk",
                 &CountryName {
                     common: "Türkmenistan",
                     official: "Türkmenistan",
+                },
+            ),
+            (
+                "rus",
+                &CountryName {
+                    common: "Туркмения",
+                    official: "Туркменистан",
                 },
             ),
         ]),
@@ -88770,7 +89229,9 @@ pub const TM: &Country = &Country {
     ],
 };
 
+/// Turkmenistan
 pub const TKM: &Country = TM;
+/// Turks and Caicos Islands
 pub const TC: &Country = &Country {
     name: &CountryMeta {
         common: "Turks and Caicos Islands",
@@ -88859,7 +89320,9 @@ pub const TC: &Country = &Country {
     }],
 };
 
+/// Turks and Caicos Islands
 pub const TCA: &Country = TC;
+/// Tuvalu
 pub const TV: &Country = &Country {
     name: &CountryMeta {
         common: "Tuvalu",
@@ -89043,21 +89506,23 @@ pub const TV: &Country = &Country {
     ],
 };
 
+/// Tuvalu
 pub const TUV: &Country = TV;
+/// Republic of Uganda
 pub const UG: &Country = &Country {
     name: &CountryMeta {
         common: "Uganda",
         official: "Republic of Uganda",
         native: &crate::StaticMap::new(&[
             (
-                "swa",
+                "eng",
                 &CountryName {
                     common: "Uganda",
                     official: "Republic of Uganda",
                 },
             ),
             (
-                "eng",
+                "swa",
                 &CountryName {
                     common: "Uganda",
                     official: "Republic of Uganda",
@@ -89174,13 +89639,13 @@ pub const UG: &Country = &Country {
             "cgg-UG", "en-UG", "lg-UG", "nyn-UG", "sw-UG", "teo-UG", "xog-UG",
         ],
         date_formats: &crate::StaticMap::new(&[
-            ("nyn-UG", "dd/MM/yyyy"),
+            ("xog-UG", "dd/MM/yyyy"),
             ("sw-UG", "dd/MM/yyyy"),
             ("en-UG", "dd/MM/yyyy"),
-            ("lg-UG", "dd/MM/yyyy"),
             ("cgg-UG", "dd/MM/yyyy"),
+            ("lg-UG", "dd/MM/yyyy"),
+            ("nyn-UG", "dd/MM/yyyy"),
             ("teo-UG", "dd/MM/yyyy"),
-            ("xog-UG", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Nairobi",
@@ -89235,17 +89700,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Abim",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Abim",
                         common: None,
                         native: None,
                     },
@@ -89279,17 +89744,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Agago",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Agago",
                         common: None,
                         native: None,
                     },
@@ -89301,17 +89766,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Alebtong",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Alebtong",
                         common: None,
                         native: None,
                     },
@@ -89323,17 +89788,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Amolatar",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Amolatar",
                         common: None,
                         native: None,
                     },
@@ -89367,17 +89832,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Amuria",
+                        official: "E",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Amuria",
                         common: None,
                         native: None,
                     },
@@ -89389,17 +89854,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Amuru",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Amuru",
                         common: None,
                         native: None,
                     },
@@ -89433,17 +89898,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Arua",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Arua",
+                        official: "N",
                         common: None,
                         native: None,
                     },
@@ -89455,17 +89920,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Budaka",
+                        official: "E",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Budaka",
                         common: None,
                         native: None,
                     },
@@ -89521,17 +89986,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Bugweri",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Bugweri",
+                        official: "E",
                         common: None,
                         native: None,
                     },
@@ -89543,17 +90008,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Buhweju",
+                        official: "W",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "W",
+                        official: "Buhweju",
                         common: None,
                         native: None,
                     },
@@ -89631,17 +90096,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Bukwo",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Bukwo",
+                        official: "E",
                         common: None,
                         native: None,
                     },
@@ -89719,17 +90184,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Bunyangabu",
+                        official: "W",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "W",
+                        official: "Bunyangabu",
                         common: None,
                         native: None,
                     },
@@ -89763,17 +90228,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Busia",
+                        official: "E",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Busia",
                         common: None,
                         native: None,
                     },
@@ -89785,17 +90250,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Butaleja",
+                        official: "E",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Butaleja",
                         common: None,
                         native: None,
                     },
@@ -89807,17 +90272,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Butambala",
+                        official: "C",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Butambala",
                         common: None,
                         native: None,
                     },
@@ -89851,17 +90316,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Buvuma",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Buvuma",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -89873,17 +90338,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Buyende",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Buyende",
+                        official: "E",
                         common: None,
                         native: None,
                     },
@@ -89917,17 +90382,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Gomba",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Gomba",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -89961,17 +90426,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "W",
+                        official: "Hoima",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Hoima",
+                        official: "W",
                         common: None,
                         native: None,
                     },
@@ -90071,17 +90536,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kaabong",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Kaabong",
                         common: None,
                         native: None,
                     },
@@ -90115,17 +90580,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kabarole",
+                        official: "W",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "W",
+                        official: "Kabarole",
                         common: None,
                         native: None,
                     },
@@ -90137,17 +90602,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Kaberamaido",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kaberamaido",
+                        official: "E",
                         common: None,
                         native: None,
                     },
@@ -90181,17 +90646,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "W",
+                        official: "Kakumiro",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kakumiro",
+                        official: "W",
                         common: None,
                         native: None,
                     },
@@ -90225,17 +90690,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Kalangala",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kalangala",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -90247,17 +90712,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Kaliro",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kaliro",
+                        official: "E",
                         common: None,
                         native: None,
                     },
@@ -90291,17 +90756,17 @@ pub const UG: &Country = &Country {
             ty: Some("city"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Kampala",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kampala",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -90313,17 +90778,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kamuli",
+                        official: "E",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Kamuli",
                         common: None,
                         native: None,
                     },
@@ -90401,17 +90866,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Kapelebyong",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kapelebyong",
+                        official: "E",
                         common: None,
                         native: None,
                     },
@@ -90423,17 +90888,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Karenga",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Karenga",
                         common: None,
                         native: None,
                     },
@@ -90445,17 +90910,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kasanda",
+                        official: "C",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Kasanda",
                         common: None,
                         native: None,
                     },
@@ -90489,17 +90954,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Katakwi",
+                        official: "E",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Katakwi",
                         common: None,
                         native: None,
                     },
@@ -90511,17 +90976,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Kayunga",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kayunga",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -90533,17 +90998,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "W",
+                        official: "Kazo",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kazo",
+                        official: "W",
                         common: None,
                         native: None,
                     },
@@ -90577,17 +91042,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kiboga",
+                        official: "C",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Kiboga",
                         common: None,
                         native: None,
                     },
@@ -90599,17 +91064,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kibuku",
+                        official: "E",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Kibuku",
                         common: None,
                         native: None,
                     },
@@ -90643,17 +91108,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kiruhura",
+                        official: "W",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "W",
+                        official: "Kiruhura",
                         common: None,
                         native: None,
                     },
@@ -90709,17 +91174,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kitagwenda",
+                        official: "W",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "W",
+                        official: "Kitagwenda",
                         common: None,
                         native: None,
                     },
@@ -90731,17 +91196,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Kitgum",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kitgum",
+                        official: "N",
                         common: None,
                         native: None,
                     },
@@ -90775,17 +91240,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Kole",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kole",
+                        official: "N",
                         common: None,
                         native: None,
                     },
@@ -90841,17 +91306,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kwania",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Kwania",
                         common: None,
                         native: None,
                     },
@@ -90863,17 +91328,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kween",
+                        official: "E",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Kween",
                         common: None,
                         native: None,
                     },
@@ -90951,17 +91416,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Kyotera",
+                        official: "C",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Kyotera",
                         common: None,
                         native: None,
                     },
@@ -91039,17 +91504,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Luwero",
+                        official: "C",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Luwero",
                         common: None,
                         native: None,
                     },
@@ -91083,17 +91548,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Lyantonde",
+                        official: "C",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Lyantonde",
                         common: None,
                         native: None,
                     },
@@ -91127,17 +91592,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Manafwa",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Manafwa",
+                        official: "E",
                         common: None,
                         native: None,
                     },
@@ -91149,17 +91614,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Maracha",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Maracha",
+                        official: "N",
                         common: None,
                         native: None,
                     },
@@ -91193,17 +91658,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Masindi",
+                        official: "W",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "W",
+                        official: "Masindi",
                         common: None,
                         native: None,
                     },
@@ -91303,17 +91768,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Mityana",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Mityana",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -91325,17 +91790,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Moroto",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Moroto",
                         common: None,
                         native: None,
                     },
@@ -91347,17 +91812,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Moyo",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Moyo",
+                        official: "N",
                         common: None,
                         native: None,
                     },
@@ -91369,17 +91834,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Mpigi",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Mpigi",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -91435,17 +91900,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Nabilatuk",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Nabilatuk",
+                        official: "N",
                         common: None,
                         native: None,
                     },
@@ -91479,17 +91944,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Nakaseke",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Nakaseke",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -91501,17 +91966,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Nakasongola",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Nakasongola",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -91677,17 +92142,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Ntungamo",
+                        official: "W",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "W",
+                        official: "Ntungamo",
                         common: None,
                         native: None,
                     },
@@ -91699,17 +92164,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Nwoya",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Nwoya",
                         common: None,
                         native: None,
                     },
@@ -91721,17 +92186,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Obongi",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Obongi",
                         common: None,
                         native: None,
                     },
@@ -91743,17 +92208,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Omoro",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Omoro",
                         common: None,
                         native: None,
                     },
@@ -91765,17 +92230,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Otuke",
+                        official: "N",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Otuke",
                         common: None,
                         native: None,
                     },
@@ -91831,17 +92296,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "N",
+                        official: "Pakwach",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Pakwach",
+                        official: "N",
                         common: None,
                         native: None,
                     },
@@ -91853,17 +92318,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Pallisa",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Pallisa",
+                        official: "E",
                         common: None,
                         native: None,
                     },
@@ -91875,17 +92340,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "C",
+                        official: "Rakai",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Rakai",
+                        official: "C",
                         common: None,
                         native: None,
                     },
@@ -91963,17 +92428,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Rukungiri",
+                        official: "W",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "W",
+                        official: "Rukungiri",
                         common: None,
                         native: None,
                     },
@@ -91985,17 +92450,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "W",
+                        official: "Rwampara",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Rwampara",
+                        official: "W",
                         common: None,
                         native: None,
                     },
@@ -92029,17 +92494,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Serere",
+                        official: "E",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Serere",
                         common: None,
                         native: None,
                     },
@@ -92051,17 +92516,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Sheema",
+                        official: "W",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "W",
+                        official: "Sheema",
                         common: None,
                         native: None,
                     },
@@ -92073,17 +92538,17 @@ pub const UG: &Country = &Country {
             ty: Some("district"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "inRegion",
+                    "en",
                     &SubdivisionMeta {
-                        official: "E",
+                        official: "Sironko",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "en",
+                    "inRegion",
                     &SubdivisionMeta {
-                        official: "Sironko",
+                        official: "E",
                         common: None,
                         native: None,
                     },
@@ -92203,7 +92668,9 @@ pub const UG: &Country = &Country {
     ],
 };
 
+/// Republic of Uganda
 pub const UGA: &Country = UG;
+/// Ukraine
 pub const UA: &Country = &Country {
     name: &CountryMeta {
         common: "Ukraine",
@@ -92646,7 +93113,9 @@ pub const UA: &Country = &Country {
     ],
 };
 
+/// Ukraine
 pub const UKR: &Country = UA;
+/// United Arab Emirates
 pub const AE: &Country = &Country {
     name: &CountryMeta {
         common: "United Arab Emirates",
@@ -92709,7 +93178,7 @@ pub const AE: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["ar-AE", "en-AE"],
-        date_formats: &crate::StaticMap::new(&[("ar-AE", "dd/MM/yyyy"), ("en-AE", "dd/MM/yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("en-AE", "dd/MM/yyyy"), ("ar-AE", "dd/MM/yyyy")]),
         timezones: &[&Timezone {
             name: "Asia/Dubai",
             ty: TimezoneType::Canonical,
@@ -92825,7 +93294,9 @@ pub const AE: &Country = &Country {
     ],
 };
 
+/// United Arab Emirates
 pub const ARE: &Country = AE;
+/// United Kingdom of Great Britain and Northern Ireland
 pub const GB: &Country = &Country {
     name: &CountryMeta {
         common: "United Kingdom",
@@ -92920,11 +93391,11 @@ pub const GB: &Country = &Country {
     locale: &Locale {
         ietf: &["cy-GB", "en-GB", "ga-GB", "gd-GB", "kw-GB"],
         date_formats: &crate::StaticMap::new(&[
-            ("gd-GB", "dd/MM/yyyy"),
             ("en-GB", "dd/MM/yyyy"),
             ("kw-GB", "yyyy-MM-dd"),
             ("ga-GB", "dd/MM/yyyy"),
             ("cy-GB", "dd/MM/yyyy"),
+            ("gd-GB", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Europe/London",
@@ -92995,17 +93466,17 @@ pub const GB: &Country = &Country {
             ty: Some("country"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "cy",
                     &SubdivisionMeta {
-                        official: "Wales",
+                        official: "Cymru",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cy",
+                    "en",
                     &SubdivisionMeta {
-                        official: "Cymru",
+                        official: "Wales",
                         common: None,
                         native: None,
                     },
@@ -93015,7 +93486,9 @@ pub const GB: &Country = &Country {
     ],
 };
 
+/// United Kingdom of Great Britain and Northern Ireland
 pub const GBR: &Country = GB;
+/// United States of America
 pub const US: &Country = &Country {
     name: &CountryMeta {
         common: "United States",
@@ -93177,12 +93650,12 @@ pub const US: &Country = &Country {
             "lkt-US",
         ],
         date_formats: &crate::StaticMap::new(&[
-            ("en-US-POSIX", "MM/dd/yyyy"),
-            ("es-US", "dd/MM/yyyy"),
-            ("haw-US", "dd/MM/yyyy"),
-            ("en-US", "MM/dd/yyyy"),
-            ("chr-US", "MM/dd/yyyy"),
             ("lkt-US", "MM/dd/yyyy"),
+            ("chr-US", "MM/dd/yyyy"),
+            ("haw-US", "dd/MM/yyyy"),
+            ("en-US-POSIX", "MM/dd/yyyy"),
+            ("en-US", "MM/dd/yyyy"),
+            ("es-US", "dd/MM/yyyy"),
         ]),
         timezones: &[
             &Timezone {
@@ -94049,17 +94522,17 @@ pub const US: &Country = &Country {
             ty: Some("Outlying area"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "cca2",
                     &SubdivisionMeta {
-                        official: "Guam",
+                        official: "GU",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cca2",
+                    "en",
                     &SubdivisionMeta {
-                        official: "GU",
+                        official: "Guam",
                         common: None,
                         native: None,
                     },
@@ -94071,17 +94544,17 @@ pub const US: &Country = &Country {
             ty: Some("Outlying area"),
             meta: &crate::StaticMap::new(&[
                 (
-                    "en",
+                    "cca2",
                     &SubdivisionMeta {
-                        official: "Northern Mariana Islands",
+                        official: "MP",
                         common: None,
                         native: None,
                     },
                 ),
                 (
-                    "cca2",
+                    "en",
                     &SubdivisionMeta {
-                        official: "MP",
+                        official: "Northern Mariana Islands",
                         common: None,
                         native: None,
                     },
@@ -94157,7 +94630,9 @@ pub const US: &Country = &Country {
     ],
 };
 
+/// United States of America
 pub const USA: &Country = US;
+/// United States Minor Outlying Islands
 pub const UM: &Country = &Country {
     name: &CountryMeta {
         common: "United States Minor Outlying Islands",
@@ -94360,7 +94835,9 @@ pub const UM: &Country = &Country {
     ],
 };
 
+/// United States Minor Outlying Islands
 pub const UMI: &Country = UM;
+/// Virgin Islands of the United States
 pub const VI: &Country = &Country {
     name: &CountryMeta {
         common: "United States Virgin Islands",
@@ -94449,7 +94926,9 @@ pub const VI: &Country = &Country {
     }],
 };
 
+/// Virgin Islands of the United States
 pub const VIR: &Country = VI;
+/// Oriental Republic of Uruguay
 pub const UY: &Country = &Country {
     name: &CountryMeta {
         common: "Uruguay",
@@ -94761,7 +95240,9 @@ pub const UY: &Country = &Country {
     ],
 };
 
+/// Oriental Republic of Uruguay
 pub const URY: &Country = UY;
+/// Republic of Uzbekistan
 pub const UZ: &Country = &Country {
     name: &CountryMeta {
         common: "Uzbekistan",
@@ -95043,7 +95524,9 @@ pub const UZ: &Country = &Country {
     ],
 };
 
+/// Republic of Uzbekistan
 pub const UZB: &Country = UZ;
+/// Republic of Vanuatu
 pub const VU: &Country = &Country {
     name: &CountryMeta {
         common: "Vanuatu",
@@ -95132,7 +95615,7 @@ pub const VU: &Country = &Country {
     ],
     locale: &Locale {
         ietf: &["en-VU", "fr-VU"],
-        date_formats: &crate::StaticMap::new(&[("fr-VU", "dd/MM/yyyy"), ("en-VU", "dd/MM/yyyy")]),
+        date_formats: &crate::StaticMap::new(&[("en-VU", "dd/MM/yyyy"), ("fr-VU", "dd/MM/yyyy")]),
         timezones: &[&Timezone {
             name: "Pacific/Efate",
             ty: TimezoneType::Canonical,
@@ -95236,7 +95719,9 @@ pub const VU: &Country = &Country {
     ],
 };
 
+/// Republic of Vanuatu
 pub const VUT: &Country = VU;
+/// Vatican City State
 pub const VA: &Country = &Country {
     name: &CountryMeta {
         common: "Vatican City",
@@ -95353,7 +95838,9 @@ pub const VA: &Country = &Country {
     }],
 };
 
+/// Vatican City State
 pub const VAT: &Country = VA;
+/// Bolivarian Republic of Venezuela
 pub const VE: &Country = &Country {
     name: &CountryMeta {
         common: "Venezuela",
@@ -95730,7 +96217,9 @@ pub const VE: &Country = &Country {
     ],
 };
 
+/// Bolivarian Republic of Venezuela
 pub const VEN: &Country = VE;
+/// Socialist Republic of Vietnam
 pub const VN: &Country = &Country {
     name: &CountryMeta {
         common: "Vietnam",
@@ -96579,7 +97068,9 @@ pub const VN: &Country = &Country {
     ],
 };
 
+/// Socialist Republic of Vietnam
 pub const VNM: &Country = VN;
+/// Territory of the Wallis and Futuna Islands
 pub const WF: &Country = &Country {
     name: &CountryMeta {
         common: "Wallis and Futuna",
@@ -96697,12 +97188,21 @@ pub const WF: &Country = &Country {
     ],
 };
 
+/// Territory of the Wallis and Futuna Islands
 pub const WLF: &Country = WF;
+/// Sahrawi Arab Democratic Republic
 pub const EH: &Country = &Country {
     name: &CountryMeta {
         common: "Western Sahara",
         official: "Sahrawi Arab Democratic Republic",
         native: &crate::StaticMap::new(&[
+            (
+                "spa",
+                &CountryName {
+                    common: "Sahara Occidental",
+                    official: "República Árabe Saharaui Democrática",
+                },
+            ),
             (
                 "mey",
                 &CountryName {
@@ -96715,13 +97215,6 @@ pub const EH: &Country = &Country {
                 &CountryName {
                     common: "Western Sahara",
                     official: "Sahrawi Arab Democratic Republic",
-                },
-            ),
-            (
-                "spa",
-                &CountryName {
-                    common: "Sahara Occidental",
-                    official: "República Árabe Saharaui Democrática",
                 },
             ),
         ]),
@@ -96791,7 +97284,9 @@ pub const EH: &Country = &Country {
     subdivisions: &[],
 };
 
+/// Sahrawi Arab Democratic Republic
 pub const ESH: &Country = EH;
+/// Republic of Yemen
 pub const YE: &Country = &Country {
     name: &CountryMeta {
         common: "Yemen",
@@ -97137,7 +97632,9 @@ pub const YE: &Country = &Country {
     ],
 };
 
+/// Republic of Yemen
 pub const YEM: &Country = YE;
+/// Republic of Zambia
 pub const ZM: &Country = &Country {
     name: &CountryMeta {
         common: "Zambia",
@@ -97363,98 +97860,16 @@ pub const ZM: &Country = &Country {
     ],
 };
 
+/// Republic of Zambia
 pub const ZMB: &Country = ZM;
+/// Republic of Zimbabwe
 pub const ZW: &Country = &Country {
     name: &CountryMeta {
         common: "Zimbabwe",
         official: "Republic of Zimbabwe",
         native: &crate::StaticMap::new(&[
             (
-                "tsn",
-                &CountryName {
-                    common: "Zimbabwe",
-                    official: "Republic of Zimbabwe",
-                },
-            ),
-            (
-                "xho",
-                &CountryName {
-                    common: "Zimbabwe",
-                    official: "Republic of Zimbabwe",
-                },
-            ),
-            (
-                "sot",
-                &CountryName {
-                    common: "Zimbabwe",
-                    official: "Republic of Zimbabwe",
-                },
-            ),
-            (
-                "toi",
-                &CountryName {
-                    common: "Zimbabwe",
-                    official: "Republic of Zimbabwe",
-                },
-            ),
-            (
-                "kck",
-                &CountryName {
-                    common: "Zimbabwe",
-                    official: "Republic of Zimbabwe",
-                },
-            ),
-            (
-                "zib",
-                &CountryName {
-                    common: "Zimbabwe",
-                    official: "Republic of Zimbabwe",
-                },
-            ),
-            (
                 "khi",
-                &CountryName {
-                    common: "Zimbabwe",
-                    official: "Republic of Zimbabwe",
-                },
-            ),
-            (
-                "ven",
-                &CountryName {
-                    common: "Zimbabwe",
-                    official: "Republic of Zimbabwe",
-                },
-            ),
-            (
-                "sna",
-                &CountryName {
-                    common: "Zimbabwe",
-                    official: "Republic of Zimbabwe",
-                },
-            ),
-            (
-                "eng",
-                &CountryName {
-                    common: "Zimbabwe",
-                    official: "Republic of Zimbabwe",
-                },
-            ),
-            (
-                "bwg",
-                &CountryName {
-                    common: "Zimbabwe",
-                    official: "Republic of Zimbabwe",
-                },
-            ),
-            (
-                "tso",
-                &CountryName {
-                    common: "Zimbabwe",
-                    official: "Republic of Zimbabwe",
-                },
-            ),
-            (
-                "nya",
                 &CountryName {
                     common: "Zimbabwe",
                     official: "Republic of Zimbabwe",
@@ -97468,7 +97883,91 @@ pub const ZW: &Country = &Country {
                 },
             ),
             (
+                "tso",
+                &CountryName {
+                    common: "Zimbabwe",
+                    official: "Republic of Zimbabwe",
+                },
+            ),
+            (
                 "nde",
+                &CountryName {
+                    common: "Zimbabwe",
+                    official: "Republic of Zimbabwe",
+                },
+            ),
+            (
+                "eng",
+                &CountryName {
+                    common: "Zimbabwe",
+                    official: "Republic of Zimbabwe",
+                },
+            ),
+            (
+                "kck",
+                &CountryName {
+                    common: "Zimbabwe",
+                    official: "Republic of Zimbabwe",
+                },
+            ),
+            (
+                "toi",
+                &CountryName {
+                    common: "Zimbabwe",
+                    official: "Republic of Zimbabwe",
+                },
+            ),
+            (
+                "sot",
+                &CountryName {
+                    common: "Zimbabwe",
+                    official: "Republic of Zimbabwe",
+                },
+            ),
+            (
+                "tsn",
+                &CountryName {
+                    common: "Zimbabwe",
+                    official: "Republic of Zimbabwe",
+                },
+            ),
+            (
+                "nya",
+                &CountryName {
+                    common: "Zimbabwe",
+                    official: "Republic of Zimbabwe",
+                },
+            ),
+            (
+                "zib",
+                &CountryName {
+                    common: "Zimbabwe",
+                    official: "Republic of Zimbabwe",
+                },
+            ),
+            (
+                "xho",
+                &CountryName {
+                    common: "Zimbabwe",
+                    official: "Republic of Zimbabwe",
+                },
+            ),
+            (
+                "bwg",
+                &CountryName {
+                    common: "Zimbabwe",
+                    official: "Republic of Zimbabwe",
+                },
+            ),
+            (
+                "sna",
+                &CountryName {
+                    common: "Zimbabwe",
+                    official: "Republic of Zimbabwe",
+                },
+            ),
+            (
+                "ven",
                 &CountryName {
                     common: "Zimbabwe",
                     official: "Republic of Zimbabwe",
@@ -97541,9 +98040,9 @@ pub const ZW: &Country = &Country {
     locale: &Locale {
         ietf: &["en-ZW", "nd-ZW", "sn-ZW"],
         date_formats: &crate::StaticMap::new(&[
-            ("nd-ZW", "dd/MM/yyyy"),
-            ("sn-ZW", "yyyy-MM-dd"),
             ("en-ZW", "dd/MM/yyyy"),
+            ("sn-ZW", "yyyy-MM-dd"),
+            ("nd-ZW", "dd/MM/yyyy"),
         ]),
         timezones: &[&Timezone {
             name: "Africa/Maputo",
@@ -97684,4 +98183,5 @@ pub const ZW: &Country = &Country {
     ],
 };
 
+/// Republic of Zimbabwe
 pub const ZWE: &Country = ZW;

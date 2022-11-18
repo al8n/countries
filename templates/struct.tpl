@@ -26,6 +26,7 @@ mod {{ mod }}_graphql {
         {% for field in fields %}
         {{field.doc}}
         #[graphql(name = "{{ field.getter }}")]
+        #[cfg_attr(docsrs, doc(cfg(all(feature = "async-graphql", feature = "alloc"))))]
         #[inline]
         pub async fn graphql_{{ field.getter }}(&self) -> {{ field.ty }} {
             self.{{ field.name }}
